@@ -1,0 +1,321 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Oprisk_Serenity_framework</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="4fc9503e2c249e3e1d3419ad8ebf1d586ac96b7961c570b6ab7b1e4688bccd64.html">To Test Admin Menu Questionnaires In Risk Framework Option</a></span>
+                > <span class="truncate-60"><a
+                    href="8152a85841706b948ebfe0b23f9cb14a8614be9247caf6e8b5c92c68d232a251.html">To Test Admin menu Questionnaires in Risk Framework option </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-11-2023 18:10</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">To Test Admin Menu Questionnaires In Risk Framework Option</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="5a2b87ec54895eb41648e4e9c8efd4d7f1b6eff05d3d5cc277ef05758e8cfa31.html">Run
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="9aa82d331814d8b4f2f6d3e0f449486bc2f5d1dbace9c430f98e5548dc535eb3.html">Endto End
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">To Test Admin menu Questionnaires in Risk Framework option
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="d671c7213be71164c77a8494a968a4c24f01598f0ee077cdf844a3da6979fc49.png" title=" Given To open the OneSumX application" width="1920"/>
+                <img src="d671c7213be71164c77a8494a968a4c24f01598f0ee077cdf844a3da6979fc49.png" title=" Oktaverification" width="1920"/>
+                <img src="aa0cc5a6cd8920d24fba92a6d5286a74be0cfbfc694c68c4dd14b0e5470e428f.png" title=" Oktaverification (completed)" width="1920"/>
+                <img src="aa0cc5a6cd8920d24fba92a6d5286a74be0cfbfc694c68c4dd14b0e5470e428f.png" title=" Given To open the OneSumX application (completed)" width="1920"/>
+                <img src="6fd6ebf17dc0e5cc4e57b31b7d3368477c126a4d1b334e93e0c441c3008196e8.png" title=" When To click the Admin menu option in home page" width="1920"/>
+                <img src="6fd6ebf17dc0e5cc4e57b31b7d3368477c126a4d1b334e93e0c441c3008196e8.png" title=" To click the admin menu option in home page" width="1920"/>
+                <img src="6fd6ebf17dc0e5cc4e57b31b7d3368477c126a4d1b334e93e0c441c3008196e8.png" title=" When To click the Admin menu option in home page (completed)" width="1920"/>
+                <img src="c165df84631b98155bf6fa876907b7453cf0ca1e4836772f94af3247626e688b.png" title=" When To mouse hover to Risk Framework option" width="1920"/>
+                <img src="c165df84631b98155bf6fa876907b7453cf0ca1e4836772f94af3247626e688b.png" title=" To mouse hover to risk framework option" width="1920"/>
+                <img src="9cd1b4860ad32396b5af776825a4e96ae6cdefa4cb1e9e83ecffc9124e55831e.png" title=" To mouse hover to risk framework option (completed)" width="1920"/>
+                <img src="9cd1b4860ad32396b5af776825a4e96ae6cdefa4cb1e9e83ecffc9124e55831e.png" title=" When To mouse hover to Risk Framework option (completed)" width="1920"/>
+                <img src="7ba812c0aadacb2bd8f802924fa0442b39a4eb00b4b1d5dca49d57ea7dc9b7aa.png" title=" When To click the Questionnaires in Risk Framework option" width="1920"/>
+                <img src="7ba812c0aadacb2bd8f802924fa0442b39a4eb00b4b1d5dca49d57ea7dc9b7aa.png" title=" To click the questionnaires in risk framework option" width="1920"/>
+                <img src="7ba812c0aadacb2bd8f802924fa0442b39a4eb00b4b1d5dca49d57ea7dc9b7aa.png" title=" When To click the Questionnaires in Risk Framework option (completed)" width="1920"/>
+                <img src="7ba812c0aadacb2bd8f802924fa0442b39a4eb00b4b1d5dca49d57ea7dc9b7aa.png" title=" Then To validate the Manage Questionnaires page" width="1920"/>
+                <img src="7ba812c0aadacb2bd8f802924fa0442b39a4eb00b4b1d5dca49d57ea7dc9b7aa.png" title=" To validate the manage questionnaires page" width="1920"/>
+                <img src="21d8522847926d1bc5066eee0029f837f6330ad55a656c434beac4d81df982a8.png" title=" When To click the the Add new button in Manage Questionnaires page" width="1920"/>
+                <img src="21d8522847926d1bc5066eee0029f837f6330ad55a656c434beac4d81df982a8.png" title=" To click the the add new button in manage questionnaires page" width="1920"/>
+                <img src="21d8522847926d1bc5066eee0029f837f6330ad55a656c434beac4d81df982a8.png" title=" When To click the the Add new button in Manage Questionnaires page (completed)" width="1920"/>
+                <img src="917c3770d7f22a295efab2a699b2bdefc7fc3401f9633a86a99d54404f2e7772.png" title=" Then To validate Add Questionnaire page" width="1920"/>
+                <img src="917c3770d7f22a295efab2a699b2bdefc7fc3401f9633a86a99d54404f2e7772.png" title=" To validate add questionnaire page" width="1920"/>
+                <img src="917c3770d7f22a295efab2a699b2bdefc7fc3401f9633a86a99d54404f2e7772.png" title=" Then To validate Add Questionnaire page (completed)" width="1920"/>
+                <img src="21d8522847926d1bc5066eee0029f837f6330ad55a656c434beac4d81df982a8.png" title=" When To Enter the value in Title box in Add Questionnaire page" width="1920"/>
+                <img src="21d8522847926d1bc5066eee0029f837f6330ad55a656c434beac4d81df982a8.png" title=" To enter the value in title box in add questionnaire page" width="1920"/>
+                <img src="1eef9dda7344374d752b343441465df10bbf7d85788df1fbd5dd79b7a2b7ae36.png" title=" To enter the value in title box in add questionnaire page (completed)" width="1920"/>
+                <img src="1eef9dda7344374d752b343441465df10bbf7d85788df1fbd5dd79b7a2b7ae36.png" title=" When To Enter the value in Title box in Add Questionnaire page (completed)" width="1920"/>
+                <img src="56fd7286aaaed1605c9a0b829d9cab96bd8209afd11f6e2c522c8d625dba76df.png" title=" When To click the Save button in Add Questionnaire page" width="1920"/>
+                <img src="56fd7286aaaed1605c9a0b829d9cab96bd8209afd11f6e2c522c8d625dba76df.png" title=" To click the save button in add questionnaire page" width="1920"/>
+                <img src="56fd7286aaaed1605c9a0b829d9cab96bd8209afd11f6e2c522c8d625dba76df.png" title=" When To click the Save button in Add Questionnaire page (completed)" width="1920"/>
+                <img src="56fd7286aaaed1605c9a0b829d9cab96bd8209afd11f6e2c522c8d625dba76df.png" title=" Then To validate the Modify Questionnaire page" width="1920"/>
+                <img src="56fd7286aaaed1605c9a0b829d9cab96bd8209afd11f6e2c522c8d625dba76df.png" title=" To validate the modify questionnaire page" width="1920"/>
+                <img src="5a11473f9ac0da5fcbc708deb4f5075c54f1406c3a4bf8f2bed3996657a41654.png" title=" When To click the insert button in Modify Questionnaire page" width="1920"/>
+                <img src="5a11473f9ac0da5fcbc708deb4f5075c54f1406c3a4bf8f2bed3996657a41654.png" title=" To click the insert button in modify questionnaire page" width="1920"/>
+                <img src="5a11473f9ac0da5fcbc708deb4f5075c54f1406c3a4bf8f2bed3996657a41654.png" title=" When To click the insert button in Modify Questionnaire page (completed)" width="1920"/>
+                <img src="5a11473f9ac0da5fcbc708deb4f5075c54f1406c3a4bf8f2bed3996657a41654.png" title=" Then To validate the Add question page" width="1920"/>
+                <img src="5a11473f9ac0da5fcbc708deb4f5075c54f1406c3a4bf8f2bed3996657a41654.png" title=" To validate the add question page" width="1920"/>
+                <img src="4301b3b8ef30828d18f351c2b25a735daf06dc20d9bd2569670f3e36e7c40db0.png" title=" When To select the drop down option in choose an item type in Add question page" width="1920"/>
+                <img src="4301b3b8ef30828d18f351c2b25a735daf06dc20d9bd2569670f3e36e7c40db0.png" title=" To select the drop down option in choose an item type in add question page" width="1920"/>
+                <img src="4301b3b8ef30828d18f351c2b25a735daf06dc20d9bd2569670f3e36e7c40db0.png" title=" When To select the drop down option in choose an item type in Add question page (completed)" width="1920"/>
+                <img src="7a0f075001a949ae8131fd6fd869f574901977dc96fbec8ab2ac6432f28689bd.png" title=" Then To validate the Add question with choose an item type in Add question page" width="1920"/>
+                <img src="7a0f075001a949ae8131fd6fd869f574901977dc96fbec8ab2ac6432f28689bd.png" title=" To validate the add question with choose an item type in add question page" width="1920"/>
+                <img src="7a0f075001a949ae8131fd6fd869f574901977dc96fbec8ab2ac6432f28689bd.png" title=" Then To validate the Add question with choose an item type in Add question page (completed)" width="1920"/>
+                <img src="d0604a75cb1bfe5928864cd9ac7e18863b312a4defb7ba09accd8bd3e2a6c76a.png" title=" When To Enter value in question box in Add question page" width="1920"/>
+                <img src="d0604a75cb1bfe5928864cd9ac7e18863b312a4defb7ba09accd8bd3e2a6c76a.png" title=" To enter value in question box in add question page" width="1920"/>
+                <img src="d0604a75cb1bfe5928864cd9ac7e18863b312a4defb7ba09accd8bd3e2a6c76a.png" title=" When To Enter value in question box in Add question page (completed)" width="1920"/>
+                <img src="3ad5ab9992793ca66fc0f4fe6097bc7cdccf92fa5dd208c8dc7d251583aeb988.png" title=" When To Enter value in question Alias box in Add question page" width="1920"/>
+                <img src="3ad5ab9992793ca66fc0f4fe6097bc7cdccf92fa5dd208c8dc7d251583aeb988.png" title=" To enter value in question alias box in add question page" width="1920"/>
+                <img src="3ad5ab9992793ca66fc0f4fe6097bc7cdccf92fa5dd208c8dc7d251583aeb988.png" title=" When To Enter value in question Alias box in Add question page (completed)" width="1920"/>
+                <img src="f15191219f628370a8dded88d3af8e9efd4ba0781c2f9a42c66513635aa9c266.png" title=" When To Enter value in Explanatory Text box in Add question page" width="1920"/>
+                <img src="f15191219f628370a8dded88d3af8e9efd4ba0781c2f9a42c66513635aa9c266.png" title=" To enter value in explanatory text box in add question page" width="1920"/>
+                <img src="f15191219f628370a8dded88d3af8e9efd4ba0781c2f9a42c66513635aa9c266.png" title=" When To Enter value in Explanatory Text box in Add question page (completed)" width="1920"/>
+                <img src="4b3e3cc55f07d3274676c726cc7450b18639685dc4a4dab6fc2e65a11a801859.png" title=" When To click the check box in Required default value in Add question page" width="1920"/>
+                <img src="4b3e3cc55f07d3274676c726cc7450b18639685dc4a4dab6fc2e65a11a801859.png" title=" To click the check box in required default value in add question page" width="1920"/>
+                <img src="fcdeb816d9d70cad6b95df5400c9982171dd5f84e9a261f9ee8360e87609cf23.png" title=" To click the check box in required default value in add question page (completed)" width="1920"/>
+                <img src="fcdeb816d9d70cad6b95df5400c9982171dd5f84e9a261f9ee8360e87609cf23.png" title=" When To click the check box in Required default value in Add question page (completed)" width="1920"/>
+                <img src="553b43ee92b16576722537197ec711680de4984b1ffaa8571c5e89466ad095fe.png" title=" When To select dropdown option in display type in Add question page" width="1920"/>
+                <img src="553b43ee92b16576722537197ec711680de4984b1ffaa8571c5e89466ad095fe.png" title=" To select dropdown option in display type in add question page" width="1920"/>
+                <img src="553b43ee92b16576722537197ec711680de4984b1ffaa8571c5e89466ad095fe.png" title=" When To select dropdown option in display type in Add question page (completed)" width="1920"/>
+                <img src="beed3e5a30dfce0c25410bb04066ccad3a992139ba3bafab5d52a3e4d891049a.png" title=" When To click the check box in Allow additonal answer in Add question page" width="1920"/>
+                <img src="beed3e5a30dfce0c25410bb04066ccad3a992139ba3bafab5d52a3e4d891049a.png" title=" To click the check box in allow additonal answer in add question page" width="1920"/>
+                <img src="beed3e5a30dfce0c25410bb04066ccad3a992139ba3bafab5d52a3e4d891049a.png" title=" When To click the check box in Allow additonal answer in Add question page (completed)" width="1920"/>
+                <img src="6d4f25f6ea45f9c9ddbc7495136577d0e631ee892e64da1152f94095d35bb898.png" title=" When To Enter value in loader id box in in Add question page" width="1920"/>
+                <img src="6d4f25f6ea45f9c9ddbc7495136577d0e631ee892e64da1152f94095d35bb898.png" title=" To enter value in loader id box in in add question page" width="1920"/>
+                <img src="6d4f25f6ea45f9c9ddbc7495136577d0e631ee892e64da1152f94095d35bb898.png" title=" When To Enter value in loader id box in in Add question page (completed)" width="1920"/>
+                <img src="7b87d82994155ca702597294ea396e307622d54ee2cd4a2a44250b164d92a657.png" title=" When To select dropdown option source system in Add question page" width="1920"/>
+                <img src="7b87d82994155ca702597294ea396e307622d54ee2cd4a2a44250b164d92a657.png" title=" To select dropdown option source system in add question page" width="1920"/>
+                <img src="7b87d82994155ca702597294ea396e307622d54ee2cd4a2a44250b164d92a657.png" title=" When To select dropdown option source system in Add question page (completed)" width="1920"/>
+                <img src="ec50da1b4f992383e67f7f8e8dc37dd25449fe212d5b1a304ac9dbbf3a92c079.png" title=" When To click the save button in Add question page" width="1920"/>
+                <img src="ec50da1b4f992383e67f7f8e8dc37dd25449fe212d5b1a304ac9dbbf3a92c079.png" title=" To click the save button in add question page" width="1920"/>
+                <img src="ec50da1b4f992383e67f7f8e8dc37dd25449fe212d5b1a304ac9dbbf3a92c079.png" title=" When To click the save button in Add question page (completed)" width="1920"/>
+                <img src="ec50da1b4f992383e67f7f8e8dc37dd25449fe212d5b1a304ac9dbbf3a92c079.png" title=" Then To validate result Modify Questionnaire page" width="1920"/>
+                <img src="ec50da1b4f992383e67f7f8e8dc37dd25449fe212d5b1a304ac9dbbf3a92c079.png" title=" To validate result modify questionnaire page: <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.21</span>
+</div>
+</body>
+</html>

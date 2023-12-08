@@ -1,0 +1,1325 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html style="overflow: hidden;"&gt;<br/>
+ &lt;head id="ctl00_Head1"&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/knockout.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/knockout-bindings.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery-ui.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;link href="favicon.ico" rel="shortcut icon" type="image/x-icon"&gt; <br/>
+  &lt;script type="text/javascript" src="./js/lib/jquery.hiddenDimensions.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./js/lib/json-min.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./js/core/master.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./js/core/Popup.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/lib/tag-it.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./JS/Keywords/Keywords.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" type="text/css" href="css/jquery.tagit.css?v=200610"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" href="css/tagit.ui-zendesk.css?v=200610"&gt; <br/>
+  &lt;script type="text/javascript" src="./Content/js/lib/datatables.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" href="Content/js/lib/datatables.css?v=200610"&gt; <br/>
+  &lt;script type="text/javascript" src="js/SystemSetup/ProcessedFiles.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;link href="https://oprisk-uat.afreximbank.net/AppA/UI/js/lib/jsTree/themes/default/style.css?v=200610" rel="stylesheet" type="text/css"&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/chosen.jquery.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/select2.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/Translations.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/Common.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink1" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/chosen.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink2" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/select2.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink3" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/onesumx.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink4" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/print.css?v=200610" rel="stylesheet" type="text/css" media="print"&gt;<br/>
+  &lt;meta name="format-detection" content="telephone=no"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink5" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/jquery.qtip.min.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;title&gt;<br/>
+	OneSumX<br/>
+&lt;/title&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body onload="OnPageLoad(); " style="min-width: 960px;"&gt; <br/>
+  &lt;form name="aspnetForm" method="post" action="./DataFeedProcessedFilesList.aspx?trId=-1&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2" id="aspnetForm" onsubmit="return OnSubmit();" onactivate="SaveOnActivate();" ondeactivate="CompareOnDeActivate();" enctype="multipart/form-data"&gt; <br/>
+   &lt;div&gt; <br/>
+    &lt;input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var theForm = document.forms['aspnetForm'];<br/>
+if (!theForm) {<br/>
+    theForm = document.aspnetForm;<br/>
+}<br/>
+function __doPostBack(eventTarget, eventArgument) {<br/>
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {<br/>
+        theForm.__EVENTTARGET.value = eventTarget;<br/>
+        theForm.__EVENTARGUMENT.value = eventArgument;<br/>
+        theForm.submit();<br/>
+    }<br/>
+}<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZOpr66KL1iv7yPr3oSKKQvFySEH_QRSN8HTwbp02VivQv64_G4gQho6Gp97TSbDCcw2&amp;t=638092594030625477" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=-fCmiEcu3xUgmjOFHhP5L9LzK-ZA1KycWbe3oxCDfoLnL4-otx_fF3cFB8XpiPI_bqw9X3qvRAKHCqkn6dQitd_NHdlTfybUX3U-psQyAG1cbxSb2LVbUxavh2Y2-bf_hFMyv4t53-W6b20qNvTf-YLR3U3MvrIthF6HwsSRZEs1&amp;t=ffffffffda0d40b5" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var hdnDirty='ctl00_hdnDirty';<br/>
+var hdnAlwaysDirty='ctl00_hdnAlwaysDirty';<br/>
+var cDisableAreYouSure=false;<br/>
+var tsUnsavedChanges='There are unsaved changes that will be lost if you proceed.';<br/>
+var tsOKToContinue='Press OK to continue, or Cancel to stay on the current page.';<br/>
+var tsNothingToSave='Nothing to save.';<br/>
+var DisplayButtonsInScroll = false;<br/>
+var userName = "Joshi Franklin";<br/>
+var defaultDateFormat = 'dd MMM yyyy';<br/>
+var defaultTimeFormat = 'HH:mm:ss';<br/>
+var sessionID='t2urbnnxdgtqvwyobth3ltut';<br/>
+var divPopupClientId1='ctl00_divExceptionWarning';<br/>
+var divPopupClientId2='ctl00_divException';<br/>
+var mpeMsgClientId='ctl00_popupMsg';<br/>
+var mpeClientId='ctl00_popup';<br/>
+var mpeWorkingId='ctl00_working';<br/>
+var gbFromLogin=false;<br/>
+var LoadDropdownURL = 'https://oprisk-uat.afreximbank.net/AppA/Services/GenericListSettings.svc/LoadSearchResults/';<br/>
+var WebApiRoot = 'https://oprisk-uat.afreximbank.net/AppA/api/';<br/>
+var gRowErrorId = 'ctl00_divError';<br/>
+var gLblErrorId = 'ctl00_lblError';<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.PrimaryReferencePopup = ARCLOGICS.PrimaryReferencePopup || {};<br/>
+ARCLOGICS.PrimaryReferencePopup.Options = {"ForegroundElement":"ctl00_ifpReferencePopup_pnlIFramePopup","ForegroundElementLeft":"ctl00_ifpReferencePopup_hdnLeft","ForegroundElementTop":"ctl00_ifpReferencePopup_hdnTop","BackgroundElement":"ctl00_ifpReferencePopup_backgroundElement","BackgroundWidth":"ctl00_ifpReferencePopup_hdnWidth","BackgroundHeight":"ctl00_ifpReferencePopup_hdnHeight","SaveButton":null,"CancelButton":"ctl00_ifpReferencePopup_btnCancel","ClearButton":null,"Apply":true,"PopupDimension":55,"CloseOnSave":true,"PopupTitle":null};<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/JS/TimeoutControl.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.are-you-sure.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/js/lib/jsTree/jstree.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.Constants = ARCLOGICS.Constants || {};<br/>
+ARCLOGICS.Constants.AM_SWORDAUTH=false;<br/>
+ARCLOGICS.Constants.UIDROPDOWN_SEARCHCOUNT = 10;<br/>
+ARCLOGICS.Constants.UIDROPDOWN_ENABLE = true;<br/>
+ARCLOGICS.Constants.RootPath='https://oprisk-uat.afreximbank.net/AppA/Pages/';<br/>
+ARCLOGICS.Constants.RootPathSur='https://oprisk-uat.afreximbank.net/AppA/Surveys/';<br/>
+ARCLOGICS.Constants.RootPathUI='https://oprisk-uat.afreximbank.net/AppA/UI/';<br/>
+ARCLOGICS.Constants.RootPathAPI='https://oprisk-uat.afreximbank.net/AppAPI/';<br/>
+ARCLOGICS.Constants.Lang = 'AFB';<br/>
+ARCLOGICS.Constants.TextDir= 'LTR';<br/>
+ARCLOGICS.Constants.BaseCcy= 'USD';<br/>
+ARCLOGICS.Constants.RootPath='https://oprisk-uat.afreximbank.net/AppA/Pages/';<br/>
+ARCLOGICS.Constants.BaseRoot='https://oprisk-uat.afreximbank.net/';<br/>
+ARCLOGICS.Constants.DefaultRTBFontFamily='verdana';<br/>
+ARCLOGICS.Constants.DefaultRTBFontSize='8';<br/>
+ARCLOGICS.Constants.RTBFonts='calibri';<br/>
+var imgMinus='../images//minus.gif';<br/>
+var imgPlus='../images//plus.gif';<br/>
+var gsNoneOption =" --None-- ";<br/>
+var gbIsPostBack=false;<br/>
+var sessionTimeoutWarning=30;<br/>
+var sessionTimeout=60;<br/>
+var sessionID='t2urbnnxdgtqvwyobth3ltut';<br/>
+var sessionRAAutoSave=0;<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/js/Dates/date-en-IE.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/js/DateCombos.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/js/translations/langAFB.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.qtip.min.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+ValidatorOnChangeBuilder();//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="js/core/GenericListSettings.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="js/core/GenericList.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var gbIsAdding=true;<br/>
+var gMultEditDelay=100;<br/>
+var gScrollPosition='ctl00_hdScrollPosition';<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.GL = ARCLOGICS.GL || {};<br/>
+ARCLOGICS.GL.GWPrefsCantExcludeSubLists = '385,384';<br/>
+ARCLOGICS.GL.AllowEdit = true;<br/>
+ARCLOGICS.GL.AllowEditGlobalPreferences = true;<br/>
+ARCLOGICS.GL.List243 = ARCLOGICS.GL.List243 || {};<br/>
+ARCLOGICS.GL.List243.ListId = 243;<br/>
+ARCLOGICS.GL.List243.SubListId = 631;<br/>
+ARCLOGICS.GL.List243.OverrideSubList = false;<br/>
+ARCLOGICS.GL.List243.ShowActionBarOnTop = true;<br/>
+ARCLOGICS.GL.List243.ShowPreferences = true;<br/>
+ARCLOGICS.GL.List243.ListGroupId = 0;<br/>
+ARCLOGICS.GL.List243.EntityId = 0;<br/>
+ARCLOGICS.GL.List243.FilterEnabled = true;<br/>
+ARCLOGICS.GL.List243.InitialFilterId = -1;<br/>
+ARCLOGICS.GL.List243.InvalidFilterId = '';<br/>
+ARCLOGICS.GL.List243.FilterParameters = '';<br/>
+ARCLOGICS.GL.List243.FilterParameters = '';<br/>
+ARCLOGICS.GL.List243.AllowSublistToHaveSublist = false;<br/>
+ARCLOGICS.GL.List243.CanApplyFilter = true;<br/>
+ARCLOGICS.GL.List243.FiltersPageName = 'https://oprisk-uat.afreximbank.net/AppA/UI/GenericListFiltersList.aspx';<br/>
+ARCLOGICS.GL.List243.FiltersListId = 'id';<br/>
+ARCLOGICS.GL.List243.FilterSubListOnly = false;<br/>
+ARCLOGICS.GL.List243.ExtraParameter = '';<br/>
+ARCLOGICS.GL.List243.FilterId = '-1';<br/>
+var __cultureInfo = {"name":"en-IE","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":false,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"€","NaNSymbol":"NaN","CurrencyNegativePattern":1,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402293599999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":false},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":2,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":false,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"eras":[1,"AD",null,0]};//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvjgXrq4Zffc3rxmW1FpQeuyVZ5bXSAvQYwdfEoMfgt-Bh1vb53YzbB5XVmOGzh8iEMCeVxmu-dFHm-jtus7zA2eeYlV9zrg1j0QapgoBEZcztv_-JJwdHMGJAHGFylavbrDM8AdnXSwEu1CMiZDfq4w1&amp;t=10c151ff" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OMJWVkZaQZofQ3V-X4w5Qzk4NRFSWMPyKICcNx02mmsYtOc3giyPf8QDu6bcPhUoBcyljj3NrUqVeXQNw9yZraOtoBUNWsCUp0rAKuf2og6MRGUp6A9wO53llH_24iZlB6UGd-a31IeHiJg9aFBHNvc1&amp;t=10c151ff" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=eE6V8nDbUVn0gtG6hKNX_Iw-h66XQshgDa8XbU6kkgPmtXve-Dw4rQTAYzh--kLDo3lEIQW0dNZLQv1v8t9rOZv57PO19r0XMfeIW0fXTAdtJgqo-8lGSXKgWnHbeF0T0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=mcAASOSteirJeuV-3by3Uca1JwyJFCF-2HRdlcvPzsllfBLdBtDD3zfo7rO3uExFh5zNiy4TaETh3HaxkLpHVrE-1TO0Q1pXpDNegLmE0101&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=jwf4VSQi7LeShc44FJ-gATP8HdB7fZLmnawQnWV4hoBvD2S9smbR9HXAzS08hnzwxebFlttLQqkcIFuae1EiDc4YN6x6cbMv9Ue1BxC4oLCp_An28cB_3vHXI_JhQ3du0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=nai7mGcYyE2dix_TwveLDSyNMXf3TAwfZ6XJjTQ0y7pDBPYWQKzoAVIvB0a0GeGmRbkHXcfzf8cGTSYQ95VfbsW8jUI8AC68Mox36PXw8NwnltV5iJMSHQ-ofhwGD94T0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=yDT7ulzE00Yqzs5zd38bJ2w9JGn1srU61yZa46m_pEdbZUydbTjizMTjhM-rZxPidrxkIIYgbuSsvkgKlI5aoNwY0mS4FDMKLx1hvNiwIpK9p2Q68RLuZj6TbKi3aTfC0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=HEFpVKbnoeQjkjHkFKu3MLN6y9u1UoaZ1jLOqq8LK5y1P4jfzv75dXL2JbKvRzOUd8UL-fqvt9Se5Llk3Kv7shgeUOYzwOlgYIWcT3P33rVEI1i3iXMYggxsemk6zPUz0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=5ib3lCcyinHeLQmkwMF7EmwV0qnW4jUyc_C55BcG7phMqdlPaZgQ6LnyW7Ax0rvmE5bCOJ0ZmCcUH-g9GZIvPbmo21yfjOGW6EPHhcYk5Dk0iLQeLRtr6fHECUMCk9yQ0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=iON9Jxe8QCRam1nkdNLgke98AoZd1jmB2R9fNWoubMvqkesgZu3rXd2i1_hUASV5kRgEUuUK86ysSYqzuErlzyU9VKE4bKJ0dfMLwpT-FNC26NFtoGPtHEzydBr-fUGP0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=xGmPTKfsNy0_1Sr5I58kO_OERHPNL28pbhKL9wgSIOk9-wPxolYq66BqVmUlhnFfzFzybJZK2Ab4X09axFxyyf-2HaEJhCA70O2omw6lu_vYNY9K-LFlhXjy9v7JcQcr0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=LQ1q2RBSthBAZhliMjtG_8glOCAO8I5TOU16JZ05E8ekQziKgyO3N6_zgwR77VbN-C81TG1jAVmL1sV26-KLyQwO9T4HoaEaWDFG7MXUDii3dtOd2fxsxnCaPiC-uVaa0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=VOYD8Xe7kQA0lniBYXVpAouv61GNcDHRRAi7I7Pahhb6vNhhRIecACQ6hZLvNyRnB0WX6-Zxy_9EkZCfsEVxGnLY2sstmQhmoEXznYgbXdk9oSwNiLGzVsYn_zh9u81B0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=hOeJu0xhC-uW6Gf8ooKdXn3t0sDYjKCjw-_q6-LtuQ6LvkMOqwTgTlpxC1XeEjeXG0be-_VcLh6ZvhcIBO5yqA2v8V6f2ofA13qZ83GZm6c8PLI3Vta6gArsltsCo7nU0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=XlV9GqTk6b5uqDuL38kZ4NZns1KHLk2xw2g6boOGA1HKt_X6fsvmzsK2uU2eJto7WMgEdKqUdd4NpGd7mohSiF9y-F4I1MoVErz_RyuURrWNTZg9favHC5jm4ypX966n0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$up',''], [], ['ctl00$btnCancel','','ctl00$content$genList$ucActionBar$lnkExportGrid','','','','',''], 300, 'ctl00');<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;input type="hidden" name="ctl00$hdScrollPosition" id="ctl00_hdScrollPosition" data-ays-ignore="true"&gt; &lt;button onclick="__doPostBack('ctl00$navBar$evtQuickAccess','')" id="ctl00_navBar_evtQuickAccess" style="display:none;"&gt;&lt;/button&gt;<br/>
+   &lt;div id="wk_header"&gt;<br/>
+    &lt;div id="wk_page_header" class="clearfix admin_active"&gt;<br/>
+     &lt;div id="wk_logo"&gt;<br/>
+      &lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Home.aspx?nbc=Y&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2" title="Go to home" tabindex="1"&gt;&lt;span class="wkicon_logo"&gt;&lt;/span&gt;&lt;span class="hidden_text"&gt;OneSumX&lt;/span&gt;&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_navigation"&gt;<br/>
+      &lt;ul id="wk_main_nav" class="wk_nav clearfix"&gt;<br/>
+       &lt;li menu="2"&gt;&lt;a&gt;Home&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="3" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Home.aspx?NoRedirect=Y&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="4" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Dashboard.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="141" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Workspace.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Workspace&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="8" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Reporting/ReportListConsol.aspx?Type=1&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Reports&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="90" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ManageScheduledReports.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Scheduled Items&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="144" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ClarificationList.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Clarifications&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="146" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/KeywordList.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Tags&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="9"&gt;&lt;a&gt;Risks&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="10" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RM_Maintain.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Risk &amp; Control Maps&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="13" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/RMAPRFlatList.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="11" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/RA_RiskAssessmentList.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Risk &amp; Control Self-Assessment (RCSA)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="16"&gt;&lt;a&gt;Controls&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="17" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PA_ControlSignoffList.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Control Signoff&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="20" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/PA_Reassign.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Reassign PA Reports&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="84" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/PA_ApprovalOverride.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Override PA Reports&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="21"&gt;&lt;a&gt;Control Gap Management&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="22" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/IssueList.aspx?showList=Y&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Control Gap Management&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="25" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/CIL_QuickQuery.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="26" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/QueryIssue_List.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Saved Queries&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="24" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/CIL_ListWrapper24a.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Issue Wrappers&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="27"&gt;&lt;a&gt;Incidents/Losses&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="28" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/EO_ListEvents.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Incidents/Losses&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="30" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_SearchQuick.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="31" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_ManageQueries.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Saved Queries&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="32" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_ReassignApprover.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Reassign Incident/Loss Approval&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="33"&gt;&lt;a&gt;Key Risk Indicators (KRIs)&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="140" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ManagePeriodicIndicator.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Periodic Key Risk Indicators (KRIs)&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="73" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Cycle_List.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Indicator Statement Cycles&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="47"&gt;&lt;a&gt;Libraries&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="48" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWRTree.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Risk&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="49" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWCTree.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Control&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="107" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/IndicatorRegister_Maintain.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Indicator&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="53" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/LibraryList.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Question Set&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="54" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Web/AuthSource?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Authoritative Source&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="57" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/KeyAssetTreeExplorer.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Assets&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+      &lt;ul id="wk_admin_nav" class="wk_nav clearfix active"&gt;<br/>
+       &lt;li menu="64" tabindex="0"&gt;&lt;a&gt;Organisation&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="65" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/OrganisationUnitTree.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Organisation Unit&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="66" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PersonList.aspx?CalledBy=0&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Person&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="67" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ORG_BusinessEntityMaintain.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Business Entities&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="125" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ProductLineTree.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Product Lines&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="68" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/SystemSetup/UserGroupList.aspx?CalledBy=0&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;User Groups&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="69" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_MaintainCCY.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Currencies&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="56" tabindex="0"&gt;&lt;a&gt;Risk Framework&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="59" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RM_Builder.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Risk Map Builder&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="60" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Statement_List.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Indicator Statements&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="58" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/SurveyList.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Questionnaires&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="78" tabindex="0"&gt;&lt;a&gt;Task Admin&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="76" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RA_OrgUnitSelect.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Generate Risk &amp; Control Self-Assessment (RCSA)&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="79" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RequirementList.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Requirements&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="80" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/OccurrenceMonitoring.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Monitoring&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="103" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/SurveyInstanceList.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Surveys&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="85" tabindex="0"&gt;&lt;a&gt;Tech Admin &lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="86" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Job_Maintain.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Scheduled Jobs&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="87" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EmailConfiguration.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Emails&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="88" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Job_Archive.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Archiving&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="89" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/AuditReport.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Auditing&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="92" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Reference_Register.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;References&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="94" class="active" tabindex="0"&gt;&lt;a&gt;Data Loading&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="95" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/DataLoaders.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Data Loaders&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="101" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/AssignLoaderIds.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Assign Loader Ids&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="96" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Import_List.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Manage Import Files&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="122" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Metric/MIVILoader.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Indicator Value Loader&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="129" tabindex="-1" class="active"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/DataFeedList.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Data Feeds&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="149" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ManageDocumentTransferConfig.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Document Transfer Configuration&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="121" tabindex="0"&gt;&lt;a&gt;System Settings&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="118" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ConfigurationOptions.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Configuration Options&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="117" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/DataLookups.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2" tabindex="-1"&gt;Data Lookups&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+      &lt;div id="wk_admin_toggle" aria-label="Expand Admin Menu" role="button" tabindex="0"&gt;<br/>
+       &lt;a href="javascript: void[0]" title="View Business Menu" class="active"&gt;&lt;span class="wkicon_admin"&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_member"&gt;<br/>
+      &lt;ul id="wk_member_nav" class="wk_dropdown"&gt;<br/>
+       &lt;li&gt;&lt;span class="wk_member_link" aria-label="Expand Person Menu" tabindex="0" role="button" onclick="ARCLOGICS.navmenu.profileMenu(); return false;"&gt;&lt;span class="wkicon_profile"&gt;&lt;/span&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;ul id="wk_member_nav_ul"&gt;<br/>
+         &lt;li&gt;<br/>
+          &lt;div class="wk_member_panel"&gt;<br/>
+           &lt;div class="wk_member_title"&gt;<br/>
+            Username<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="wk_member_name"&gt;<br/>
+            Joshi Franklin<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainPerson.aspx?fromcontext=Y&amp;self=Y&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2&amp;nbc=Y"&gt;Details&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ChangePassword.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2&amp;nbc=Y"&gt;Product Ext. password&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MyS_Panels.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2&amp;nbc=Y"&gt;Workspace Settings&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/About.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2&amp;nbc=Y"&gt;About&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Logout.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2&amp;nbc=Y"&gt;Logout&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div id="wk_page_subheader" class="clearfix"&gt;<br/>
+     &lt;div id="wk_page_subheader_left"&gt;<br/>
+      &lt;ul class="clearfix"&gt;<br/>
+       &lt;li id="wk_page_history"&gt;<br/>
+        &lt;div class="wk_dropdown_container position_left"&gt;<br/>
+         &lt;div class="wk_dropdown_btn"&gt;<br/>
+          &lt;button type="button" class="btn_normal btn_icon_only btn_no_border btn_dropdown" onclick="ARCLOGICS.navmenu.dropdownMenu(historyOptions); return false;" aria-label="Navigate Back List" role="buttton" tabindex="0"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_back"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_helper"&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="historyOptions" class="wk_dropdown_panel position_left"&gt;<br/>
+          &lt;ul class="menu_list"&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/UI/DataFeedProcessedFilesList.aspx?trId=-1&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2&amp;nbc=Y"&gt;List Processed Data Feed Files&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/UI/DataFeedList.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2&amp;nbc=Y"&gt;List Data Feeds&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/UI/Workspace.aspx?r2055=b7b53743-0c10-40a3-82ba-de2a4530dec4&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2&amp;nbc=Y"&gt;Workspace&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;/li&gt;<br/>
+       &lt;li id="wk_page_title"&gt;&lt;h1&gt;List Processed Data Feed Files&lt;/h1&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_page_subheader_right"&gt;<br/>
+      &lt;ul class="clearfix"&gt;<br/>
+       &lt;li&gt;&lt;button type="button" class="btn_normal btn_icon_only btn_border" onclick="try{openNamedBox('https://oprisk-uat.afreximbank.net/AppA/Help/Online Help/Default.htm#ProgramManagementGuide/Viewing Data Feed Results.htm', 1000, 500, 'ArcLogicsHelpWindow');}catch(e){}; return false;" title="View Help"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_help"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;<br/>
+        &lt;div class="wk_dropdown_container"&gt;<br/>
+         &lt;div class="wk_dropdown_btn"&gt;<br/>
+          &lt;button type="button" class="btn_normal btn_group_left btn_border" onclick="return CancelChangesAndRedirectToPage('https://oprisk-uat.afreximbank.net/AppA/UI/AuthoritativeSourceAddEdit.aspx?fromcontext=Y&amp;CalledBy=3&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2')" aria-label="Add Authoritative Source"&gt;&lt;span class="btn_icon btn_icon_spacer"&gt;&lt;span class="wkicon_add"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_text"&gt;Authoritative Source&lt;/span&gt;&lt;/button&gt;&lt;button type="button" class="btn_normal btn_icon_only btn_group_right btn_border btn_dropdown" onclick="ARCLOGICS.navmenu.dropdownMenu(quickAddOptions); return false;"&gt;&lt;span class="btn_helper"&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="quickAddOptions" class="wk_dropdown_panel position_right"&gt;<br/>
+          &lt;ul class="menu_list"&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl00_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/AuthoritativeSourceAddEdit.aspx?fromcontext=Y&amp;CalledBy=3&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2"&gt;Authoritative Source&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl01_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWCAddEdit.aspx?fromcontext=Y&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2"&gt;Groupwide Control&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl02_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWRAddEdit.aspx?fromcontext=Y&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2"&gt;Groupwide Risk&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl03_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/HeadlineIndicatorAdd.aspx?fromcontext=Y&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2"&gt;Headline Indicator&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl04_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RaiseIssue.aspx?r269702=edadddef-c0d2-469f-a6df-54d34300abf2"&gt;Issue&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl05_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainPerson.aspx?fromcontext=Y&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2"&gt;Person&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl06_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Reporting/UserReportDataSelect.aspx?fromcontext=Y&amp;r269702=edadddef-c0d2-469f-a6df-54d34300abf2"&gt;User Report&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="content-container"&gt; <br/>
+    &lt;div id="ctl00_divPageTitle" class="page-title-container" style="display:none; height:0px"&gt; <br/>
+     &lt;div class="page-title" tabindex="0"&gt; &lt;span id="ctl00_lblTitle" class="title"&gt;&lt;/span&gt; <br/>
+      &lt;div class="page-title-extras-right"&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;br class="clear"&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="page-title-extras-left"&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div id="ctl00_mainContainer" class="main-container"&gt; <br/>
+     &lt;div id="ctl00_up"&gt; <br/>
+      &lt;div id="boxOuter"&gt; <br/>
+       &lt;div id="boxInner"&gt; <br/>
+        &lt;div id="ctl00_rightPane"&gt; <br/>
+         &lt;div class="warning-container" aria-live="assertive"&gt; &lt;span id="ctl00_lblWarning" class="warning" style="display: none;"&gt;&lt;/span&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="ctl00_divError" class="error-container" aria-live="assertive" style="display: none;"&gt; &lt;span id="ctl00_lblError" class="error" style="display:none;"&gt;&lt;/span&gt; <br/>
+          &lt;div id="ctl00_vldError" class="error" style="color:Red;display:none;"&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="ctl00_contextcontainer" class="form-context-container"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="form-scrollable-container" onscroll="return RememberScrollPosition();"&gt; <br/>
+          &lt;div class="form-content-container scroll-button" onscroll="return RememberScrollPosition();" style="height: 534.2px;"&gt; <br/>
+           &lt;div id="ctl00_contextcontainerpath" class="form-context-container-path"&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="ui-helper-IE7-table-width"&gt; <br/>
+            &lt;table style="width: 100%;"&gt; <br/>
+             &lt;tbody&gt;<br/>
+              &lt;tr style="width: 0; display: none;"&gt; <br/>
+               &lt;input type="hidden" name="ctl00$content$genList$ctl01" value="57" data-ays-ignore="true"&gt;<br/>
+               &lt;input name="ctl00$content$genList$hdnExpand__8690_243" type="hidden" id="ctl00_content_genList_hdnExpand__8690_243" value="," data-ays-ignore="true"&gt; <br/>
+              &lt;/tr&gt; <br/>
+             &lt;/tbody&gt;<br/>
+            &lt;/table&gt; <br/>
+            &lt;div id="ctl00_content_genList_pnlActionBar" class="action-bar-panel"&gt; <br/>
+             &lt;div class="wk_action_bar clearfix"&gt;<br/>
+              &lt;input type="submit" name="ctl00$content$genList$ucActionBar$btnfireevent" value="" id="ctl00_content_genList_ucActionBar_btnfireevent" class="action-fire-event" style="display:none;"&gt;<br/>
+              &lt;ul&gt;<br/>
+               &lt;li id="ctl00_content_genList_ucActionBar_li-preferences-g-l" class="action_right"&gt;&lt;button id="ctl00_content_genList_ucActionBar_lnkPreferences" class="btn_normal btn_icon_only btn_border" title="Preferences" onclick="IgnoreChanges();" data-list-id="243"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_preferences"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;<br/>
+               &lt;li id="ctl00_content_genList_ucActionBar_li-custom-views-g-l" class="action_right"&gt;<br/>
+                &lt;div class="form_row no_padding"&gt;<br/>
+                 &lt;div class="select_container"&gt;&lt;/div&gt;<br/>
+                &lt;/div&gt;&lt;/li&gt;<br/>
+               &lt;li id="ctl00_content_genList_ucActionBar_li-filters-g-l" class="action_left"&gt;<br/>
+                &lt;div class="wk_dropdown_container position_right"&gt;<br/>
+                 &lt;div class="wk_dropdown_btn"&gt;<br/>
+                  &lt;a id="ctl00_content_genList_ucActionBar_lnkScheduledFilters" title="Clear Scheduled Filter" class="btn_normal btn_icon_only btn_group_left btn_border btn_dropdown" href="javascript:__doPostBack('ctl00$content$genList$ucActionBar$lnkScheduledFilters','')" style="display:none;"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_scheduled_filter"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;a onclick="return false;" id="ctl00_content_genList_ucActionBar_btnToggleSavedFilter" class="btn_normal btn_icon_only btn_group_left btn_border btn_dropdown" data-filter-id="-1" title="Select a Filter" href="javascript:__doPostBack('ctl00$content$genList$ucActionBar$btnToggleSavedFilter','')"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_filter"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;button id="ctl00_content_genList_ucActionBar_btnShowHideSavedFilters" title="Manage Saved Filters" class="btn_normal btn_icon_only btn_group_right btn_border btn_dropdown"&gt;&lt;span class="btn_helper"&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+                 &lt;/div&gt;&lt;!-- ko stopBinding: true --&gt; <br/>
+                 &lt;div id="pnlSavedFiltersContainer243" class="wk_dropdown_panel position_left no_scroll wide_panel"&gt; <br/>
+                  &lt;div class="wk_dropdown_header"&gt; <br/>
+                   &lt;h3 data-bind="text: lblHeaderText"&gt;Saved Filters&lt;/h3&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;div class="wk_dropdown_search" data-bind="visible: !showNoSavedFilters()"&gt; <br/>
+                   &lt;div class="form_row no_padding clearfix"&gt; <br/>
+                    &lt;div class="form_text hidden_label"&gt; &lt;label for="search_version_list"&gt;Search Versions&lt;/label&gt; <br/>
+                    &lt;/div&gt; <br/>
+                    &lt;div class="form_input form_search"&gt; <br/>
+                     &lt;input name="search_version_list" id="search_version_list" type="text" class="inputbox" data-bind="textInput: SearchPhrase, event: { keyup: UpdateSearchResults }" data-ays-ignore="true"&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;div class="wk_dropdown_body" data-bind="visible: !showNoSavedFilters()"&gt; <br/>
+                   &lt;ul class="menu_list" data-bind="visible: !$root.showSearchNoResults(), foreach: $root.FilterGroups"&gt;&lt;/ul&gt; &lt;span class="genericListSavedFilterContainerNoMatches" data-bind="visible: showSearchNoResults(), text: lblNoMatchesText" style="display: none;"&gt;No matches found&lt;/span&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;div class="genericListSavedFilterContainerNoSavedFilters" data-bind="visible: showNoSavedFilters()" style="display: none;"&gt; &lt;span data-bind="visible: showNoSavedFilters(), text: lblNoSavedFiltersText" style="display: none;"&gt;No Saved Filters&lt;/span&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;div class="wk_dropdown_actions clearfix"&gt; <br/>
+                   &lt;div class="wk_dropdown_actions_left"&gt; &lt;button id="btn_clear_saved_filter" type="button" class="btn_normal btn_border btn_primary" data-bind="enable: enableClearFilter, click: $root.ClearFilter" disabled&gt; &lt;span class="btn_text" data-bind="text: btnClearFilterText"&gt;Clear Filter&lt;/span&gt; &lt;/button&gt; <br/>
+                   &lt;/div&gt; <br/>
+                   &lt;div class="wk_dropdown_actions_right"&gt; &lt;button id="btn_edit_saved_filters" type="button" class="btn_normal btn_border btn_primary" data-bind="enable: enableEditFilter, click: $root.EditFilters" disabled&gt; &lt;span class="btn_text" data-bind="text: btnEditFilters"&gt;Edit Filters&lt;/span&gt; &lt;/button&gt; &lt;button id="btn_new_saved_filter" type="button" class="btn_normal btn_border btn_primary" data-bind="click: $root.AddFilter"&gt; &lt;span class="btn_text" data-bind="text: btnNewFilter"&gt;New Filter&lt;/span&gt; &lt;/button&gt; <br/>
+                   &lt;/div&gt; <br/>
+                  &lt;/div&gt; <br/>
+                 &lt;/div&gt; &lt;!-- /ko --&gt;<br/>
+                &lt;/div&gt;&lt;/li&gt;<br/>
+               &lt;li id="ctl00_content_genList_ucActionBar_li-search-g-l" class="action_left action_bar_search"&gt;<br/>
+                &lt;div class="wk_search_bar clearfix" type="QuickSearchContainer" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_content_genList_ucActionBar_ctl00_content_genList_GenericGridView_QuickSearch_btnSearch')"&gt; <br/>
+                 &lt;div class="wk_search_inputs clearfix"&gt;<br/>
+                  &lt;div class="wk_search_category"&gt;<br/>
+                   &lt;div class="select_container"&gt;&lt;/div&gt;&lt;select name="ctl00$content$genList$ucActionBar$ctl00_content_genList_GenericGridView_QuickSearch$ddlQuickSearch" id="ctl00_content_genList_ucActionBar_ctl00_content_genList_GenericGridView_QuickSearch_ddlQuickSearch" class="inputbox no_border" data-ays-ignore="true" transform="chosen" data-placeholder="Select An Option" style="display: none;"&gt; &lt;option selected value="*"&gt;All&lt;/option&gt; &lt;optgroup label="Processed Data Feed Files"&gt;&lt;option value="4898"&gt;Data Feed Name&lt;/option&gt; &lt;option value="8709"&gt;Last File Upload Time&lt;/option&gt; &lt;option value="8703"&gt;Last File Upload Start Time&lt;/option&gt; &lt;option value="8704"&gt;Last File Upload Finish Time&lt;/option&gt; &lt;option value="4901"&gt;Data Feed File Name&lt;/option&gt; &lt;option value="8702"&gt;Last File Upload Status&lt;/option&gt; &lt;/optgroup&gt;&lt;optgroup label="Processed Data Feed File Logs"&gt;&lt;option value="8692"&gt;Load Id&lt;/option&gt; &lt;option value="8693"&gt;File Upload Start Time&lt;/option&gt; &lt;option value="8694"&gt;File Upload Finish Time&lt;/option&gt; &lt;option value="8695"&gt;Status&lt;/option&gt; &lt;option value="8696"&gt;# Total Records&lt;/option&gt; &lt;option value="8705"&gt;Loaded By&lt;/option&gt; &lt;option value="8697"&gt;# Valid Records&lt;/option&gt; &lt;option value="8698"&gt;# Invalid Records&lt;/option&gt; &lt;option value="8699"&gt;# Loaded Records&lt;/option&gt; &lt;option value="8700"&gt;Duration&lt;/option&gt; &lt;/optgroup&gt; &lt;/select&gt;<br/>
+                   &lt;div class="chosen-container chosen-container-single" title="" id="ctl00_content_genList_ucActionBar_ctl00_content_genList_GenericGridView_QuickSearch_ddlQuickSearch_chosen" style="width: 214px;"&gt;<br/>
+                    &lt;a class="chosen-single"&gt; &lt;span&gt;All&lt;/span&gt; <br/>
+                     &lt;div&gt;<br/>
+                      &lt;b&gt;&lt;/b&gt;<br/>
+                     &lt;/div&gt; &lt;/a&gt; <br/>
+                    &lt;div class="chosen-drop"&gt; <br/>
+                     &lt;div class="chosen-search"&gt; <br/>
+                      &lt;input class="chosen-search-input" type="text" autocomplete="off"&gt; <br/>
+                     &lt;/div&gt; <br/>
+                     &lt;ul class="chosen-results"&gt;&lt;/ul&gt; <br/>
+                    &lt;/div&gt;<br/>
+                   &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="wk_search_input"&gt;<br/>
+                   &lt;input name="ctl00$content$genList$ucActionBar$ctl00_content_genList_GenericGridView_QuickSearch$txtQuicksearch" id="ctl00_content_genList_ucActionBar_ctl00_content_genList_GenericGridView_QuickSearch_txtQuicksearch" class="inputbox no_border" data-ays-ignore="true" type="text" placeholder="Enter Search..." spellcheck="true"&gt;&lt;a id="ctl00_content_genList_ucActionBar_ctl00_content_genList_GenericGridView_QuickSearch_btnSearch" title="Search" class="btn_normal btn_inline btn_no_border btn_icon_only" href="javascript:__doPostBack('ctl00$content$genList$ucActionBar$ctl00_content_genList_GenericGridView_QuickSearch$btnSearch','')"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_search"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/div&gt;<br/>
+                 &lt;div class="wk_clear_search_btn"&gt;<br/>
+                  &lt;a id="ctl00_content_genList_ucActionBar_ctl00_content_genList_GenericGridView_QuickSearch_lnkClear" title="Clear Search" class="btn_normal btn_inline btn_no_border btn_icon_only" href="javascript:__doPostBack('ctl00$content$genList$ucActionBar$ctl00_content_genList_GenericGridView_QuickSearch$lnkClear','')"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_clear_search"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+                 &lt;/div&gt; <br/>
+                &lt;/div&gt;&lt;/li&gt;<br/>
+               &lt;li id="ctl00_content_genList_ucActionBar_li-export-g-l" class="action_left"&gt;&lt;a onclick="showLoading(false);" id="ctl00_content_genList_ucActionBar_lnkExportGrid" title="Export" class="btn_normal btn_icon_only btn_border btn_color_export_xls" href="javascript:__doPostBack('ctl00$content$genList$ucActionBar$lnkExportGrid','')"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_doc_xls"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+               &lt;li id="ctl00_content_genList_ucActionBar_li-clear-inline-filters-g-l" class="action_right" style="display:none;"&gt;&lt;a id="ctl00_content_genList_ucActionBar_btnClearFilters" title="Clear Column Filters" class="btn_normal btn_icon_only btn_border state_clear" href="javascript:__doPostBack('ctl00$content$genList$ucActionBar$btnClearFilters','')"&gt;&lt;span class="btn_icon btn_icon_spacer"&gt;&lt;span class="wkicon_filter"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_text"&gt;Clear Column Filters (0)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+              &lt;/ul&gt;<br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div id="genericListSettingsDialog" title="" style="display: none;"&gt;&lt;/div&gt; <br/>
+            &lt;div id="template-genlist-settings-panel" style="display: none"&gt; <br/>
+             &lt;div class="error-container" id="template-genlist-settings-panel-errors" style="width: 100%"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div id="ctl00_content_genList_subListDisplay" class="template-row"&gt; <br/>
+              &lt;div class="template-property"&gt;<br/>
+               &lt;span class="subHeadingCOLON"&gt;Sublist Display&lt;/span&gt;<br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="template-value"&gt; &lt;span id="lblSublist" class="bodyText"&gt;&lt;/span&gt; &lt;select id="ddlSublistDisplay" class="bodytext select"&gt;&lt;/select&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clear"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="template-row"&gt; <br/>
+              &lt;div class="template-property"&gt;<br/>
+               &lt;span class="subHeadingCOLON"&gt;Rows per page&lt;/span&gt;<br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="template-value"&gt; <br/>
+               &lt;input id="txtRowsPerPage" type="text" class="bodyText"&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clear"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="template-row"&gt; &lt;span class="show-globalPref"&gt;&lt;a id="lnkGlobalPref" href="#" class="bodyText"&gt;Maintain Global Preferences&lt;/a&gt;&lt;/span&gt; &lt;span class="show-unselected"&gt;&lt;a id="lnkShowGenColumns" href="#" state="shown" class="bodyText"&gt;Hide Unselected&lt;/a&gt;&lt;/span&gt; <br/>
+              &lt;br class="clear"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="clearfix pref-column-header"&gt; &lt;span class="header-order"&gt;Order&lt;/span&gt; &lt;span class="header-visible"&gt;Visible&lt;/span&gt; &lt;span id="ctl00_content_genList_lblGLPrefGroupHeader" class="header-group" title="Selecting a checkbox in the Group column will group the generic list on the selected field. Multiple grouping columns can be selected."&gt;Group&lt;/span&gt; &lt;span class="header-repheader"&gt;Repeat Header&lt;/span&gt; &lt;span class="header-name"&gt; &lt;span class="header-name-text"&gt;Name&lt;/span&gt; &lt;span class="header-name-search" id="lblPrefNameSearch" title="Search"&gt;&lt;/span&gt; &lt;span class="form_search"&gt; &lt;input id="txtPrefNameSearch" type="text" class="bodyText header-name-search-textbox"&gt; &lt;/span&gt; &lt;/span&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;ul id="genericListColumns" class="sortable"&gt; <br/>
+             &lt;/ul&gt; <br/>
+             &lt;input type="hidden" name="ctl00$content$genList$hdnIsPopup" id="ctl00_content_genList_hdnIsPopup" value="False" data-ays-ignore="true"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="gl-edited"&gt; <br/>
+             &lt;input type="hidden" name="ctl00$content$genList$hdnSavedData" id="ctl00_content_genList_hdnSavedData" data-ays-ignore="true"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="generic-list-container"&gt; <br/>
+             &lt;div id="ctl00_content_genList_pnlContainerList" class="pnlContainerList ui-resizable" data-initial-perc-width="100" style="margin-bottom:10px;width:100%;"&gt; <br/>
+              &lt;div&gt; <br/>
+               &lt;table class="generic2-list" cellspacing="0" rules="all" data-list-id="243" data-main-list-id="243" border="1" id="ctl00_content_genList_GenericGridView" style="border-collapse:collapse;"&gt; <br/>
+                &lt;colgroup&gt;<br/>
+                 &lt;col id="8690" style="width: 1.52%;"&gt;<br/>
+                 &lt;col id="4898" style="width: 21.4283%;"&gt;<br/>
+                 &lt;col id="8709" style="width: 13.6383%;"&gt;<br/>
+                 &lt;col id="8703" style="width: 15.5583%;"&gt;<br/>
+                 &lt;col id="8704" style="width: 15.8883%;"&gt;<br/>
+                 &lt;col id="4901" style="width: 16.0783%;"&gt;<br/>
+                 &lt;col id="8702" style="width: 14.1083%;"&gt;<br/>
+                 &lt;col id="8688" style="width: 1.78%;"&gt;<br/>
+                &lt;/colgroup&gt;<br/>
+                &lt;thead&gt; <br/>
+                 &lt;tr class="tableHeader ui-sortable" style="white-space:nowrap;"&gt; <br/>
+                  &lt;th class="tableHeader gl-select-all" scope="col"&gt;&lt;span&gt;&lt;input title="Select all main And Sub-list items" type="image" src="../images//cube_green_preferences.png" ischildheader="8690" id="imgbtn_8690_selAll" onclick="selectAllNodes(this);" style="display: none;"&gt;&lt;/span&gt;&lt;/th&gt;<br/>
+                  &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND ui-resizable ui-sortable-handle" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView','Sort$TRANSFORM_NAME')"&gt;Data Feed Name&lt;/a&gt;&lt;span class="inlineFilter" data-listcolumn-id="4898"&gt;&lt;/span&gt;<br/>
+                   &lt;div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"&gt;&lt;/div&gt;&lt;/th&gt;<br/>
+                  &lt;th class="sortLink sortLinkDescImg sortLinkBDATE ui-resizable ui-sortable-handle" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView','Sort$LOADED_DATE')"&gt;Last File Upload Time&lt;/a&gt;&lt;span class="inlineFilter" data-listcolumn-id="8709"&gt;&lt;/span&gt;<br/>
+                   &lt;div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"&gt;&lt;/div&gt;&lt;/th&gt;<br/>
+                  &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE ui-resizable ui-sortable-handle" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView','Sort$LAST_LOAD_DATE_START')"&gt;Last File Upload Start Time&lt;/a&gt;&lt;span class="inlineFilter" data-listcolumn-id="8703"&gt;&lt;/span&gt;<br/>
+                   &lt;div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"&gt;&lt;/div&gt;&lt;/th&gt;<br/>
+                  &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE ui-resizable ui-sortable-handle" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView','Sort$LAST_LOAD_DATE_END')"&gt;Last File Upload Finish Time&lt;/a&gt;&lt;span class="inlineFilter" data-listcolumn-id="8704"&gt;&lt;/span&gt;<br/>
+                   &lt;div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"&gt;&lt;/div&gt;&lt;/th&gt;<br/>
+                  &lt;th class="sortLink sortLinkNoSortableImg sortLinkHLINK ui-resizable ui-sortable-handle" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView','Sort$LOAD_FILENAME')"&gt;Data Feed File Name&lt;/a&gt;&lt;span class="inlineFilter" data-listcolumn-id="4901"&gt;&lt;/span&gt;<br/>
+                   &lt;div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"&gt;&lt;/div&gt;&lt;/th&gt;<br/>
+                  &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND ui-resizable ui-sortable-handle" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView','Sort$LOAD_RESULT')"&gt;Last File Upload Status&lt;/a&gt;&lt;span class="inlineFilter" data-listcolumn-id="8702"&gt;&lt;/span&gt;<br/>
+                   &lt;div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"&gt;&lt;/div&gt;&lt;/th&gt;<br/>
+                  &lt;th class="tableHeader gl_fixed_right_column" scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                 &lt;/tr&gt; <br/>
+                &lt;/thead&gt;<br/>
+                &lt;tbody&gt; <br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_glRow_0" class="bodytextRow" row_identity="868330774"&gt; <br/>
+                  &lt;td align="center" style="white-space:nowrap;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_0$ctl00" id="ctl00_content_genList_GenericGridView_glRow_0_ctl00" title="" alt="" src="images/plus.gif" onclick="return toggleSublist('ctl00_content_genList_GenericGridView_ctl03','ctl00_content_genList_GenericGridView_glRow_0_ctl00','ctl00_content_genList_hdnExpand__8690_243','58');" style="border-width:0px;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_0$ctl01" title="Select main and all sub-list items" ischildheader="8690" alt="" src="images/cube_green_preferences.png" onclick="return selectChildnodes(this);" style="border-width:0px;display:none;"&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="4898" tabindex="0"&gt;Test Register, Tests&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;23 Nov 2023 12:57:50&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;23 Nov 2023 12:57:51&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;23 Nov 2023 12:57:51&lt;/td&gt;<br/>
+                  &lt;td&gt;&lt;span&gt;&lt;a onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','e41c5276-a9e0-49d4-890b-312593254a64','58','New Text Document.txt','58'); }, true);" id="ctl00_content_genList_GenericGridView_glRow_0_LOAD_FILENAME_4901" onfocus="javascript: ToggleParentStyleFocus(this);" href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$glRow_0$LOAD_FILENAME_4901','')"&gt;New Text Document.txt&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="8702" tabindex="0"&gt;Failure&lt;/td&gt;<br/>
+                  &lt;td align="center"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_0$RELOAD" id="ctl00_content_genList_GenericGridView_glRow_0_RELOAD" title="Upload File Again" onfocus="javascript: ToggleParentStyleFocus(this);" alt="Upload File Again" src="images/reupload.png" onclick="event.stopPropagation(); var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return reloadFile(ButtonClicked, event, 'e41c5276-a9e0-49d4-890b-312593254a64'); }, true);" style="border-width:0px;"&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_ctl03" type="sublist" style="display:none;"&gt; <br/>
+                  &lt;td class="sub-list-container"&gt;&lt;/td&gt;<br/>
+                  &lt;td id="ctl00_content_genList_GenericGridView_ctl03_LOGS0" class="sub-list-container" colspan="7"&gt;<br/>
+                   &lt;div id="ctl00_content_genList_GenericGridView_ctl03_pnlContainerSubList" class="pnlContainerSubList" data-initial-perc-width="100" style="width:100%;"&gt; <br/>
+                    &lt;div&gt; <br/>
+                     &lt;table class="generic-sub-list" cellspacing="0" rules="all" data-list-id="631" data-main-list-id="243" border="1" id="ctl00_content_genList_GenericGridView_ctl03_ChildGrid_58" style="border-collapse:collapse;"&gt; <br/>
+                      &lt;colgroup&gt;<br/>
+                       &lt;col id="8692" style="width:5%;"&gt;<br/>
+                       &lt;col id="8693" style="width:10%;"&gt;<br/>
+                       &lt;col id="8694" style="width:10%;"&gt;<br/>
+                       &lt;col id="8695" style="width:10%;"&gt;<br/>
+                       &lt;col id="8696" style="width:5%;"&gt;<br/>
+                       &lt;col id="8705" style="width:5%;"&gt;<br/>
+                       &lt;col id="8697" style="width:5%;"&gt;<br/>
+                       &lt;col id="8698" style="width:5%;"&gt;<br/>
+                       &lt;col id="8699" style="width:5%;"&gt;<br/>
+                       &lt;col id="8700" style="width:5%;"&gt;<br/>
+                       &lt;col id="8706" style="width:1%;"&gt;<br/>
+                      &lt;/colgroup&gt;<br/>
+                      &lt;thead&gt; <br/>
+                       &lt;tr class="tableHeader" style="white-space:nowrap;"&gt; <br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl03$ChildGrid_58','Sort$LOAD_ID')"&gt;Load Id&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkDescImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl03$ChildGrid_58','Sort$LOAD_DATE_START')"&gt;File Upload Start Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl03$ChildGrid_58','Sort$LOAD_DATE_END')"&gt;File Upload Finish Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl03$ChildGrid_58','Sort$LOAD_RESULT')"&gt;Status&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl03$ChildGrid_58','Sort$TOTAL_RECORD_COUNT')"&gt;# Total Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl03$ChildGrid_58','Sort$LOADED_BY')"&gt;Loaded By&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl03$ChildGrid_58','Sort$NUM_SUCCESS')"&gt;# Valid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl03$ChildGrid_58','Sort$NUM_ERROR')"&gt;# Invalid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl03$ChildGrid_58','Sort$LOADED_RECORDS_COUNT')"&gt;# Loaded Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl03$ChildGrid_58','Sort$DURATION')"&gt;Duration&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="tableHeader gl_fixed_right_column" scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/thead&gt;<br/>
+                      &lt;tbody&gt; <br/>
+                       &lt;tr id="ctl00_content_genList_GenericGridView_ctl03_ChildGrid_58_glRow_0" class="bodytextRowAlternate" row_identity="666802958"&gt; <br/>
+                        &lt;td cid="8692" tabindex="0"&gt;58&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;23 Nov 2023 12:57:51&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;23 Nov 2023 12:57:51&lt;/td&gt;<br/>
+                        &lt;td cid="8695" tabindex="0"&gt;Failure&lt;/td&gt;<br/>
+                        &lt;td cid="8696" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8705" tabindex="0"&gt;Joshi Franklin&lt;/td&gt;<br/>
+                        &lt;td cid="8697" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8698" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8699" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;00:00:00&lt;/td&gt;<br/>
+                        &lt;td align="center"&gt;&lt;a id="ctl00_content_genList_GenericGridView_ctl03_ChildGrid_58_glRow_0_DETAILS" title="View Log File" onfocus="javascript: ToggleHeaderFocus(this);" onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','d92700ad-0ec8-4d47-9c47-7184770ba12d','3','Log File.log','58'); }, true);" onkeypress="return $(this).trigger('click');"&gt;&lt;img title="View Log File" src="images/viewicon2.png" alt="" style="border-width:0px;"&gt;&lt;/a&gt;&lt;/td&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/tbody&gt; <br/>
+                     &lt;/table&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_glRow_1" class="bodytextRow" row_identity="-1518914673"&gt; <br/>
+                  &lt;td align="center" style="white-space:nowrap;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_1$ctl00" id="ctl00_content_genList_GenericGridView_glRow_1_ctl00" title="" alt="" src="images/plus.gif" onclick="return toggleSublist('ctl00_content_genList_GenericGridView_ctl05','ctl00_content_genList_GenericGridView_glRow_1_ctl00','ctl00_content_genList_hdnExpand__8690_243','57');" style="border-width:0px;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_1$ctl01" title="Select main and all sub-list items" ischildheader="8690" alt="" src="images/cube_green_preferences.png" onclick="return selectChildnodes(this);" style="border-width:0px;display:none;"&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="4898" tabindex="0"&gt;Control Register, Controls&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;23 Nov 2023 12:32:32&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;23 Nov 2023 12:32:33&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;23 Nov 2023 12:32:33&lt;/td&gt;<br/>
+                  &lt;td&gt;&lt;span&gt;&lt;a onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','0775e927-00f8-4b98-a612-bb745a60195d','57','New Text Document.txt','57'); }, true);" id="ctl00_content_genList_GenericGridView_glRow_1_LOAD_FILENAME_4901" onfocus="javascript: ToggleParentStyleFocus(this);" href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$glRow_1$LOAD_FILENAME_4901','')"&gt;New Text Document.txt&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="8702" tabindex="0"&gt;Failure&lt;/td&gt;<br/>
+                  &lt;td align="center"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_1$RELOAD" id="ctl00_content_genList_GenericGridView_glRow_1_RELOAD" title="Upload File Again" onfocus="javascript: ToggleParentStyleFocus(this);" alt="Upload File Again" src="images/reupload.png" onclick="event.stopPropagation(); var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return reloadFile(ButtonClicked, event, '0775e927-00f8-4b98-a612-bb745a60195d'); }, true);" style="border-width:0px;"&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_ctl05" type="sublist" style="display:none;"&gt; <br/>
+                  &lt;td class="sub-list-container"&gt;&lt;/td&gt;<br/>
+                  &lt;td id="ctl00_content_genList_GenericGridView_ctl05_LOGS1" class="sub-list-container" colspan="7"&gt;<br/>
+                   &lt;div id="ctl00_content_genList_GenericGridView_ctl05_pnlContainerSubList" class="pnlContainerSubList" data-initial-perc-width="100" style="width:100%;"&gt; <br/>
+                    &lt;div&gt; <br/>
+                     &lt;table class="generic-sub-list" cellspacing="0" rules="all" data-list-id="631" data-main-list-id="243" border="1" id="ctl00_content_genList_GenericGridView_ctl05_ChildGrid_57" style="border-collapse:collapse;"&gt; <br/>
+                      &lt;colgroup&gt;<br/>
+                       &lt;col id="8692" style="width:5%;"&gt;<br/>
+                       &lt;col id="8693" style="width:10%;"&gt;<br/>
+                       &lt;col id="8694" style="width:10%;"&gt;<br/>
+                       &lt;col id="8695" style="width:10%;"&gt;<br/>
+                       &lt;col id="8696" style="width:5%;"&gt;<br/>
+                       &lt;col id="8705" style="width:5%;"&gt;<br/>
+                       &lt;col id="8697" style="width:5%;"&gt;<br/>
+                       &lt;col id="8698" style="width:5%;"&gt;<br/>
+                       &lt;col id="8699" style="width:5%;"&gt;<br/>
+                       &lt;col id="8700" style="width:5%;"&gt;<br/>
+                       &lt;col id="8706" style="width:1%;"&gt;<br/>
+                      &lt;/colgroup&gt;<br/>
+                      &lt;thead&gt; <br/>
+                       &lt;tr class="tableHeader" style="white-space:nowrap;"&gt; <br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl05$ChildGrid_57','Sort$LOAD_ID')"&gt;Load Id&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkDescImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl05$ChildGrid_57','Sort$LOAD_DATE_START')"&gt;File Upload Start Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl05$ChildGrid_57','Sort$LOAD_DATE_END')"&gt;File Upload Finish Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl05$ChildGrid_57','Sort$LOAD_RESULT')"&gt;Status&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl05$ChildGrid_57','Sort$TOTAL_RECORD_COUNT')"&gt;# Total Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl05$ChildGrid_57','Sort$LOADED_BY')"&gt;Loaded By&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl05$ChildGrid_57','Sort$NUM_SUCCESS')"&gt;# Valid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl05$ChildGrid_57','Sort$NUM_ERROR')"&gt;# Invalid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl05$ChildGrid_57','Sort$LOADED_RECORDS_COUNT')"&gt;# Loaded Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl05$ChildGrid_57','Sort$DURATION')"&gt;Duration&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="tableHeader gl_fixed_right_column" scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/thead&gt;<br/>
+                      &lt;tbody&gt; <br/>
+                       &lt;tr id="ctl00_content_genList_GenericGridView_ctl05_ChildGrid_57_glRow_0" class="bodytextRowAlternate" row_identity="412690637"&gt; <br/>
+                        &lt;td cid="8692" tabindex="0"&gt;57&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;23 Nov 2023 12:32:33&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;23 Nov 2023 12:32:33&lt;/td&gt;<br/>
+                        &lt;td cid="8695" tabindex="0"&gt;Failure&lt;/td&gt;<br/>
+                        &lt;td cid="8696" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8705" tabindex="0"&gt;Joshi Franklin&lt;/td&gt;<br/>
+                        &lt;td cid="8697" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8698" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8699" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;00:00:00&lt;/td&gt;<br/>
+                        &lt;td align="center"&gt;&lt;a id="ctl00_content_genList_GenericGridView_ctl05_ChildGrid_57_glRow_0_DETAILS" title="View Log File" onfocus="javascript: ToggleHeaderFocus(this);" onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','6d3230a6-242c-4951-9e53-9c8b2620ef40','2','Log File.log','57'); }, true);" onkeypress="return $(this).trigger('click');"&gt;&lt;img title="View Log File" src="images/viewicon2.png" alt="" style="border-width:0px;"&gt;&lt;/a&gt;&lt;/td&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/tbody&gt; <br/>
+                     &lt;/table&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_glRow_2" class="bodytextRow" row_identity="-1813246620"&gt; <br/>
+                  &lt;td align="center" style="white-space:nowrap;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_2$ctl00" id="ctl00_content_genList_GenericGridView_glRow_2_ctl00" title="" alt="" src="images/plus.gif" onclick="return toggleSublist('ctl00_content_genList_GenericGridView_ctl07','ctl00_content_genList_GenericGridView_glRow_2_ctl00','ctl00_content_genList_hdnExpand__8690_243','56');" style="border-width:0px;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_2$ctl01" title="Select main and all sub-list items" ischildheader="8690" alt="" src="images/cube_green_preferences.png" onclick="return selectChildnodes(this);" style="border-width:0px;display:none;"&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="4898" tabindex="0"&gt;Control Register, Controls&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;23 Nov 2023 12:16:37&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;23 Nov 2023 12:16:38&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;23 Nov 2023 12:16:38&lt;/td&gt;<br/>
+                  &lt;td&gt;&lt;span&gt;&lt;a onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','b1710949-d92c-46b0-8ff3-9ea43f08adf0','56','New Text Document.txt','56'); }, true);" id="ctl00_content_genList_GenericGridView_glRow_2_LOAD_FILENAME_4901" onfocus="javascript: ToggleParentStyleFocus(this);" href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$glRow_2$LOAD_FILENAME_4901','')"&gt;New Text Document.txt&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="8702" tabindex="0"&gt;Failure&lt;/td&gt;<br/>
+                  &lt;td align="center"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_2$RELOAD" id="ctl00_content_genList_GenericGridView_glRow_2_RELOAD" title="Upload File Again" onfocus="javascript: ToggleParentStyleFocus(this);" alt="Upload File Again" src="images/reupload.png" onclick="event.stopPropagation(); var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return reloadFile(ButtonClicked, event, 'b1710949-d92c-46b0-8ff3-9ea43f08adf0'); }, true);" style="border-width:0px;"&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_ctl07" type="sublist" style="display:none;"&gt; <br/>
+                  &lt;td class="sub-list-container"&gt;&lt;/td&gt;<br/>
+                  &lt;td id="ctl00_content_genList_GenericGridView_ctl07_LOGS2" class="sub-list-container" colspan="7"&gt;<br/>
+                   &lt;div id="ctl00_content_genList_GenericGridView_ctl07_pnlContainerSubList" class="pnlContainerSubList" data-initial-perc-width="100" style="width:100%;"&gt; <br/>
+                    &lt;div&gt; <br/>
+                     &lt;table class="generic-sub-list" cellspacing="0" rules="all" data-list-id="631" data-main-list-id="243" border="1" id="ctl00_content_genList_GenericGridView_ctl07_ChildGrid_56" style="border-collapse:collapse;"&gt; <br/>
+                      &lt;colgroup&gt;<br/>
+                       &lt;col id="8692" style="width:5%;"&gt;<br/>
+                       &lt;col id="8693" style="width:10%;"&gt;<br/>
+                       &lt;col id="8694" style="width:10%;"&gt;<br/>
+                       &lt;col id="8695" style="width:10%;"&gt;<br/>
+                       &lt;col id="8696" style="width:5%;"&gt;<br/>
+                       &lt;col id="8705" style="width:5%;"&gt;<br/>
+                       &lt;col id="8697" style="width:5%;"&gt;<br/>
+                       &lt;col id="8698" style="width:5%;"&gt;<br/>
+                       &lt;col id="8699" style="width:5%;"&gt;<br/>
+                       &lt;col id="8700" style="width:5%;"&gt;<br/>
+                       &lt;col id="8706" style="width:1%;"&gt;<br/>
+                      &lt;/colgroup&gt;<br/>
+                      &lt;thead&gt; <br/>
+                       &lt;tr class="tableHeader" style="white-space:nowrap;"&gt; <br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl07$ChildGrid_56','Sort$LOAD_ID')"&gt;Load Id&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkDescImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl07$ChildGrid_56','Sort$LOAD_DATE_START')"&gt;File Upload Start Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl07$ChildGrid_56','Sort$LOAD_DATE_END')"&gt;File Upload Finish Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl07$ChildGrid_56','Sort$LOAD_RESULT')"&gt;Status&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl07$ChildGrid_56','Sort$TOTAL_RECORD_COUNT')"&gt;# Total Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl07$ChildGrid_56','Sort$LOADED_BY')"&gt;Loaded By&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl07$ChildGrid_56','Sort$NUM_SUCCESS')"&gt;# Valid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl07$ChildGrid_56','Sort$NUM_ERROR')"&gt;# Invalid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl07$ChildGrid_56','Sort$LOADED_RECORDS_COUNT')"&gt;# Loaded Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl07$ChildGrid_56','Sort$DURATION')"&gt;Duration&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="tableHeader gl_fixed_right_column" scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/thead&gt;<br/>
+                      &lt;tbody&gt; <br/>
+                       &lt;tr id="ctl00_content_genList_GenericGridView_ctl07_ChildGrid_56_glRow_0" class="bodytextRowAlternate" row_identity="841203689"&gt; <br/>
+                        &lt;td cid="8692" tabindex="0"&gt;56&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;23 Nov 2023 12:16:38&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;23 Nov 2023 12:16:38&lt;/td&gt;<br/>
+                        &lt;td cid="8695" tabindex="0"&gt;Failure&lt;/td&gt;<br/>
+                        &lt;td cid="8696" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8705" tabindex="0"&gt;Joshi Franklin&lt;/td&gt;<br/>
+                        &lt;td cid="8697" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8698" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8699" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;00:00:00&lt;/td&gt;<br/>
+                        &lt;td align="center"&gt;&lt;a id="ctl00_content_genList_GenericGridView_ctl07_ChildGrid_56_glRow_0_DETAILS" title="View Log File" onfocus="javascript: ToggleHeaderFocus(this);" onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','ffedc9ed-1066-4cb4-8cf1-ced1ad2e74f5','2','Log File.log','56'); }, true);" onkeypress="return $(this).trigger('click');"&gt;&lt;img title="View Log File" src="images/viewicon2.png" alt="" style="border-width:0px;"&gt;&lt;/a&gt;&lt;/td&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/tbody&gt; <br/>
+                     &lt;/table&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_glRow_3" class="bodytextRow" row_identity="1935181020"&gt; <br/>
+                  &lt;td align="center" style="white-space:nowrap;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_3$ctl00" id="ctl00_content_genList_GenericGridView_glRow_3_ctl00" title="" alt="" src="images/plus.gif" onclick="return toggleSublist('ctl00_content_genList_GenericGridView_ctl09','ctl00_content_genList_GenericGridView_glRow_3_ctl00','ctl00_content_genList_hdnExpand__8690_243','55');" style="border-width:0px;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_3$ctl01" title="Select main and all sub-list items" ischildheader="8690" alt="" src="images/cube_green_preferences.png" onclick="return selectChildnodes(this);" style="border-width:0px;display:none;"&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="4898" tabindex="0"&gt;Test Register, Tests&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 12:15:11&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 12:15:13&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 12:15:13&lt;/td&gt;<br/>
+                  &lt;td&gt;&lt;span&gt;&lt;a onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','cdbd6fb0-30e7-442a-a514-4cf24bc03657','55','Book1.xlsx','55'); }, true);" id="ctl00_content_genList_GenericGridView_glRow_3_LOAD_FILENAME_4901" onfocus="javascript: ToggleParentStyleFocus(this);" href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$glRow_3$LOAD_FILENAME_4901','')"&gt;Book1.xlsx&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="8702" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                  &lt;td align="center"&gt;&nbsp;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_ctl09" type="sublist" style="display:none;"&gt; <br/>
+                  &lt;td class="sub-list-container"&gt;&lt;/td&gt;<br/>
+                  &lt;td id="ctl00_content_genList_GenericGridView_ctl09_LOGS3" class="sub-list-container" colspan="7"&gt;<br/>
+                   &lt;div id="ctl00_content_genList_GenericGridView_ctl09_pnlContainerSubList" class="pnlContainerSubList" data-initial-perc-width="100" style="width:100%;"&gt; <br/>
+                    &lt;div&gt; <br/>
+                     &lt;table class="generic-sub-list" cellspacing="0" rules="all" data-list-id="631" data-main-list-id="243" border="1" id="ctl00_content_genList_GenericGridView_ctl09_ChildGrid_55" style="border-collapse:collapse;"&gt; <br/>
+                      &lt;colgroup&gt;<br/>
+                       &lt;col id="8692" style="width:5%;"&gt;<br/>
+                       &lt;col id="8693" style="width:10%;"&gt;<br/>
+                       &lt;col id="8694" style="width:10%;"&gt;<br/>
+                       &lt;col id="8695" style="width:10%;"&gt;<br/>
+                       &lt;col id="8696" style="width:5%;"&gt;<br/>
+                       &lt;col id="8705" style="width:5%;"&gt;<br/>
+                       &lt;col id="8697" style="width:5%;"&gt;<br/>
+                       &lt;col id="8698" style="width:5%;"&gt;<br/>
+                       &lt;col id="8699" style="width:5%;"&gt;<br/>
+                       &lt;col id="8700" style="width:5%;"&gt;<br/>
+                       &lt;col id="8706" style="width:1%;"&gt;<br/>
+                      &lt;/colgroup&gt;<br/>
+                      &lt;thead&gt; <br/>
+                       &lt;tr class="tableHeader" style="white-space:nowrap;"&gt; <br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl09$ChildGrid_55','Sort$LOAD_ID')"&gt;Load Id&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkDescImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl09$ChildGrid_55','Sort$LOAD_DATE_START')"&gt;File Upload Start Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl09$ChildGrid_55','Sort$LOAD_DATE_END')"&gt;File Upload Finish Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl09$ChildGrid_55','Sort$LOAD_RESULT')"&gt;Status&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl09$ChildGrid_55','Sort$TOTAL_RECORD_COUNT')"&gt;# Total Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl09$ChildGrid_55','Sort$LOADED_BY')"&gt;Loaded By&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl09$ChildGrid_55','Sort$NUM_SUCCESS')"&gt;# Valid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl09$ChildGrid_55','Sort$NUM_ERROR')"&gt;# Invalid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl09$ChildGrid_55','Sort$LOADED_RECORDS_COUNT')"&gt;# Loaded Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl09$ChildGrid_55','Sort$DURATION')"&gt;Duration&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="tableHeader gl_fixed_right_column" scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/thead&gt;<br/>
+                      &lt;tbody&gt; <br/>
+                       &lt;tr id="ctl00_content_genList_GenericGridView_ctl09_ChildGrid_55_glRow_0" class="bodytextRowAlternate" row_identity="-692892709"&gt; <br/>
+                        &lt;td cid="8692" tabindex="0"&gt;55&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;22 Nov 2023 12:15:13&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;22 Nov 2023 12:15:13&lt;/td&gt;<br/>
+                        &lt;td cid="8695" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                        &lt;td cid="8696" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8705" tabindex="0"&gt;Joshi Franklin&lt;/td&gt;<br/>
+                        &lt;td cid="8697" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8698" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8699" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;00:00:00&lt;/td&gt;<br/>
+                        &lt;td align="center"&gt;&lt;a id="ctl00_content_genList_GenericGridView_ctl09_ChildGrid_55_glRow_0_DETAILS" title="View Log File" onfocus="javascript: ToggleHeaderFocus(this);" onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','cb568a73-afdf-400e-8004-60bd3d7a57a2','3','Log File.log','55'); }, true);" onkeypress="return $(this).trigger('click');"&gt;&lt;img title="View Log File" src="images/viewicon2.png" alt="" style="border-width:0px;"&gt;&lt;/a&gt;&lt;/td&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/tbody&gt; <br/>
+                     &lt;/table&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_glRow_4" class="bodytextRow" row_identity="746347573"&gt; <br/>
+                  &lt;td align="center" style="white-space:nowrap;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_4$ctl00" id="ctl00_content_genList_GenericGridView_glRow_4_ctl00" title="" alt="" src="images/plus.gif" onclick="return toggleSublist('ctl00_content_genList_GenericGridView_ctl11','ctl00_content_genList_GenericGridView_glRow_4_ctl00','ctl00_content_genList_hdnExpand__8690_243','54');" style="border-width:0px;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_4$ctl01" title="Select main and all sub-list items" ischildheader="8690" alt="" src="images/cube_green_preferences.png" onclick="return selectChildnodes(this);" style="border-width:0px;display:none;"&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="4898" tabindex="0"&gt;Test Register, Tests&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 09:27:21&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 09:27:22&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 09:27:22&lt;/td&gt;<br/>
+                  &lt;td&gt;&lt;span&gt;&lt;a onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','bd131d7b-a343-4413-a95b-0c631bbad5f6','54','Book1.xlsx','54'); }, true);" id="ctl00_content_genList_GenericGridView_glRow_4_LOAD_FILENAME_4901" onfocus="javascript: ToggleParentStyleFocus(this);" href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$glRow_4$LOAD_FILENAME_4901','')"&gt;Book1.xlsx&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="8702" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                  &lt;td align="center"&gt;&nbsp;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_ctl11" type="sublist" style="display:none;"&gt; <br/>
+                  &lt;td class="sub-list-container"&gt;&lt;/td&gt;<br/>
+                  &lt;td id="ctl00_content_genList_GenericGridView_ctl11_LOGS4" class="sub-list-container" colspan="7"&gt;<br/>
+                   &lt;div id="ctl00_content_genList_GenericGridView_ctl11_pnlContainerSubList" class="pnlContainerSubList" data-initial-perc-width="100" style="width:100%;"&gt; <br/>
+                    &lt;div&gt; <br/>
+                     &lt;table class="generic-sub-list" cellspacing="0" rules="all" data-list-id="631" data-main-list-id="243" border="1" id="ctl00_content_genList_GenericGridView_ctl11_ChildGrid_54" style="border-collapse:collapse;"&gt; <br/>
+                      &lt;colgroup&gt;<br/>
+                       &lt;col id="8692" style="width:5%;"&gt;<br/>
+                       &lt;col id="8693" style="width:10%;"&gt;<br/>
+                       &lt;col id="8694" style="width:10%;"&gt;<br/>
+                       &lt;col id="8695" style="width:10%;"&gt;<br/>
+                       &lt;col id="8696" style="width:5%;"&gt;<br/>
+                       &lt;col id="8705" style="width:5%;"&gt;<br/>
+                       &lt;col id="8697" style="width:5%;"&gt;<br/>
+                       &lt;col id="8698" style="width:5%;"&gt;<br/>
+                       &lt;col id="8699" style="width:5%;"&gt;<br/>
+                       &lt;col id="8700" style="width:5%;"&gt;<br/>
+                       &lt;col id="8706" style="width:1%;"&gt;<br/>
+                      &lt;/colgroup&gt;<br/>
+                      &lt;thead&gt; <br/>
+                       &lt;tr class="tableHeader" style="white-space:nowrap;"&gt; <br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl11$ChildGrid_54','Sort$LOAD_ID')"&gt;Load Id&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkDescImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl11$ChildGrid_54','Sort$LOAD_DATE_START')"&gt;File Upload Start Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl11$ChildGrid_54','Sort$LOAD_DATE_END')"&gt;File Upload Finish Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl11$ChildGrid_54','Sort$LOAD_RESULT')"&gt;Status&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl11$ChildGrid_54','Sort$TOTAL_RECORD_COUNT')"&gt;# Total Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl11$ChildGrid_54','Sort$LOADED_BY')"&gt;Loaded By&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl11$ChildGrid_54','Sort$NUM_SUCCESS')"&gt;# Valid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl11$ChildGrid_54','Sort$NUM_ERROR')"&gt;# Invalid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl11$ChildGrid_54','Sort$LOADED_RECORDS_COUNT')"&gt;# Loaded Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl11$ChildGrid_54','Sort$DURATION')"&gt;Duration&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="tableHeader gl_fixed_right_column" scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/thead&gt;<br/>
+                      &lt;tbody&gt; <br/>
+                       &lt;tr id="ctl00_content_genList_GenericGridView_ctl11_ChildGrid_54_glRow_0" class="bodytextRowAlternate" row_identity="-460541037"&gt; <br/>
+                        &lt;td cid="8692" tabindex="0"&gt;54&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;22 Nov 2023 09:27:22&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;22 Nov 2023 09:27:22&lt;/td&gt;<br/>
+                        &lt;td cid="8695" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                        &lt;td cid="8696" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8705" tabindex="0"&gt;Joshi Franklin&lt;/td&gt;<br/>
+                        &lt;td cid="8697" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8698" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8699" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;00:00:00&lt;/td&gt;<br/>
+                        &lt;td align="center"&gt;&lt;a id="ctl00_content_genList_GenericGridView_ctl11_ChildGrid_54_glRow_0_DETAILS" title="View Log File" onfocus="javascript: ToggleHeaderFocus(this);" onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','7807f721-bbfc-4923-b72e-8d802b92208f','3','Log File.log','54'); }, true);" onkeypress="return $(this).trigger('click');"&gt;&lt;img title="View Log File" src="images/viewicon2.png" alt="" style="border-width:0px;"&gt;&lt;/a&gt;&lt;/td&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/tbody&gt; <br/>
+                     &lt;/table&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_glRow_5" class="bodytextRow" row_identity="418501229"&gt; <br/>
+                  &lt;td align="center" style="white-space:nowrap;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_5$ctl00" id="ctl00_content_genList_GenericGridView_glRow_5_ctl00" title="" alt="" src="images/plus.gif" onclick="return toggleSublist('ctl00_content_genList_GenericGridView_ctl13','ctl00_content_genList_GenericGridView_glRow_5_ctl00','ctl00_content_genList_hdnExpand__8690_243','53');" style="border-width:0px;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_5$ctl01" title="Select main and all sub-list items" ischildheader="8690" alt="" src="images/cube_green_preferences.png" onclick="return selectChildnodes(this);" style="border-width:0px;display:none;"&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="4898" tabindex="0"&gt;Control Register, Controls&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 09:09:07&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 09:09:08&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 09:09:08&lt;/td&gt;<br/>
+                  &lt;td&gt;&lt;span&gt;&lt;a onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','9a9a045c-efda-4aa5-97c7-a303d5a8411e','53','Book1.xlsx','53'); }, true);" id="ctl00_content_genList_GenericGridView_glRow_5_LOAD_FILENAME_4901" onfocus="javascript: ToggleParentStyleFocus(this);" href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$glRow_5$LOAD_FILENAME_4901','')"&gt;Book1.xlsx&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="8702" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                  &lt;td align="center"&gt;&nbsp;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_ctl13" type="sublist" style="display:none;"&gt; <br/>
+                  &lt;td class="sub-list-container"&gt;&lt;/td&gt;<br/>
+                  &lt;td id="ctl00_content_genList_GenericGridView_ctl13_LOGS5" class="sub-list-container" colspan="7"&gt;<br/>
+                   &lt;div id="ctl00_content_genList_GenericGridView_ctl13_pnlContainerSubList" class="pnlContainerSubList" data-initial-perc-width="100" style="width:100%;"&gt; <br/>
+                    &lt;div&gt; <br/>
+                     &lt;table class="generic-sub-list" cellspacing="0" rules="all" data-list-id="631" data-main-list-id="243" border="1" id="ctl00_content_genList_GenericGridView_ctl13_ChildGrid_53" style="border-collapse:collapse;"&gt; <br/>
+                      &lt;colgroup&gt;<br/>
+                       &lt;col id="8692" style="width:5%;"&gt;<br/>
+                       &lt;col id="8693" style="width:10%;"&gt;<br/>
+                       &lt;col id="8694" style="width:10%;"&gt;<br/>
+                       &lt;col id="8695" style="width:10%;"&gt;<br/>
+                       &lt;col id="8696" style="width:5%;"&gt;<br/>
+                       &lt;col id="8705" style="width:5%;"&gt;<br/>
+                       &lt;col id="8697" style="width:5%;"&gt;<br/>
+                       &lt;col id="8698" style="width:5%;"&gt;<br/>
+                       &lt;col id="8699" style="width:5%;"&gt;<br/>
+                       &lt;col id="8700" style="width:5%;"&gt;<br/>
+                       &lt;col id="8706" style="width:1%;"&gt;<br/>
+                      &lt;/colgroup&gt;<br/>
+                      &lt;thead&gt; <br/>
+                       &lt;tr class="tableHeader" style="white-space:nowrap;"&gt; <br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl13$ChildGrid_53','Sort$LOAD_ID')"&gt;Load Id&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkDescImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl13$ChildGrid_53','Sort$LOAD_DATE_START')"&gt;File Upload Start Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl13$ChildGrid_53','Sort$LOAD_DATE_END')"&gt;File Upload Finish Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl13$ChildGrid_53','Sort$LOAD_RESULT')"&gt;Status&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl13$ChildGrid_53','Sort$TOTAL_RECORD_COUNT')"&gt;# Total Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl13$ChildGrid_53','Sort$LOADED_BY')"&gt;Loaded By&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl13$ChildGrid_53','Sort$NUM_SUCCESS')"&gt;# Valid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl13$ChildGrid_53','Sort$NUM_ERROR')"&gt;# Invalid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl13$ChildGrid_53','Sort$LOADED_RECORDS_COUNT')"&gt;# Loaded Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl13$ChildGrid_53','Sort$DURATION')"&gt;Duration&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="tableHeader gl_fixed_right_column" scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/thead&gt;<br/>
+                      &lt;tbody&gt; <br/>
+                       &lt;tr id="ctl00_content_genList_GenericGridView_ctl13_ChildGrid_53_glRow_0" class="bodytextRowAlternate" row_identity="1806824617"&gt; <br/>
+                        &lt;td cid="8692" tabindex="0"&gt;53&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;22 Nov 2023 09:09:08&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;22 Nov 2023 09:09:08&lt;/td&gt;<br/>
+                        &lt;td cid="8695" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                        &lt;td cid="8696" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8705" tabindex="0"&gt;Joshi Franklin&lt;/td&gt;<br/>
+                        &lt;td cid="8697" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8698" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8699" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;00:00:00&lt;/td&gt;<br/>
+                        &lt;td align="center"&gt;&lt;a id="ctl00_content_genList_GenericGridView_ctl13_ChildGrid_53_glRow_0_DETAILS" title="View Log File" onfocus="javascript: ToggleHeaderFocus(this);" onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','cf30e7b1-fc87-48e9-a6c9-21817390b52d','2','Log File.log','53'); }, true);" onkeypress="return $(this).trigger('click');"&gt;&lt;img title="View Log File" src="images/viewicon2.png" alt="" style="border-width:0px;"&gt;&lt;/a&gt;&lt;/td&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/tbody&gt; <br/>
+                     &lt;/table&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_glRow_6" class="bodytextRow" row_identity="311414206"&gt; <br/>
+                  &lt;td align="center" style="white-space:nowrap;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_6$ctl00" id="ctl00_content_genList_GenericGridView_glRow_6_ctl00" title="" alt="" src="images/plus.gif" onclick="return toggleSublist('ctl00_content_genList_GenericGridView_ctl15','ctl00_content_genList_GenericGridView_glRow_6_ctl00','ctl00_content_genList_hdnExpand__8690_243','52');" style="border-width:0px;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_6$ctl01" title="Select main and all sub-list items" ischildheader="8690" alt="" src="images/cube_green_preferences.png" onclick="return selectChildnodes(this);" style="border-width:0px;display:none;"&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="4898" tabindex="0"&gt;Control Register, Controls&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 09:02:33&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 09:02:34&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;22 Nov 2023 09:02:34&lt;/td&gt;<br/>
+                  &lt;td&gt;&lt;span&gt;&lt;a onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','4fdd7df5-38c6-473d-863e-6f1835c5ea44','52','Book1.xlsx','52'); }, true);" id="ctl00_content_genList_GenericGridView_glRow_6_LOAD_FILENAME_4901" onfocus="javascript: ToggleParentStyleFocus(this);" href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$glRow_6$LOAD_FILENAME_4901','')"&gt;Book1.xlsx&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="8702" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                  &lt;td align="center"&gt;&nbsp;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_ctl15" type="sublist" style="display:none;"&gt; <br/>
+                  &lt;td class="sub-list-container"&gt;&lt;/td&gt;<br/>
+                  &lt;td id="ctl00_content_genList_GenericGridView_ctl15_LOGS6" class="sub-list-container" colspan="7"&gt;<br/>
+                   &lt;div id="ctl00_content_genList_GenericGridView_ctl15_pnlContainerSubList" class="pnlContainerSubList" data-initial-perc-width="100" style="width:100%;"&gt; <br/>
+                    &lt;div&gt; <br/>
+                     &lt;table class="generic-sub-list" cellspacing="0" rules="all" data-list-id="631" data-main-list-id="243" border="1" id="ctl00_content_genList_GenericGridView_ctl15_ChildGrid_52" style="border-collapse:collapse;"&gt; <br/>
+                      &lt;colgroup&gt;<br/>
+                       &lt;col id="8692" style="width:5%;"&gt;<br/>
+                       &lt;col id="8693" style="width:10%;"&gt;<br/>
+                       &lt;col id="8694" style="width:10%;"&gt;<br/>
+                       &lt;col id="8695" style="width:10%;"&gt;<br/>
+                       &lt;col id="8696" style="width:5%;"&gt;<br/>
+                       &lt;col id="8705" style="width:5%;"&gt;<br/>
+                       &lt;col id="8697" style="width:5%;"&gt;<br/>
+                       &lt;col id="8698" style="width:5%;"&gt;<br/>
+                       &lt;col id="8699" style="width:5%;"&gt;<br/>
+                       &lt;col id="8700" style="width:5%;"&gt;<br/>
+                       &lt;col id="8706" style="width:1%;"&gt;<br/>
+                      &lt;/colgroup&gt;<br/>
+                      &lt;thead&gt; <br/>
+                       &lt;tr class="tableHeader" style="white-space:nowrap;"&gt; <br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl15$ChildGrid_52','Sort$LOAD_ID')"&gt;Load Id&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkDescImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl15$ChildGrid_52','Sort$LOAD_DATE_START')"&gt;File Upload Start Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl15$ChildGrid_52','Sort$LOAD_DATE_END')"&gt;File Upload Finish Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl15$ChildGrid_52','Sort$LOAD_RESULT')"&gt;Status&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl15$ChildGrid_52','Sort$TOTAL_RECORD_COUNT')"&gt;# Total Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl15$ChildGrid_52','Sort$LOADED_BY')"&gt;Loaded By&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl15$ChildGrid_52','Sort$NUM_SUCCESS')"&gt;# Valid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl15$ChildGrid_52','Sort$NUM_ERROR')"&gt;# Invalid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl15$ChildGrid_52','Sort$LOADED_RECORDS_COUNT')"&gt;# Loaded Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl15$ChildGrid_52','Sort$DURATION')"&gt;Duration&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="tableHeader gl_fixed_right_column" scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/thead&gt;<br/>
+                      &lt;tbody&gt; <br/>
+                       &lt;tr id="ctl00_content_genList_GenericGridView_ctl15_ChildGrid_52_glRow_0" class="bodytextRowAlternate" row_identity="2005569359"&gt; <br/>
+                        &lt;td cid="8692" tabindex="0"&gt;52&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;22 Nov 2023 09:02:34&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;22 Nov 2023 09:02:34&lt;/td&gt;<br/>
+                        &lt;td cid="8695" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                        &lt;td cid="8696" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8705" tabindex="0"&gt;Joshi Franklin&lt;/td&gt;<br/>
+                        &lt;td cid="8697" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8698" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8699" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;00:00:00&lt;/td&gt;<br/>
+                        &lt;td align="center"&gt;&lt;a id="ctl00_content_genList_GenericGridView_ctl15_ChildGrid_52_glRow_0_DETAILS" title="View Log File" onfocus="javascript: ToggleHeaderFocus(this);" onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','98229fb5-2028-4489-8229-cae70a3df716','2','Log File.log','52'); }, true);" onkeypress="return $(this).trigger('click');"&gt;&lt;img title="View Log File" src="images/viewicon2.png" alt="" style="border-width:0px;"&gt;&lt;/a&gt;&lt;/td&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/tbody&gt; <br/>
+                     &lt;/table&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_glRow_7" class="bodytextRow" row_identity="1056437687"&gt; <br/>
+                  &lt;td align="center" style="white-space:nowrap;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_7$ctl00" id="ctl00_content_genList_GenericGridView_glRow_7_ctl00" title="" alt="" src="images/plus.gif" onclick="return toggleSublist('ctl00_content_genList_GenericGridView_ctl17','ctl00_content_genList_GenericGridView_glRow_7_ctl00','ctl00_content_genList_hdnExpand__8690_243','51');" style="border-width:0px;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_7$ctl01" title="Select main and all sub-list items" ischildheader="8690" alt="" src="images/cube_green_preferences.png" onclick="return selectChildnodes(this);" style="border-width:0px;display:none;"&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="4898" tabindex="0"&gt;Control Register, Controls&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;21 Nov 2023 11:21:42&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;21 Nov 2023 11:21:43&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;21 Nov 2023 11:21:43&lt;/td&gt;<br/>
+                  &lt;td&gt;&lt;span&gt;&lt;a onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','d3e5b515-48e2-4543-a887-b3e4bcf24d8d','51','Book1.xlsx','51'); }, true);" id="ctl00_content_genList_GenericGridView_glRow_7_LOAD_FILENAME_4901" onfocus="javascript: ToggleParentStyleFocus(this);" href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$glRow_7$LOAD_FILENAME_4901','')"&gt;Book1.xlsx&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="8702" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                  &lt;td align="center"&gt;&nbsp;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_ctl17" type="sublist" style="display:none;"&gt; <br/>
+                  &lt;td class="sub-list-container"&gt;&lt;/td&gt;<br/>
+                  &lt;td id="ctl00_content_genList_GenericGridView_ctl17_LOGS7" class="sub-list-container" colspan="7"&gt;<br/>
+                   &lt;div id="ctl00_content_genList_GenericGridView_ctl17_pnlContainerSubList" class="pnlContainerSubList" data-initial-perc-width="100" style="width:100%;"&gt; <br/>
+                    &lt;div&gt; <br/>
+                     &lt;table class="generic-sub-list" cellspacing="0" rules="all" data-list-id="631" data-main-list-id="243" border="1" id="ctl00_content_genList_GenericGridView_ctl17_ChildGrid_51" style="border-collapse:collapse;"&gt; <br/>
+                      &lt;colgroup&gt;<br/>
+                       &lt;col id="8692" style="width:5%;"&gt;<br/>
+                       &lt;col id="8693" style="width:10%;"&gt;<br/>
+                       &lt;col id="8694" style="width:10%;"&gt;<br/>
+                       &lt;col id="8695" style="width:10%;"&gt;<br/>
+                       &lt;col id="8696" style="width:5%;"&gt;<br/>
+                       &lt;col id="8705" style="width:5%;"&gt;<br/>
+                       &lt;col id="8697" style="width:5%;"&gt;<br/>
+                       &lt;col id="8698" style="width:5%;"&gt;<br/>
+                       &lt;col id="8699" style="width:5%;"&gt;<br/>
+                       &lt;col id="8700" style="width:5%;"&gt;<br/>
+                       &lt;col id="8706" style="width:1%;"&gt;<br/>
+                      &lt;/colgroup&gt;<br/>
+                      &lt;thead&gt; <br/>
+                       &lt;tr class="tableHeader" style="white-space:nowrap;"&gt; <br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl17$ChildGrid_51','Sort$LOAD_ID')"&gt;Load Id&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkDescImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl17$ChildGrid_51','Sort$LOAD_DATE_START')"&gt;File Upload Start Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl17$ChildGrid_51','Sort$LOAD_DATE_END')"&gt;File Upload Finish Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl17$ChildGrid_51','Sort$LOAD_RESULT')"&gt;Status&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl17$ChildGrid_51','Sort$TOTAL_RECORD_COUNT')"&gt;# Total Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl17$ChildGrid_51','Sort$LOADED_BY')"&gt;Loaded By&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl17$ChildGrid_51','Sort$NUM_SUCCESS')"&gt;# Valid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl17$ChildGrid_51','Sort$NUM_ERROR')"&gt;# Invalid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl17$ChildGrid_51','Sort$LOADED_RECORDS_COUNT')"&gt;# Loaded Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl17$ChildGrid_51','Sort$DURATION')"&gt;Duration&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="tableHeader gl_fixed_right_column" scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/thead&gt;<br/>
+                      &lt;tbody&gt; <br/>
+                       &lt;tr id="ctl00_content_genList_GenericGridView_ctl17_ChildGrid_51_glRow_0" class="bodytextRowAlternate" row_identity="533854136"&gt; <br/>
+                        &lt;td cid="8692" tabindex="0"&gt;51&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;21 Nov 2023 11:21:43&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;21 Nov 2023 11:21:43&lt;/td&gt;<br/>
+                        &lt;td cid="8695" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                        &lt;td cid="8696" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8705" tabindex="0"&gt;Joshi Franklin&lt;/td&gt;<br/>
+                        &lt;td cid="8697" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8698" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8699" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;00:00:00&lt;/td&gt;<br/>
+                        &lt;td align="center"&gt;&lt;a id="ctl00_content_genList_GenericGridView_ctl17_ChildGrid_51_glRow_0_DETAILS" title="View Log File" onfocus="javascript: ToggleHeaderFocus(this);" onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','09acf526-dac1-4699-a677-6f576c0da094','2','Log File.log','51'); }, true);" onkeypress="return $(this).trigger('click');"&gt;&lt;img title="View Log File" src="images/viewicon2.png" alt="" style="border-width:0px;"&gt;&lt;/a&gt;&lt;/td&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/tbody&gt; <br/>
+                     &lt;/table&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_glRow_8" class="bodytextRow" row_identity="1210399825"&gt; <br/>
+                  &lt;td align="center" style="white-space:nowrap;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_8$ctl00" id="ctl00_content_genList_GenericGridView_glRow_8_ctl00" title="" alt="" src="images/plus.gif" onclick="return toggleSublist('ctl00_content_genList_GenericGridView_ctl19','ctl00_content_genList_GenericGridView_glRow_8_ctl00','ctl00_content_genList_hdnExpand__8690_243','50');" style="border-width:0px;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_8$ctl01" title="Select main and all sub-list items" ischildheader="8690" alt="" src="images/cube_green_preferences.png" onclick="return selectChildnodes(this);" style="border-width:0px;display:none;"&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="4898" tabindex="0"&gt;Control Register, Controls&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;21 Nov 2023 10:23:37&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;21 Nov 2023 10:23:38&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;21 Nov 2023 10:23:38&lt;/td&gt;<br/>
+                  &lt;td&gt;&lt;span&gt;&lt;a onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','8af0a724-901f-4e1f-b922-f5ecdd5d21b0','50','Book1.xlsx','50'); }, true);" id="ctl00_content_genList_GenericGridView_glRow_8_LOAD_FILENAME_4901" onfocus="javascript: ToggleParentStyleFocus(this);" href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$glRow_8$LOAD_FILENAME_4901','')"&gt;Book1.xlsx&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="8702" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                  &lt;td align="center"&gt;&nbsp;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_ctl19" type="sublist" style="display:none;"&gt; <br/>
+                  &lt;td class="sub-list-container"&gt;&lt;/td&gt;<br/>
+                  &lt;td id="ctl00_content_genList_GenericGridView_ctl19_LOGS8" class="sub-list-container" colspan="7"&gt;<br/>
+                   &lt;div id="ctl00_content_genList_GenericGridView_ctl19_pnlContainerSubList" class="pnlContainerSubList" data-initial-perc-width="100" style="width:100%;"&gt; <br/>
+                    &lt;div&gt; <br/>
+                     &lt;table class="generic-sub-list" cellspacing="0" rules="all" data-list-id="631" data-main-list-id="243" border="1" id="ctl00_content_genList_GenericGridView_ctl19_ChildGrid_50" style="border-collapse:collapse;"&gt; <br/>
+                      &lt;colgroup&gt;<br/>
+                       &lt;col id="8692" style="width:5%;"&gt;<br/>
+                       &lt;col id="8693" style="width:10%;"&gt;<br/>
+                       &lt;col id="8694" style="width:10%;"&gt;<br/>
+                       &lt;col id="8695" style="width:10%;"&gt;<br/>
+                       &lt;col id="8696" style="width:5%;"&gt;<br/>
+                       &lt;col id="8705" style="width:5%;"&gt;<br/>
+                       &lt;col id="8697" style="width:5%;"&gt;<br/>
+                       &lt;col id="8698" style="width:5%;"&gt;<br/>
+                       &lt;col id="8699" style="width:5%;"&gt;<br/>
+                       &lt;col id="8700" style="width:5%;"&gt;<br/>
+                       &lt;col id="8706" style="width:1%;"&gt;<br/>
+                      &lt;/colgroup&gt;<br/>
+                      &lt;thead&gt; <br/>
+                       &lt;tr class="tableHeader" style="white-space:nowrap;"&gt; <br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl19$ChildGrid_50','Sort$LOAD_ID')"&gt;Load Id&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkDescImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl19$ChildGrid_50','Sort$LOAD_DATE_START')"&gt;File Upload Start Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl19$ChildGrid_50','Sort$LOAD_DATE_END')"&gt;File Upload Finish Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl19$ChildGrid_50','Sort$LOAD_RESULT')"&gt;Status&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl19$ChildGrid_50','Sort$TOTAL_RECORD_COUNT')"&gt;# Total Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl19$ChildGrid_50','Sort$LOADED_BY')"&gt;Loaded By&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl19$ChildGrid_50','Sort$NUM_SUCCESS')"&gt;# Valid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl19$ChildGrid_50','Sort$NUM_ERROR')"&gt;# Invalid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl19$ChildGrid_50','Sort$LOADED_RECORDS_COUNT')"&gt;# Loaded Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl19$ChildGrid_50','Sort$DURATION')"&gt;Duration&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="tableHeader gl_fixed_right_column" scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/thead&gt;<br/>
+                      &lt;tbody&gt; <br/>
+                       &lt;tr id="ctl00_content_genList_GenericGridView_ctl19_ChildGrid_50_glRow_0" class="bodytextRowAlternate" row_identity="97313086"&gt; <br/>
+                        &lt;td cid="8692" tabindex="0"&gt;50&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;21 Nov 2023 10:23:38&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;21 Nov 2023 10:23:38&lt;/td&gt;<br/>
+                        &lt;td cid="8695" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                        &lt;td cid="8696" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8705" tabindex="0"&gt;Joshi Franklin&lt;/td&gt;<br/>
+                        &lt;td cid="8697" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8698" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8699" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;00:00:00&lt;/td&gt;<br/>
+                        &lt;td align="center"&gt;&lt;a id="ctl00_content_genList_GenericGridView_ctl19_ChildGrid_50_glRow_0_DETAILS" title="View Log File" onfocus="javascript: ToggleHeaderFocus(this);" onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','68f30b8a-b3c0-4379-ae50-b2e6c9d031d5','2','Log File.log','50'); }, true);" onkeypress="return $(this).trigger('click');"&gt;&lt;img title="View Log File" src="images/viewicon2.png" alt="" style="border-width:0px;"&gt;&lt;/a&gt;&lt;/td&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/tbody&gt; <br/>
+                     &lt;/table&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_glRow_9" class="bodytextRow" row_identity="-1883828449"&gt; <br/>
+                  &lt;td align="center" style="white-space:nowrap;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_9$ctl00" id="ctl00_content_genList_GenericGridView_glRow_9_ctl00" title="" alt="" src="images/plus.gif" onclick="return toggleSublist('ctl00_content_genList_GenericGridView_ctl21','ctl00_content_genList_GenericGridView_glRow_9_ctl00','ctl00_content_genList_hdnExpand__8690_243','49');" style="border-width:0px;"&gt;&lt;input type="image" name="ctl00$content$genList$GenericGridView$glRow_9$ctl01" title="Select main and all sub-list items" ischildheader="8690" alt="" src="images/cube_green_preferences.png" onclick="return selectChildnodes(this);" style="border-width:0px;display:none;"&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="4898" tabindex="0"&gt;Control Register, Controls&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;21 Nov 2023 09:36:48&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;21 Nov 2023 09:36:49&lt;/td&gt;<br/>
+                  &lt;td tabindex="0"&gt;21 Nov 2023 09:36:49&lt;/td&gt;<br/>
+                  &lt;td&gt;&lt;span&gt;&lt;a onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','f8a2a918-93e4-422a-bd99-f46aeb1999a5','49','Book1.xlsx','49'); }, true);" id="ctl00_content_genList_GenericGridView_glRow_9_LOAD_FILENAME_4901" onfocus="javascript: ToggleParentStyleFocus(this);" href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$glRow_9$LOAD_FILENAME_4901','')"&gt;Book1.xlsx&lt;/a&gt;&lt;/span&gt;&lt;/td&gt;<br/>
+                  &lt;td cid="8702" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                  &lt;td align="center"&gt;&nbsp;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr id="ctl00_content_genList_GenericGridView_ctl21" type="sublist" style="display:none;"&gt; <br/>
+                  &lt;td class="sub-list-container"&gt;&lt;/td&gt;<br/>
+                  &lt;td id="ctl00_content_genList_GenericGridView_ctl21_LOGS9" class="sub-list-container" colspan="7"&gt;<br/>
+                   &lt;div id="ctl00_content_genList_GenericGridView_ctl21_pnlContainerSubList" class="pnlContainerSubList" data-initial-perc-width="100" style="width:100%;"&gt; <br/>
+                    &lt;div&gt; <br/>
+                     &lt;table class="generic-sub-list" cellspacing="0" rules="all" data-list-id="631" data-main-list-id="243" border="1" id="ctl00_content_genList_GenericGridView_ctl21_ChildGrid_49" style="border-collapse:collapse;"&gt; <br/>
+                      &lt;colgroup&gt;<br/>
+                       &lt;col id="8692" style="width:5%;"&gt;<br/>
+                       &lt;col id="8693" style="width:10%;"&gt;<br/>
+                       &lt;col id="8694" style="width:10%;"&gt;<br/>
+                       &lt;col id="8695" style="width:10%;"&gt;<br/>
+                       &lt;col id="8696" style="width:5%;"&gt;<br/>
+                       &lt;col id="8705" style="width:5%;"&gt;<br/>
+                       &lt;col id="8697" style="width:5%;"&gt;<br/>
+                       &lt;col id="8698" style="width:5%;"&gt;<br/>
+                       &lt;col id="8699" style="width:5%;"&gt;<br/>
+                       &lt;col id="8700" style="width:5%;"&gt;<br/>
+                       &lt;col id="8706" style="width:1%;"&gt;<br/>
+                      &lt;/colgroup&gt;<br/>
+                      &lt;thead&gt; <br/>
+                       &lt;tr class="tableHeader" style="white-space:nowrap;"&gt; <br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl21$ChildGrid_49','Sort$LOAD_ID')"&gt;Load Id&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkDescImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl21$ChildGrid_49','Sort$LOAD_DATE_START')"&gt;File Upload Start Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl21$ChildGrid_49','Sort$LOAD_DATE_END')"&gt;File Upload Finish Time&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl21$ChildGrid_49','Sort$LOAD_RESULT')"&gt;Status&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl21$ChildGrid_49','Sort$TOTAL_RECORD_COUNT')"&gt;# Total Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl21$ChildGrid_49','Sort$LOADED_BY')"&gt;Loaded By&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl21$ChildGrid_49','Sort$NUM_SUCCESS')"&gt;# Valid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl21$ChildGrid_49','Sort$NUM_ERROR')"&gt;# Invalid Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl21$ChildGrid_49','Sort$LOADED_RECORDS_COUNT')"&gt;# Loaded Records&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="sortLink sortLinkNoSortableImg sortLinkBDATE" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl21$ChildGrid_49','Sort$DURATION')"&gt;Duration&lt;/a&gt;&lt;/th&gt;<br/>
+                        &lt;th class="tableHeader gl_fixed_right_column" scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/thead&gt;<br/>
+                      &lt;tbody&gt; <br/>
+                       &lt;tr id="ctl00_content_genList_GenericGridView_ctl21_ChildGrid_49_glRow_0" class="bodytextRowAlternate" row_identity="-281379743"&gt; <br/>
+                        &lt;td cid="8692" tabindex="0"&gt;49&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;21 Nov 2023 09:36:49&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;21 Nov 2023 09:36:49&lt;/td&gt;<br/>
+                        &lt;td cid="8695" tabindex="0"&gt;Success&lt;/td&gt;<br/>
+                        &lt;td cid="8696" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8705" tabindex="0"&gt;Joshi Franklin&lt;/td&gt;<br/>
+                        &lt;td cid="8697" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8698" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td cid="8699" tabindex="0"&gt;0&lt;/td&gt;<br/>
+                        &lt;td tabindex="0"&gt;00:00:00&lt;/td&gt;<br/>
+                        &lt;td align="center"&gt;&lt;a id="ctl00_content_genList_GenericGridView_ctl21_ChildGrid_49_glRow_0_DETAILS" title="View Log File" onfocus="javascript: ToggleHeaderFocus(this);" onclick="var ButtonClicked = this; return selectionMadeBeforeNavigation(ButtonClicked, function () { return OpenDocumentViewer('Y','5fc5ed2c-0ee7-46e9-9194-a563533ddc65','2','Log File.log','49'); }, true);" onkeypress="return $(this).trigger('click');"&gt;&lt;img title="View Log File" src="images/viewicon2.png" alt="" style="border-width:0px;"&gt;&lt;/a&gt;&lt;/td&gt; <br/>
+                       &lt;/tr&gt; <br/>
+                      &lt;/tbody&gt; <br/>
+                     &lt;/table&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt;<br/>
+                 &lt;tr class="generic-pager" onclick="IgnoreChanges();"&gt; <br/>
+                  &lt;td colspan="8"&gt;<br/>
+                   &lt;div id="ctl00_content_genList_GenericGridView_ctl23_pnlPagerControlOnly"&gt; <br/>
+                    &lt;div&gt; &lt;span&gt;1&lt;/span&gt; <br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div&gt; &lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl23$ctl03','')"&gt;2&lt;/a&gt; <br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div&gt; &lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl23$ctl05','')"&gt;3&lt;/a&gt; <br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div&gt; &lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl23$ctl07','')"&gt;4&lt;/a&gt; <br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div&gt; &lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl23$ctl09','')"&gt;5&lt;/a&gt; <br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div&gt; &lt;a href="javascript:__doPostBack('ctl00$content$genList$GenericGridView$ctl23$ctl11','')"&gt;6&lt;/a&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;<br/>
+                   &lt;div&gt; &lt;span id="ctl00_content_genList_GenericGridView_ctl23_lblGLNumberOfRecords" class="lblNumberOfRecords"&gt;57 Record(s)&lt;/span&gt; <br/>
+                   &lt;/div&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt; <br/>
+                &lt;/tbody&gt; <br/>
+               &lt;/table&gt; <br/>
+              &lt;/div&gt; &lt;!-- ko stopBinding: true --&gt; <br/>
+              &lt;div id="ctl00_content_genList_pnlInlineFiltersContainer" class="genericListInlineFilter-main-container" style="display: block;"&gt; <br/>
+               &lt;div class="genericListInlineFilterShrinked"&gt; <br/>
+                &lt;div class="genericListInlineFilterHeaderContainer"&gt; &lt;span class="genericListInlineFilterHeaderTitle" data-bind="text: lblHeaderText"&gt;Column Filters&lt;/span&gt; &lt;span class="genericListInlineFilterHeaderClose" data-bind="click: CancelFilter, attr: { title: btnCloseText }" title="Close"&gt;&lt;/span&gt; <br/>
+                &lt;/div&gt; <br/>
+                &lt;div class="genericListInlineFilterSearchContainer"&gt; <br/>
+                 &lt;input type="text" class="genericListInlineFilterSearch" data-bind="textInput: SearchPhrase, event: { keyup: UpdateSearchResults }" data-ays-ignore="true"&gt; <br/>
+                &lt;/div&gt; <br/>
+                &lt;div class="genericListInlineFilterContainer" data-bind="event: { scroll: scrolled }"&gt; <br/>
+                 &lt;ul data-bind="visible: !showSearchNoResults()"&gt; <br/>
+                  &lt;li&gt; &lt;label&gt; &lt;input type="checkbox" class="genericListInlineFilterChkSelectAll" data-bind="checked: selectAll" data-ays-ignore="true"&gt; &lt;span class="genericListInlineFilterCheckboxText" data-bind="html: searchDefaultOption"&gt;(Select All)&lt;/span&gt; &lt;/label&gt; &lt;/li&gt; &lt;!-- ko foreach: filterValuesList --&gt;&lt;!-- /ko --&gt; <br/>
+                 &lt;/ul&gt; &lt;span class="genericListInlineFilterNoMatches" data-bind="visible: showSearchNoResults(), text: lblNoMatchesText" style="display: none;"&gt;No matches found&lt;/span&gt; <br/>
+                &lt;/div&gt; <br/>
+                &lt;div class="genericListInlineFilterContainerButtons"&gt; <br/>
+                 &lt;div class="genericListInlineFilterClearFilter"&gt; <br/>
+                  &lt;input type="button" class="buttontext" data-bind="enable: !disableClearFilter(), click: ClearFilter, value: btnClearFilterText" disabled value="Clear filter"&gt; <br/>
+                 &lt;/div&gt; <br/>
+                 &lt;div class="genericListInlineFilterApplyFilter"&gt; <br/>
+                  &lt;input type="button" class="buttontext" data-bind="enable: enableApplyFilter, click: ApplyFilter, value: btnApplyText" disabled value="Apply Filter"&gt; <br/>
+                 &lt;/div&gt; <br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; &lt;!-- /ko --&gt; <br/>
+              &lt;div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"&gt;&lt;/div&gt;<br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div id="ctl00_content_genList_divReload" style="display: none;"&gt;&lt;/div&gt; <br/>
+            &lt;input type="submit" name="ctl00$content$genList$btnRebindList" value="" id="ctl00_content_genList_btnRebindList" data-list-id="243" style="display: none;"&gt; <br/>
+            &lt;input type="submit" name="ctl00$content$genList$btnSavedFilterChanged" value="" id="ctl00_content_genList_btnSavedFilterChanged" style="display: none"&gt; <br/>
+            &lt;input type="submit" name="ctl00$content$genList$btnNewFilterCondition" value="" id="ctl00_content_genList_btnNewFilterCondition" style="display: none;"&gt; <br/>
+            &lt;div id="ctl00_content_pnlTransformFile" class="ra-onscreenscoring-div ra-position-fixed" style="height: 480px; width: 700px; display: none; position: fixed; z-index: 99998;"&gt; <br/>
+             &lt;input type="submit" name="ctl00$content$btnTransformFileTarget" value="" id="ctl00_content_btnTransformFileTarget" style="display:none;"&gt; <br/>
+             &lt;div class="popup-title"&gt; &lt;span id="ctl00_content_lblTransformFile"&gt;Data Feed Transform File&lt;/span&gt; <br/>
+             &lt;/div&gt; &lt;textarea name="ctl00$content$txtTransformFile" rows="2" cols="20" id="ctl00_content_txtTransformFile" spellcheck="true" style="height:400px;width:700px;"&gt;&lt;/textarea&gt; <br/>
+             &lt;div class="secondary-action-container"&gt; <br/>
+              &lt;input type="submit" name="ctl00$content$btnCancelResults" value="Cancel" onclick="return ClearTransformFileContent();" id="ctl00_content_btnCancelResults" class="buttontext"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div data-act-control-type="modalPopupBackground" id="mpeTransformFile_backgroundElement" class="ra-modal" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"&gt;&lt;/div&gt;<br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div id="ctl00_divButtons" class="action-container"&gt; <br/>
+           &lt;input type="submit" name="ctl00$btnCancel" value="Cancel" onclick="Page_ValidationActive=false; return CancelChanges(this);" id="ctl00_btnCancel" class="buttontext"&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;br class="clear"&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;br class="clear"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="footer-container"&gt; <br/>
+    &lt;img id="ctl00_KeepAliveMVC" src="https://oprisk-uat.afreximbank.net/AppA/Web/SessionSync?" style="height:0px;width:0px;border-width:0px;"&gt;<br/>
+    &lt;img id="ctl00_KeepAliveSurveys" src="https://oprisk-uat.afreximbank.net/AppA/Surveys/SessionSync.aspx?" style="height:0px;width:0px;border-width:0px;"&gt;<br/>
+    &lt;img id="ctl00_KeepAliveSwordDotNet" src="https://oprisk-uat.afreximbank.net/AppA/Pages/SessionSync.aspx?" style="height:0px;width:0px;border-width:0px;"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnRandomParameter" id="ctl00_hdnRandomParameter" value="r269702" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnRandomIdentifier" id="ctl00_hdnRandomIdentifier" value="edadddef-c0d2-469f-a6df-54d34300abf2" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnDocumentmode" id="ctl00_hdnDocumentmode" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnDirty" id="ctl00_hdnDirty" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnAlwaysDirty" id="ctl00_hdnAlwaysDirty" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="divWorking" style="display: none; position: fixed; z-index: 1000001;"&gt; <br/>
+    &lt;img src="../images/wk_loading.gif" alt="Loading..." id="loadImg"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="ctl00_ifpReferencePopup_backgroundElement" class="modal-dialog-bg background GL-BE" style="display:none;"&gt;&lt;/div&gt; <br/>
+   &lt;div id="ctl00_ifpReferencePopup_pnlIFramePopup" class="popUpBox ra-onscreenscoring-div ra-showComment-div generic-list-popup-div GL-FE" style="display:none;"&gt; <br/>
+    &lt;div class="wrapper"&gt; <br/>
+     &lt;div class="popup-title popUpHeader"&gt; &lt;span id="ctl00_ifpReferencePopup_lblTitle"&gt;&lt;/span&gt; <br/>
+      &lt;div title="Close pop up" class="closePopup" id="popupCloseTreeBtn"&gt;&lt;/div&gt; <br/>
+      &lt;div title="Maximize" class="maximizePopup maximizePopupBG" id="popupMaximizeTreeBtn"&gt;&lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div id="popup-content" class="popupcontainer"&gt; &lt;iframe id="iframe-content" frameborder="0"&gt;&lt;/iframe&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div class="popUpFooter"&gt; <br/>
+     &lt;input type="submit" name="ctl00$ifpReferencePopup$btnCancel" value="Close" id="ctl00_ifpReferencePopup_btnCancel" class="buttonText"&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnWidth" id="ctl00_ifpReferencePopup_hdnWidth" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnHeight" id="ctl00_ifpReferencePopup_hdnHeight" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnTop" id="ctl00_ifpReferencePopup_hdnTop" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnLeft" id="ctl00_ifpReferencePopup_hdnLeft" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnScrollPosition" id="ctl00_ifpReferencePopup_hdnScrollPosition" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnPopupChanges" id="ctl00_ifpReferencePopup_hdnPopupChanges" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; &lt;button id="ctl00_btnPopupTarget" style="display: none;" type="button"&gt;&lt;/button&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var Page_ValidationSummaries =  new Array(document.getElementById("ctl00_vldError"));<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;div&gt; <br/>
+    &lt;input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="F68C96CE" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+document.addEventListener('DOMContentLoaded', function(){ $('body').css('min-width', ( ( (typeof IsPopupWindow !== 'undefined') && (IsPopupWindow) ) ? 'none' : '960px' )); });Sys.Application.add_load( function(){ prepSetting(); } );$("tr[class^=bodytextRow]").on('mouseover', function() { hover_OnMouseOver(this); }).on('mouseout', function() { hover_OnMouseOut(this); });SetupEventsOnList();qTipConfigJSON = '{"content":{},"position":{"my":"top left","at":"bottom center","adjust":{"x":5},"viewport":true},"hide":{"delay":200,"fixed":true,"leave":false },"style":{"tip":{"width":6,"height":12}}}';var ARCLOGICS = ARCLOGICS || {};$(document).ready(function () {try{ ARCLOGICS.navmenu = $('#navbar').navigationBar({selectedMenuId: 129}); }catch(e){console.log(e)} });if(typeof ShowFilterName == 'function') { ShowFilterName(0); }<br/>
+(function(id) {<br/>
+    var e = document.getElementById(id);<br/>
+    if (e) {<br/>
+        e.dispose = function() {<br/>
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));<br/>
+        }<br/>
+        e = null;<br/>
+    }<br/>
+})('ctl00_vldError');<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"ra-modal","cancelControlID":"ctl00_content_btnCancelResults","dynamicServicePath":"/AppA/UI/DataFeedProcessedFilesList.aspx","id":"mpeTransformFile","popupControlID":"ctl00_content_pnlTransformFile","repositionMode":1}, null, null, $get("ctl00_content_btnTransformFileTarget"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"modal-timeout","dropShadow":true,"dynamicServicePath":"/AppA/UI/DataFeedProcessedFilesList.aspx","id":"ctl00_popup","okControlID":"btnTimeoutOK","onOkScript":"GotoHomePage();","popupControlID":"ctl00_divException","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"modal-timeout","cancelControlID":"btnNoMsg","dropShadow":true,"dynamicServicePath":"/AppA/UI/DataFeedProcessedFilesList.aspx","id":"ctl00_popupMsg","okControlID":"btnOKMsg","onCancelScript":"NotKeepAlive();","onOkScript":"KeepAlive();","popupControlID":"ctl00_divExceptionWarning","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"working","dynamicServicePath":"/AppA/UI/DataFeedProcessedFilesList.aspx","id":"ctl00_working","popupControlID":"divWorking","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;div id="ctl00_popup_foregroundElement" style="display: none; position: fixed; z-index: 1000001;"&gt;<br/>
+    &lt;div id="ctl00_divException" style="display:none;" class="tmeout-div"&gt;<br/>
+     &lt;br&gt;Your session has timed out.<br/>
+     &lt;br&gt;Click OK to continue using OneSumX.<br/>
+     &lt;br&gt;<br/>
+     &lt;br&gt;<br/>
+     &lt;input type="button" id="btnTimeoutOK" tabindex="0" value="Ok"&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div data-act-control-type="modalPopupBackground" id="ctl00_popup_backgroundElement" class="modal-timeout" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"&gt;&lt;/div&gt;<br/>
+   &lt;div id="ctl00_popupMsg_foregroundElement" style="display: none; position: fixed; z-index: 1000001;"&gt;<br/>
+    &lt;div id="ctl00_divExceptionWarning" style="display:none;" class="tmeout-div"&gt;<br/>
+     &lt;br&gt;Your session is about to timeout.<br/>
+     &lt;br&gt;Do you wish to refresh your session?<br/>
+     &lt;br&gt;<br/>
+     &lt;br&gt;<br/>
+     &lt;input type="button" id="btnOKMsg" value="Yes"&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+     &lt;input type="button" id="btnNoMsg" value="No"&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div data-act-control-type="modalPopupBackground" id="ctl00_popupMsg_backgroundElement" class="modal-timeout" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"&gt;&lt;/div&gt;<br/>
+   &lt;div data-act-control-type="modalPopupBackground" id="ctl00_working_backgroundElement" class="working" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"&gt;&lt;/div&gt;<br/>
+  &lt;/form&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

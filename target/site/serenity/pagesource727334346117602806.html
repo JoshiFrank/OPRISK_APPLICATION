@@ -1,0 +1,673 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html style="overflow: hidden;"&gt;<br/>
+ &lt;head id="ctl00_Head1"&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/knockout.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/knockout-bindings.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery-ui.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;link href="../favicon.ico" rel="shortcut icon" type="image/x-icon"&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/jquery/jquery.hiddenDimensions.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/lib/json-min.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/Core/master.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/TimeoutControl.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/Utilities.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/Popup.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/lib/tag-it.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/Keywords/Keywords.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" type="text/css" href="../css/jquery.tagit.css?v=200610"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" href="../css/tagit.ui-zendesk.css?v=200610"&gt; <br/>
+  &lt;script src="../JS/SYS_MaintainStandardData.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+  &lt;link href="https://oprisk-uat.afreximbank.net/AppA/UI/js/lib/jsTree/themes/default/style.css?v=200610" rel="stylesheet" type="text/css"&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/chosen.jquery.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/select2.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/Translations.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/Common.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink1" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/chosen.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink2" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/select2.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink3" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/onesumx.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink4" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/print.css?v=200610" rel="stylesheet" type="text/css" media="print"&gt;<br/>
+  &lt;meta name="format-detection" content="telephone=no"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink5" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/jquery.qtip.min.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;title&gt;<br/>
+	OneSumX<br/>
+&lt;/title&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body onload="OnPageLoad(); " style="min-width: 960px;"&gt; <br/>
+  &lt;form name="aspnetForm" method="post" action="SYS_MaintainStandardData.aspx?dmType=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723" id="aspnetForm" onsubmit="return OnSubmit();" onactivate="SaveOnActivate();" ondeactivate="CompareOnDeActivate();"&gt; <br/>
+   &lt;div&gt; <br/>
+    &lt;input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var theForm = document.forms['aspnetForm'];<br/>
+if (!theForm) {<br/>
+    theForm = document.aspnetForm;<br/>
+}<br/>
+function __doPostBack(eventTarget, eventArgument) {<br/>
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {<br/>
+        theForm.__EVENTTARGET.value = eventTarget;<br/>
+        theForm.__EVENTARGUMENT.value = eventArgument;<br/>
+        theForm.submit();<br/>
+    }<br/>
+}<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="/AppA/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZEVIIt_cPfWWJcfkABY1NhqEMYCSZlCHfXZSXQisxmbG8qx-Gpt0SA9KENPLGRNYzA2&amp;t=638092594030625477" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=-fCmiEcu3xUgmjOFHhP5L2Swg9YnIEImTmcmFJme18Ie_FUWZXdEAXueAanAYP8JblTl4G3w7i8grgNt4KVGCR6Vc64btx-sicK7p5oa7dk62iYicmUoj4y6KHFrnTiLyuKTpqUrG73KDt4zChEnj9B-14ud7QebKRcW9-mZTzo1&amp;t=ffffffffda0d40b5" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var hdnDirty='ctl00_hdnDirty';<br/>
+var hdnAlwaysDirty='ctl00_hdnAlwaysDirty';<br/>
+var cDisableAreYouSure=false;<br/>
+var tsUnsavedChanges='There are unsaved changes that will be lost if you proceed.';<br/>
+var tsOKToContinue='Press OK to continue, or Cancel to stay on the current page.';<br/>
+var tsNothingToSave='Nothing to save.';<br/>
+var DisplayButtonsInScroll = false;<br/>
+var userName = "Joshi Franklin";<br/>
+var defaultDateFormat = 'dd MMM yyyy';<br/>
+var defaultTimeFormat = 'HH:mm:ss';<br/>
+var sessionID='phawjdyw55442g5tenfhkcrd';<br/>
+var divPopupClientId1='ctl00_divExceptionWarning';<br/>
+var divPopupClientId2='ctl00_divException';<br/>
+var mpeMsgClientId='ctl00_popupMsg';<br/>
+var mpeClientId='ctl00_popup';<br/>
+var mpeWorkingId='ctl00_working';<br/>
+var gbFromLogin=false;<br/>
+var LoadDropdownURL = 'https://oprisk-uat.afreximbank.net/AppA/Services/GenericListSettings.svc/LoadSearchResults/';<br/>
+var WebApiRoot = 'https://oprisk-uat.afreximbank.net/AppA/api/';<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.PrimaryReferencePopup = ARCLOGICS.PrimaryReferencePopup || {};<br/>
+ARCLOGICS.PrimaryReferencePopup.Options = {"ForegroundElement":"ctl00_ifpReferencePopup_pnlIFramePopup","ForegroundElementLeft":"ctl00_ifpReferencePopup_hdnLeft","ForegroundElementTop":"ctl00_ifpReferencePopup_hdnTop","BackgroundElement":"ctl00_ifpReferencePopup_backgroundElement","BackgroundWidth":"ctl00_ifpReferencePopup_hdnWidth","BackgroundHeight":"ctl00_ifpReferencePopup_hdnHeight","SaveButton":null,"CancelButton":"ctl00_ifpReferencePopup_btnCancel","ClearButton":null,"Apply":true,"PopupDimension":55,"CloseOnSave":true,"PopupTitle":null};<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.are-you-sure.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/js/lib/jsTree/jstree.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.Constants = ARCLOGICS.Constants || {};<br/>
+ARCLOGICS.Constants.AM_SWORDAUTH=false;<br/>
+ARCLOGICS.Constants.UIDROPDOWN_SEARCHCOUNT = 10;<br/>
+ARCLOGICS.Constants.UIDROPDOWN_ENABLE = true;<br/>
+ARCLOGICS.Constants.Lang = 'AFB';<br/>
+ARCLOGICS.Constants.TextDir= 'LTR';<br/>
+ARCLOGICS.Constants.BaseCcy= 'USD';<br/>
+ARCLOGICS.Constants.BaseRoot='https://oprisk-uat.afreximbank.net/';<br/>
+ARCLOGICS.Constants.RootPath='https://oprisk-uat.afreximbank.net/AppA/Pages/';<br/>
+ARCLOGICS.Constants.RootPathSur='https://oprisk-uat.afreximbank.net/AppA/Surveys/';<br/>
+ARCLOGICS.Constants.RootPathUI='https://oprisk-uat.afreximbank.net/AppA/UI/';<br/>
+ARCLOGICS.Constants.RootPathAPI='https://oprisk-uat.afreximbank.net/AppAPI/';<br/>
+ARCLOGICS.Constants.DefaultRTBFontFamily='verdana';<br/>
+ARCLOGICS.Constants.DefaultRTBFontSize='8';<br/>
+ARCLOGICS.Constants.RTBFonts='calibri';<br/>
+var imgMinus='../images//minus.gif';<br/>
+var imgPlus='../images//plus.gif';<br/>
+var gsNoneOption =" --None-- ";<br/>
+var gbIsPostBack=false;<br/>
+var sessionTimeoutWarning=30;<br/>
+var sessionTimeout=60;<br/>
+var sessionID='phawjdyw55442g5tenfhkcrd';<br/>
+var gbFromLogin=false;<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="../JS/Dates/date-en-IE.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="../JS/DateCombos.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="../JS/translations/langAFB.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.qtip.min.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var __cultureInfo = {"name":"en-IE","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":false,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"€","NaNSymbol":"NaN","CurrencyNegativePattern":1,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402293599999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":false},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":2,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":false,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"eras":[1,"AD",null,0]};//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvnMidvRLPL6GthzKRu2PpeDOYa_deXBAlx1foH6FoDqfxCZUscZsq-bH9UFId6-x5oCEBKW_asrl_yV2VQ8rnYBBYnPX2_FB1PJWZf2jikBRJx0hNTr0Lh-1n0sYX0ht0bR19wDNgaVT1J8wkLtQGF41&amp;t=10c151ff" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OG1YlC7t6hAWzjlzp7DiGNfvIKWyXZc1sBOdx2RCBCP_kSZxs8Fhf45AVuc7FZKc3Pl-InC2Qd3SvGJEi1cnnDBV4Pz3mcen-Ybaams61R-Erj00rS9gEoEjdLWplKNQ6H6HBeqdyxx0-U0o-WOXHKA1&amp;t=10c151ff" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=eE6V8nDbUVn0gtG6hKNX_D28K__MmET0UyKII6gWarDqdv7JfdYU0eGxsvTCQIJmHTDmIpR0hZCw06zh879_0WN8Q4jMVAMp-gtJlDYKq5TpKVqaje-68lgcxOqOBvqJ0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=mcAASOSteirJeuV-3by3UX8AsZF9cD5ql4VKfjtI_hxywn-ebni1VKbvpDBJ6SwPIjdUBQ7UuleuCX0qq0I5pIjAfKEVdbWZLiqUjgbk9I81&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=jwf4VSQi7LeShc44FJ-gAVWaiNaylNR6UPvBnEMzjIkHFIk5imlS2jntiY-GoerD7a_RMSA5QQj0GtVi_WxFRxVSNVsa-ynvzIc6eDD4qGOdsoPnHcKWXRwRwK9BAYka0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=nai7mGcYyE2dix_TwveLDSGEDfIiEk9swU1-qJhH0CokDN7Yr_JCfUvM9AEkTg-gajjpXeB_jKqr_vs4FvxBf60Z1NlDwDZLKGAj8pOTyioRvT6jmuf31hNmmWEP11oh0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=yDT7ulzE00Yqzs5zd38bJ4kJbOzUjtM6Wl32NNeOvsQkvzwzzD6SHNw0_u4cA3gCWe7MV7PrQcjjPv2kClUAB1Wv5PKbfN8iVdtMu-JCu7yFHtcmP7z38IrXAadZUTbs0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=HEFpVKbnoeQjkjHkFKu3MDTM_x1420EJRLp0L62Lrly8gpZhquVPkE8y7TfZBaaYkelFz1VwE-wkZn9OQ-hcwtHgUJSrxk_px_cm_f8k1fwqjNybtHaX0PgpGgN6wBS90&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=5ib3lCcyinHeLQmkwMF7Eue4P0ZZpmOL2ta8S8LDcjeFBmrPzR6YLGkjGHZOxFzGkWQSA_aDbN75UiMD6N_ApW2S7E5yP51D0VAtTQSJItf1jgAlICYS42yu7cBon9we0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=iON9Jxe8QCRam1nkdNLgkXSD8SO0KCr-LSUawwGk1D3mMEeKF0OS0vJ81Mn43Ayd5Rdg03h7zapRAAe9L8w59DtAMYzaZsY6OCjhR-W_sLM_XcVFc3PFRyZXF0li-rDW0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=xGmPTKfsNy0_1Sr5I58kOwF6cWaGL6qJNNpDCoujb__sRKKhMpfJkLJX1KcxGt59q-MibH1BNJ5Zo4njPXWEVLAMBuuIHO-rB2VsbmgwAasqvuOJqbp-AwU--zENLbGM0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=LQ1q2RBSthBAZhliMjtG__GMM5bjyhHfyDnzRdq6f3blBCOgj5Xu3srIFsb6FdTD0sWXngbpxF_dPUoDouXC4jOYYUJzk0VWeZwYtt8XRK-3i35OzEZYfghXRTYS7oVZ0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=VOYD8Xe7kQA0lniBYXVpAoi3LXKkMVs4QSp1FEAK6zsV7F3v1sL-GOjZOMIhcfQhSJZcSRngmtzatmcXZPkHN_tb3T-N5Aot2hD922odwCYKuQ_9HNhUevpAP7SOGVq-0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=hOeJu0xhC-uW6Gf8ooKdXpssojfrGL8rb-Pu8d73jB_kP2y0NFr4BtdmJqqRqr12rnSVzVDMLwlbxa931mBDkHb0AYftqrhB7b-7BAA8_mXBQ42F3zmQquUHgZtG73Qt0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=XlV9GqTk6b5uqDuL38kZ4Au-5d4vFtnVKNVWfYsmLQ7qIPHj6dreXmTA-El-1fR63i6O6GNS5v0mkKBc1v-3iYwxdKmUW3aHoUiu0s8a9-FAhO5a1u-iNdLpIMZa4oCs0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$updPnlErrorContainer','','tctl00$content$ctl00',''], [], [], 300, 'ctl00');<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;input type="hidden" name="ctl00$hdScrollPosition" id="ctl00_hdScrollPosition" data-ays-ignore="true"&gt; &lt;button onclick="__doPostBack('ctl00$navBar$evtQuickAccess','')" id="ctl00_navBar_evtQuickAccess" style="display:none;"&gt;&lt;/button&gt;<br/>
+   &lt;div id="wk_header"&gt;<br/>
+    &lt;div id="wk_page_header" class="clearfix admin_active"&gt;<br/>
+     &lt;div id="wk_logo"&gt;<br/>
+      &lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Home.aspx?nbc=Y&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723" title="Go to home" tabindex="1"&gt;&lt;span class="wkicon_logo"&gt;&lt;/span&gt;&lt;span class="hidden_text"&gt;OneSumX&lt;/span&gt;&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_navigation"&gt;<br/>
+      &lt;ul id="wk_main_nav" class="wk_nav clearfix"&gt;<br/>
+       &lt;li menu="2"&gt;&lt;a&gt;Home&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="3" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Home.aspx?NoRedirect=Y&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="4" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Dashboard.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="141" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Workspace.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Workspace&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="8" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Reporting/ReportListConsol.aspx?Type=1&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Reports&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="90" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ManageScheduledReports.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Scheduled Items&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="144" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ClarificationList.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Clarifications&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="146" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/KeywordList.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Tags&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="9"&gt;&lt;a&gt;Risks&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="10" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RM_Maintain.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Risk &amp; Control Maps&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="13" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/RMAPRFlatList.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="11" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/RA_RiskAssessmentList.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Risk &amp; Control Self-Assessment (RCSA)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="16"&gt;&lt;a&gt;Controls&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="17" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PA_ControlSignoffList.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Control Signoff&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="20" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/PA_Reassign.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Reassign PA Reports&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="84" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/PA_ApprovalOverride.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Override PA Reports&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="21"&gt;&lt;a&gt;Control Gap Management&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="22" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/IssueList.aspx?showList=Y&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Control Gap Management&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="25" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/CIL_QuickQuery.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="26" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/QueryIssue_List.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Saved Queries&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="24" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/CIL_ListWrapper24a.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Issue Wrappers&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="27"&gt;&lt;a&gt;Incidents/Losses&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="28" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/EO_ListEvents.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Incidents/Losses&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="30" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_SearchQuick.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="31" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_ManageQueries.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Saved Queries&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="32" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_ReassignApprover.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Reassign Incident/Loss Approval&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="33"&gt;&lt;a&gt;Key Risk Indicators (KRIs)&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="140" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ManagePeriodicIndicator.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Periodic Key Risk Indicators (KRIs)&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="73" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Cycle_List.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Indicator Statement Cycles&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="47"&gt;&lt;a&gt;Libraries&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="48" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWRTree.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Risk&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="49" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWCTree.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Control&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="107" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/IndicatorRegister_Maintain.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Indicator&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="53" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/LibraryList.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Question Set&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="54" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Web/AuthSource?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Authoritative Source&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="57" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/KeyAssetTreeExplorer.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Assets&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+      &lt;ul id="wk_admin_nav" class="wk_nav clearfix active"&gt;<br/>
+       &lt;li menu="64" tabindex="0"&gt;&lt;a&gt;Organisation&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="65" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/OrganisationUnitTree.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Organisation Unit&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="66" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PersonList.aspx?CalledBy=0&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Person&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="67" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ORG_BusinessEntityMaintain.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Business Entities&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="125" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ProductLineTree.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Product Lines&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="68" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/SystemSetup/UserGroupList.aspx?CalledBy=0&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;User Groups&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="69" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_MaintainCCY.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Currencies&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="56" tabindex="0"&gt;&lt;a&gt;Risk Framework&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="59" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RM_Builder.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Risk Map Builder&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="60" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Statement_List.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Indicator Statements&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="58" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/SurveyList.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Questionnaires&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="78" tabindex="0"&gt;&lt;a&gt;Task Admin&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="76" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RA_OrgUnitSelect.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Generate Risk &amp; Control Self-Assessment (RCSA)&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="79" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RequirementList.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Requirements&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="80" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/OccurrenceMonitoring.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Monitoring&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="103" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/SurveyInstanceList.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Surveys&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="85" tabindex="0"&gt;&lt;a&gt;Tech Admin &lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="86" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Job_Maintain.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Scheduled Jobs&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="87" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EmailConfiguration.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Emails&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="88" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Job_Archive.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Archiving&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="89" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/AuditReport.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Auditing&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="92" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Reference_Register.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;References&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="94" tabindex="0"&gt;&lt;a&gt;Data Loading&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="95" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/DataLoaders.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Data Loaders&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="101" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/AssignLoaderIds.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Assign Loader Ids&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="96" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Import_List.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Manage Import Files&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="122" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Metric/MIVILoader.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Indicator Value Loader&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="129" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/DataFeedList.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Data Feeds&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="149" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ManageDocumentTransferConfig.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Document Transfer Configuration&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="121" class="active" tabindex="0"&gt;&lt;a&gt;System Settings&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="118" tabindex="-1" class="active"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ConfigurationOptions.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Configuration Options&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="117" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/DataLookups.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723" tabindex="-1"&gt;Data Lookups&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+      &lt;div id="wk_admin_toggle" aria-label="Expand Admin Menu" role="button" tabindex="0"&gt;<br/>
+       &lt;a href="javascript: void[0]" title="View Business Menu" class="active"&gt;&lt;span class="wkicon_admin"&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_member"&gt;<br/>
+      &lt;ul id="wk_member_nav" class="wk_dropdown"&gt;<br/>
+       &lt;li&gt;&lt;span class="wk_member_link" aria-label="Expand Person Menu" tabindex="0" role="button" onclick="ARCLOGICS.navmenu.profileMenu(); return false;"&gt;&lt;span class="wkicon_profile"&gt;&lt;/span&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;ul id="wk_member_nav_ul"&gt;<br/>
+         &lt;li&gt;<br/>
+          &lt;div class="wk_member_panel"&gt;<br/>
+           &lt;div class="wk_member_title"&gt;<br/>
+            Username<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="wk_member_name"&gt;<br/>
+            Joshi Franklin<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainPerson.aspx?fromcontext=Y&amp;self=Y&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723&amp;nbc=Y"&gt;Details&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ChangePassword.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723&amp;nbc=Y"&gt;Product Ext. password&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MyS_Panels.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723&amp;nbc=Y"&gt;Workspace Settings&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/About.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723&amp;nbc=Y"&gt;About&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Logout.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723&amp;nbc=Y"&gt;Logout&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div id="wk_page_subheader" class="clearfix"&gt;<br/>
+     &lt;div id="wk_page_subheader_left"&gt;<br/>
+      &lt;ul class="clearfix"&gt;<br/>
+       &lt;li id="wk_page_history"&gt;<br/>
+        &lt;div class="wk_dropdown_container position_left"&gt;<br/>
+         &lt;div class="wk_dropdown_btn"&gt;<br/>
+          &lt;button type="button" class="btn_normal btn_icon_only btn_no_border btn_dropdown" onclick="ARCLOGICS.navmenu.dropdownMenu(historyOptions); return false;" aria-label="Navigate Back List" role="buttton" tabindex="0"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_back"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_helper"&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="historyOptions" class="wk_dropdown_panel position_left"&gt;<br/>
+          &lt;ul class="menu_list"&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/Pages/ConfigurationOptions.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723&amp;nbc=Y"&gt;Settings&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/UI/Workspace.aspx?r2055=b7b53743-0c10-40a3-82ba-de2a4530dec4&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723&amp;nbc=Y"&gt;Workspace&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;/li&gt;<br/>
+       &lt;li id="wk_page_title"&gt;&lt;h1&gt;Settings&lt;/h1&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_page_subheader_right"&gt;<br/>
+      &lt;ul class="clearfix"&gt;<br/>
+       &lt;li&gt;&lt;button type="button" class="btn_normal btn_icon_only btn_border" onclick="try{openNamedBox('https://oprisk-uat.afreximbank.net/AppA/Help/Online Help/Default.htm#InterfaceGuide/Configuration Settings.htm', 1000, 500, 'ArcLogicsHelpWindow');}catch(e){}; return false;" title="View Help"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_help"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;<br/>
+        &lt;div class="wk_dropdown_container"&gt;<br/>
+         &lt;div class="wk_dropdown_btn"&gt;<br/>
+          &lt;button type="button" class="btn_normal btn_group_left btn_border" onclick="return CancelChangesAndRedirectToPage('https://oprisk-uat.afreximbank.net/AppA/UI/AuthoritativeSourceAddEdit.aspx?fromcontext=Y&amp;CalledBy=3&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723')" aria-label="Add Authoritative Source"&gt;&lt;span class="btn_icon btn_icon_spacer"&gt;&lt;span class="wkicon_add"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_text"&gt;Authoritative Source&lt;/span&gt;&lt;/button&gt;&lt;button type="button" class="btn_normal btn_icon_only btn_group_right btn_border btn_dropdown" onclick="ARCLOGICS.navmenu.dropdownMenu(quickAddOptions); return false;"&gt;&lt;span class="btn_helper"&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="quickAddOptions" class="wk_dropdown_panel position_right"&gt;<br/>
+          &lt;ul class="menu_list"&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl00_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/AuthoritativeSourceAddEdit.aspx?fromcontext=Y&amp;CalledBy=3&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Authoritative Source&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl01_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWCAddEdit.aspx?fromcontext=Y&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Groupwide Control&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl02_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWRAddEdit.aspx?fromcontext=Y&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Groupwide Risk&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl03_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/HeadlineIndicatorAdd.aspx?fromcontext=Y&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Headline Indicator&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl04_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RaiseIssue.aspx?r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Issue&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl05_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainPerson.aspx?fromcontext=Y&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Person&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl06_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Reporting/UserReportDataSelect.aspx?fromcontext=Y&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;User Report&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="content-container wkfs-sword"&gt; <br/>
+    &lt;div id="ctl00_divPageTitle" class="page-title-container" style="display:none;"&gt; <br/>
+     &lt;div class="page-title"&gt; &lt;span id="ctl00_lblTitle" class="title"&gt;&lt;/span&gt; <br/>
+      &lt;div class="page-title-extras-right"&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;br class="clearLine"&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="page-title-extras-left"&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div class="main-container"&gt; <br/>
+     &lt;div id="ctl00_updPnlErrorContainer"&gt; <br/>
+      &lt;div class="error-container" aria-live="assertive"&gt; &lt;span id="ctl00_lblError" class="error" style="display:none;"&gt;&lt;/span&gt; <br/>
+       &lt;div id="ctl00_vldError" class="error" style="color:Red;display:none;"&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; &lt;button id="ctl00_btnPopupTarget" style="display: none;" type="button"&gt;&lt;/button&gt; <br/>
+      &lt;div id="ctl00_popup_foregroundElement" style="display: none; position: fixed; z-index: 1000001;"&gt;<br/>
+       &lt;div id="ctl00_divException" style="display:none;" class="tmeout-div"&gt;<br/>
+        &lt;br&gt;Your session has timed out.<br/>
+        &lt;br&gt;Click OK to continue using OneSumX.<br/>
+        &lt;br&gt;<br/>
+        &lt;br&gt;<br/>
+        &lt;input type="button" id="btnTimeoutOK" tabindex="0" value="Ok"&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div data-act-control-type="modalPopupBackground" id="ctl00_popup_backgroundElement" class="modal-timeout" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"&gt;&lt;/div&gt;<br/>
+      &lt;div id="ctl00_popupMsg_foregroundElement" style="display: none; position: fixed; z-index: 1000001;"&gt;<br/>
+       &lt;div id="ctl00_divExceptionWarning" style="display:none;" class="tmeout-div"&gt;<br/>
+        &lt;br&gt;Your session is about to timeout.<br/>
+        &lt;br&gt;Do you wish to refresh your session?<br/>
+        &lt;br&gt;<br/>
+        &lt;br&gt;<br/>
+        &lt;input type="button" id="btnOKMsg" value="Yes"&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+        &lt;input type="button" id="btnNoMsg" value="No"&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div data-act-control-type="modalPopupBackground" id="ctl00_popupMsg_backgroundElement" class="modal-timeout" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"&gt;&lt;/div&gt;<br/>
+     &lt;/div&gt; <br/>
+     &lt;div id="boxOuter"&gt; <br/>
+      &lt;div id="boxInner"&gt; <br/>
+       &lt;div class="form-context-container"&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="form-scrollable-container" id="masterFormScrollableContainerDiv" onscroll="return RememberScrollPosition();" style="overflow-x: hidden;"&gt; <br/>
+        &lt;div class="form-content-container scroll-button" id="masterFormContentContainerDiv" onscroll="return RememberScrollPosition();" style="height: 758px; overflow-x: hidden;"&gt; <br/>
+         &lt;div class="form-context-container-path"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="divContentHeader"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="groupsContainer" style="position: relative; height: 494px;"&gt; <br/>
+          &lt;div id="ctl00_content_ctl00"&gt; <br/>
+           &lt;div class="setting-group-list" style="position: absolute; top: 0px; left: 0px; min-width: 278.188px;"&gt; <br/>
+            &lt;div id="settingsTable"&gt; &lt;span id="ctl00_content_settingGroups_ctl00_lblGroupName" class="settings-group-header"&gt;Data Fields &amp; Workflows&lt;/span&gt; <br/>
+             &lt;table cellspacing="0" cellpadding="0" border="0" id="ctl00_content_settingGroups_ctl00_settingGroupTable" style="border-collapse:collapse;"&gt; <br/>
+              &lt;tbody&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl00_settingGroupTable_ctl02_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/SYS_CustomControlsList.aspx?CalledBy=1&amp;dmId=90&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Custom Fields&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl00_settingGroupTable_ctl03_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/SYS_CustPicklistHierarchyList.aspx?CalledBy=1&amp;dmId=239&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Custom Picklists/Hierarchies&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl00_settingGroupTable_ctl04_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/FieldTemplate.aspx?CalledBy=1&amp;dmId=103&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Field Templates&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl00_settingGroupTable_ctl05_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/QuickQuerySettings.aspx?CalledBy=1&amp;dmId=217&amp;PageType=1&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Incident/Loss Quick Query Settings&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl00_settingGroupTable_ctl06_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_ListTemplates.aspx?CalledBy=1&amp;dmId=107&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Incident/Loss Templates&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl00_settingGroupTable_ctl07_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ScoringMethodology_List.aspx?CalledBy=1&amp;dmId=106&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Indicator Scoring Methodologies&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl00_settingGroupTable_ctl08_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ReferenceCategoryList.aspx?CalledBy=1&amp;dmId=211&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Reference Categories&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl00_settingGroupTable_ctl09_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_RevalRules.aspx?CalledBy=1&amp;dmId=108&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Revaluations Rules&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl00_settingGroupTable_ctl10_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/OPR/WF_ListCT100.aspx?CalledBy=1&amp;dmId=109&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Risk Assessment Workflow Templates&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl00_settingGroupTable_ctl11_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/SystemSetup/MaintainScoringList.aspx?CalledBy=1&amp;dmId=110&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Scoring Methodologies&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt; <br/>
+              &lt;/tbody&gt;<br/>
+             &lt;/table&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="setting-group-list" style="position: absolute; top: 0px; left: 278.188px; min-width: 278.188px;"&gt; <br/>
+            &lt;div id="settingsTable"&gt; &lt;span id="ctl00_content_settingGroups_ctl01_lblGroupName" class="settings-group-header"&gt;Global Settings&lt;/span&gt; <br/>
+             &lt;table cellspacing="0" cellpadding="0" border="0" id="ctl00_content_settingGroups_ctl01_settingGroupTable" style="border-collapse:collapse;"&gt; <br/>
+              &lt;tbody&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl01_settingGroupTable_ctl02_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/GenericListPreferenceDefaults.aspx?CalledBy=1&amp;dmId=104&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Generic List Defaults&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl01_settingGroupTable_ctl03_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/HPG_MaintainGlobalDashboards.aspx?CalledBy=1&amp;dmId=105&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Global Dashboards&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl01_settingGroupTable_ctl04_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/LP_Configuration.aspx?CalledBy=1&amp;dmId=169&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Left Panes&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl01_settingGroupTable_ctl05_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PreferenceGroups.aspx?CalledBy=1&amp;dmId=206&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Preference Sets&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl01_settingGroupTable_ctl06_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RI_Configuration.aspx?CalledBy=1&amp;dmId=135&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Related Items&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl01_settingGroupTable_ctl07_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/SYSGuidanceText.aspx?CalledBy=1&amp;dmId=166&amp;mode=task&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Task Guidance&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl01_settingGroupTable_ctl08_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MyS_ListTemplates.aspx?CalledBy=1&amp;dmId=111&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Workspace Templates&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt; <br/>
+              &lt;/tbody&gt;<br/>
+             &lt;/table&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="setting-group-list" style="position: absolute; top: 0px; left: 556.376px; min-width: 278.188px;"&gt; <br/>
+            &lt;div id="settingsTable"&gt; &lt;span id="ctl00_content_settingGroups_ctl02_lblGroupName" class="settings-group-header"&gt;Hierarchy Configuration&lt;/span&gt; <br/>
+             &lt;table cellspacing="0" cellpadding="0" border="0" id="ctl00_content_settingGroups_ctl02_settingGroupTable" style="border-collapse:collapse;"&gt; <br/>
+              &lt;tbody&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl02_settingGroupTable_ctl02_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/TreeLevelsMaintain.aspx?CalledBy=1&amp;dmId=61&amp;id=8&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Authoritative Category Levels&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl02_settingGroupTable_ctl03_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/TreeLevelsMaintain.aspx?CalledBy=1&amp;dmId=77&amp;id=0&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Business Entity Levels&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl02_settingGroupTable_ctl04_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/ControlRegister/GPWControlHeadingLevel.aspx?CalledBy=1&amp;dmId=69&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Control Register Heading Levels&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl02_settingGroupTable_ctl05_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/IndicatorRegisterLevels_Maintain.aspx?CalledBy=1&amp;dmId=84&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Indicator Register Heading Levels&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl02_settingGroupTable_ctl06_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/TreeLevelsMaintain.aspx?CalledBy=1&amp;dmId=60&amp;id=9&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Industry Levels&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl02_settingGroupTable_ctl07_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/TreeLevelsMaintain.aspx?CalledBy=1&amp;dmId=63&amp;id=7&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Jurisdiction Levels&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl02_settingGroupTable_ctl08_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/TreeLevelsMaintain.aspx?CalledBy=1&amp;dmId=74&amp;id=3&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Location Levels&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl02_settingGroupTable_ctl09_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/TreeLevelsMaintain.aspx?CalledBy=1&amp;dmId=75&amp;id=4&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Organisation Unit Levels&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl02_settingGroupTable_ctl10_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/TreeLevelsMaintain.aspx?CalledBy=1&amp;dmId=150&amp;id=10&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Product Line Levels&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl02_settingGroupTable_ctl11_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/TreeLevelsMaintain.aspx?CalledBy=1&amp;dmId=76&amp;id=5&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Risk Category Levels&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt; <br/>
+              &lt;/tbody&gt;<br/>
+             &lt;/table&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="setting-group-list" style="position: absolute; top: 295px; left: 556.376px; min-width: 278.188px;"&gt; <br/>
+            &lt;div id="settingsTable"&gt; &lt;span id="ctl00_content_settingGroups_ctl03_lblGroupName" class="settings-group-header"&gt;Indicator Setup&lt;/span&gt; <br/>
+             &lt;table cellspacing="0" cellpadding="0" border="0" id="ctl00_content_settingGroups_ctl03_settingGroupTable" style="border-collapse:collapse;"&gt; <br/>
+              &lt;tbody&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl03_settingGroupTable_ctl02_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/DimensionType_list.aspx?CalledBy=1&amp;dmId=93&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Dimension Types&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt; <br/>
+              &lt;/tbody&gt;<br/>
+             &lt;/table&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="setting-group-list" style="position: absolute; top: 0px; left: 834.564px; min-width: 278.188px;"&gt; <br/>
+            &lt;div id="settingsTable"&gt; &lt;span id="ctl00_content_settingGroups_ctl04_lblGroupName" class="settings-group-header"&gt;Reporting&lt;/span&gt; <br/>
+             &lt;table cellspacing="0" cellpadding="0" border="0" id="ctl00_content_settingGroups_ctl04_settingGroupTable" style="border-collapse:collapse;"&gt; <br/>
+              &lt;tbody&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl04_settingGroupTable_ctl02_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RS_ManageDataSources.aspx?CalledBy=1&amp;dmId=73&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Data Sources&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl04_settingGroupTable_ctl03_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RS_Maintain.aspx?CalledBy=1&amp;dmId=72&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Folders&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl04_settingGroupTable_ctl04_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ReportsLogo.aspx?CalledBy=1&amp;dmId=236&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Report Logos&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl04_settingGroupTable_ctl05_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Reporting/ReportingDefaults.aspx?CalledBy=1&amp;dmId=249&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;User Report Defaults&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt; <br/>
+              &lt;/tbody&gt;<br/>
+             &lt;/table&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="setting-group-list" style="position: absolute; top: 151px; left: 834.564px; min-width: 278.188px;"&gt; <br/>
+            &lt;div id="settingsTable"&gt; &lt;span id="ctl00_content_settingGroups_ctl05_lblGroupName" class="settings-group-header"&gt;System Configuration&lt;/span&gt; <br/>
+             &lt;table cellspacing="0" cellpadding="0" border="0" id="ctl00_content_settingGroups_ctl05_settingGroupTable" style="border-collapse:collapse;"&gt; <br/>
+              &lt;tbody&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl02_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Web/TokenManagement?CalledBy=1&amp;dmId=257&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;API Settings&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl03_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/AppMods.aspx?CalledBy=1&amp;dmId=99&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Application Modifications&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl04_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainApprovalText.aspx?CalledBy=1&amp;dmId=79&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Approval Text&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl05_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/IntegrationArea.aspx?CalledBy=1&amp;dmId=100&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Integration Areas&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl06_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainIssuesLogAdmin.aspx?CalledBy=1&amp;dmId=101&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Issue Log Administrators&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl07_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/DefaultContent.aspx?CalledBy=1&amp;dmId=195&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Issues Default Settings&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl08_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/SystemSetup/LoaderConfigureEntitySettings.aspx?CalledBy=1&amp;dmId=94&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Loader Entity Settings&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl09_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PasswordRules.aspx?CalledBy=1&amp;dmId=223&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Password Rules&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl10_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ReferenceTypes.aspx?CalledBy=1&amp;dmId=209&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Reference Types&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl11_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ServiceSettings.aspx?CalledBy=1&amp;dmId=212&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Service Settings&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl12_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/SystemSetup/Systemparameter.aspx?CalledBy=1&amp;dmId=102&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;System Parameters&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td class="setting-bulletin-icon"&gt; &lt;img id="ctl00_content_settingGroups_ctl05_settingGroupTable_ctl13_BulletinIcon" src="../images/icon_bullet_list.png" align="left" style="height:16px;width:16px;border-width:0px;"&gt; &lt;/td&gt;<br/>
+                &lt;td class="setting-link"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/SYSGuidanceText.aspx?CalledBy=1&amp;dmId=203&amp;mode=systext&amp;Type=C&amp;r402120=eef877cb-bb68-4280-8699-546e6f44d723"&gt;Terms and Conditions&lt;/a&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt; <br/>
+              &lt;/tbody&gt;<br/>
+             &lt;/table&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;br class="clearLine"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="divContentFooter"&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div id="ctl00_divButtons" class="action-container"&gt; <br/>
+         &lt;input type="submit" name="ctl00$btnCancel" value="Cancel" onclick="Page_ValidationActive=false; return CancelChanges(this);" id="ctl00_btnCancel" class="buttontext"&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;br class="clear"&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="footer-container"&gt; <br/>
+    &lt;img id="ctl00_KeepAliveMVC" src="https://oprisk-uat.afreximbank.net/AppA/Web/SessionSync?" style="height:0px;width:0px;border-width:0px;"&gt;<br/>
+    &lt;img id="ctl00_KeepAliveSurveys" src="https://oprisk-uat.afreximbank.net/AppA/Surveys/SessionSync.aspx?" style="height:0px;width:0px;border-width:0px;"&gt;<br/>
+    &lt;img id="ctl00_KeepAliveUI" src="https://oprisk-uat.afreximbank.net/AppA/UI/SessionSync.aspx?" style="height:0px;width:0px;border-width:0px;"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnRandomParameter" id="ctl00_hdnRandomParameter" value="r402120" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnRandomIdentifier" id="ctl00_hdnRandomIdentifier" value="eef877cb-bb68-4280-8699-546e6f44d723" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnDocumentmode" id="ctl00_hdnDocumentmode" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnDirty" id="ctl00_hdnDirty" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnAlwaysDirty" id="ctl00_hdnAlwaysDirty" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="divWorking" style="display: none; position: fixed; z-index: 1000001;"&gt;&lt;/div&gt; <br/>
+   &lt;div id="ctl00_ifpReferencePopup_backgroundElement" class="modal-dialog-bg background GL-BE" style="display:none;"&gt;&lt;/div&gt; <br/>
+   &lt;div id="ctl00_ifpReferencePopup_pnlIFramePopup" class="popUpBox ra-onscreenscoring-div ra-showComment-div generic-list-popup-div GL-FE" style="display:none;"&gt; <br/>
+    &lt;div class="wrapper"&gt; <br/>
+     &lt;div class="popup-title popUpHeader"&gt; &lt;span id="ctl00_ifpReferencePopup_lblTitle"&gt;&lt;/span&gt; <br/>
+      &lt;div title="Close pop up" class="closePopup" id="popupCloseTreeBtn"&gt;&lt;/div&gt; <br/>
+      &lt;div title="Maximize" class="maximizePopup maximizePopupBG" id="popupMaximizeTreeBtn"&gt;&lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div id="popup-content" class="popupcontainer"&gt; &lt;iframe id="iframe-content" frameborder="0"&gt;&lt;/iframe&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div class="popUpFooter"&gt; <br/>
+     &lt;input type="submit" name="ctl00$ifpReferencePopup$btnCancel" value="Close" id="ctl00_ifpReferencePopup_btnCancel" class="buttonText"&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnWidth" id="ctl00_ifpReferencePopup_hdnWidth" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnHeight" id="ctl00_ifpReferencePopup_hdnHeight" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnTop" id="ctl00_ifpReferencePopup_hdnTop" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnLeft" id="ctl00_ifpReferencePopup_hdnLeft" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnScrollPosition" id="ctl00_ifpReferencePopup_hdnScrollPosition" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnPopupChanges" id="ctl00_ifpReferencePopup_hdnPopupChanges" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var Page_ValidationSummaries =  new Array(document.getElementById("ctl00_vldError"));<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;div&gt; <br/>
+    &lt;input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="34A9977A" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="eX6gz07MHnZ6mOFDW5F7ETyj7tScOrWke4jxduhiGDv1TraqH+lPtNC00h3Mw1Rpo/LSHA5SCiYJWTjX8iXQ0aj2uvKobhskwpU5+ceZPgnrvAhU9/gc6KosFb8BooYZpHnJjHUtAs741uvyhLgIrpfwj9pBAA1FEfPbI9rpFylU4z7YOCBo/vYWaykcYgNZlOPFvhEHaBsidKdT85YtJGu0ehBXpjeXsCPQUIahLuzBTLPMRvfXOyTH8XDow9zOk20IvPy+ZGTZ4rIj3qokMccOCO7pvNQLoWZ+9LHNSt8LpYZidu6KyJgR50iWuKpv+A+4rPHG+nqN6V7yIHGbQgl8wO3ZzyG9lVsVAEyqlS0tM/OLmee8imfaadFUVFgwDzln5YvpQyjlMJF5hMrcJQwKEY4+TnsDOmz6YY2xR0Q=" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+document.addEventListener('DOMContentLoaded', function(){ $('body').css('min-width', ( ( (typeof IsPopupWindow !== 'undefined') && (IsPopupWindow) ) ? 'none' : '960px' )); });Sys.Application.add_load( function(){ prepSetting(); } );$("tr[class^=bodytextRow]").on('mouseover', function() { hover_OnMouseOver(this); }).on('mouseout', function() { hover_OnMouseOut(this); });qTipConfigJSON = '{"content":{},"position":{"my":"top left","at":"bottom center","adjust":{"x":5},"viewport":true},"hide":{"delay":200,"fixed":true,"leave":false },"style":{"tip":{"width":6,"height":12}}}';var ARCLOGICS = ARCLOGICS || {};$(document).ready(function () {try{ ARCLOGICS.navmenu = $('#navbar').navigationBar({selectedMenuId: 118}); }catch(e){console.log(e)} });<br/>
+(function(id) {<br/>
+    var e = document.getElementById(id);<br/>
+    if (e) {<br/>
+        e.dispose = function() {<br/>
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));<br/>
+        }<br/>
+        e = null;<br/>
+    }<br/>
+})('ctl00_vldError');<br/>
+;Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"modal-timeout","dropShadow":true,"dynamicServicePath":"/AppA/Pages/ConfigurationOptions.aspx","id":"ctl00_popup","okControlID":"btnTimeoutOK","onOkScript":"GotoHomePage();","popupControlID":"ctl00_divException","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"modal-timeout","cancelControlID":"btnNoMsg","dropShadow":true,"dynamicServicePath":"/AppA/Pages/ConfigurationOptions.aspx","id":"ctl00_popupMsg","okControlID":"btnOKMsg","onCancelScript":"NotKeepAlive();","onOkScript":"KeepAlive();","popupControlID":"ctl00_divExceptionWarning","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"working","dynamicServicePath":"/AppA/Pages/ConfigurationOptions.aspx","id":"ctl00_working","popupControlID":"divWorking","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;div data-act-control-type="modalPopupBackground" id="ctl00_working_backgroundElement" class="working" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"&gt;&lt;/div&gt;<br/>
+  &lt;/form&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

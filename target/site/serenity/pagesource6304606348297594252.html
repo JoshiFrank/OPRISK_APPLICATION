@@ -1,0 +1,907 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html style="overflow: hidden;"&gt;<br/>
+ &lt;head id="ctl00_ctl00_Head1"&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/knockout.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/knockout-bindings.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery-ui.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;link href="../favicon.ico" rel="shortcut icon" type="image/x-icon"&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/jquery/jquery.hiddenDimensions.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/lib/json-min.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/Core/master.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/TimeoutControl.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/Utilities.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/Popup.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/lib/tag-it.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/Keywords/Keywords.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" type="text/css" href="../css/jquery.tagit.css?v=200610"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" href="../css/tagit.ui-zendesk.css?v=200610"&gt; <br/>
+  &lt;script src="../JS/RequirementAddEdit.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+  &lt;link href="https://oprisk-uat.afreximbank.net/AppA/UI/js/lib/jsTree/themes/default/style.css?v=200610" rel="stylesheet" type="text/css"&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/chosen.jquery.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/select2.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/Translations.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/Common.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;link id="ctl00_ctl00_StyleSheetLink1" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/chosen.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_ctl00_StyleSheetLink2" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/select2.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_ctl00_StyleSheetLink3" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/onesumx.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_ctl00_StyleSheetLink4" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/print.css?v=200610" rel="stylesheet" type="text/css" media="print"&gt;<br/>
+  &lt;meta name="format-detection" content="telephone=no"&gt;<br/>
+  &lt;link id="ctl00_ctl00_StyleSheetLink5" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/jquery.qtip.min.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link href="/AppA/WebResource.axd?d=-H-7euyzCq22q5_s0z2InHa4mnLnnX_d6pMCbCbhguYhm7jBaQMj8DQUjE_HiA5tAMoKsKovILhcobfBsLpIpgiEns-T3UclHBJ7urBRPNH6cUH34DLJ2jN3a8hDYPB1MxN2wadItX99GFBCcuJRWw2&amp;t=637308792196280579" type="text/css" rel="stylesheet"&gt;<br/>
+  &lt;link href="/AppA/WebResource.axd?d=hcXDZhXiidgsQUtEo5iT36I-STFTmOr2bQDH4Y6Y-qPpqO7fbQoortKm-uNc7MRkFBggRC_YpcM0gfrmLsyIKzC7eJhKi9AxVYZVTcWUfoVFqJOWXSQk8gaXBkbwdZL-RWjWLMBJHuniT_c5NvhMqd1cvTzbpsjPOeJwtzVY29o1&amp;t=637308792196280579" type="text/css" rel="stylesheet"&gt;<br/>
+  &lt;title&gt;OneSumX&lt;/title&gt;<br/>
+  &lt;link type="text/css" rel="stylesheet" href="/AppA/WebResource.axd?d=-H-7euyzCq22q5_s0z2InHa4mnLnnX_d6pMCbCbhguYhm7jBaQMj8DQUjE_HiA5tAMoKsKovILhcobfBsLpIpgiEns-T3UclHBJ7urBRPNH6cUH34DLJ2jN3a8hDYPB1MxN2wadItX99GFBCcuJRWw2&amp;t=637308792196280579"&gt;<br/>
+  &lt;link type="text/css" rel="stylesheet" href="/AppA/WebResource.axd?d=hcXDZhXiidgsQUtEo5iT36I-STFTmOr2bQDH4Y6Y-qPpqO7fbQoortKm-uNc7MRkFBggRC_YpcM0gfrmLsyIKzC7eJhKi9AxVYZVTcWUfoVFqJOWXSQk8gaXBkbwdZL-RWjWLMBJHuniT_c5NvhMqd1cvTzbpsjPOeJwtzVY29o1&amp;t=637308792196280579"&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body onload="OnPageLoad(); " style="min-width: 960px;"&gt; <br/>
+  &lt;form name="aspnetForm" method="post" action="./RequirementAddEdit.aspx?CalledBy=1&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" onactivate="SaveOnActivate();" ondeactivate="CompareOnDeActivate();" class="dirty"&gt; <br/>
+   &lt;div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var theForm = document.forms['aspnetForm'];<br/>
+if (!theForm) {<br/>
+    theForm = document.aspnetForm;<br/>
+}<br/>
+function __doPostBack(eventTarget, eventArgument) {<br/>
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {<br/>
+        theForm.__EVENTTARGET.value = eventTarget;<br/>
+        theForm.__EVENTARGUMENT.value = eventArgument;<br/>
+        theForm.submit();<br/>
+    }<br/>
+}<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="/AppA/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZEVIIt_cPfWWJcfkABY1NhqEMYCSZlCHfXZSXQisxmbG8qx-Gpt0SA9KENPLGRNYzA2&amp;t=638092594030625477" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=-fCmiEcu3xUgmjOFHhP5L2Swg9YnIEImTmcmFJme18Ie_FUWZXdEAXueAanAYP8JblTl4G3w7i8grgNt4KVGCR6Vc64btx-sicK7p5oa7dk62iYicmUoj4y6KHFrnTiLyuKTpqUrG73KDt4zChEnj9B-14ud7QebKRcW9-mZTzo1&amp;t=ffffffffda0d40b5" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var hdnDirty='ctl00_ctl00_hdnDirty';<br/>
+var hdnAlwaysDirty='ctl00_ctl00_hdnAlwaysDirty';<br/>
+var cDisableAreYouSure=false;<br/>
+var tsUnsavedChanges='There are unsaved changes that will be lost if you proceed.';<br/>
+var tsOKToContinue='Press OK to continue, or Cancel to stay on the current page.';<br/>
+var tsNothingToSave='Nothing to save.';<br/>
+var DisplayButtonsInScroll = false;<br/>
+var userName = "Joshi Franklin";<br/>
+var defaultDateFormat = 'dd MMM yyyy';<br/>
+var defaultTimeFormat = 'HH:mm:ss';<br/>
+var sessionID='xq43mrtmzpa5z1pcobterg4j';<br/>
+var divPopupClientId1='ctl00_ctl00_divExceptionWarning';<br/>
+var divPopupClientId2='ctl00_ctl00_divException';<br/>
+var mpeMsgClientId='ctl00_ctl00_popupMsg';<br/>
+var mpeClientId='ctl00_ctl00_popup';<br/>
+var mpeWorkingId='ctl00_ctl00_working';<br/>
+var gbFromLogin=false;<br/>
+var LoadDropdownURL = 'https://oprisk-uat.afreximbank.net/AppA/Services/GenericListSettings.svc/LoadSearchResults/';<br/>
+var WebApiRoot = 'https://oprisk-uat.afreximbank.net/AppA/api/';<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.PrimaryReferencePopup = ARCLOGICS.PrimaryReferencePopup || {};<br/>
+ARCLOGICS.PrimaryReferencePopup.Options = {"ForegroundElement":"ctl00_ctl00_ifpReferencePopup_pnlIFramePopup","ForegroundElementLeft":"ctl00_ctl00_ifpReferencePopup_hdnLeft","ForegroundElementTop":"ctl00_ctl00_ifpReferencePopup_hdnTop","BackgroundElement":"ctl00_ctl00_ifpReferencePopup_backgroundElement","BackgroundWidth":"ctl00_ctl00_ifpReferencePopup_hdnWidth","BackgroundHeight":"ctl00_ctl00_ifpReferencePopup_hdnHeight","SaveButton":null,"CancelButton":"ctl00_ctl00_ifpReferencePopup_btnCancel","ClearButton":null,"Apply":true,"PopupDimension":55,"CloseOnSave":true,"PopupTitle":null};<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.are-you-sure.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/js/lib/jsTree/jstree.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.Constants = ARCLOGICS.Constants || {};<br/>
+ARCLOGICS.Constants.AM_SWORDAUTH=false;<br/>
+ARCLOGICS.Constants.UIDROPDOWN_SEARCHCOUNT = 10;<br/>
+ARCLOGICS.Constants.UIDROPDOWN_ENABLE = true;<br/>
+ARCLOGICS.Constants.Lang = 'AFB';<br/>
+ARCLOGICS.Constants.TextDir= 'LTR';<br/>
+ARCLOGICS.Constants.BaseCcy= 'USD';<br/>
+ARCLOGICS.Constants.BaseRoot='https://oprisk-uat.afreximbank.net/';<br/>
+ARCLOGICS.Constants.RootPath='https://oprisk-uat.afreximbank.net/AppA/Pages/';<br/>
+ARCLOGICS.Constants.RootPathSur='https://oprisk-uat.afreximbank.net/AppA/Surveys/';<br/>
+ARCLOGICS.Constants.RootPathUI='https://oprisk-uat.afreximbank.net/AppA/UI/';<br/>
+ARCLOGICS.Constants.RootPathAPI='https://oprisk-uat.afreximbank.net/AppAPI/';<br/>
+ARCLOGICS.Constants.DefaultRTBFontFamily='verdana';<br/>
+ARCLOGICS.Constants.DefaultRTBFontSize='8';<br/>
+ARCLOGICS.Constants.RTBFonts='calibri';<br/>
+var imgMinus='../images//minus.gif';<br/>
+var imgPlus='../images//plus.gif';<br/>
+var gsNoneOption =" --None-- ";<br/>
+var gbIsPostBack=false;<br/>
+var sessionTimeoutWarning=30;<br/>
+var sessionTimeout=60;<br/>
+var sessionID='xq43mrtmzpa5z1pcobterg4j';<br/>
+var gbFromLogin=false;<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="../JS/Dates/date-en-IE.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="../JS/DateCombos.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="../JS/translations/langAFB.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.qtip.min.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.SurveysPopup = ARCLOGICS.SurveysPopup || {};<br/>
+ARCLOGICS.SurveysPopup.Options = {"ForegroundElement":"ctl00_ctl00_content_content_ifpQuestionnaire_pnlIFramePopup","ForegroundElementLeft":"ctl00_ctl00_content_content_ifpQuestionnaire_hdnLeft","ForegroundElementTop":"ctl00_ctl00_content_content_ifpQuestionnaire_hdnTop","BackgroundElement":"ctl00_ctl00_content_content_ifpQuestionnaire_backgroundElement","BackgroundWidth":"ctl00_ctl00_content_content_ifpQuestionnaire_hdnWidth","BackgroundHeight":"ctl00_ctl00_content_content_ifpQuestionnaire_hdnHeight","SaveButton":null,"CancelButton":"ctl00_ctl00_content_content_ifpQuestionnaire_btnCancel","ClearButton":null,"Apply":true,"PopupDimension":50,"CloseOnSave":true,"PopupTitle":"Preview Document Attestation"};<br/>
+function calendarExtenderPostback(e) { setTimeout('__doPostBack(\'ctl00$ctl00$content$content$ucOccurencePattern$dteStartDate$dtd\',\'\')', 0) }//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="../JS/GenericListSettings.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="../JS/GenericList.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1PZr7UO8Wqqn0OiujzIZhsfgOpcEo9i_-HlEF6SFfFKKrvXSiTRPVo3_Smm2EQLahSlumz5jF8eK4Jc9GTkeWK2ZuvGMH_2yHYGnYTmb2jJJeG5mQkLMabnISC0jwMWE1Q2&amp;t=33e90bc4" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var __cultureInfo = {"name":"en-IE","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":false,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"€","NaNSymbol":"NaN","CurrencyNegativePattern":1,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402293599999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":false},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":2,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":false,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"eras":[1,"AD",null,0]};//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvnMidvRLPL6GthzKRu2PpeDOYa_deXBAlx1foH6FoDqfxCZUscZsq-bH9UFId6-x5oCEBKW_asrl_yV2VQ8rnYBBYnPX2_FB1PJWZf2jikBRJx0hNTr0Lh-1n0sYX0ht0bR19wDNgaVT1J8wkLtQGF41&amp;t=10c151ff" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OG1YlC7t6hAWzjlzp7DiGNfvIKWyXZc1sBOdx2RCBCP_kSZxs8Fhf45AVuc7FZKc3Pl-InC2Qd3SvGJEi1cnnDBV4Pz3mcen-Ybaams61R-Erj00rS9gEoEjdLWplKNQ6H6HBeqdyxx0-U0o-WOXHKA1&amp;t=10c151ff" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=eE6V8nDbUVn0gtG6hKNX_D28K__MmET0UyKII6gWarDqdv7JfdYU0eGxsvTCQIJmHTDmIpR0hZCw06zh879_0WN8Q4jMVAMp-gtJlDYKq5TpKVqaje-68lgcxOqOBvqJ0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=mcAASOSteirJeuV-3by3UX8AsZF9cD5ql4VKfjtI_hxywn-ebni1VKbvpDBJ6SwPIjdUBQ7UuleuCX0qq0I5pIjAfKEVdbWZLiqUjgbk9I81&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=jwf4VSQi7LeShc44FJ-gAVWaiNaylNR6UPvBnEMzjIkHFIk5imlS2jntiY-GoerD7a_RMSA5QQj0GtVi_WxFRxVSNVsa-ynvzIc6eDD4qGOdsoPnHcKWXRwRwK9BAYka0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=nai7mGcYyE2dix_TwveLDSGEDfIiEk9swU1-qJhH0CokDN7Yr_JCfUvM9AEkTg-gajjpXeB_jKqr_vs4FvxBf60Z1NlDwDZLKGAj8pOTyioRvT6jmuf31hNmmWEP11oh0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=yDT7ulzE00Yqzs5zd38bJ4kJbOzUjtM6Wl32NNeOvsQkvzwzzD6SHNw0_u4cA3gCWe7MV7PrQcjjPv2kClUAB1Wv5PKbfN8iVdtMu-JCu7yFHtcmP7z38IrXAadZUTbs0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=HEFpVKbnoeQjkjHkFKu3MDTM_x1420EJRLp0L62Lrly8gpZhquVPkE8y7TfZBaaYkelFz1VwE-wkZn9OQ-hcwtHgUJSrxk_px_cm_f8k1fwqjNybtHaX0PgpGgN6wBS90&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=5ib3lCcyinHeLQmkwMF7Eue4P0ZZpmOL2ta8S8LDcjeFBmrPzR6YLGkjGHZOxFzGkWQSA_aDbN75UiMD6N_ApW2S7E5yP51D0VAtTQSJItf1jgAlICYS42yu7cBon9we0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=iON9Jxe8QCRam1nkdNLgkXSD8SO0KCr-LSUawwGk1D3mMEeKF0OS0vJ81Mn43Ayd5Rdg03h7zapRAAe9L8w59DtAMYzaZsY6OCjhR-W_sLM_XcVFc3PFRyZXF0li-rDW0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=xGmPTKfsNy0_1Sr5I58kOwF6cWaGL6qJNNpDCoujb__sRKKhMpfJkLJX1KcxGt59q-MibH1BNJ5Zo4njPXWEVLAMBuuIHO-rB2VsbmgwAasqvuOJqbp-AwU--zENLbGM0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=LQ1q2RBSthBAZhliMjtG__GMM5bjyhHfyDnzRdq6f3blBCOgj5Xu3srIFsb6FdTD0sWXngbpxF_dPUoDouXC4jOYYUJzk0VWeZwYtt8XRK-3i35OzEZYfghXRTYS7oVZ0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=VOYD8Xe7kQA0lniBYXVpAoi3LXKkMVs4QSp1FEAK6zsV7F3v1sL-GOjZOMIhcfQhSJZcSRngmtzatmcXZPkHN_tb3T-N5Aot2hD922odwCYKuQ_9HNhUevpAP7SOGVq-0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=hOeJu0xhC-uW6Gf8ooKdXpssojfrGL8rb-Pu8d73jB_kP2y0NFr4BtdmJqqRqr12rnSVzVDMLwlbxa931mBDkHb0AYftqrhB7b-7BAA8_mXBQ42F3zmQquUHgZtG73Qt0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=XlV9GqTk6b5uqDuL38kZ4Au-5d4vFtnVKNVWfYsmLQ7qIPHj6dreXmTA-El-1fR63i6O6GNS5v0mkKBc1v-3iYwxdKmUW3aHoUiu0s8a9-FAhO5a1u-iNdLpIMZa4oCs0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=uiErWUqGhD5_ddnGX4Xq_ueLvbL7e7D5pEvWzHMVBTnF1R3sT5gIcEZyeQHsEpN0FthEL3yqhcKEk3CRivujXeK0GRxKY0OxkRuVgszO6fHL8zf-aVZA-NypMF0Acr090&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=24039AtbfhsNBYQDFUMYHF6VkndqiZjzOd4lUqbooEj0f_cl3BkfXniUkJbp2fYrZhygbrLLx5PLm5vdiRjLkJbxPmCniEl1aA9nAjpT1Bk1&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=myBlz7mQmGQE80F8-WeLsSYYxiUquHHKkIuQISbf09BiobGHwWoTqZ2JKhXV9P5T2UbMt1ZM0C7tGgDqREDzIwzViaCsv11T4SUFc-7NLMM9rarogdPZOaWOzEnZeqZL0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/ScriptResource.axd?d=NISXSzp87hD3qcCkP6NEPoG9yXYBXxNyXJ_m1u34fo5zZ7RJtfGTolNEwQbbhZ1KC7EO2xxzjrw8YACI8BkIKma9V_vURdWB6set_1jMiNS3dFCb59AcTIIip5NFCM810&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+function WebForm_OnSubmit() {<br/>
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;return OnSubmit();<br/>
+return true;<br/>
+}<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'aspnetForm', ['tctl00$ctl00$updPnlErrorContainer','','tctl00$ctl00$content$content$UpdatePanel1','','tctl00$ctl00$content$content$ucOccurencePattern$UpdatePanel1',''], [], [], 300, 'ctl00$ctl00');<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;input type="hidden" name="ctl00$ctl00$hdScrollPosition" id="ctl00_ctl00_hdScrollPosition" data-ays-ignore="true" tabindex="0"&gt; &lt;button onclick="if (typeof(Page_ClientValidate) == 'function') Page_ClientValidate(''); __doPostBack('ctl00$ctl00$navBar$evtQuickAccess','')" id="ctl00_ctl00_navBar_evtQuickAccess" style="display:none;" tabindex="0"&gt;&lt;/button&gt;<br/>
+   &lt;div id="wk_header"&gt;<br/>
+    &lt;div id="wk_page_header" class="clearfix admin_active"&gt;<br/>
+     &lt;div id="wk_logo"&gt;<br/>
+      &lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Home.aspx?nbc=Y&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" title="Go to home" tabindex="1"&gt;&lt;span class="wkicon_logo"&gt;&lt;/span&gt;&lt;span class="hidden_text"&gt;OneSumX&lt;/span&gt;&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_navigation"&gt;<br/>
+      &lt;ul id="wk_main_nav" class="wk_nav clearfix"&gt;<br/>
+       &lt;li menu="2"&gt;&lt;a tabindex="0"&gt;Home&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="3" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Home.aspx?NoRedirect=Y&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="4" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Dashboard.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="141" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Workspace.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Workspace&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="8" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Reporting/ReportListConsol.aspx?Type=1&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Reports&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="90" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ManageScheduledReports.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Scheduled Items&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="144" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ClarificationList.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Clarifications&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="146" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/KeywordList.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Tags&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="9"&gt;&lt;a tabindex="0"&gt;Risks&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="10" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RM_Maintain.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Risk &amp; Control Maps&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="13" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/RMAPRFlatList.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="11" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/RA_RiskAssessmentList.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Risk &amp; Control Self-Assessment (RCSA)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="16"&gt;&lt;a tabindex="0"&gt;Controls&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="17" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PA_ControlSignoffList.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Control Signoff&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="20" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/PA_Reassign.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Reassign PA Reports&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="84" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/PA_ApprovalOverride.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Override PA Reports&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="21"&gt;&lt;a tabindex="0"&gt;Control Gap Management&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="22" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/IssueList.aspx?showList=Y&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Control Gap Management&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="25" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/CIL_QuickQuery.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="26" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/QueryIssue_List.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Saved Queries&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="24" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/CIL_ListWrapper24a.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Issue Wrappers&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="27"&gt;&lt;a tabindex="0"&gt;Incidents/Losses&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="28" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/EO_ListEvents.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Incidents/Losses&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="30" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_SearchQuick.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="31" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_ManageQueries.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Saved Queries&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="32" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_ReassignApprover.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Reassign Incident/Loss Approval&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="33"&gt;&lt;a tabindex="0"&gt;Key Risk Indicators (KRIs)&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="140" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ManagePeriodicIndicator.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Periodic Key Risk Indicators (KRIs)&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="73" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Cycle_List.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Indicator Statement Cycles&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="47"&gt;&lt;a tabindex="0"&gt;Libraries&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="48" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWRTree.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Risk&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="49" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWCTree.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Control&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="107" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/IndicatorRegister_Maintain.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Indicator&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="53" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/LibraryList.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Question Set&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="54" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Web/AuthSource?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Authoritative Source&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="57" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/KeyAssetTreeExplorer.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Assets&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+      &lt;ul id="wk_admin_nav" class="wk_nav clearfix active"&gt;<br/>
+       &lt;li menu="64" tabindex="0"&gt;&lt;a tabindex="0"&gt;Organisation&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="65" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/OrganisationUnitTree.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Organisation Unit&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="66" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PersonList.aspx?CalledBy=0&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Person&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="67" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ORG_BusinessEntityMaintain.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Business Entities&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="125" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ProductLineTree.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Product Lines&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="68" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/SystemSetup/UserGroupList.aspx?CalledBy=0&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;User Groups&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="69" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_MaintainCCY.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Currencies&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="56" tabindex="0"&gt;&lt;a tabindex="0"&gt;Risk Framework&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="59" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RM_Builder.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Risk Map Builder&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="60" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Statement_List.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Indicator Statements&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="58" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/SurveyList.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Questionnaires&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="78" class="active" tabindex="0"&gt;&lt;a tabindex="0"&gt;Task Admin&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="76" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RA_OrgUnitSelect.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Generate Risk &amp; Control Self-Assessment (RCSA)&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="79" tabindex="-1" class="active"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RequirementList.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Requirements&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="80" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/OccurrenceMonitoring.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Monitoring&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="103" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/SurveyInstanceList.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Surveys&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="85" tabindex="0"&gt;&lt;a tabindex="0"&gt;Tech Admin &lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="86" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Job_Maintain.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Scheduled Jobs&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="87" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EmailConfiguration.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Emails&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="88" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Job_Archive.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Archiving&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="89" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/AuditReport.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Auditing&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="92" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Reference_Register.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;References&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="94" tabindex="0"&gt;&lt;a tabindex="0"&gt;Data Loading&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="95" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/DataLoaders.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Data Loaders&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="101" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/AssignLoaderIds.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Assign Loader Ids&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="96" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Import_List.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Manage Import Files&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="122" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Metric/MIVILoader.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Indicator Value Loader&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="129" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/DataFeedList.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Data Feeds&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="149" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ManageDocumentTransferConfig.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Document Transfer Configuration&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="121" tabindex="0"&gt;&lt;a tabindex="0"&gt;System Settings&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="118" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ConfigurationOptions.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Configuration Options&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="117" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/DataLookups.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="-1"&gt;Data Lookups&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+      &lt;div id="wk_admin_toggle" aria-label="Expand Admin Menu" role="button" tabindex="0"&gt;<br/>
+       &lt;a href="javascript: void[0]" title="View Business Menu" class="active" tabindex="0"&gt;&lt;span class="wkicon_admin"&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_member"&gt;<br/>
+      &lt;ul id="wk_member_nav" class="wk_dropdown"&gt;<br/>
+       &lt;li&gt;&lt;span class="wk_member_link" aria-label="Expand Person Menu" tabindex="0" role="button" onclick="ARCLOGICS.navmenu.profileMenu(); return false;"&gt;&lt;span class="wkicon_profile"&gt;&lt;/span&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;ul id="wk_member_nav_ul"&gt;<br/>
+         &lt;li&gt;<br/>
+          &lt;div class="wk_member_panel"&gt;<br/>
+           &lt;div class="wk_member_title"&gt;<br/>
+            Username<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="wk_member_name"&gt;<br/>
+            Joshi Franklin<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainPerson.aspx?fromcontext=Y&amp;self=Y&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b&amp;nbc=Y" tabindex="0"&gt;Details&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ChangePassword.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b&amp;nbc=Y" tabindex="0"&gt;Product Ext. password&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MyS_Panels.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b&amp;nbc=Y" tabindex="0"&gt;Workspace Settings&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/About.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b&amp;nbc=Y" tabindex="0"&gt;About&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Logout.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b&amp;nbc=Y" tabindex="0"&gt;Logout&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div id="wk_page_subheader" class="clearfix"&gt;<br/>
+     &lt;div id="wk_page_subheader_left"&gt;<br/>
+      &lt;ul class="clearfix"&gt;<br/>
+       &lt;li id="wk_page_history"&gt;<br/>
+        &lt;div class="wk_dropdown_container position_left"&gt;<br/>
+         &lt;div class="wk_dropdown_btn"&gt;<br/>
+          &lt;button type="button" class="btn_normal btn_icon_only btn_no_border btn_dropdown" onclick="ARCLOGICS.navmenu.dropdownMenu(historyOptions); return false;" aria-label="Navigate Back List" role="buttton" tabindex="0"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_back"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_helper"&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="historyOptions" class="wk_dropdown_panel position_left"&gt;<br/>
+          &lt;ul class="menu_list"&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/Pages/RequirementList.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b&amp;nbc=Y" tabindex="0"&gt;Maintain Requirements&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/UI/Workspace.aspx?r2055=b7b53743-0c10-40a3-82ba-de2a4530dec4&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b&amp;nbc=Y" tabindex="0"&gt;Workspace&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;/li&gt;<br/>
+       &lt;li id="wk_page_title"&gt;&lt;h1&gt;Add Requirement&lt;/h1&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_page_subheader_right"&gt;<br/>
+      &lt;ul class="clearfix"&gt;<br/>
+       &lt;li&gt;&lt;button type="button" class="btn_normal btn_icon_only btn_border" onclick="try{openNamedBox('https://oprisk-uat.afreximbank.net/AppA/Help/Online Help/Default.htm#AdminGuide/Creating Requirements.htm', 1000, 500, 'ArcLogicsHelpWindow');}catch(e){}; return false;" title="View Help" tabindex="0"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_help"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;<br/>
+        &lt;div class="wk_dropdown_container"&gt;<br/>
+         &lt;div class="wk_dropdown_btn"&gt;<br/>
+          &lt;button type="button" class="btn_normal btn_group_left btn_border" onclick="return CancelChangesAndRedirectToPage('https://oprisk-uat.afreximbank.net/AppA/UI/AuthoritativeSourceAddEdit.aspx?fromcontext=Y&amp;CalledBy=3&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b')" aria-label="Add Authoritative Source" tabindex="0"&gt;&lt;span class="btn_icon btn_icon_spacer"&gt;&lt;span class="wkicon_add"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_text"&gt;Authoritative Source&lt;/span&gt;&lt;/button&gt;&lt;button type="button" class="btn_normal btn_icon_only btn_group_right btn_border btn_dropdown" onclick="ARCLOGICS.navmenu.dropdownMenu(quickAddOptions); return false;" tabindex="0"&gt;&lt;span class="btn_helper"&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="quickAddOptions" class="wk_dropdown_panel position_right"&gt;<br/>
+          &lt;ul class="menu_list"&gt;<br/>
+           &lt;li id="ctl00_ctl00_navBar_ctl207_rptAddList_ctl00_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/AuthoritativeSourceAddEdit.aspx?fromcontext=Y&amp;CalledBy=3&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="0"&gt;Authoritative Source&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_ctl00_navBar_ctl207_rptAddList_ctl01_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWCAddEdit.aspx?fromcontext=Y&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="0"&gt;Groupwide Control&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_ctl00_navBar_ctl207_rptAddList_ctl02_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWRAddEdit.aspx?fromcontext=Y&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="0"&gt;Groupwide Risk&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_ctl00_navBar_ctl207_rptAddList_ctl03_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/HeadlineIndicatorAdd.aspx?fromcontext=Y&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="0"&gt;Headline Indicator&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_ctl00_navBar_ctl207_rptAddList_ctl04_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RaiseIssue.aspx?r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="0"&gt;Issue&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_ctl00_navBar_ctl207_rptAddList_ctl05_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainPerson.aspx?fromcontext=Y&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="0"&gt;Person&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_ctl00_navBar_ctl207_rptAddList_ctl06_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Reporting/UserReportDataSelect.aspx?fromcontext=Y&amp;r955612=d3fc89cb-5221-4207-bcaa-797dd14e8c5b" tabindex="0"&gt;User Report&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="content-container wkfs-sword"&gt; <br/>
+    &lt;div id="ctl00_ctl00_divPageTitle" class="page-title-container" style="display:none;"&gt; <br/>
+     &lt;div class="page-title"&gt; &lt;span id="ctl00_ctl00_lblTitle" class="title"&gt;&lt;/span&gt; <br/>
+      &lt;div class="page-title-extras-right"&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;br class="clearLine"&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="page-title-extras-left"&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div class="main-container"&gt; <br/>
+     &lt;div id="ctl00_ctl00_updPnlErrorContainer"&gt; <br/>
+      &lt;div class="error-container" aria-live="assertive"&gt; &lt;span id="ctl00_ctl00_lblError" class="error" style="display:none;"&gt;&lt;/span&gt; <br/>
+       &lt;div id="ctl00_ctl00_vldError" class="error" style="color:Red;display:none;"&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; &lt;button id="ctl00_ctl00_btnPopupTarget" style="display: none;" type="button"&gt;&lt;/button&gt;<br/>
+      &lt;div id="ctl00_ctl00_popup_foregroundElement" style="display: none; position: fixed; z-index: 1000001; left: 768px; top: 347.5px;"&gt;<br/>
+       &lt;div id="ctl00_ctl00_divException" style="display:none;" class="tmeout-div"&gt;<br/>
+        &lt;br&gt;Your session has timed out.<br/>
+        &lt;br&gt;Click OK to continue using OneSumX.<br/>
+        &lt;br&gt;<br/>
+        &lt;br&gt;<br/>
+        &lt;input type="button" id="btnTimeoutOK" tabindex="0" value="Ok"&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div data-act-control-type="modalPopupBackground" id="ctl00_ctl00_popup_backgroundElement" class="modal-timeout" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000; width: 1536px; height: 695px;"&gt;&lt;/div&gt;<br/>
+      &lt;div id="ctl00_ctl00_popupMsg_foregroundElement" style="display: none; position: fixed; z-index: 1000001; left: 768px; top: 347.5px;"&gt;<br/>
+       &lt;div id="ctl00_ctl00_divExceptionWarning" style="display:none;" class="tmeout-div"&gt;<br/>
+        &lt;br&gt;Your session is about to timeout.<br/>
+        &lt;br&gt;Do you wish to refresh your session?<br/>
+        &lt;br&gt;<br/>
+        &lt;br&gt;<br/>
+        &lt;input type="button" id="btnOKMsg" value="Yes"&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+        &lt;input type="button" id="btnNoMsg" value="No"&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div data-act-control-type="modalPopupBackground" id="ctl00_ctl00_popupMsg_backgroundElement" class="modal-timeout" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000; width: 1536px; height: 695px;"&gt;&lt;/div&gt;<br/>
+     &lt;/div&gt; <br/>
+     &lt;div id="boxOuter"&gt; <br/>
+      &lt;div id="boxInner"&gt; <br/>
+       &lt;div class="form-context-container"&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="form-scrollable-container" id="masterFormScrollableContainerDiv" onscroll="return RememberScrollPosition();"&gt; <br/>
+        &lt;div class="form-content-container scroll-button" id="masterFormContentContainerDiv" onscroll="return RememberScrollPosition();" style="height: 534.2px; overflow: hidden; margin-right: 17px; width: 99%;"&gt; <br/>
+         &lt;div class="form-context-container-path"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="divContentHeader"&gt; <br/>
+          &lt;br class="clear"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="ctl00_ctl00_content_content_UpdatePanel1"&gt; <br/>
+          &lt;div id="ctl00_ctl00_content_content_pnlDetails" style="display:block;"&gt; <br/>
+           &lt;div class="SectionHeaderContainer"&gt; <br/>
+            &lt;div class="Expander"&gt; &lt;span class="ExpanderIcon"&gt; &lt;input type="submit" name="ctl00$ctl00$content$content$secOverview$imgExpanderGroup" value="" onclick="return ExpandContractWithSaveExpansionState('ctl00_ctl00_content_content_pnlOverview','ctl00_ctl00_content_content_secOverview_imgExpanderGroup','ctl00_ctl00_content_content_secOverview_hdExpansionState');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$content$content$secOverview$imgExpanderGroup&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl00_content_content_secOverview_imgExpanderGroup" class="minus"&gt; &lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="Heading"&gt; &lt;span id="ctl00_ctl00_content_content_secOverview_lblSectionTitle" class="FieldSetHead"&gt;Overview&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="Separator"&gt;<br/>
+             &lt;hr class="FieldSetLine"&gt;<br/>
+            &lt;/div&gt; <br/>
+            &lt;br class="clear"&gt; <br/>
+            &lt;input type="hidden" name="ctl00$ctl00$content$content$secOverview$hdExpansionState" id="ctl00_ctl00_content_content_secOverview_hdExpansionState" value="Exp" data-ays-ignore="true"&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div id="ctl00_ctl00_content_content_pnlOverview" style="display:block;"&gt; <br/>
+            &lt;table cellspacing="8" width="100%"&gt; <br/>
+             &lt;tbody&gt;<br/>
+              &lt;tr id="ctl00_ctl00_content_content_trRequirementType"&gt; <br/>
+               &lt;td class="labelTD" width="20%"&gt; &lt;span id="ctl00_ctl00_content_content_TransLabel2" class="subHeadingCOLON"&gt;Requirement Type&lt;/span&gt; &lt;span class="mandatoryMark" title="Mandatory" alt="Mandatory"&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+               &lt;td width="80%"&gt; &lt;select name="ctl00$ctl00$content$content$ddlRequirementType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$content$content$ddlRequirementType\',\'\')', 0)" id="ctl00_ctl00_content_content_ddlRequirementType" data-ays-ignore="true"&gt; &lt;option value="-1"&gt;--None--&lt;/option&gt; &lt;option value="1"&gt;Document Attestation&lt;/option&gt; &lt;option value="2"&gt;Survey&lt;/option&gt; &lt;option selected value="3"&gt;Case&lt;/option&gt; &lt;/select&gt; &lt;span id="ctl00_ctl00_content_content_rfvRequirementType" title="Requirement Type is mandatory." class="bodyTextRed" style="color:Red;display:none;"&gt;*&lt;/span&gt; &lt;/td&gt; <br/>
+              &lt;/tr&gt; <br/>
+              &lt;tr id="ctl00_ctl00_content_content_trRequirementItem"&gt; <br/>
+               &lt;td class="labelTD" width="20%"&gt; &lt;span id="ctl00_ctl00_content_content_tdRequirementItemLabel" class="subHeadingCOLON"&gt;Requirement Item&lt;/span&gt; &lt;span class="mandatoryMark" title="Mandatory" alt="Mandatory"&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+               &lt;td width="80%"&gt; &lt;span id="ctl00_ctl00_content_content_lblRequirementItemId" class="bodyText"&gt;&lt;/span&gt; &lt;a id="ctl00_ctl00_content_content_lnkRequirementItem" class="bodyText checkLink" href="javascript:__doPostBack('ctl00$ctl00$content$content$lnkRequirementItem','')" style="padding:4px 0 2px ;"&gt;Select&lt;/a&gt; &lt;/td&gt; <br/>
+              &lt;/tr&gt; <br/>
+              &lt;tr id="ctl00_ctl00_content_content_trRequirementName"&gt; <br/>
+               &lt;td class="labelTD" width="20%"&gt; &lt;span id="ctl00_ctl00_content_content_TransLabel3" class="subHeadingCOLON"&gt;Requirement Name&lt;/span&gt; &lt;span class="mandatoryMark" title="Mandatory" alt="Mandatory"&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+               &lt;td width="80%"&gt; &lt;input name="ctl00$ctl00$content$content$txtRequirementName" type="text" maxlength="100" id="ctl00_ctl00_content_content_txtRequirementName" class="bodyText" spellcheck="true" style="width:75%;"&gt; &lt;span id="ctl00_ctl00_content_content_rfvRequirementName" title="Requirement Name is mandatory." class="bodyTextRed" style="color:Red;display:none;"&gt;*&lt;/span&gt; &lt;/td&gt; <br/>
+              &lt;/tr&gt; <br/>
+              &lt;tr id="ctl00_ctl00_content_content_trRequirementDesc"&gt; <br/>
+               &lt;td class="labelTD" width="20%"&gt; &lt;span id="ctl00_ctl00_content_content_TransLabel4" class="subHeadingCOLON"&gt;Requirement Description&lt;/span&gt; &lt;span class="mandatoryMark" title="Mandatory" alt="Mandatory"&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+               &lt;td width="80%"&gt; &lt;textarea name="ctl00$ctl00$content$content$txtRequirementDesc" rows="6" cols="20" id="ctl00_ctl00_content_content_txtRequirementDesc" class="bodyText" spellcheck="true" style="width:75%;"&gt;&lt;/textarea&gt; &lt;span id="ctl00_ctl00_content_content_rfvRequirementDesc" title="Requirement Description is mandatory." class="bodyTextRed" style="color:Red;display:none;"&gt;*&lt;/span&gt; &lt;span id="ctl00_ctl00_content_content_revRequirementDesc" title="Requirement Description must be less than 2000 characters." class="bodyTextRed" style="color:Red;display:none;"&gt;*&lt;/span&gt; &lt;/td&gt; <br/>
+              &lt;/tr&gt; <br/>
+              &lt;tr&gt; <br/>
+               &lt;td class="labelTD" width="20%"&gt; &lt;span id="ctl00_ctl00_content_content_TransLabel9" class="subHeadingCOLON"&gt;Requirement Status&lt;/span&gt; &lt;/td&gt; <br/>
+               &lt;td width="80%"&gt; &lt;span id="ctl00_ctl00_content_content_lblRequirementStatus" class="bodyText"&gt;Planning&lt;/span&gt; &lt;/td&gt; <br/>
+              &lt;/tr&gt; <br/>
+             &lt;/tbody&gt;<br/>
+            &lt;/table&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="SectionHeaderContainer"&gt; <br/>
+            &lt;div class="Expander"&gt; &lt;span class="ExpanderIcon"&gt; &lt;input type="submit" name="ctl00$ctl00$content$content$secOccurrencePattern$imgExpanderGroup" value="" onclick="return ExpandContractWithSaveExpansionState('ctl00_ctl00_content_content_pnlOccurrencePattern','ctl00_ctl00_content_content_secOccurrencePattern_imgExpanderGroup','ctl00_ctl00_content_content_secOccurrencePattern_hdExpansionState');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$content$content$secOccurrencePattern$imgExpanderGroup&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl00_content_content_secOccurrencePattern_imgExpanderGroup" class="minus"&gt; &lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="Heading"&gt; &lt;span id="ctl00_ctl00_content_content_secOccurrencePattern_lblSectionTitle" class="FieldSetHead"&gt;Occurrence Pattern&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="Separator"&gt;<br/>
+             &lt;hr class="FieldSetLine"&gt;<br/>
+            &lt;/div&gt; <br/>
+            &lt;br class="clear"&gt; <br/>
+            &lt;input type="hidden" name="ctl00$ctl00$content$content$secOccurrencePattern$hdExpansionState" id="ctl00_ctl00_content_content_secOccurrencePattern_hdExpansionState" value="Exp" data-ays-ignore="true"&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div id="ctl00_ctl00_content_content_pnlOccurrencePattern" style="display:block;"&gt; <br/>
+            &lt;table cellspacing="8" width="100%"&gt; <br/>
+             &lt;tbody&gt;<br/>
+              &lt;tr&gt; <br/>
+               &lt;td class="labelTD" width="20%"&gt; &lt;span id="ctl00_ctl00_content_content_TransLabel18" class="subHeadingCOLON"&gt;Frequency&lt;/span&gt; &lt;/td&gt; <br/>
+               &lt;td width="80%"&gt; <br/>
+                &lt;div id="ctl00_ctl00_content_content_ucOccurencePattern_pnlMain"&gt; <br/>
+                 &lt;div id="ctl00_ctl00_content_content_ucOccurencePattern_UpdatePanel1"&gt; <br/>
+                  &lt;table border="0" cellpadding="0" cellspacing="8"&gt; <br/>
+                   &lt;tbody&gt;<br/>
+                    &lt;tr&gt; <br/>
+                     &lt;td id="ctl00_ctl00_content_content_ucOccurencePattern_tdFrequency" rowspan="4" width="120px"&gt; <br/>
+                      &lt;table id="ctl00_ctl00_content_content_ucOccurencePattern_rblFrequency" class="bodyText" border="0"&gt; <br/>
+                       &lt;tbody&gt;<br/>
+                        &lt;tr&gt; <br/>
+                         &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_rblFrequency_0" type="radio" name="ctl00$ctl00$content$content$ucOccurencePattern$rblFrequency" value="1" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$content$content$ucOccurencePattern$rblFrequency$0\',\'\')', 0)"&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_rblFrequency_0"&gt;Once&lt;/label&gt;&lt;/td&gt; <br/>
+                        &lt;/tr&gt;<br/>
+                        &lt;tr&gt; <br/>
+                         &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_rblFrequency_1" type="radio" name="ctl00$ctl00$content$content$ucOccurencePattern$rblFrequency" value="2" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$content$content$ucOccurencePattern$rblFrequency$1\',\'\')', 0)"&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_rblFrequency_1"&gt;Weekly&lt;/label&gt;&lt;/td&gt; <br/>
+                        &lt;/tr&gt;<br/>
+                        &lt;tr&gt; <br/>
+                         &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_rblFrequency_2" type="radio" name="ctl00$ctl00$content$content$ucOccurencePattern$rblFrequency" value="3" onclick="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$content$content$ucOccurencePattern$rblFrequency$2\',\'\')', 0)"&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_rblFrequency_2"&gt;Monthly&lt;/label&gt;&lt;/td&gt; <br/>
+                        &lt;/tr&gt;<br/>
+                        &lt;tr&gt; <br/>
+                         &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_rblFrequency_3" type="radio" name="ctl00$ctl00$content$content$ucOccurencePattern$rblFrequency" value="4" checked&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_rblFrequency_3"&gt;Yearly&lt;/label&gt;&lt;/td&gt; <br/>
+                        &lt;/tr&gt; <br/>
+                       &lt;/tbody&gt;<br/>
+                      &lt;/table&gt; &lt;/td&gt; <br/>
+                     &lt;td style="vertical-align:top;"&gt; <br/>
+                      &lt;div id="ctl00_ctl00_content_content_ucOccurencePattern_pnlOnce" style="Display:none;"&gt; <br/>
+                      &lt;/div&gt; <br/>
+                      &lt;div id="ctl00_ctl00_content_content_ucOccurencePattern_pnlWeekly" style="Display:none;"&gt; <br/>
+                       &lt;div id="ctl00_ctl00_content_content_ucOccurencePattern_divWeekly" style="padding:4px;"&gt; &lt;span style="padding:4px;"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_Translabel1" class="bodyText"&gt;Recur every&lt;/span&gt; &lt;/span&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_spanWeeklyWeek" style="padding:4px;"&gt; &lt;input name="ctl00$ctl00$content$content$ucOccurencePattern$txtWeeklyWeek" type="text" value="1" maxlength="2" id="ctl00_ctl00_content_content_ucOccurencePattern_txtWeeklyWeek" class="bodyText" spellcheck="true" style="width:40px;"&gt; &lt;/span&gt; &lt;span style="padding:4px;"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_Translabel2" class="bodyText"&gt;week(s) on&lt;/span&gt; &lt;/span&gt; <br/>
+                       &lt;/div&gt; <br/>
+                       &lt;table id="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays" class="bodyText" cellpadding="4" border="0"&gt; <br/>
+                        &lt;tbody&gt;<br/>
+                         &lt;tr&gt; <br/>
+                          &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_0" type="checkbox" name="ctl00$ctl00$content$content$ucOccurencePattern$chkWeekDays$0" checked&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_0"&gt;Monday&lt;/label&gt;&lt;/td&gt;<br/>
+                          &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_1" type="checkbox" name="ctl00$ctl00$content$content$ucOccurencePattern$chkWeekDays$1"&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_1"&gt;Tuesday&lt;/label&gt;&lt;/td&gt;<br/>
+                          &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_2" type="checkbox" name="ctl00$ctl00$content$content$ucOccurencePattern$chkWeekDays$2"&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_2"&gt;Wednesday&lt;/label&gt;&lt;/td&gt;<br/>
+                          &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_3" type="checkbox" name="ctl00$ctl00$content$content$ucOccurencePattern$chkWeekDays$3"&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_3"&gt;Thursday&lt;/label&gt;&lt;/td&gt; <br/>
+                         &lt;/tr&gt;<br/>
+                         &lt;tr&gt; <br/>
+                          &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_4" type="checkbox" name="ctl00$ctl00$content$content$ucOccurencePattern$chkWeekDays$4"&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_4"&gt;Friday&lt;/label&gt;&lt;/td&gt;<br/>
+                          &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_5" type="checkbox" name="ctl00$ctl00$content$content$ucOccurencePattern$chkWeekDays$5"&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_5"&gt;Saturday&lt;/label&gt;&lt;/td&gt;<br/>
+                          &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_6" type="checkbox" name="ctl00$ctl00$content$content$ucOccurencePattern$chkWeekDays$6"&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_chkWeekDays_6"&gt;Sunday&lt;/label&gt;&lt;/td&gt;<br/>
+                          &lt;td&gt;&lt;/td&gt; <br/>
+                         &lt;/tr&gt; <br/>
+                        &lt;/tbody&gt;<br/>
+                       &lt;/table&gt; <br/>
+                      &lt;/div&gt; <br/>
+                      &lt;div id="ctl00_ctl00_content_content_ucOccurencePattern_pnlMonthly" style="Display:none;"&gt; <br/>
+                       &lt;div style="padding:4px;"&gt; &lt;span style="padding:4px"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_Translabel3" class="bodyText"&gt;Day&lt;/span&gt; &lt;/span&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_spanMonthlyDay" style="padding:4px;"&gt; &lt;input name="ctl00$ctl00$content$content$ucOccurencePattern$txtMonthlyDay" type="text" value="20" id="ctl00_ctl00_content_content_ucOccurencePattern_txtMonthlyDay" class="bodyText" spellcheck="true" style="width:40px;"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay" style="color:Red;display:none;"&gt;*&lt;/span&gt; &lt;/span&gt; &lt;span style="padding:4px;"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_Translabel5" class="bodyText"&gt;of every&lt;/span&gt; &lt;/span&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_spanMonthlyMonth" style="padding:4px;"&gt; &lt;input name="ctl00$ctl00$content$content$ucOccurencePattern$txtMonthlyMonth" type="text" value="1" maxlength="2" id="ctl00_ctl00_content_content_ucOccurencePattern_txtMonthlyMonth" class="bodyText" spellcheck="true" style="width:40px;"&gt; &lt;/span&gt; &lt;span style="padding:4px;"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_Translabel4" class="bodyText"&gt;month(s)&lt;/span&gt; &lt;/span&gt; <br/>
+                       &lt;/div&gt; <br/>
+                      &lt;/div&gt; <br/>
+                      &lt;div id="ctl00_ctl00_content_content_ucOccurencePattern_pnlYearly" style="Display:block;"&gt; <br/>
+                       &lt;div style="padding:4px;"&gt; &lt;span style="padding:4px"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_Label1" class="bodyText"&gt;Recur every&lt;/span&gt; &lt;/span&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_spanYearlyYear" style="padding:4px;"&gt; &lt;input name="ctl00$ctl00$content$content$ucOccurencePattern$txtYearlyYear" type="text" value="1" maxlength="2" id="ctl00_ctl00_content_content_ucOccurencePattern_txtYearlyYear" class="bodyText" spellcheck="true" style="width:40px;"&gt; &lt;/span&gt; &lt;span style="padding:4px;"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_Label2" class="bodyText"&gt;year(s)&lt;/span&gt; &lt;/span&gt; <br/>
+                       &lt;/div&gt; <br/>
+                       &lt;div style="padding:4px;"&gt; &lt;span style="padding:4px;"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_Label3" class="bodyText"&gt;On&lt;/span&gt; &lt;/span&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_spanYearlyMonths" style="padding:4px"&gt; &lt;select name="ctl00$ctl00$content$content$ucOccurencePattern$ddlMonths" id="ctl00_ctl00_content_content_ucOccurencePattern_ddlMonths" class="bodyText"&gt; &lt;option value="1"&gt;January&lt;/option&gt; &lt;option value="2"&gt;February&lt;/option&gt; &lt;option value="3"&gt;March&lt;/option&gt; &lt;option value="4"&gt;April&lt;/option&gt; &lt;option value="5"&gt;May&lt;/option&gt; &lt;option value="6"&gt;June&lt;/option&gt; &lt;option value="7"&gt;July&lt;/option&gt; &lt;option value="8"&gt;August&lt;/option&gt; &lt;option value="9"&gt;September&lt;/option&gt; &lt;option value="10"&gt;October&lt;/option&gt; &lt;option selected value="11"&gt;November&lt;/option&gt; &lt;option value="12"&gt;December&lt;/option&gt; &lt;/select&gt; &lt;/span&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_spanYearlyDay" style="padding:4px"&gt; &lt;input name="ctl00$ctl00$content$content$ucOccurencePattern$txtYearlyDay" type="text" value="20" id="ctl00_ctl00_content_content_ucOccurencePattern_txtYearlyDay" class="bodyText" spellcheck="true" style="width:40px;"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay" style="color:Red;display:none;"&gt;*&lt;/span&gt; &lt;/span&gt; <br/>
+                       &lt;/div&gt; <br/>
+                      &lt;/div&gt; &lt;/td&gt; <br/>
+                    &lt;/tr&gt; <br/>
+                   &lt;/tbody&gt;<br/>
+                  &lt;/table&gt; <br/>
+                  &lt;div style="padding:4px;"&gt; &lt;span style="padding:4px;"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_Translabel6" class="bodyTextBold"&gt;Range&lt;/span&gt; &lt;/span&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;div style="padding:4px; display:inline;" class="floatLeft"&gt; &lt;span style="padding:4px;"&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_Translabel7" class="bodyText"&gt;Start&lt;/span&gt; &lt;/span&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_spanStartDate" style="padding:4px;"&gt; &lt;span&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_dteStartDate_dtd__phCalendarExtender" style="z-index:1001;white-space:nowrap;width:135px;" enabled="true"&gt;&lt;input name="ctl00$ctl00$content$content$ucOccurencePattern$dteStartDate$dtd$txtDate" type="text" value="20 Nov 2023" id="ctl00_ctl00_content_content_ucOccurencePattern_dteStartDate_dtd_txtDate" class="bodyText" spellcheck="true" style="width:150px;"&gt;&lt;input type="hidden" name="ctl00$ctl00$content$content$ucOccurencePattern$dteStartDate$dtd$hdnDateV" id="ctl00_ctl00_content_content_ucOccurencePattern_dteStartDate_dtd_hdnDateV" value="20 Nov 2023" data-ays-ignore="true"&gt;&lt;input type="image" name="ctl00$ctl00$content$content$ucOccurencePattern$dteStartDate$dtd$imgCalendarButton" id="ctl00_ctl00_content_content_ucOccurencePattern_dteStartDate_dtd_imgCalendarButton" tabindex="-1" class="calendar-icon" title="" alt="" src="../images/Calendar.gif" align="absbottom" style="border-width:0px;"&gt;&lt;/span&gt;&lt;iframe id="ctl00_ctl00_content_content_ucOccurencePattern_dteStartDate_dtd__if" style="display:none;left:0px;position:absolute;top:0px;z-index:-1;" src="javascript:'';" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt; &lt;/span&gt; &lt;/span&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;div style="padding:4px; display:inline;"&gt; <br/>
+                   &lt;div&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_spanNoEndDate" style="padding:4px;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_rdoNoEndDate" type="radio" name="ctl00$ctl00$content$content$ucOccurencePattern$EndBy" value="rdoNoEndDate" checked onclick="toggleEndBy();"&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_rdoNoEndDate"&gt;No End Date&lt;/label&gt;&lt;/span&gt; &lt;/span&gt; <br/>
+                   &lt;/div&gt; <br/>
+                   &lt;div&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_spanEndDate" style="padding:4px;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_ctl00_content_content_ucOccurencePattern_rdoEndBy" type="radio" name="ctl00$ctl00$content$content$ucOccurencePattern$EndBy" value="rdoEndBy" onclick="toggleEndBy();"&gt;&lt;label for="ctl00_ctl00_content_content_ucOccurencePattern_rdoEndBy"&gt;End By&lt;/label&gt;&lt;/span&gt; <br/>
+                     &lt;div id="divEndDate" style="display:inline;"&gt; &lt;span&gt; &lt;span id="ctl00_ctl00_content_content_ucOccurencePattern_dteEndDate_dtd__phCalendarExtender" style="z-index:1000;white-space:nowrap;width:135px;" enabled="true"&gt;&lt;input name="ctl00$ctl00$content$content$ucOccurencePattern$dteEndDate$dtd$txtDate" type="text" value="20 Nov 2032" id="ctl00_ctl00_content_content_ucOccurencePattern_dteEndDate_dtd_txtDate" class="bodyText" spellcheck="true" style="width:150px;" disabled&gt;&lt;input type="hidden" name="ctl00$ctl00$content$content$ucOccurencePattern$dteEndDate$dtd$hdnDateV" id="ctl00_ctl00_content_content_ucOccurencePattern_dteEndDate_dtd_hdnDateV" value="20 Nov 2032" disabled data-ays-ignore="true"&gt;&lt;input type="image" name="ctl00$ctl00$content$content$ucOccurencePattern$dteEndDate$dtd$imgCalendarButton" id="ctl00_ctl00_content_content_ucOccurencePattern_dteEndDate_dtd_imgCalendarButton" tabindex="-1" class="calendar-icon" title="" alt="" src="../images/Calendar.gif" align="absbottom" style="border-width:0px;" disabled&gt;&lt;/span&gt;&lt;iframe id="ctl00_ctl00_content_content_ucOccurencePattern_dteEndDate_dtd__if" style="display:none;left:0px;position:absolute;top:0px;z-index:-1;" src="javascript:'';" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt; &lt;/span&gt; <br/>
+                     &lt;/div&gt; &lt;/span&gt; <br/>
+                   &lt;/div&gt; <br/>
+                  &lt;/div&gt; <br/>
+                 &lt;/div&gt; <br/>
+                &lt;/div&gt; &lt;/td&gt; <br/>
+              &lt;/tr&gt; <br/>
+             &lt;/tbody&gt;<br/>
+            &lt;/table&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="SectionHeaderContainer"&gt; <br/>
+            &lt;div class="Expander"&gt; &lt;span class="ExpanderIcon"&gt; &lt;input type="submit" name="ctl00$ctl00$content$content$secOccurrenceRules$imgExpanderGroup" value="" onclick="return ExpandContractWithSaveExpansionState('ctl00_ctl00_content_content_pnlOccurrenceRules','ctl00_ctl00_content_content_secOccurrenceRules_imgExpanderGroup','ctl00_ctl00_content_content_secOccurrenceRules_hdExpansionState');WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$content$content$secOccurrenceRules$imgExpanderGroup&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl00_content_content_secOccurrenceRules_imgExpanderGroup" class="minus"&gt; &lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="Heading"&gt; &lt;span id="ctl00_ctl00_content_content_secOccurrenceRules_lblSectionTitle" class="FieldSetHead"&gt;Occurrence Rules&lt;/span&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="Separator"&gt;<br/>
+             &lt;hr class="FieldSetLine"&gt;<br/>
+            &lt;/div&gt; <br/>
+            &lt;br class="clear"&gt; <br/>
+            &lt;input type="hidden" name="ctl00$ctl00$content$content$secOccurrenceRules$hdExpansionState" id="ctl00_ctl00_content_content_secOccurrenceRules_hdExpansionState" value="Exp" data-ays-ignore="true"&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div id="ctl00_ctl00_content_content_pnlOccurrenceRules" style="display:block;"&gt; <br/>
+            &lt;table id="ctl00_ctl00_content_content_tblOccurrenceRules" cellspacing="8" width="100%"&gt; <br/>
+             &lt;tbody&gt;<br/>
+              &lt;tr&gt; <br/>
+               &lt;td class="labelTD" width="20%"&gt; &lt;span id="ctl00_ctl00_content_content_TransLabel11" class="subHeadingCOLON"&gt;Issue requirement to new recipients for latest occurrence&lt;/span&gt; &lt;/td&gt; <br/>
+               &lt;td width="80%"&gt; <br/>
+                &lt;table id="ctl00_ctl00_content_content_rblIssueToNewRecipientsForLatestOccurrences" class="bodyText" border="0"&gt; <br/>
+                 &lt;tbody&gt;<br/>
+                  &lt;tr&gt; <br/>
+                   &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_rblIssueToNewRecipientsForLatestOccurrences_0" type="radio" name="ctl00$ctl00$content$content$rblIssueToNewRecipientsForLatestOccurrences" value="Y"&gt;&lt;label for="ctl00_ctl00_content_content_rblIssueToNewRecipientsForLatestOccurrences_0"&gt;Yes&lt;/label&gt;&lt;/td&gt;<br/>
+                   &lt;td&gt;&lt;input id="ctl00_ctl00_content_content_rblIssueToNewRecipientsForLatestOccurrences_1" type="radio" name="ctl00$ctl00$content$content$rblIssueToNewRecipientsForLatestOccurrences" value="N" checked&gt;&lt;label for="ctl00_ctl00_content_content_rblIssueToNewRecipientsForLatestOccurrences_1"&gt;No&lt;/label&gt;&lt;/td&gt; <br/>
+                  &lt;/tr&gt; <br/>
+                 &lt;/tbody&gt;<br/>
+                &lt;/table&gt; &lt;/td&gt; <br/>
+              &lt;/tr&gt; <br/>
+              &lt;tr&gt; <br/>
+               &lt;td class="labelTD" width="20%"&gt; &lt;span id="ctl00_ctl00_content_content_TransLabel14" class="subHeadingCOLON"&gt;Occurrence Expiry Date&lt;/span&gt; &lt;/td&gt; <br/>
+               &lt;td width="80%"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_ctl00_content_content_rdoOccurrenceNoExpiryDate" type="radio" name="ctl00$ctl00$content$content$Expiry" value="rdoOccurrenceNoExpiryDate" checked&gt;&lt;label for="ctl00_ctl00_content_content_rdoOccurrenceNoExpiryDate"&gt;No Expiry Date&lt;/label&gt;&lt;/span&gt; &lt;br&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_ctl00_content_content_rdoOccurrenceExpireAfter" type="radio" name="ctl00$ctl00$content$content$Expiry" value="rdoOccurrenceExpireAfter"&gt;&lt;label for="ctl00_ctl00_content_content_rdoOccurrenceExpireAfter"&gt;Expire&lt;/label&gt;&lt;/span&gt; &lt;span id="ctl00_ctl00_content_content_spanOccurrenceExpireAfterDays"&gt; &lt;input name="ctl00$ctl00$content$content$txtOccurrenceExpireAfterDays" type="text" value="30" id="ctl00_ctl00_content_content_txtOccurrenceExpireAfterDays" class="bodyText" spellcheck="true" style="width:40px;"&gt; &lt;span id="ctl00_ctl00_content_content_revOccurrenceExpireAfterDays" style="color:Red;display:none;"&gt;*&lt;/span&gt; &lt;/span&gt; &lt;span id="ctl00_ctl00_content_content_lblOccurrenceExpireAfterPostText" class="bodyText"&gt;days after the occurrence date&lt;/span&gt; &lt;/td&gt; <br/>
+              &lt;/tr&gt; <br/>
+             &lt;/tbody&gt;<br/>
+            &lt;/table&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div id="ctl00_ctl00_content_content_glp_backgroundElement" class="modal-dialog-bg background GL-BE" style=""&gt;&lt;/div&gt; <br/>
+           &lt;div id="ctl00_ctl00_content_content_glp_pnlGenericList" class="popUpBox ra-onscreenscoring-div ra-showComment-div generic-list-popup-div GL-FE ui-draggable" style="display: table; visibility: visible; position: fixed; width: 922px; height: 486px; left: 296px; top: 93.5px; margin: 0px;"&gt; <br/>
+            &lt;div class="wrapper"&gt; <br/>
+             &lt;div class="popup-title popUpHeader ui-draggable-handle"&gt; &lt;span id="ctl00_ctl00_content_content_glp_lblTitle"&gt;Select Case&lt;/span&gt; <br/>
+              &lt;div title="Close pop up" class="closePopup" id="popupCloseBtn"&gt;&lt;/div&gt; <br/>
+              &lt;div title="Maximize" class="maximizePopup maximizePopupBG" id="popupMaximizeBtn"&gt;&lt;/div&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div id="popup-content" class="popupcontainer" style="max-height: 391.5px; max-width: 1360.8px; height: 100%;"&gt; <br/>
+              &lt;div class="generic-list-popup"&gt; <br/>
+               &lt;input type="hidden" name="ctl00$ctl00$content$content$glp$gridlist$ctl01" value="3" data-ays-ignore="true"&gt;<br/>
+               &lt;input name="ctl00$ctl00$content$content$glp$gridlist$hdnRadio__7298" type="hidden" id="ctl00_ctl00_content_content_glp_gridlist_hdnRadio__7298" data-ays-ignore="true" value="1"&gt; <br/>
+               &lt;div id="ctl00_ctl00_content_content_glp_gridlist_pnlActionBar" class="action-bar-panel"&gt; <br/>
+                &lt;div class="wk_action_bar clearfix"&gt;<br/>
+                 &lt;input type="submit" name="ctl00$ctl00$content$content$glp$gridlist$ucActionBar$btnfireevent" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$content$content$glp$gridlist$ucActionBar$btnfireevent&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_btnfireevent" class="action-fire-event" style="display:none;"&gt;<br/>
+                 &lt;ul&gt;<br/>
+                  &lt;li id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_li-preferences-g-l" class="action_right"&gt;&lt;button id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_lnkPreferences" class="btn_normal btn_icon_only btn_border" title="Preferences" onclick="IgnoreChanges();" data-list-id="462"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_preferences"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;<br/>
+                  &lt;li id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_li-custom-views-g-l" class="action_right"&gt;<br/>
+                   &lt;div class="form_row no_padding"&gt;<br/>
+                    &lt;div class="select_container"&gt;&lt;/div&gt;<br/>
+                   &lt;/div&gt;&lt;/li&gt;<br/>
+                  &lt;li id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_li-search-g-l" class="action_left action_bar_search"&gt;<br/>
+                   &lt;div class="wk_search_bar clearfix" type="QuickSearchContainer" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_ctl00_content_content_glp_gridlist_ucActionBar_ctl00_ctl00_content_content_glp_gridlist_GenericGridView_QuickSearch_btnSearch')"&gt; <br/>
+                    &lt;div class="wk_search_inputs clearfix"&gt;<br/>
+                     &lt;div class="wk_search_category"&gt;<br/>
+                      &lt;div class="select_container"&gt;&lt;/div&gt;&lt;select name="ctl00$ctl00$content$content$glp$gridlist$ucActionBar$ctl00_ctl00_content_content_glp_gridlist_GenericGridView_QuickSearch$ddlQuickSearch" id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_ctl00_ctl00_content_content_glp_gridlist_GenericGridView_QuickSearch_ddlQuickSearch" class="inputbox no_border" data-ays-ignore="true" transform="chosen"&gt; &lt;option selected value="*"&gt;All&lt;/option&gt; &lt;optgroup label="Case Types"&gt;&lt;option value="4804"&gt;Case Type Id&lt;/option&gt; &lt;option value="4805"&gt;Case Type Code&lt;/option&gt; &lt;option value="4806"&gt;Case Type Name&lt;/option&gt; &lt;option value="4807"&gt;Case Type Description&lt;/option&gt; &lt;/optgroup&gt; &lt;/select&gt;<br/>
+                     &lt;/div&gt;<br/>
+                     &lt;div class="wk_search_input"&gt;<br/>
+                      &lt;input name="ctl00$ctl00$content$content$glp$gridlist$ucActionBar$ctl00_ctl00_content_content_glp_gridlist_GenericGridView_QuickSearch$txtQuicksearch" id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_ctl00_ctl00_content_content_glp_gridlist_GenericGridView_QuickSearch_txtQuicksearch" class="inputbox no_border" data-ays-ignore="true" type="text" placeholder="Enter Search..."&gt;&lt;a id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_ctl00_ctl00_content_content_glp_gridlist_GenericGridView_QuickSearch_btnSearch" title="Search" class="btn_normal btn_inline btn_no_border btn_icon_only" href="javascript:__doPostBack('ctl00$ctl00$content$content$glp$gridlist$ucActionBar$ctl00_ctl00_content_content_glp_gridlist_GenericGridView_QuickSearch$btnSearch','')"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_search"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+                     &lt;/div&gt;<br/>
+                    &lt;/div&gt;<br/>
+                    &lt;div class="wk_clear_search_btn"&gt;<br/>
+                     &lt;a id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_ctl00_ctl00_content_content_glp_gridlist_GenericGridView_QuickSearch_lnkClear" title="Clear Search" class="btn_normal btn_inline btn_no_border btn_icon_only" href="javascript:__doPostBack('ctl00$ctl00$content$content$glp$gridlist$ucActionBar$ctl00_ctl00_content_content_glp_gridlist_GenericGridView_QuickSearch$lnkClear','')"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_clear_search"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt;&lt;/li&gt;<br/>
+                  &lt;li id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_li-export-g-l" class="action_left"&gt;&lt;a onclick="showLoading(false);" id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_lnkExportGrid" title="Export" class="btn_normal btn_icon_only btn_border btn_color_export_xls" href="javascript:__doPostBack('ctl00$ctl00$content$content$glp$gridlist$ucActionBar$lnkExportGrid','')"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_doc_xls"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                  &lt;li id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_li-clear-inline-filters-g-l" class="action_right" style="display:none;"&gt;&lt;a id="ctl00_ctl00_content_content_glp_gridlist_ucActionBar_btnClearFilters" title="Clear Column Filters" class="btn_normal btn_icon_only btn_border state_clear" href="javascript:__doPostBack('ctl00$ctl00$content$content$glp$gridlist$ucActionBar$btnClearFilters','')"&gt;&lt;span class="btn_icon btn_icon_spacer"&gt;&lt;span class="wkicon_filter"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_text"&gt;Clear Column Filters (0)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br/>
+                 &lt;/ul&gt;<br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+               &lt;div class="generic-list-container"&gt; <br/>
+                &lt;div id="ctl00_ctl00_content_content_glp_gridlist_pnlContainerList" class="pnlContainerList" data-initial-perc-width="100" style="width:100%;"&gt; <br/>
+                 &lt;div&gt; <br/>
+                  &lt;table class="generic-list" cellspacing="0" rules="all" data-list-id="462" data-main-list-id="462" border="1" id="ctl00_ctl00_content_content_glp_gridlist_GenericGridView" style="border-collapse:collapse;"&gt; <br/>
+                   &lt;colgroup&gt;<br/>
+                    &lt;col id="7298" style="width:1%;"&gt;<br/>
+                    &lt;col id="4804" style="width:5%;"&gt;<br/>
+                    &lt;col id="4805" style="width:10%;"&gt;<br/>
+                    &lt;col id="4806" style="width:20%;"&gt;<br/>
+                    &lt;col id="4807" style="width:40%;"&gt;<br/>
+                   &lt;/colgroup&gt;<br/>
+                   &lt;thead&gt; <br/>
+                    &lt;tr class="tableHeader" style="white-space:nowrap;"&gt; <br/>
+                     &lt;th scope="col"&gt;&nbsp;&lt;/th&gt;<br/>
+                     &lt;th class="sortLink sortLinkAscImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$ctl00$content$content$glp$gridlist$GenericGridView','Sort$CASE_TYPE_ID')"&gt;Case Type Id&lt;/a&gt;&lt;span class="inlineFilter" data-listcolumn-id="4804"&gt;&lt;/span&gt;&lt;/th&gt;<br/>
+                     &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$ctl00$content$content$glp$gridlist$GenericGridView','Sort$CASE_TYPE_CODE')"&gt;Case Type Code&lt;/a&gt;&lt;span class="inlineFilter" data-listcolumn-id="4805"&gt;&lt;/span&gt;&lt;/th&gt;<br/>
+                     &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$ctl00$content$content$glp$gridlist$GenericGridView','Sort$CASE_TYPE_NAME')"&gt;Case Type Name&lt;/a&gt;&lt;span class="inlineFilter" data-listcolumn-id="4806"&gt;&lt;/span&gt;&lt;/th&gt;<br/>
+                     &lt;th class="sortLink sortLinkNoSortableImg sortLinkBOUND" scope="col"&gt;&lt;a href="javascript:__doPostBack('ctl00$ctl00$content$content$glp$gridlist$GenericGridView','Sort$CASE_TYPE_DESC')"&gt;Case Type Description&lt;/a&gt;&lt;span class="inlineFilter" data-listcolumn-id="4807"&gt;&lt;/span&gt;&lt;/th&gt; <br/>
+                    &lt;/tr&gt; <br/>
+                   &lt;/thead&gt;<br/>
+                   &lt;tbody&gt; <br/>
+                    &lt;tr id="ctl00_ctl00_content_content_glp_gridlist_GenericGridView_glRow_0" class="bodytextRow" row_identity="-1467239074"&gt; <br/>
+                     &lt;td align="center"&gt;&lt;input id="ctl00_ctl00_content_content_glp_gridlist_GenericGridView_glRow_0_rbtn7298" type="radio" name="SELECTED" value="ctl00$ctl00$content$content$glp$gridlist$GenericGridView$glRow_0$rbtn7298" onclick="RadioOnClick('ctl00_ctl00_content_content_glp_gridlist_hdnRadio__7298','1')" style="display:inline;"&gt;&lt;/td&gt;<br/>
+                     &lt;td cid="4804" tabindex="0"&gt;1&lt;/td&gt;<br/>
+                     &lt;td cid="4805" tabindex="0"&gt;RI&lt;/td&gt;<br/>
+                     &lt;td cid="4806" tabindex="0"&gt;Regulatory Implementation&lt;/td&gt;<br/>
+                     &lt;td cid="4807" tabindex="0"&gt;For managing changes to regulations&lt;/td&gt; <br/>
+                    &lt;/tr&gt;<br/>
+                    &lt;tr id="ctl00_ctl00_content_content_glp_gridlist_GenericGridView_glRow_1" class="bodytextRow" row_identity="-1063954547"&gt; <br/>
+                     &lt;td align="center"&gt;&lt;input id="ctl00_ctl00_content_content_glp_gridlist_GenericGridView_glRow_1_rbtn7298" type="radio" name="SELECTED" value="ctl00$ctl00$content$content$glp$gridlist$GenericGridView$glRow_1$rbtn7298" onclick="RadioOnClick('ctl00_ctl00_content_content_glp_gridlist_hdnRadio__7298','2')" style="display:inline;"&gt;&lt;/td&gt;<br/>
+                     &lt;td cid="4804" tabindex="0"&gt;2&lt;/td&gt;<br/>
+                     &lt;td cid="4805" tabindex="0"&gt;PR&lt;/td&gt;<br/>
+                     &lt;td cid="4806" tabindex="0"&gt;Proposal&lt;/td&gt;<br/>
+                     &lt;td cid="4807" tabindex="0"&gt;For managing proposed new regulations&lt;/td&gt; <br/>
+                    &lt;/tr&gt;<br/>
+                    &lt;tr id="ctl00_ctl00_content_content_glp_gridlist_GenericGridView_glRow_2" class="bodytextRow" row_identity="1664928808"&gt; <br/>
+                     &lt;td align="center"&gt;&lt;input id="ctl00_ctl00_content_content_glp_gridlist_GenericGridView_glRow_2_rbtn7298" type="radio" name="SELECTED" value="ctl00$ctl00$content$content$glp$gridlist$GenericGridView$glRow_2$rbtn7298" onclick="RadioOnClick('ctl00_ctl00_content_content_glp_gridlist_hdnRadio__7298','3')" style="display:inline;"&gt;&lt;/td&gt;<br/>
+                     &lt;td cid="4804" tabindex="0"&gt;3&lt;/td&gt;<br/>
+                     &lt;td cid="4805" tabindex="0"&gt;CA&lt;/td&gt;<br/>
+                     &lt;td cid="4806" tabindex="0"&gt;Corrective Action&lt;/td&gt;<br/>
+                     &lt;td cid="4807" tabindex="0"&gt;For managing proposed new regulations&lt;/td&gt; <br/>
+                    &lt;/tr&gt;<br/>
+                    &lt;tr&gt; <br/>
+                    &lt;/tr&gt; <br/>
+                   &lt;/tbody&gt; <br/>
+                  &lt;/table&gt; <br/>
+                 &lt;/div&gt; &lt;!-- ko stopBinding: true --&gt; <br/>
+                 &lt;div id="ctl00_ctl00_content_content_glp_gridlist_pnlInlineFiltersContainer" class="genericListInlineFilter-main-container" style="display: block;"&gt; <br/>
+                  &lt;div class="genericListInlineFilterShrinked"&gt; <br/>
+                   &lt;div class="genericListInlineFilterHeaderContainer"&gt; &lt;span class="genericListInlineFilterHeaderTitle" data-bind="text: lblHeaderText"&gt;Column Filters&lt;/span&gt; &lt;span class="genericListInlineFilterHeaderClose" data-bind="click: CancelFilter, attr: { title: btnCloseText }" title="Close"&gt;&lt;/span&gt; <br/>
+                   &lt;/div&gt; <br/>
+                   &lt;div class="genericListInlineFilterSearchContainer"&gt; <br/>
+                    &lt;input type="text" class="genericListInlineFilterSearch" data-bind="textInput: SearchPhrase, event: { keyup: UpdateSearchResults }" data-ays-ignore="true"&gt; <br/>
+                   &lt;/div&gt; <br/>
+                   &lt;div class="genericListInlineFilterContainer" data-bind="event: { scroll: scrolled }"&gt; <br/>
+                    &lt;ul data-bind="visible: !showSearchNoResults()"&gt; <br/>
+                     &lt;li&gt; &lt;label&gt; &lt;input type="checkbox" class="genericListInlineFilterChkSelectAll" data-bind="checked: selectAll" data-ays-ignore="true"&gt; &lt;span class="genericListInlineFilterCheckboxText" data-bind="html: searchDefaultOption"&gt;(Select All)&lt;/span&gt; &lt;/label&gt; &lt;/li&gt; &lt;!-- ko foreach: filterValuesList --&gt;&lt;!-- /ko --&gt; <br/>
+                    &lt;/ul&gt; &lt;span class="genericListInlineFilterNoMatches" data-bind="visible: showSearchNoResults(), text: lblNoMatchesText" style="display: none;"&gt;No matches found&lt;/span&gt; <br/>
+                   &lt;/div&gt; <br/>
+                   &lt;div class="genericListInlineFilterContainerButtons"&gt; <br/>
+                    &lt;div class="genericListInlineFilterClearFilter"&gt; <br/>
+                     &lt;input type="button" class="buttontext" data-bind="enable: !disableClearFilter(), click: ClearFilter, value: btnClearFilterText" disabled value="Clear filter"&gt; <br/>
+                    &lt;/div&gt; <br/>
+                    &lt;div class="genericListInlineFilterApplyFilter"&gt; <br/>
+                     &lt;input type="button" class="buttontext" data-bind="enable: enableApplyFilter, click: ApplyFilter, value: btnApplyText" disabled value="Apply Filter"&gt; <br/>
+                    &lt;/div&gt; <br/>
+                   &lt;/div&gt; <br/>
+                  &lt;/div&gt; <br/>
+                 &lt;/div&gt; &lt;!-- /ko --&gt; <br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+               &lt;div id="genericListSettingsDialog" title="" style="display: none;"&gt;&lt;/div&gt; <br/>
+               &lt;div id="template-genlist-settings-panel" style="display: none"&gt; <br/>
+                &lt;div class="error-container" id="template-genlist-settings-panel-errors" style="width: 100%"&gt; <br/>
+                &lt;/div&gt; <br/>
+                &lt;div id="ctl00_ctl00_content_content_glp_gridlist_subListDisplay" class="template-row" style="display: none;"&gt; <br/>
+                 &lt;div class="template-property"&gt;<br/>
+                  &lt;span class="subHeadingCOLON"&gt;Sublist Display&lt;/span&gt;<br/>
+                 &lt;/div&gt; <br/>
+                 &lt;div class="template-value"&gt; &lt;span id="lblSublist" class="bodyText"&gt;&lt;/span&gt; &lt;select id="ddlSublistDisplay" class="bodytext select"&gt;&lt;/select&gt; <br/>
+                 &lt;/div&gt; <br/>
+                 &lt;br class="clear"&gt; <br/>
+                &lt;/div&gt; <br/>
+                &lt;div class="template-row"&gt; <br/>
+                 &lt;div class="template-property"&gt;<br/>
+                  &lt;span class="subHeadingCOLON"&gt;Rows per page&lt;/span&gt;<br/>
+                 &lt;/div&gt; <br/>
+                 &lt;div class="template-value"&gt; <br/>
+                  &lt;input id="txtRowsPerPage" type="text" class="bodyText"&gt; <br/>
+                 &lt;/div&gt; <br/>
+                 &lt;br class="clear"&gt; <br/>
+                &lt;/div&gt; <br/>
+                &lt;div class="template-row"&gt; &lt;span class="show-globalPref"&gt;&lt;a id="lnkGlobalPref" href="#" class="bodyText"&gt;Maintain Global Preferences&lt;/a&gt;&lt;/span&gt; &lt;span class="show-unselected"&gt;&lt;a id="lnkShowGenColumns" href="#" state="shown" class="bodyText"&gt;Hide Unselected&lt;/a&gt;&lt;/span&gt; <br/>
+                 &lt;br class="clear"&gt; <br/>
+                &lt;/div&gt; <br/>
+                &lt;div class="clearfix pref-column-header"&gt; &lt;span class="header-order"&gt;Order&lt;/span&gt; &lt;span class="header-visible"&gt;Visible&lt;/span&gt; &lt;span id="ctl00_ctl00_content_content_glp_gridlist_lblGLPrefGroupHeader" class="header-group" title="Selecting a checkbox in the Group column will group the generic list on the selected field. Multiple grouping columns can be selected."&gt;Group&lt;/span&gt; &lt;span class="header-repheader"&gt;Repeat Header&lt;/span&gt; &lt;span class="header-name"&gt; &lt;span class="header-name-text"&gt;Name&lt;/span&gt; &lt;span class="header-name-search" id="lblPrefNameSearch" title="Search"&gt;&lt;/span&gt; &lt;span class="form_search"&gt; &lt;input id="txtPrefNameSearch" type="text" class="bodyText header-name-search-textbox"&gt; &lt;/span&gt; &lt;/span&gt; <br/>
+                &lt;/div&gt; <br/>
+                &lt;ul id="genericListColumns" class="sortable"&gt; <br/>
+                &lt;/ul&gt; <br/>
+                &lt;input type="hidden" name="ctl00$ctl00$content$content$glp$gridlist$hdnIsPopup" id="ctl00_ctl00_content_content_glp_gridlist_hdnIsPopup" value="True" data-ays-ignore="true"&gt; <br/>
+               &lt;/div&gt; <br/>
+               &lt;div id="ctl00_ctl00_content_content_glp_gridlist_divReload"&gt;&lt;/div&gt; <br/>
+               &lt;input type="submit" name="ctl00$ctl00$content$content$glp$gridlist$btnRebindList" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$content$content$glp$gridlist$btnRebindList&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl00_content_content_glp_gridlist_btnRebindList" data-list-id="462" style="display: none;"&gt; <br/>
+               &lt;input type="submit" name="ctl00$ctl00$content$content$glp$gridlist$btnSavedFilterChanged" value="" id="ctl00_ctl00_content_content_glp_gridlist_btnSavedFilterChanged" style="display: none"&gt; <br/>
+              &lt;/div&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="popUpFooter"&gt; <br/>
+             &lt;input type="submit" name="ctl00$ctl00$content$content$glp$btnSaveGenericList" value="Proceed" id="ctl00_ctl00_content_content_glp_btnSaveGenericList" class="buttonText"&gt; <br/>
+             &lt;input type="submit" name="ctl00$ctl00$content$content$glp$btnCancelGenericList" value="Cancel" id="ctl00_ctl00_content_content_glp_btnCancelGenericList" class="buttonText"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;input type="hidden" name="ctl00$ctl00$content$content$glp$hdnWidth" id="ctl00_ctl00_content_content_glp_hdnWidth" data-ays-ignore="true"&gt; <br/>
+            &lt;input type="hidden" name="ctl00$ctl00$content$content$glp$hdnHeight" id="ctl00_ctl00_content_content_glp_hdnHeight" data-ays-ignore="true"&gt; <br/>
+            &lt;input type="hidden" name="ctl00$ctl00$content$content$glp$hdnTop" id="ctl00_ctl00_content_content_glp_hdnTop" data-ays-ignore="true" value="93.5"&gt; <br/>
+            &lt;input type="hidden" name="ctl00$ctl00$content$content$glp$hdnLeft" id="ctl00_ctl00_content_content_glp_hdnLeft" data-ays-ignore="true" value="296"&gt; <br/>
+            &lt;input type="hidden" name="ctl00$ctl00$content$content$glp$hdnScrollPosition" id="ctl00_ctl00_content_content_glp_hdnScrollPosition" data-ays-ignore="true"&gt; <br/>
+            &lt;input type="hidden" name="ctl00$ctl00$content$content$glp$hdnPopupChanges" id="ctl00_ctl00_content_content_glp_hdnPopupChanges" data-ays-ignore="true"&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="ctl00_ctl00_content_content_ifpQuestionnaire_backgroundElement" class="modal-dialog-bg background GL-BE" style="display:none;"&gt;&lt;/div&gt; <br/>
+         &lt;div id="ctl00_ctl00_content_content_ifpQuestionnaire_pnlIFramePopup" class="popUpBox ra-onscreenscoring-div ra-showComment-div generic-list-popup-div GL-FE" style="display:none;"&gt; <br/>
+          &lt;div class="wrapper"&gt; <br/>
+           &lt;div class="popup-title popUpHeader"&gt; &lt;span id="ctl00_ctl00_content_content_ifpQuestionnaire_lblTitle"&gt;&lt;/span&gt; <br/>
+            &lt;div title="Close pop up" class="closePopup" id="popupCloseTreeBtn"&gt;&lt;/div&gt; <br/>
+            &lt;div title="Maximize" class="maximizePopup maximizePopupBG" id="popupMaximizeTreeBtn"&gt;&lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div id="popup-content" class="popupcontainer"&gt; &lt;iframe id="iframe-content" frameborder="0" tabindex="0"&gt;&lt;/iframe&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="popUpFooter"&gt; <br/>
+           &lt;input type="submit" name="ctl00$ctl00$content$content$ifpQuestionnaire$btnCancel" value="Close" id="ctl00_ctl00_content_content_ifpQuestionnaire_btnCancel" class="buttonText" tabindex="0"&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;input type="hidden" name="ctl00$ctl00$content$content$ifpQuestionnaire$hdnWidth" id="ctl00_ctl00_content_content_ifpQuestionnaire_hdnWidth" data-ays-ignore="true" tabindex="0"&gt; <br/>
+          &lt;input type="hidden" name="ctl00$ctl00$content$content$ifpQuestionnaire$hdnHeight" id="ctl00_ctl00_content_content_ifpQuestionnaire_hdnHeight" data-ays-ignore="true" tabindex="0"&gt; <br/>
+          &lt;input type="hidden" name="ctl00$ctl00$content$content$ifpQuestionnaire$hdnTop" id="ctl00_ctl00_content_content_ifpQuestionnaire_hdnTop" data-ays-ignore="true" tabindex="0"&gt; <br/>
+          &lt;input type="hidden" name="ctl00$ctl00$content$content$ifpQuestionnaire$hdnLeft" id="ctl00_ctl00_content_content_ifpQuestionnaire_hdnLeft" data-ays-ignore="true" tabindex="0"&gt; <br/>
+          &lt;input type="hidden" name="ctl00$ctl00$content$content$ifpQuestionnaire$hdnScrollPosition" id="ctl00_ctl00_content_content_ifpQuestionnaire_hdnScrollPosition" data-ays-ignore="true" tabindex="0"&gt; <br/>
+          &lt;input type="hidden" name="ctl00$ctl00$content$content$ifpQuestionnaire$hdnPopupChanges" id="ctl00_ctl00_content_content_ifpQuestionnaire_hdnPopupChanges" data-ays-ignore="true" tabindex="0"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="divContentFooter"&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;div id="ctl00_ctl00_divButtons" class="action-container"&gt; <br/>
+         &lt;input type="submit" name="ctl00$ctl00$btnSave" value="Save" onclick="return SaveChanges();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$btnSave&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_ctl00_btnSave" class="buttonText" tabindex="0"&gt; <br/>
+         &lt;input type="submit" name="ctl00$ctl00$btnCancel" value="Exit" onclick="Page_ValidationActive=false; return CancelChanges(this);" id="ctl00_ctl00_btnCancel" class="buttontext" tabindex="0"&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;br class="clear"&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="footer-container"&gt; <br/>
+    &lt;img id="ctl00_ctl00_KeepAliveMVC" src="https://oprisk-uat.afreximbank.net/AppA/Web/SessionSync?" style="height:0px;width:0px;border-width:0px;"&gt;<br/>
+    &lt;img id="ctl00_ctl00_KeepAliveSurveys" src="https://oprisk-uat.afreximbank.net/AppA/Surveys/SessionSync.aspx?" style="height:0px;width:0px;border-width:0px;"&gt;<br/>
+    &lt;img id="ctl00_ctl00_KeepAliveUI" src="https://oprisk-uat.afreximbank.net/AppA/UI/SessionSync.aspx?" style="height:0px;width:0px;border-width:0px;"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ctl00$hdnRandomParameter" id="ctl00_ctl00_hdnRandomParameter" value="r955612" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ctl00$hdnRandomIdentifier" id="ctl00_ctl00_hdnRandomIdentifier" value="d3fc89cb-5221-4207-bcaa-797dd14e8c5b" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ctl00$hdnDocumentmode" id="ctl00_ctl00_hdnDocumentmode" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ctl00$hdnDirty" id="ctl00_ctl00_hdnDirty" data-ays-ignore="true" tabindex="0" value="Y"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ctl00$hdnAlwaysDirty" id="ctl00_ctl00_hdnAlwaysDirty" data-ays-ignore="true" tabindex="0"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="divWorking" style="position: fixed; z-index: 1000001; left: 768px; top: 347.5px; display: none;"&gt;<br/>
+    &lt;img src="../images/wk_loading.gif" alt="Loading..." id="loadImg" style="display: block;"&gt;<br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="ctl00_ctl00_ifpReferencePopup_backgroundElement" class="modal-dialog-bg background GL-BE" style="display:none;"&gt;&lt;/div&gt; <br/>
+   &lt;div id="ctl00_ctl00_ifpReferencePopup_pnlIFramePopup" class="popUpBox ra-onscreenscoring-div ra-showComment-div generic-list-popup-div GL-FE" style="display:none;"&gt; <br/>
+    &lt;div class="wrapper"&gt; <br/>
+     &lt;div class="popup-title popUpHeader"&gt; &lt;span id="ctl00_ctl00_ifpReferencePopup_lblTitle"&gt;&lt;/span&gt; <br/>
+      &lt;div title="Close pop up" class="closePopup" id="popupCloseTreeBtn"&gt;&lt;/div&gt; <br/>
+      &lt;div title="Maximize" class="maximizePopup maximizePopupBG" id="popupMaximizeTreeBtn"&gt;&lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div id="popup-content" class="popupcontainer"&gt; &lt;iframe id="iframe-content" frameborder="0" tabindex="0"&gt;&lt;/iframe&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div class="popUpFooter"&gt; <br/>
+     &lt;input type="submit" name="ctl00$ctl00$ifpReferencePopup$btnCancel" value="Close" id="ctl00_ctl00_ifpReferencePopup_btnCancel" class="buttonText" tabindex="0"&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ctl00$ifpReferencePopup$hdnWidth" id="ctl00_ctl00_ifpReferencePopup_hdnWidth" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ctl00$ifpReferencePopup$hdnHeight" id="ctl00_ctl00_ifpReferencePopup_hdnHeight" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ctl00$ifpReferencePopup$hdnTop" id="ctl00_ctl00_ifpReferencePopup_hdnTop" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ctl00$ifpReferencePopup$hdnLeft" id="ctl00_ctl00_ifpReferencePopup_hdnLeft" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ctl00$ifpReferencePopup$hdnScrollPosition" id="ctl00_ctl00_ifpReferencePopup_hdnScrollPosition" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ctl00$ifpReferencePopup$hdnPopupChanges" id="ctl00_ctl00_ifpReferencePopup_hdnPopupChanges" data-ays-ignore="true" tabindex="0"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var Page_ValidationSummaries =  new Array(document.getElementById("ctl00_ctl00_vldError"));<br/>
+var Page_Validators =  new Array(document.getElementById("ctl00_ctl00_content_content_rfvRequirementType"), document.getElementById("ctl00_ctl00_content_content_rfvRequirementName"), document.getElementById("ctl00_ctl00_content_content_rfvRequirementDesc"), document.getElementById("ctl00_ctl00_content_content_revRequirementDesc"), document.getElementById("ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay"), document.getElementById("ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay"), document.getElementById("ctl00_ctl00_content_content_revOccurrenceExpireAfterDays"));<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var ctl00_ctl00_content_content_rfvRequirementType = document.all ? document.all["ctl00_ctl00_content_content_rfvRequirementType"] : document.getElementById("ctl00_ctl00_content_content_rfvRequirementType");<br/>
+ctl00_ctl00_content_content_rfvRequirementType.controltovalidate = "ctl00_ctl00_content_content_ddlRequirementType";<br/>
+ctl00_ctl00_content_content_rfvRequirementType.errormessage = "Requirement Type is mandatory.";<br/>
+ctl00_ctl00_content_content_rfvRequirementType.display = "Dynamic";<br/>
+ctl00_ctl00_content_content_rfvRequirementType.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";<br/>
+ctl00_ctl00_content_content_rfvRequirementType.initialvalue = "-1";<br/>
+var ctl00_ctl00_content_content_rfvRequirementName = document.all ? document.all["ctl00_ctl00_content_content_rfvRequirementName"] : document.getElementById("ctl00_ctl00_content_content_rfvRequirementName");<br/>
+ctl00_ctl00_content_content_rfvRequirementName.controltovalidate = "ctl00_ctl00_content_content_txtRequirementName";<br/>
+ctl00_ctl00_content_content_rfvRequirementName.errormessage = "Requirement Name is mandatory.";<br/>
+ctl00_ctl00_content_content_rfvRequirementName.display = "Dynamic";<br/>
+ctl00_ctl00_content_content_rfvRequirementName.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";<br/>
+ctl00_ctl00_content_content_rfvRequirementName.initialvalue = "";<br/>
+var ctl00_ctl00_content_content_rfvRequirementDesc = document.all ? document.all["ctl00_ctl00_content_content_rfvRequirementDesc"] : document.getElementById("ctl00_ctl00_content_content_rfvRequirementDesc");<br/>
+ctl00_ctl00_content_content_rfvRequirementDesc.controltovalidate = "ctl00_ctl00_content_content_txtRequirementDesc";<br/>
+ctl00_ctl00_content_content_rfvRequirementDesc.errormessage = "Requirement Description is mandatory.";<br/>
+ctl00_ctl00_content_content_rfvRequirementDesc.display = "Dynamic";<br/>
+ctl00_ctl00_content_content_rfvRequirementDesc.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";<br/>
+ctl00_ctl00_content_content_rfvRequirementDesc.initialvalue = "";<br/>
+var ctl00_ctl00_content_content_revRequirementDesc = document.all ? document.all["ctl00_ctl00_content_content_revRequirementDesc"] : document.getElementById("ctl00_ctl00_content_content_revRequirementDesc");<br/>
+ctl00_ctl00_content_content_revRequirementDesc.controltovalidate = "ctl00_ctl00_content_content_txtRequirementDesc";<br/>
+ctl00_ctl00_content_content_revRequirementDesc.errormessage = "Requirement Description must be less than 2000 characters.";<br/>
+ctl00_ctl00_content_content_revRequirementDesc.display = "Dynamic";<br/>
+ctl00_ctl00_content_content_revRequirementDesc.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";<br/>
+ctl00_ctl00_content_content_revRequirementDesc.validationexpression = "^[\\s\\S]{0,2000}$";<br/>
+var ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay = document.all ? document.all["ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay"] : document.getElementById("ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay");<br/>
+ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay.controltovalidate = "ctl00_ctl00_content_content_ucOccurencePattern_txtMonthlyDay";<br/>
+ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay.errormessage = "Day must contain an integer value greater than zero.";<br/>
+ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay.display = "Dynamic";<br/>
+ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";<br/>
+ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay.validationexpression = "^[0]*[1-9][0-9]*$";<br/>
+var ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay = document.all ? document.all["ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay"] : document.getElementById("ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay");<br/>
+ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay.controltovalidate = "ctl00_ctl00_content_content_ucOccurencePattern_txtYearlyDay";<br/>
+ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay.errormessage = "Day must contain an integer value greater than zero.";<br/>
+ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay.display = "Dynamic";<br/>
+ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";<br/>
+ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay.validationexpression = "^[0]*[1-9][0-9]*$";<br/>
+var ctl00_ctl00_content_content_revOccurrenceExpireAfterDays = document.all ? document.all["ctl00_ctl00_content_content_revOccurrenceExpireAfterDays"] : document.getElementById("ctl00_ctl00_content_content_revOccurrenceExpireAfterDays");<br/>
+ctl00_ctl00_content_content_revOccurrenceExpireAfterDays.controltovalidate = "ctl00_ctl00_content_content_txtOccurrenceExpireAfterDays";<br/>
+ctl00_ctl00_content_content_revOccurrenceExpireAfterDays.errormessage = "Occurrence Expiry Date must contain an integer value greater than zero.";<br/>
+ctl00_ctl00_content_content_revOccurrenceExpireAfterDays.display = "Dynamic";<br/>
+ctl00_ctl00_content_content_revOccurrenceExpireAfterDays.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";<br/>
+ctl00_ctl00_content_content_revOccurrenceExpireAfterDays.validationexpression = "^[0]*[1-9][0-9]*$";<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+document.addEventListener('DOMContentLoaded', function(){ $('body').css('min-width', ( ( (typeof IsPopupWindow !== 'undefined') && (IsPopupWindow) ) ? 'none' : '960px' )); });Sys.Application.add_load( function(){ prepSetting(); } );$("tr[class^=bodytextRow]").on('mouseover', function() { hover_OnMouseOver(this); }).on('mouseout', function() { hover_OnMouseOut(this); });qTipConfigJSON = '{"content":{},"position":{"my":"top left","at":"bottom center","adjust":{"x":5},"viewport":true},"hide":{"delay":200,"fixed":true,"leave":false },"style":{"tip":{"width":6,"height":12}}}';var ARCLOGICS = ARCLOGICS || {};$(document).ready(function () {try{ ARCLOGICS.navmenu = $('#navbar').navigationBar({selectedMenuId: 79}); }catch(e){console.log(e)} });TogglePanel('ctl00_ctl00_content_content_pnlOverview','True');TogglePanel('ctl00_ctl00_content_content_pnlOverview','True');TogglePanel('ctl00_ctl00_content_content_pnlOccurrenceSummary','True');TogglePanel('ctl00_ctl00_content_content_pnlOccurrenceSummary','True');TogglePanel('ctl00_ctl00_content_content_pnlOccurrencePattern','True');TogglePanel('ctl00_ctl00_content_content_pnlOccurrencePattern','True');SetupDateControl('ctl00_ctl00_content_content_ucOccurencePattern_dteStartDate_dtd_txtDate', 'ctl00_ctl00_content_content_ucOccurencePattern_dteStartDate_dtd__if', '');SetupDateControl('ctl00_ctl00_content_content_ucOccurencePattern_dteEndDate_dtd_txtDate', 'ctl00_ctl00_content_content_ucOccurencePattern_dteEndDate_dtd__if', '');TogglePanel('ctl00_ctl00_content_content_pnlOccurrenceRules','True');TogglePanel('ctl00_ctl00_content_content_pnlOccurrenceRules','True');TogglePanel('ctl00_ctl00_content_content_pnlOccurrenceNotifications','True');TogglePanel('ctl00_ctl00_content_content_pnlOccurrenceNotifications','True');TogglePanel('ctl00_ctl00_content_content_pnlEmails','True');TogglePanel('ctl00_ctl00_content_content_pnlEmails','True');TogglePanel('ctl00_ctl00_content_content_pnlProperties','True');TogglePanel('ctl00_ctl00_content_content_pnlProperties','True');TogglePanel('ctl00_ctl00_content_content_pnlUserGroups','True');TogglePanel('ctl00_ctl00_content_content_pnlUserGroups','True');TogglePanel('ctl00_ctl00_content_content_pnlIndividualUsers','True');TogglePanel('ctl00_ctl00_content_content_pnlIndividualUsers','True');<br/>
+(function(id) {<br/>
+    var e = document.getElementById(id);<br/>
+    if (e) {<br/>
+        e.dispose = function() {<br/>
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));<br/>
+        }<br/>
+        e = null;<br/>
+    }<br/>
+})('ctl00_ctl00_vldError');<br/>
+;<br/>
+var Page_ValidationActive = false;<br/>
+if (typeof(ValidatorOnLoad) == "function") {<br/>
+    ValidatorOnLoad();<br/>
+}<br/>
+<br/>
+function ValidatorOnSubmit() {<br/>
+    if (Page_ValidationActive) {<br/>
+        return ValidatorCommonOnSubmit();<br/>
+    }<br/>
+    else {<br/>
+        return true;<br/>
+    }<br/>
+}<br/>
+        Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"modal-timeout","dropShadow":true,"dynamicServicePath":"/AppA/Pages/RequirementAddEdit.aspx","id":"ctl00_ctl00_popup","okControlID":"btnTimeoutOK","onOkScript":"GotoHomePage();","popupControlID":"ctl00_ctl00_divException","repositionMode":1}, null, null, $get("ctl00_ctl00_btnPopupTarget"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"modal-timeout","cancelControlID":"btnNoMsg","dropShadow":true,"dynamicServicePath":"/AppA/Pages/RequirementAddEdit.aspx","id":"ctl00_ctl00_popupMsg","okControlID":"btnOKMsg","onCancelScript":"NotKeepAlive();","onOkScript":"KeepAlive();","popupControlID":"ctl00_ctl00_divExceptionWarning","repositionMode":1}, null, null, $get("ctl00_ctl00_btnPopupTarget"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"working","dynamicServicePath":"/AppA/Pages/RequirementAddEdit.aspx","id":"ctl00_ctl00_working","popupControlID":"divWorking","repositionMode":1}, null, null, $get("ctl00_ctl00_btnPopupTarget"));<br/>
+});<br/>
+<br/>
+document.getElementById('ctl00_ctl00_content_content_rfvRequirementType').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_ctl00_content_content_rfvRequirementType'));<br/>
+}<br/>
+<br/>
+document.getElementById('ctl00_ctl00_content_content_rfvRequirementName').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_ctl00_content_content_rfvRequirementName'));<br/>
+}<br/>
+<br/>
+document.getElementById('ctl00_ctl00_content_content_rfvRequirementDesc').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_ctl00_content_content_rfvRequirementDesc'));<br/>
+}<br/>
+<br/>
+document.getElementById('ctl00_ctl00_content_content_revRequirementDesc').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_ctl00_content_content_revRequirementDesc'));<br/>
+}<br/>
+<br/>
+document.getElementById('ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_ctl00_content_content_ucOccurencePattern_revMonthlyDay'));<br/>
+}<br/>
+<br/>
+document.getElementById('ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_ctl00_content_content_ucOccurencePattern_revYearlyDay'));<br/>
+}<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.CalendarBehavior, {"button":$get("ctl00_ctl00_content_content_ucOccurencePattern_dteStartDate_dtd_imgCalendarButton"),"format":"dd MMM yyyy","id":"ctl00_ctl00_content_content_ucOccurencePattern_dteStartDate_dtd_calendarButtonExtender"}, {"dateSelectionChanged":DateChanged,"hidden":HideCalendarControl,"shown":ShowCalendarControl}, null, $get("ctl00_ctl00_content_content_ucOccurencePattern_dteStartDate_dtd_txtDate"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.CalendarBehavior, {"button":$get("ctl00_ctl00_content_content_ucOccurencePattern_dteEndDate_dtd_imgCalendarButton"),"format":"dd MMM yyyy","id":"ctl00_ctl00_content_content_ucOccurencePattern_dteEndDate_dtd_calendarButtonExtender"}, {"dateSelectionChanged":DateChanged,"hidden":HideCalendarControl,"shown":ShowCalendarControl}, null, $get("ctl00_ctl00_content_content_ucOccurencePattern_dteEndDate_dtd_txtDate"));<br/>
+});<br/>
+<br/>
+document.getElementById('ctl00_ctl00_content_content_revOccurrenceExpireAfterDays').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_ctl00_content_content_revOccurrenceExpireAfterDays'));<br/>
+}<br/>
+//]]&gt;<br/>
+&lt;/script&gt; &lt;span style="display: none !important;"&gt;&lt;input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" data-ays-ignore="true"&gt;&lt;/span&gt;&lt;span style="display: none !important;"&gt;&lt;input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" data-ays-ignore="true"&gt;&lt;/span&gt;&lt;span style="display: none !important;"&gt;&lt;input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" data-ays-ignore="true"&gt;&lt;/span&gt;&lt;span style="display: none !important;"&gt;&lt;input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="+GIqqYRRmQIonDGQ1z+G9KUuKZWuelgkNr1RHbzktxjA+iKQvDGNJ/rnlalDEcc5O9hR97FtTBbegGFZjDGyTyFf2GfH54jGDqZhFpcRIqzsBdLpXzh/vHWNLGDjTC6+ZiO9CDKgcqSdQ+hL6MZPaqo1gFocCMTHdUID13DWG9QHIz+8joxGL+8jr53fNQxQmMqsKT1dfuwfP1WloxhauIUUm/yF/dLNh4KsnpnPZarCXGIrYJcLTWJag+LYr8/zx7rkcdUq87RqSecaYftu7l6CS4mvJ305k6gXplxuEmKbD4Xz4OlL3yjCyHkePMdIVE2e7mQ6wqIdbNEPB5F7+S5UokePyNjtutPSF92NDi0T78uVULEW0ppPDy8nFAM/NhdXeLDMjtXt3MSlLxJC6JCSIO6DKZHTjW0F+7EXv6l2dgtCKfk+nBZGtTbbv/IlLIMQnuluTbT/fnO5kSw4IHAi0UwbxsCStqFOQnEmn3ZSfwGbXHZ7tfxKdXGMW566A0E5PlfPkWyfkXLqbzWmozlDyTv9bkKtKhlOgdT+Hh3xdWO9UobQKM8r9F3hFo+o/mo4CwWtvY0/KxgJKPNfp2wLlZpdp2LMk0rcR32EiCsgVgZKQJ8nwkFAzDOxDt/WBpN/L9fU9ZPfER1n0gJn6nH34AeWQvaqYOBE8MycCALBS9t9VUtQIg1s0m9TsxSAKCM9JWxwGgX4vgNStGqi/KsG8Y2FpEBVeBJ0W4/Pau7UkkmlhA2A1bIl3wKPowtO9rrzeuyT2b0653U/SUCGPwsalIn8iWPd2X5iX93dY8DlqN//NkNK0AJ9Rs7GJwetvLmdAkhB8zKy7o8/9zUQZZvrOJGO9NEMdfmkt3GLFsQAEARneSEKyXcfcMymPwKB/Zzd0tzbLbjnmdi8WZ/8NNt37DxZawdAFYtcI0A4LUH16DJ/hFhsA2oAIkuxsz12egLZ5KCA+s2bDIkQ+YmlCOAmWTz82VJOeLTbamwjZzrJOt3g87Q54stTomIUbV2F1qsaipoKADcdJ8HDE7xa+RrYFBjrMS5WbUx4WDA9NP+jfuVCgOPfZoqfDOKLmD2OhOolHrWv8cRKP9SqrjMUy54pkscb0myQnxHPep4dcXlVj/+9CAVyuY14vY9QNDf2uXRkdJ7mGpYTIIOhRcakAlOx0GKEdzuICSVlOl1tz3grEsqghFgDrvabaH6CGaU6CBczZD/SKN3zk01akQpL/XROKmJvJZxwx85AVG7eOKqaEHhkufrb2LVU4VFWG4lpGLdLOXBdBi6NxiXjm/9DSt8esZSWQ2pCntXFPDkpq965jNvzowlVEYK7BZaztXO22Z4f8kj7EENeuWDJlDmh8uPwOjPAA+0Rn5anmApIHdxWkJmrXx6001KM+fEwfjmwyk3Q0NcmnrKviB7PzIrbIq6BZqlvNamfa5gedTRCje71IXJnekZ+R3UR/N0VwFfMEEgKyeFEU/gdwTopXsuNGV71A+IcQ6DurAv7969gc96uwY4U7MP8YOIiAstFTuyLHHeGi5D+gX0TGTW/Qxo3XDA9eekVa0WZl/c6C1G5kXLm4coM7fPTJZYDnUgM6D2cGWlAIXP81LMzt1xe8JZp1tuL93fBKyPA3uSwGVUPHglIh6A4Yx+5smTarz9Q+czBzE3bsFp8hykhTwx+QHn+VJE978DoLH9AlwhTMl9g5A0J2WPQeYL1APHLdkNVEm9eaRafkYfbGN8fOaQHjo/DdHZjJZfZFPahpcCHY2yDE6b260tEx73SzkSYvyIAlaz9/Qvu9PuyEyp7MpO1/MURbiYpX7sMsot1GkY7tdhe595xs1ZqPXlso0jDvuBH0KxcPTcGBxH/I7Ffgqs03ypwf6IcffUUh6ERrOxqKbMz4kwW2DEtYOwf+UANSovDVK21GXZMwHRri9s+f43fCYuRkaePgsrhIL9oXlPaQ2YE3Nfqamd8SlavHx4P0S+4R9vwBoFvezc4um0UUQi9kaAydDfSsUj/28eYBw3i2oNoHY2J0/MgEBlqKmnouu7xwYwab9cEnCU+l6RWtu4zuh1/8X8nGpR4U23D1Wq0uI6pBnAM+Ni7j8Y+UilNi/TyT+JNaAIZPk5HZqKZoQmSOh2VRm5Cs0YFe9TvDbqeaxCL2m6gTFsfOSMFNGleRxiUfW/HukFuTAsMOfEuv60TTaZS1OO5h00n5BURlzpb57p2sedeuyOLUrt4k2mCUgsFSNd1xSYsb/QqoBzBGwT51JeaQLesCoobVsAfIKb31oSR5BUZ/mwAGfOn0Pae+vokwP8yY+sWP+buo4TwEkg5bn4LX57HjQfhtzI1smk2OMZ+Ehn5JWiWyVqxzqpSMmIXM1nhloLnySSkMyNSTWAsWFE215jFi32DuAgm2IO6bISY2hv6aSf5qjm6ONzTnSlqMs+rxVz6XseyulU/cPozOC/pevaDHwOgrgwYZ0BcQzmCv2vO1VXpEma+zhJWtRgBbG77ka2fUr0hCTEbjkwKVPJX18i8xkIFkJIM3ugKFGkEPPzsu+mi4S2+GgJ0aSe4cfueIa10PrUhC10BHhjO+KWsd+Gk5T2r3VVr3Llt2LiFMP629QmpW2RFAr8HGApgVS/XMvQ8eTHStpgNzZAeMF8ieMKdPp8C8fQc+TVYiUEhgdeZ70xEDhNBa2j9lUJdHekZEDmP/LsOmrO7k3sVtnj8+BMKHNwZrATLJ4/nL77JsRVJo+/d3xyU/utLE7Uad4BD0O0fl0vIhE50IISBHVX4lZdqaJyv5UE6eVW6NJUm+zcVa8/fvhTUzQ4xbDupwot1ZUSnvmdxxH4Z/s+hX0iQJ+7UIXmFnjvBqrNGebzPXZPKRu2MPEdHtgJfUDWIobFvzFZDlQqFRX7ZzNS9ZAjJscVa6h6HhR2CgHmo4x1sBcFrMGoF1CFHTq6JnuKNhH6TlHrnkyxGnEndtgHkUd28Y2ZXKlo+YYEDHdvbg7SCBH2rvV0un5qiqLQ/0WUdtWg4MLIId46wquKf17iMw/CW98KaUK0cslb3iVgzx7qZB1/DwzuvdpOPOQEEZWMPZngATQRTKl7zkt/LSesxvCsNPOc35rKEqQN00CKaJT1UJHPLrFGG20ye7URIZ5JBiBclVyGt7yRqAEMQNLT4TBC/LMnjePklkSuxrfdT5SQH4w8XtU4d31tL1V8GG2+ld791ut3+us13xT/uq56Khk45OHZRlADqLXVZiSQpgAlVuLh8CB2+sA2QMEGCmG1zu4257QiMS2kvwrMBkRPDIibpXTkOJo6L+pPjfmkJ+spGc3H4kIoGTcpFcZIO59x44voQuaC14KM0S4BA8ktBjKEf6yGZesFDvgONPVwB6EYbKNlU7/0dVgtVPbohwmUNf5cnOJ+HGc0vSXDjpFDoJSTffYk0vkm56D6rGc3e9TpzZnRMcWNkTk0IK/z6vkL4DsC8Xt1u/i2tXNnhS3F15DvOtNCgs+BjK3sHAo5/X1659ditYGB7TxYvX8GVWwU2JL3YVdmSyxDtDsip45Ehmsvfr+zqyU7cxYfSBSWWlPmk+PsHUzXFQVFc/cG4EOjYMeeh7/G9lpJx8oSeERFM4yc0T83ySMf2aQ5IK55uBOGHhBTQ2+YfU+t0lSm+RTCWXvP3Bm0DldM9EqRSGLYt3sHEZrcPxP/L3rc+g8D38HSN0+kaE4MNWtbIFL3m3lCGjsNPxkIEI+/Uqv+Xka8Rh8weFp0Kwvo7JkFgyvCdmjEAA+UeoUpgUZEzJ7bI3bRLULd+LN/gPMNdBz1Yszk7zA5FGDiqU7q4+ZApDydgYZqXVwPvUAmQ6Bz/F55BTwhrYpydkimG4C3jml68fiYnioSLjN84kGuFGJUAn80v78pvF1n5pJ9E8YT99JPQyCvtpttNAi7zdUtgCwPy3lH37jj5BeNssSS6UO2Xvx+5U4U5qGDF8gFZVzn50O9gWUdAO2wmcK5gCfYhe9UiDizhfO8NBXqL0EsDFen65idfeiP4ZEcD22kOkqGpEGmXFZZUy5jq6xIaIqt+qGvh+2vXetlBvHzoi723iZcDlhooiE//z+X5vvq5YVzwX1J/6uiVwbF9wnuf5YN9BtyMsi9kOb8mtseNMN8MyZOeTRa4VKZydN/pGns9X5zDw3q9wLUUMquegd/+yePItMKqPRpuZZup0zWeLLmwhShZ+o8sYzJ9BufsWlR1A+ImwrFccfXfLb7I7Fty0sf3eMRT/4h+ufER4S2Q5FwP0AzNTbx80DE/ljNIZvyQrdubwBiV6u3Sz+KTbX/GIZpP1rTg9m0QZ+4r33m6ypZmJ2seRvpjDUA24DCPxc8I3J9wmw8x4wmruCw/n5hyK8QuV5uSGfU6PEjpmGW39OmgNiY7iadkIGtgO53V+aLE7xFHuwHSo2ob2qP4i8FiZKk2k8l2j22HIorb6FytbXz/WUAmatLM+anJttCA0/Jso3NepfjdnrMoiV2De7LDgSLdtKYXFvipNoJnzWW4y+h5Q73WxWSp4dHZK8+TOKTjG5m3/n30LxeeQ8XMGa1aFt7ZypEKVWqi8mAQvhkYIYvbphOh35ISvptDuzHFoAb7N8YpacrbBEOcff5dXQ784Xc2W60HoQr1maLCfGJqSN+Wyo5ixDbKwDmgWGLxYz4oMcaduN+Xe5YbEE9VKSrX3FD0i4e/PwvLjBtJtVOpa4a/z/ZeAS+ZqU4JlAUPf1Xqs6IfqFap5m3pFubvSbDezaOx6kOcez77HsAa/e3UNHq82DhknfGleUWs0LwkG8Y1U6yA7zkXRQ7X+WV2Ue6/ujW9PBSPX3e/UoalUIGbSd5HuIgGa0EbvNYL4sYVA2qsK8x5zvdVCjeBlte3/vEC5QE5N8cjCLzHavbutYBMVBH0VYovwhdSL/mItFqBnY7paRXfowd5342GEPhbJC6pFFn4XFY2D4gLAKINM9Ze62ArlfVO8GjvnZnHINritC0lpAMoD6fXS02DRzWXDUW7xG8MkNAN1emSgOiul0A66SZZnhiGqBI9DDxaMkyGUfg23lZdXi9791vnYiUI1nnnWWjrUBQ+/fxms20eRB+DW8TJ9oqwoigPKAA7cALZHGb30FbpS/RIK9F75+xdYQtgDZJ3g8/dzxQcwdr7gwKIu7lrZqE08a4dawSvWsTSPDLdtzzXqlOTTV87eLqxGoIoeI6MK3m4rFfNV98KcW6k1D90NkJgl1lIqeS4zAIBNSO3JO+tBgSFgNu1Fgl9G6wjJhLDjEXoeLFDH2C3bVc7ZR0P1sWuR5VjznPFvz+dfSa9Nt4MlrKsuqsasZIw/xRFJhzFkCb46BAZTLdqL6uV/tYUFKDy6zUlj5S7/N28iqkToFxiwpOYn89XnjH/Z6rFuFV17hJf+70x29a8+weIBIeNAwKED2ANiUv0SHtIZZFymj43EXpyerN3VJKcodmCM/zHWG4z68AAeMUCArBy7tFGKZFmrq2yIIq4fymlGqYXMjvMlLJrN02UldAscU7IALr/x94o8/xtSLGJt7yI3gAGKIcPX3WxZFTdH52kNEpV5czlKsngPzIW1bR6ZfL+/8doGnyku+z9s42lfby3O2h4LNqqdfWtIiixGkTGsp+1iUHwXFJGtAbrkGTqFGH/3A772RF27w1WkQqaVFIdNc9zyaxCLjoX60mFvEOtgJFNk937sLF4pSAa/p4s0HsT4u8Pl9f37J8Mkg9J7SFDxYOlJPJzQfeVKxbl6D/4qIj8D5nARYOKe6cjtpXxufAAg9QwGPCfA5bR6Ti8Het7mFl0HK/HJ5vGOGus+eWhcL4nF4hqiWOabjpKAuxF1iFtaphkaD94RykzeVC9GjfBn8o00+NqTIgoABMp/qhB8yDqRjIbKiqZb99kPlFy539tV67wRkaavwa0y4i4+fY/UZh2ri/3jDM1HVavvQayVcOWAKfmNV8sT5NcG346IXV+7ZZsozOOg4HJyQ0WIM9rLd1/mWWzFT3KEkSqhgYlb9ZnJ2iLDeklHGydsTB1cjHZpsyITaqL6vGtD7QJBntzco5UA5onMwAz8rJucLJfQgpBIHX35X+KeiUHlbZxujwJCyBfunAHN0P8dn6ALn3cSvBw/2OpFG1lRUZRLTm5XfAxQM6t4jIS41Rg50BCLwM2mNHMMj0ezeg/O/S8fOjPHpU935XyMLJ/v8JG5HB0kZUld/eMgM8k9WdXZ6GMBQZcYTvdOCKCL3TXf+G5ymFGUwPV6tS35U/kcHKcZy+yAPaJDmHL1Yi4HYyBw4qsq6VVrkIk7v6IYF+NexhmjlYono7Ov99z0MHVa0QNwSv6qd7qgoGsYK7WwOdx0GtnWFE9lhocQxvULi3lD1TqFhyteHB4zZyR4wfohT2kirdzQRSGSf0wzPh2Ah1WyaTM1sXN4n/1Lb82+M13TufGD5A1dmfLK0uVCtsWpqUDDijjq7kjSHmTQYdal2tHSEVK3elDfATedTigJt+Bvolub1XjK1C4J7i51YjKnOlIzngZH5VZ/JvLFb+pGs0C1glL46ZfravJxoM5gzpRNnSAcFu7YdC8z0iVy4yTey8DK8TzDgQJi0gy7KBz1zxCmYor6GB+W6sw1znTvUYh9ON6yOdaMR8D/HN2xXBYrHWGoTQomBg2Zs1t/zA1krBwN5ZtIMRRc5WRkmzXBykq+9CbusXFd8b9h99zyeQg7q/kfBLzssdVwW+yRTuDNIWnqHL/v963kbXPg3QdFGS9w88v1NLJlZJsYpLNxf1vouchqLsJ5RS2VrIDYTHUJO5dUhR8+QlwXs8TTUUIkHpgZyUVTV1tp1c7xHywKcIn3BwIdIR8l9xyItLRoswYt1pH7gItM8ppmGxpmuj3WhWfUHp8Phvo5dEvHKiH9FnuXByZPHhcOUZo0iPL0Lv0ncgvGOWSjUVhsrqJnsCacVD5EiayClO13SSdjMGqecjVCQY1YwtFbj1IbXbJmtu798XY5/9XEwjhmcx+5ibtVfeX3GrSjy51rqv/YmfhnDORxq3VuO8iySWmPrcGKug4OvwP0K0iMrKNWSVkUqI5tF4JAI8/m5u+gIDA7gPC3kZZ1HFlUDj6DmgDg0IRZjbSjvMVQCkv9xYa/LWALxTGlZ3PdHvlL2PvBL6eClkIbw+EEqRCOqEuNHjtisYMPllvP1vMLYgA7o2RZeq0oUItOem0XXlAOs3MvK8tottXNunqaUZFiPiW3WJcMdX0B8JKms6fe5kLqgFBgRFt6qwFPL485C8Nmdm+S2GvSYpwcVloBRc+R00v8EeWJ8O9GHBVfYrf0d/n8N1yER3xAYWFgiLKqhLpNnC3LqtSKqCRPDT7IikqTX2Nei38kIjQcNOTYhoWB6nnoSUokXwS98yo8UuqkT6gpHOayGZip40Qrg2mkQmcvwUzeG8qfqPw0x+NUBaebevsiy6+7miCOy3rnHSjZe57uG15N5sIa1tYICIEPoNqSSPnLt1euFn53r12I+J2Y1WcIxsY6QjkydWkvPci+gP3DbjzI4AADF98o1PvzatXWt3fXVIi57c/MFdAxQpH5dwfvYAS2yhIYvvfAVT0kkQ1ZSGde59mdHGwFibb3M7XfGmkz/hv/UUJ/rsdII+CIfNzZq2HPJo7QuC12k6EE8T5APmw7exx1WKEJLbGqqjlT9rSYGOykwiawPD2Bf3ScN5eLxnqQ8UPUHcXNs+AM3nfZa1GRPQ8MlUN8K7diJ5qROw7m20WwGL1U3Br0TlWNpuj4nDbPSb9puYWrxogMupGTbgHvQJBra4Yv0WY5KX8gn0CMgj+gCv+pdI8447n8Sq4Dpkvi5HLB7LTffwWQ6AGfX7nIPvrEeLpJx24M9gL4AhBtexCZfLgcPLTjNUcCdI2xaNNlsuoD+RkdxdrV9FT5jQaXcjcAk/qLeS0aCVHg8OndfE4UL8Ax5W838dPkAgZzsB60nOp8RRaHWzxgE5GV+uYT0rnvEr69IqtHkBub//CbQMfeEK2QjGhAVgP/I49rjCpbPbzynDiSqpqxF1DlqWQ5Zm4bHa1xdpmcBrXcLPerkcnD7H1OvhWWrqxijzsu/Bg0IBTa3RGRTb6Terhs/vxd+bNFdPcsy0l6S8jcwvzbNWpg9vF+ktkx/V8orYtTdJ+WgkG8rEqejRQ6afsYWGnGDpVTjtytwn8pYWcVXsDl+Gird/gWoxoyCg9+7/PXi/UhuxT68OLUKbswr7aXZjSsSh7twge1tfbLsAsTnmhjh79+ev4BthOam+JdWFPlV6EvDwOx7mirp55QIutWnK9rdE3/px2j63Nc8fYTAbjlWOfNkab6+SBI0Ze72snY3YIEBlVQ+rSjuh1iZ8wwnQDfQUE5PE8MwKHjeSU8mP2P69VzzW+wBUtVa7q1p0BETmVSOSuJD14pqT9sj6w8vEmJQHNyflnidnk6ycjCpjzt80pyGtrtY2QPMcut1Oq89PKzNXb9Cm7eLunEkAyV57dmPsn1FSvO2iNi1osWlCGRGNewG7cPsHbDSOHcX8Ye536Sb3vt9lCW9iypdNUWWZM2ArB4j6NpFPYDOLMsSCn8kGIrLiC0oOaoWXMxLcdRBH3snnyaSvSRZCLtQXCOKiDjL1Ibzo+duJFWIidRugzPOZGEOBPnYMrGIhWqi9gVgr2TJ+Ls3BZhQ4+xWdn/+NQtrchaKDfUjbbxYXPSEBy/GOXRAOFFALlfxQWEePTDmJXh5LFmsJFZgg0lTvY2yds3CrUn2VMJhqUZDHwM7dZER7EZH3OewlZm1iwbzi0VmzDPqaIRYQUA9qO3dPqR3ZBA67y2YenQAigV8Os6UPm3jRs6838OFerrDptI0V85WdtABBW+R6yu/sBdNU4w84G7jOaSbVddATJnSo6lsaHiBwWjnBwenLrS3UzbyMtoujflRp/5WobnTO6HbqpxH1EaL5tiufbNRMJIVPyV6BA9ZmK6JrgcCPJ3vYIXgtgp02QG3YsVERcv1dMlJuVNmqJDeyc+2H9EgA9MNuEqmjM0IINz15XPQbXCm6YNofGPqAyixC44EgVMSwR8KMjol1bIPSB/WhSDGHrAIBde3pJ3LYuPQi4dTaxgpnEvL0gLRyjHYcQ3PVAh47Eq3UMBB81deLGC75lH5dxlPr+EY0Oe6tZ4SWk4aPchN75uMET7aqMGCBfr0INl9ZNSEn32PAvjKUaomTmGVRt91xO8f0V8MDmjLjZO3x190Qs/cO0FyiBLcJpIE1f8TB7YsNqq+MEn5+L+twHcYN2kRChhVuIxbAKKf/F40pDbw0mM1BADoFl6qmMK3ks/qGexnwAbcE3oscPKXmsN79zpPZzXQsPCD53MjNhY6iKsM0dQwvbpG2INehLtbd0cr53fpq60vMPY9E8/eTdkMlBWNbs4jrasLsVuQjAHePuZwbgNmMwBUaUTNRFbYcg6YRxcFqZ4iJoupJxc5+vwvsRBwtc77PWDBwUsaBRBF04j6yJt9I+L8ZzN5XHOSnaXed8CFZLqZYyWRXEYRT2z6UnjiUD0GhQKGewljuZRe3GUBepyd4ZUxQhyc/0UpInlzpntHW/4mYpdyaqDmrolgzTIYt9Ag0gEwOr3mAs/SnrSdBkZXSGSxVtTe0nvY1WJpoEkng3O1dp21D1mLleBRvLwnkJ5nmJ3cPOELxMyCHJWJJZGxlx0mffxS4MtTE+4rb/2rR7YHcWQOwBFsYZU3P1aCwkhJTxrmT/zfFmxc/K8FLPT+qRoEcEWybkWi2dDe/zbhIz1Jgtvm4PdZ+sdotjB4SlpFcjCmtQGfUYqt+wYnmOnn65VkSue5qoL5wAjoioWnQlkSa9x1Hc5KNXdXEooEBQ1Bk85HnNRqASc4GtvpCo2wHBKbwtusUUgZ+4srxuic/f1q+kWg6E1gBNYHGuYkikjvtNQOBv3AJceNQVm/rOVepIGmTYxCiNe3lET6EX5p4LqJBUJihzRKIFfO3JdYhYstXwoMaI9dRmdhJrENZJ4ce55p2ZB2WuZltJjKYzHQZsQJayf+DIoKi5gkaKJOm4TD4eCk15LwJtt8fRjSPLhS9J6dHQ+oXUtIxDDMXL3WhPYKoN2gp3c5KZan2TrwWWT2qwK6fUYKu8j1FCMuSoplY9IsGs+NtTB0XbH61f+emV9C2Gyfl29B8cuCjafffismV4OlJEhvkg/d09q9TJ0iM+cklOEkP72jF4/+V/aIw9SSRCqGkJg6PTmWTyglXo1XM+jvKgoe8xJRs3FgRn+iMMJ13O8yzjxSBLIZiDzXU0ZZuWvOWcj90WNqu11iqCqPgPWab+aFWj2XEIFu22QmI+7RDjPOhmmk7qZpVekgGQFnks8GT4rkqbcAZKC/K9geaC5TdDnAs85oid+EurmufO32zca50YWVkUumKWzR/hx20tHr6RiabmV4t7a+Lh2MtzBhsW02DdgPSGcI5/D9jGmTa2nG+g/+bcLHAOazAgW/9b4Ek5I+YmbQEtFJ0ZENIPAnwvDB57E1T80YMbiF4v15ol33z+Mz3J3kXKAO4f3H4QdFTIil+24NbpC7J8aEvEFUvYKJ/rjyTWprB+wFohQV69lZxMxS2vpQTQ7VoHUlrIUdpyQs+jef/UrFHK3YwBgVIwvUXKWM+WFozwQT+/X4hygzpxTVm9qT97KPMb0ADTgsYAVQEtCI7VbpEqyRbcfkR48eidDMSjk+JPpIdMTOsQwIVpIDiK1tZmaGoJI8+DuGK+H9o3rsLxx2944V3AkB+scgj4tKCqZCtGgUz4AzG7ecdRgLDdatdOrp0hRQDiWE1MeZzGqbxBxMG8ux1eGQGIZsqokOj+3WFAMNcUC8WEvix0cl4ts6Hx1aN7Oilkpab3B6l6HPTiDjVkgej3lYcQJWRzdD1skqEqBz6MCxbKSKdRH3U2wwtGAZzN2BSrFgx7Wf73ycRaKYFBSIXJRlmEYx8k07fteD+RFNhT1En/Z7hdmFmLgQUcQTQCMnlY3ZkMATeSJrPy6XiJbmiYu1uujGCGYmlGo8Y1Z3Kyzs7NUADnOfb2rg0lLN20LVzMP/VEbXhDHpSgXu52143vvAe4Mvpcf3lHVYPw9FtssLjAGFf+WG5pntrqb227d8Y+9qr+2p8zp+L+LR1dWGv0GfBz+W8hxbY4kOgAK2GmM8PjQsVkcIfqO3feIYUR+8hBCMd7iDeAB7EDRJUfu8nIOX7MYIzqUG/ditxhyfccSUpKc9s2xxIXpnW5/cvsQ8Rv4OLsyuRaK7um7YrspY6LhcTeFOsg6PFYmPiU7nNdvMc06ogVT9DkSxvQpvwE7EqEPq1DUiNVNF1GYQkX0g9smSBnnbwlviWeUTATrCCIMes2ajlS5QtfGs0W5ZdnyNp3HYM2EfvyXpiCNny0zDElfMQvblprP49BAt5ObIr6xvc4VeD7lxdpeeEYRmVLlZUBpSc7QbP3ca9/2vHGHXzECe4Mp83RPe8WbyVFJs4M6x9OFM8KQM2pZehJjS3MqWuxNyAKUis3B6Nd/UCssmOCL8I7w93h4X1iYKSFRcxA42epV/4u2hKOT5DHOw6RN3xA+Qi/2riiFKqv6aizDD02XjSPJmOp7th3dxe5XlwioUvXhMAxjAw7mgBbfgq23VRGV8hWoDiFsPsMI8h9lDEiDv58R0/HS8Yh4kZA5nqGLHJV6VWz7gxCePO2+zKREj/tzz/UX1+d5X2s3pI7zCoUmIoXtfViTrwdQlU8z1PHCnAE1kz5+Jbz1dJTvceLrii6WZtMtKR2B1C8D3Wt4n7Rr09nLhxXGzubQQWcarqVhxkbsBKfMT5XNu/zXGL0P/ARaBnHadZ8VSEU4eL+L+9HJeYnUJnCHf/RUhQ/m8m1q061UTnTUgqGkEiIPyB36cGRsOpCIrkKZbBRtVHomDTuycaYOmCguHbWtd1CeyZm2iLSIgkDbqU3XGQggEeKR01vv5GxVPf+RUCBQO0x9ffL31NlucnGsDRqs+bbeUVAe8cMe4BVD2ERSRj0/VWyzT7EjD7/CDMQ/FzfjNm5OUWQIwOtQhe/lBhcRW5imQOUs8RJGsFHLvXZRwYuI2763ZxJG81d94W8Z/EWU9njc2G1cHJT+qOYnfyHz0ftqwLSF3EZzEsbVA9ljHmAtjoQs/uyw/pphyToBYr3GjeLBRGQWhz8gBT2Li+dQ/OcGvkUurTnucLClnYBEQ4t2bSqZWXAOz8w9Xz+CqPX2sC63BqIe51lQQ2RYOcNe6kX1E3GNsv90gFCn/4w6xv0Jj6UUHCsl912Sj+jd0EWpAbLW9FiGfK335DFxILSUdp1ejRVmfY7s55U3/ko1r+zatYkZGCpjyoX/6uoL8hzsOWJde78luNosgqIF5KUm/pPGllHTfjYxc+XkzOkOwLuplGGf+DeEK5obk8GChwiZGaOUG8/sW2DXTvOkEU1+jpymPtQBO4+gsuz+AqoRDMPUo4HZtsTa7ZzucqXYGrB1CfTwqMk054Q8tO/YJBsSm07vFc41PBR8oKOyk9Y8689kVROIk6bOyajO69VJSP34S9Bc302ipMu6cXHW8JnnAdBgzYQdrFm1E0lx3rNFQozwLxKwEPzQ9Zke7HYK0XdmzddcvzBzbtO2P3jNVxFkr0BMKlgQOfyRS8EMf+ov87mEfboXsD4LqLeKAv1ANL++uJLRZWAQ9jeKxZjrYVEbPLaAZuDFCcCNBzfybbIui4ZRyDCxzwCdCKIjUGRENg/TR1XxrKBz9SN3WALrPU6UI0TGXcgS9vETD0l3pSsHAoL2btAB/gnyLdzkv6lksRJCoeIP4Teo7QPPehm2zVmlaSJy466EEkU2VOyJTbV2WQljrmA7O+eEb9u2xUsyMEo4riYLf6Ke2+sS6GSecDLTorIz3x+0NYbMn41gHq+YT2DfC4xyrfTlbEp6EHbtP3oKZNnJqH/HPHJzRWRPqmbI1XUFsXAJOoLVaKxWSflRE+pRnk5M8FtJzl+h5qjvjYLqMsL/3rtRbICEImuC3HKI3ZtI3JkAt4byCVGuYGnu6RheU3Yg10x9wOkL7UhF+3AaHJbqi9rnB7a6EPcyY0q2UILdmiUCXt3ysbptXhyB81FzZ0evTB1vECXk5j3QmJowRf7QelbvtiEIy61qLjby4ZHcqTG/RyMB0YnolSUMxmnjW4AaEjr0zjZcqGqfHlmK1+najMQ4hCMey9jJIX7GUM/VLAN2XfRHLUFHBjfkz3RPJ/rPOomZNwvz3LAiK68jkBENc8aFivnh6TbfxzLULHNWAL0GMLBdhByITZS01necIonBdn4+dOHUjDuVxomNcSutLwD2O4EQF1xo7L6NFwCVX3Z05RwkK7mJZ0i79ACPsVx0j5BmD4pTVAPBYagU/Xe/DjadC372DAEg6yZ78kywzB/7xVOjUyFyA144HGkyeAcmZlMOipqDFP1g30qiq46lMQBAky9869nQCQISOIhqacxORnwigCYSN8qN07+5prQI4be73aum2wqC1390AVZZ2WPgsDlHZhxnNyPFYlJBIQFDBEryMMggPrHzfw96FHXrZJZFUSXzrJU3BbApPwzz+RkfOhlWVZYOKNtg/sZV7UyyqN9d1dgGQ9oyjYsYOGWRxxb72L4cAtgMotSsuOknM5oLYkA9q6chJ/BAfk3yaEjtLdZXBAI0iJQvZGG8bflkpEwkfeFpAKf1IgyDjSoAYlzxVjKSXINh2WTCDpWNfeOLxGCU5D/BC1dgJ5AuHhlEz4yQXwMWRbvuYQrVIkpeco/+7Vv4124mn+QynC3wYtl9ZSFTR2lC+w92f7sDCKlkRRERTqMb128s0gO1/RPsJCLkshETjYFEBodPVqZMZJDoMIhxgsFImy3V/k1rncGJ+TPxMXvTT63i+JYtCMTpDv0Crn+UgzU8g0HM9Zn6qAvZFK9bX9QlWtXjV/5G4MvZlv8wAXtsEfZtJdOovW6YOGXiEr9oY8920o+F2CZ/k7trbcW6YsZ2QKX1gro//Z9aMpNfRO5hNcelj6/IGJ7b/ElHUoIDS84gPBY++3T6Bf+JwkEF/nf9QvUy5iqU2GXBlh6cGctbwyITtUK4kiG1mTk8HvfwbxjOnxDwLwIPkQor+b1FB6f9nrEtYvqqLkoL6nAuYTOqXVWUD9abG43vQyRv45xug8wx02DDbhaP9t3RzIasevFRNLV3LhYWPtrmwaTQ+3hbgIRCU3atQNh0ojYQisyFKz6N76Rarf1qh/jXBQQWEDXEzjS8j5P3WqZFkMYyxL2GjYR2fI8f+RMY9rcdI+4D/XO62A/NNSKOZNTjtkqF2AKPHoksEi3ssu8fEZmudfFNcrcuLEeGDPzKE3kofWeXr78KSe2S2h0wkx83IztNOGPgmNp2Fwt0ugx4nwkOpKtRK4L4frglzN1fDZy0z3INURwTc5mC7hR0gHirUWisoDhLX5AmQoGrCLYG5gjaYnW7OtpaOwQKnTz9NgWO0CAYUD+ZARVzWIH0Qmid0sq5IC2k7syemj+H3a4avSLA1oGYzhUdWthQDiYG0fkM6uEjUdR0cjiLxhow4xzR5eD+fUA/D8/jYBbCB6417TjxW4dKLmDejRic6nbO27FxNCrzp/QGgzzA7Nq3ow+mxrR+a+ICdZUPJ002IIuLmFp3m/XlE2Bjdfgg0YZn0xayBJtZ7nPTzaxH7uyKWiiogzvpPAfxL50IsMyBeP5veMMkRHn34vI7/W+KgdjQhDvVSlnaNmM0lkSrACYxAd5CgWmlFU6HNAnKcx8MmOKQitb/AnXXRKA2hmhLNss46eh6n/BqiS95mItQNhySdk9GB0I6z28wgIvyIhVOSrcei4ZmloDAk8IGSTYKsGl1qiLagj3YeHVpPGlFtKq4LMtMV1qinMF8RZjyzf9oNSkOsoAOjez96P0ZqPtaJojCua8K2F5E0JaYLPbQIWTVxciViJkpAtD0MQpykiHF9xu3uMzUO+Qr25sdf0jGREKP+2sXgYgakjmITTevm3p2H7Q7Y5qg159YilYcrZ78zb23z7F+W+uIY203KZ7nH4TuDP8eChbQ0lGhcNK7ahM9524ZSYpwyAMg5dgfSRytV7I3d2eV0L58u3qHPjNtXMHvHdjJBSAvYWn8FMkAp+W4gdnZZCR/ENeplF0Tj2+j4MAS4tovcngKESfiGFJo7T6u3qe70uA9ZYfAyXurLvrPoSauGN+6wieha94zPDY1Q8yEe44AxGUzSwEGzljrqdDt6IQQPNO9DQ1TnGkgl9IMAZrdPDW47AWCGadHboz3liceNOZ45Q5bkCWdzYyCKbmZ5EX9cGpgn0ELrD4MusaKNN9mS63dCgyChRERAVUb3lZGjznzRUZaqdmTSw45Q7pCRAl7R+nltQz1EubsmxaH69P9lrY5cJPIPvE/de0zDGojc6o1vZWA6wSgAW6yM3uE0nUHEwRf1DilXusl49vBCASD9xtrpFgrw8yo13eCSGJxVK0gtEvKcRYOYBG97CRQqJrswo8cDrlcD7U3gMKixKYjL0QPR5eqlQ2deoRr4ZlsjL+X4XwkEVvh+JpoS74RsaTTBoPA11TAcbuC18Klhbg4EIEKHWZ95+ULscBIFl8BdcEC0Z3Vyb97epwB1W8tlIjdh3OLRi/FPWIgJVeMQOGYC1c9E41wgPCUxCQFzHeA5lZGojuS8mQBXB2hVyngM9ElNxIP6R99vqoBx6cZRmLrbiVQIgIJ1FJ4vOjM0S6/xos1cesUPkqZBQS/m3NmVl2x3v/9ALScy9qXVyIXk46o1notbo/IN0Hr3wcVJdtjiaoJ1rmJ55I2ilN3NuRCpGsUYzF0L/5lqAOk543BnxKaSKXI/O3DJ8L7iPLntGdhy+BREHfEfpnvK+1EVOwWexm/A2BgwkNTbW8bUG+eQhY1OY/8+FjnDVntxEzrjgmH9RlzzzJ0vEMpvYqsTv4/rvSHp7Gcbq6v07dqNpzrWVBYw7MqwNnyFM7T/WgYvd1+DIX7KNxofbN/cQKSn68yFXJW4ZHp5loUrYH8KtdM63I9vAbtGNgFlkXPd/67oD+ebwvumJQzpYxPB3xXa7zJ5FZpw23hwLiHU+ab7cM4fIX1+jFNLK1Cm1xn+1qQnTxug/ebPCFlp6QUReRhtGW/b+kbiR+vG4H1kqxgOIxWNTnUHJxBqPJNPHQIiAwtxJwkeCoCFvqmEHd2OYMzr22Ro7qykw7OUQk4SOjxI/RdynDCcb9++aPvEgnUp6vwAQh1TI/GLmC3fj1bGvPnUuH5mAYlavnRyRitia6fR/wi9/Y7AFVjPTo7wJll+9W3xSSl6OB4eEcA+h1pTQoXJ6eGzyJJXiuXmFYQKB7cWEi1S/ai6rplk0xOyGMgRQHjBQDHnMJ6eMZcWkgQv+WM9s2eXHhDNa9CQBCz29peUQSZnxcZwSCPfEfGLoL7yDehJ3k6Nr90EdcFAD1NXlGFTQh4QQJUxQve+d0IRVcetZhbrn+xfp4ONVYTzCn70Q9iP2zCcz0aC8LvMWxqMtBAUgCLKMyZJSM00a6bZ18jq35dM1BYuvWF1ZsAjlyAX2rTJZV2jA+U2JyALjt3RmDNOwdjkLl3rS3rM6UJVWC3Lv60MDJn+B5LjxH2joPb/9YUPuOj6pD4pdRa17YEMNgerupkRpuI4zEb/gvoWgVFioR23L3oW/GJPxZSR99jSgJyRNvcry98bef0AihL+VEwTpfSBq9yWQq6dET3iUBpRtHuCZ6NpjspUyorvFn45bkEpg/Tet8f0VDxy3XTlg19LDRDE4mqI8vKhKC0hClPgovKZhJPk3Z9Ohv6ZkMIhLikp6Pydsc0pOet5Bibal3kYZ6zpBLtNF52T/WY5ABt1Pi82eGOzGKLH1Es+J/lzLsoxVD8gndOn4u/eWomurmqIC4iHtrp4pxSOrM8dsPjYRE5uSuaU5XQChLVaM9+2N5v+XIbs6MkUiwh4ITL5PZS/fAn1q5/St6Yfo5bHM5VOPzrOizUQ862gSrSxkIeBZzUoDBu3bXNs/hucxshZycKk4HHAqKr/E8XYoAvc/bNcpZOtzgHOeF47DUomBAZZKWH8LD2R6lL5z4RlOdILGTlzcKm+H7BreY7fZC2bU0hIJ3foPfv5ay0GD7dC0NKeETo2K+zTPq/lOz8jvIkMW/iJONqdbYYDAJ6nQF38IEWEct6ds7uuT4sNTM9HBbi3HckIrGrBggx76/2F6B3NMKb8HfKNk1BaOIwGcQUyYU67dAGsxUVNvD1415egRUqDHD2PSPhr04n/ocZo9oSxlh5VQ9sqtFWV0cI2gURhv7M9Txey2sgi7nUlM9+8Gbs5h3xyXFQsZ9OW5y5ZeOdNv++58iQ4H/uXNcTDy1PgSily/2SN42VgPpxZ/GRXuo/KSLoRfEO8ylyQvUpRXIquaNOWJi/XBs9duhTEN2pUcK0rrAoVckoOQ5O1cUTEPrdNKahTxjejMkXCOqfrCPoAqb2sUfTIS0wSmwHey2v9HR8CBSy2kMQJ+ZyHwG/wFx4DIlEd/urfIzyvMNpuxxU+mVpvT2pmdtXjZr0nmZDlsk/9+DDr/FJ7R6DRVNUHFyOqtExiPFJljRgsTJrkt1Ua/pKS3vJDF8YKMLqgOtbTkiwxbDv8MQr5w0lgTB7LwC6+XNXl5QSOkF9Up3CS53YEP5ADhbxuMfGymqa/XSGZDo5W7r2qJmisGmjPKhk8Wu2vCty/olQrfTzhKGc2DRpkN1yZGkcVKrySskbzuhA6uPA6+E9YM/0CN9Z4vANBxSmZmglZN7Ux44oLXnqzl0HVDoGz/1Csd+D8hWe5KLO+/JvkElY/9F9+4PHIGhxgMHad2ctj5u70ZgUU4ok49YAaL11ggl3TCdPtx0u/s83NH1ZAoVuIIs8xKDcGGcss4EfDbOBEUppimozr+owxY+XRTaNeN7yk7S05lvSN7WauJRWTgYeAOd9UvFPOqP68zdO1Az2uCfu/7A7l8VgprzUXZbNCPCvlj7AQ4RWxj+dNudEKnLJgL1VG0nFhvl8bwdfqiPmSmhAa3HGB5/p2xiHyHhc3q1DjpFPyiDgf3M4YqGqwWw3gB2TjhPhs6euT6MrhRr+BIIu+9SdCVeKxMRqBKOcIy/X7UpaYy7UlK1+UeEwFFcesYPpbnWizyRxtye+J4fnI50rVuL5xH60Bcd7OU6LYErmdqsy3pTj+nT76J2Sh2FpTljgWvj6h4pDU04lppCIWtGnSCOdEZkPkiloLiyHvQI60T/+SCp6cXHdeypzSc3wIFirJJu4bAdhZ6ianaOKpIq/Of4mJOHCZxrIzWK6VtHUEI4BfQl5rczunhztgedqrwuhDdmowI1IaZTMfeFtO0JzgsOJdEwJpxHmZbBx0ZRgVG942Q+pChXL4j+yppbK9xeiTxdqIXMRfmULgPQSm93DeR/lqHq5KxyXaJImNRme82ItdLus6eKxjIsd7uwiLzyIQZ660jsm2xM0Dr1UAJuG4poj2vR6m/ZxIcCwwYVCkGqNt2RU+1y2qfGFUBh6RCwewGMbugztrwIB52w0GO1Rc1/ejOBXaqQhizdAUmHn4uN1Eyp+VMFaxqZQWxDtmITMZDAZ7/GddAmggELdLPjtw7LKYfejjQVknH8TwpBw437joKXsK2QMHnpp/c/hNpaKDOST6RMPl6l5fnrQvROaqm1MGVtVNd+yyVPAqcXk5HGr1UprPgnyqsO8y5FhgJosTVvqMdTIIbmqURKctm6aOLBhEncx2/61HKfRWUfLB+OtZHXGJYbCc9zLcm1IoODj+nip+7tZZqU1yKPdK8Wt3WDAR8wU7fRHr8iuh599yF99CP/Uu4R2DWYu2xxu2CoDNrlEonuanV8u+qFyhF6kkiOUzxkjrlbEOo36JVkbqqLYiQQKG4n+FR3rytlDnQ7+5p1pYw6XBl6H4vYc16yAwP8ZMnWCPTBb6RNeLI/WA5CLG7PEAbmjDXkEjv1K7tQr81/W7EVZd+Q46qxJr9nW/61iw/zFd8YrlzEgt0uNPB/GJ6DqFKprWJYqkJPXNBUQzr6SgI5Xd2mTZhfAImXwkzLN2NkJfiQirIVs3WH9IYUyHCJZSjHrXb7/CGJZ4my2nYJqLAJc+/wMO526uRkn5476FkbXWapp3NGM32RQw9kGyrZHnev1x6ckrsctjobSSKR+mNyPtK36lSPjASXeFlFXaBpKvBd6ced5pgWYCKry1TVWSYzytuiLU47bNuDHrGFDYrQ7T+GwhM8xmkqIOrH2SwxB20F0l98PrwOniRo5VEw9MMpRMTt4HFUP3Wg/LD0iougpoJphLJn0bfh3zMJzOK347wuD69/ENJy5TacJEawkk4zNpMCQEudEYLb0hiKlNMEXeVvdCPMrxRWYkDI5vqwJaWaJVKo821TXZ2BdZK3LCdBEueuWNckHHjiNjPZTzllJkKIg9JWLlOS57rX22klAuMvHBhaVOlgSGzYye9Zuf4AQEFNdqWeIdKQVLdxdEfdBvfM9Bmu7XTrf1lQDDHgbMcCj7gb2cton/QQnjGwM2hHhS4CWORlPUxVd3ocERNYZB36gIVQ/xAHRqaDzuX3sYUJFDiMHAgzatV/yDbuY5DQQeESa6ZucYs2E/XPKIgnk7HiOKSbUwIzO5JtRS9UD8PI5birU54VHRH+oqwx96dr5TV+DcoUAoEn8dETjfjr3G5/JenXvMBR37z1g+g6IaFSzgxXYUbDv8qSiXInNGhMLgYm6Vyiz/9a9chDmdq+A6iThie+dASqy4p9/JsCZcYv0SD1sgLwdNTYTjSmQ9cAUG+/Ngp01Mb/ES1KYe8Kx0UGurEar2RQHVc9SJrLoojpAbfyT2lp5KJW+HrjMZOt0byAwqIudA+JCLK9z+wSDqenqrHWv0pnApLnpy6meyc8pfcmyxNvS7PM3xN559fIk8qTGDhIIKcXJdlY7LCqvi5Aq2XPBmZm1NmYU5jjEwvHrmaN6RgizUb7ItkgElFk8T71r5uLKwZ2LnjBprAFq3MQZerlqYkjDuIH2XwG38CvtyJGQGkhwt86bfqr+bSiH3i4jb+y1/WHk+yuhIVghSHj4PX8Ylh4IXCSkRIPgJvAPGAfzd37F5ky4KdxSnI+OGpJaKXMydp93IiooaAFa9BibGEKLAtQBZYc+sW1yCuMkL3Nl75/CVjEsCRctseFHJfLwLUfX1QxpIWvaUMfmJwCXS3JRRL/IUsP0d2uxZr9EQHPlH/Dve5eM5h03C1xW6Q7sJrLOURaYA0sYinrPqacY9OuTTnjUAMKH961WQ22qM7FLnwUOowEEyqJ/Dn7pKDEKy8qO7F5KpQaCcELGoGyhsTZHOoVkS6xesPJPcOB0+Fq7AYS5pmNOD9gIAUop+/zbPHGqzuID00VdEkLCEYRAyHzGdgvKwq7yK9sDz0mX9U9KHYV19CmGLYt9173dgcpDNiyuymhmZ9bidXLLMRdzuS0TLS8IvKnHIKih+P8sVKF3MhBaBNHHQBALq9M5PdasqgutjLeTtwHmA1Vxr4/MHNqmrfloSd28iDly7yLS1asFJSY//qRrrCGw6g8t1Ezche/oudJUwTfDX991cFm2hCXhWCFOqfpDAKBG7m1RlGM/6a/lr3LNslfRzThaaWAj1v8sPQFLWOLu+y0by4by/FNpY5AU21is6JdfLwRtouflP0hSPJNpfkMTZxRYrQWCXM/aF0cM0RrNwrKY1P5o83hbDs4+dwrR/sGtOu1zH0pqHiv3R1fjfv5lqWx7tqsfQpuhPk0oaoj6+9n/Y1ED+EipSMRhmYlq3dIVbI7I/Q4+F1plKNClRrcdcOevmpt7O+6ROdCe3x38n9yCcwuwTPrmrtllKbNdd+OVkl4mG2o9kM6DJEg70GzKDtcKbcyu8+nMTNUt+Jb9f7qxHMA2XnvlF5Tn80wV7jCeUyLHErt1HMsFHdig0iiRp8Y77YO6L3l+Bpv1hke9dlwvDjowj6xIhPV2ivrpuA1663Wtub8QyGarMpBsEQYVfBtEdcuxKkJU+RaNYtQAVymjiGrzr4ISAZOO3a7gdyWrChXigdW/MS2LHUYRblaZLBx9b3wHLzsT/Rwqnisxt1pKmZHExuWtEaIuFCZnloyYCW3GWsfx7/mRSkg+zKne13eBXhXzq+Nfyi7spIzfsc42AD0qTBmImA/lMat2M9FbQQhioYCOkLtxzMv07DZrhridWdFSHOP5F0MboorTTLxWvjiWdx7gM9++TWyVI+pWIzaHirYBaXHp62S40q+FrbsXtzSV99qXEDmhdw9j3CCWq8hueTG7+NVX9hiGkDLdSsEiYDcUcEhUC9q56wO0I7U5WTDVQRA4A+rOe/sdTtICrL/5p86Si2fUjk8835uPiq4MCtrVldQUHEyZBYtANr7/EGAVchQyxRhfGg4JQfBpv5LE8N9eP07LQMXGh42yU6BYqlBEr8wXVFpWMLHLioeXeELXR+aXwE1UFjC8kuVeHvikIxPONNLiIxxhdAmAYyhHvnjvyQkJ26zDXBZy8dfbPIRz9heidtEqy246uNQJdPzjcJGXuD8vRKzgOgeegi76med+NAwTf43fWBwZKa7X578lv41eAsZzS+5qCIjXWC1P9RlQLuv3wLIEwwblg3be+TXrPPwfOPVleTkB+PiuPNYo06+eozLpEBPnvYfgxFIakHDPNdJ0Eiq/t5QrVY6AY0SZnS1PjkFAqSHIINXg7tETZvgg6qVMJCy9OwDqkhMElCEycfcJuNj3OXOwq8oVTs3U9Z3tyJ1ENTrXI74zAFF7hb1TxdI+oxYLNEhnc02yn6ofHTs+K6U+uTX9lAI4LMliwLul883pF0F5s17iOl2oyZnNB0lwZKIVXHwRqnk1Zo9IwahZhBVB4+tjCruyN2MMxB2sV/7alRT+xbOl1SC5jPmvmutIGqwkhdefn1Dn2HqGZ4FMCavR/0ph6YwoU/qjm+P8Ln5AwEogOCy+OodqqnN+S0MlKwVp9dQ9uur79ITCFB6H4MMHTaVbm3DgownLkldq0oik9Qh8gCgQMbnQ43WHdN3m/oyavHMNmIXgJb5hlvWZny/BHMeUcr2Z24CemtomaK3Ij7/4uOOVvAMJwVSUGYW5yd5viVOsDIRJbZfrNWSfuObj7C+FMpNiB7QLdE0pneYSgfl0v3/292YyBGlwamKuRsPoYPRPdTNdpCyaMig1NNpMiXepWV082e9IhjH6caNcKHXvraxe1sxaW8OBT8CsoDdrQ2Vdgdn4s42t5qp+DKB8vE9LlopBIM9CN+cBRRDbM9QPjj5PjTzOdT4cM03Q5GM7t1MeVrAKCxlfpXnBoV0WfP6jFaaB92EsQKe1e2dhg1k0MlSa7ceGTTtsAeRCiGCxWfA2bgV3x+eZDwTODZGsRcxx3SNoOTHICrJ0N1eJxEd2GwlUC3Cy2mdaz0vVsk26cECgqm82GNyA37yXZ5fVd0XgvX56Q9K1aboDwEDaEZZ4ynecndit//9U5DZg9xFi3kmBYD0gZZnKcc51ED5h5kFwXXLxl9YLf5FSJsEWZwk6jUauHmq9UrzFby77/OZjSODrUYgCd4VmfiJhvFEjHwO3CfyHbw/GCoR9JgtXO0fRQugFmOM4DnBfPSdZXMgHAErkV95W43zA5T5JFKVHI3XhZ8YQJoUvbSqb1JnetfIylfX9fNGUgFI/YcFVi5QdQt75kFY5Id5kpkys0UcW6cOV6k2JZ7fFE5/Atu4rFpODOLWDELLuS+yf2i5oLxvR2RYfWzC382h7NaulMO0Uejyt1oG9JY3tTNvZ6NOyPKgBuwjHZ9NMPPkATKcXCcz1/ZdHk5sUl4dg1se5ZAwUxNTRZmGOW5sXo/tWqsndTZCUkY2HQG8SpKCYzuiyxSvf1pFm6gRpuAkhlUCJhpt+VBxpM97FFPaHRaQ3RB4wcVN+9tOp194d0eBaJEOSYsXLQyHmi9wDVQCf8H0QM7RddkUoEh8oUR11CxOabahlzQolQu2hKpJ2T/DV3A6yaoh2wxGGMSjclz+pdbOqIN6pM0gc1WZkawgo1L/OW6Vg2wJdTQmOoA2ld1UEbwVaDQZBDCbZ41G/q3SO1o0tTxLgVid3Hrn7XVbfyhhRTxrw+S+EJBfTIO1UlR2mb3LrdrJ/XlUO66R7gCzuyyVjrSnk5XLZlWo+L6CrbuoT87RDO8ps9DJgjNdJsnTAuvast+OSsXPjKCpUMEI/bsi52CHAjIbZvYdL+nbf+V6qmHo941jrcPk/21Xsex0q4RE8f+R/vuqXI+XanHlJNKsxlbq1Od0a3vYl37857bKzl/k0mI1Jaogc1mrySHnDqRHRGEJc6S2qxiy8WCQ0t5hd0XJOpfX2PEFSz2tWkmPCdhwIZtMsimoCCkX2QNKgGJgucWc+6oZUN70oSqYxPDRM9xGSiMf5xM3maUhMUu5c2Z2/Bdl8F+vczYZG+tHcISLaorEp4AFyE7nCe+xGu8UXzYY4ojvhge+ZO5bYC4D/9/91keRfLe7yNS5VaQ13BNMd0WcBbksgLjOPHVA3TfLEkZruaBetzLFVsegJqLhusl4VXaHknTmJOaQwfSr8+EHTINE8c9JaaJ3iHfFsatUB4sJzqt8zUh76nI+HA/Rmde88z76H5VowmwtuTjeS1tJueb4kf00e/6ESuqqoS9FCyzEy2iSWyzl0DF1X+fM53o5asZO691w+Mkj7az63fbcXGZrxUNSNo63nAfFVYLuqtpi+s2MhOj1uayedfZ32CEGPwpC8aF+57jEfTvSTuqWu5Ro2dPBVfYYXrwgGJwOj3dHYii9BYNM+/zCClArlvMLT33kiaoeosjpYBeYE35b+h+3Xaka1d7QI27SBU92CFPT8p+/hAdwqZecFPWzbiaoY/FKPfU57l1V+yx6JZuN8T6BoewQ+8lDQGiEQznnY6ah9VzpuihMNHnbaYFMRNhoyNCYrT7ucKsOhS86g5oPgkbgf1hPuOLsbz76hOhbAY1znEj+eNkbUdkIt+9RkK6o5GWu3KWIjP2LypcjT7zflNWyLXv/hVvq00auCxwj4KZX6phhedenb7rT0RhQ+1brnaho9xya2tzJlhqghjINY0pVQ7qYOVWABD/MWr/R8Y9TEzNHFFh+gq/2M1hU0g7T9sMQpKHeIFopItnSt+w7l/zQPR6j+IVT9qbylVlzNxpD2jIEk3OzgPS1secGmywOb85sXDS/OLpceC0daWGWqd+iEDOILuJptweldB5HsG+5LFZMeXmw3FrNounauFKO5O+NP4Mj6oSLE0g17HPhmshUrf/gNqKEgfVdjzy2UFrB3BhpcSetoTvn4u3Y3oubtEt6xMiuoCKEXV5tAz1T4iQ4nu3gUReuXw+aLA3pN3HIaf2tDMKsAzhaquxImrlPY4iW9Mh+0pW5Jou8hmNjy+wxYeqTQ4NWZb/bl9jnJCuU9TNVIHwDHeS66NHPcuZGEPSehjGYLud0WMmeuUkkbjH//y4v6LY5EZ8JRjvCxzzPUHt2fS0JE2ON3vuejSQGQUyU4aIuHXSL4/qb4Y9mxT9JzVI8P/2W3Rdz1BHfomrLqScnnQKPhknKH2XQRQv6EzhRrcICWFxORtz8tUDiVd08/szlFlYYzNfLBFwtHwZW8BGK7WO7UW37RDSqS7pEXEVwX3A6dQyFL7mEmgbcYagMcXW8LID0obozEI5cyfH5/mx9DOu/PG1Uy0kyxLSkqnSxFZtF6scUBgcqY2F3Yy3UAgMVoI/a/dTuv2cXvt+sifOpn1n+M9Gj1f1t+RpVhV+RK/ObUqZFrCrM/AqZSzPgkr0dWafTjKrnejBN9LZvXsHm60cXH2PCjfI15rYINRT4pZsIFjh/Wi6mS6Te5xdr/STpbJqUnRSXvYXaYavJVX2rYhgJq6WOxQDbqznFf++6uZ7ZYbwLVlItiSJ9+oo65CCVy7fyPVnfmkXe2kICvRlg0GfUfxyucg1TcoBZ8zG3g7atj0wapHHu7bomyHFRXOUV0xjNVIuMPNt6WriQ5/RL5ftkh+Peoe7HkxujIHiW5qIq4/g3qeT12I2lgD066cQYw8icNvVCI8umwpljwGgTJjmZmkZ4f9hThATFmlW1shExK6Na+LlAquUmaa6qnYVBXZXxXyyIjCH9yVwwVaYh1VKYN9vVTyntebATFnFvNmo4hKJ4SPQW0/tGKeE3UQ8cXcbQOAYtJ7xSGNeDBxY+OOWk+IS9PTtwNLGNr1cXcEEhEDsxBs224YN1kJsvqSwPhDipNPjtvJSbn7vAJr0HF5pndjrg0C2oZE7DsJmuOr+cyu5HR3VT6ReHoj6xLSLCzUsomahPD6n9kp6ghc5OWix7YUPUkERW3/TB+phiZGUWpeU4UT64Cm1LJcojuV0eu1gNA9OssGEqNNoustEKoIBhGdVq2nFgKnr7NKU6Ywp+pXmFFC9FPKk05oVIc2JJSS6ficSAAVD2MdSF9C2aP2Gdg3TGbwC540tFtO1LNkv4mCjYC2D7LQLmb2uCIQ7YvjKRtHlKFZOeBDo106r6Hoce6JOslj5KRT9ska83WH6GCM7E4ZVjxP/Aax1ret4BhOsqYoqB1OwzmJjt+esJStA94ah1hZ3hetvtrjKiUuNPmJhjJvoStiSlTbomXaENH8fwRsxpCgyYEYTgpK15Ut8RolIl84zfwn2ugBuKlWJpZOOM+s0x5I+KxIfn2L0DL3vHHPIDkb+XXDaTRvTYhy69TFsHmGryXlQBi+d8XtXTCSM0gW/tdavzP/jk1wCxM6ijrZtIrIUkOdBFKHxW09hUlRnetPDox2TFYvp3tXDUITnfg6DIbePUl3XvtPQbc4GbuK70V0PWiUWQnK4IvHULvG6YgsWS0K3sr3KqT0fFvu3AoIncUDY0qeEmPVeCrnKdlLPDUtRIBlE0fpMNdBvSN0/4koWRyXtI/3v22dc1zlIZ9p7xU/RD5JT1hLIFmSmbUtll0GEyTZ8qcDWG3nDav6mLc/AcvLSniEoNwkNOkVbIIRY8hLoUgZXX/WCmy596ItrhV8RrkndWEg2GeZfdHAfFxYchxJE9GD4kMyHzI/z9vVZML4wWGxOWQwqLCoOmgwX2tKbm5+FmaG+pPx2ssmTDopFY2xLsQuDWQH+U4lQgkuevH+SFX7JMhVVPXQ0ZmtpaRRK0Y0GrrqEp6/hGoVEgqcregde1jS7dUjJrOqtDmKEaWsdpRbx2+gXXAtEV5+MbfetCfkugMIPS1+u92evu00bRRk6u5bf29zOh8vQEY6vP1ATctpxd11HMoQ9gvMSlGLYTJaadwbFIgWwcJW9HukskbM8KkaFqpKWNATPuKplTFJs7d7aZ3FPVysHrvt6myvqMEAl756GGEzb22G1E1/h1ClKx1YgTliLCkpF+5dtQoZpfX1pcsC3QNTjYRyLJEY+0ESnSY8/bEbZHm6SgMQj0JpseDj9nHlXZjUxiBShyo9z6kAfrVbSdi19KicsdnmJeyCqLHCpxyYGJV66Jz+PFzKTY2zZla2nnPWTH4eHLsqx08u1KzxJjALrVo/TuMhRiagdldiwM4NvlQ8hCVsDkljpuaCy7yi2HtZDYzf+HoAsrJA4zyQaxaRdZiejoASMJlt527nMwYgT3Kvg/UL8XkQGGFIY+jFTofRPutLiuN4diOR7cwvXmcrnwaJO2oU++lZeOPDGLwg32vLqBHmBqbOopO6Vs5uxb85Uo70myZ8Oa09Ybqj2IJvWi5aPnxDTMTsZ58RCZqgBcdvaO/s2Wpa03utKOIoPDaenVipOHpNGtHlXPsbJxSt8+KnaYDr4qhe/J+FIzG1WZsuUxo1cFRXk5bE8fWgHqeNgmRZDU80sxJ9CMsaET55GZohgmgC8PDziypJtujWTBcPKwAwk0Xj2nnQ3UuTL/EAiSu/ilKMLrsmeqF8kREOoHrKiTberZfUy73ZKpAmig5VwwrXRr0zQzaVY0cbD+afMIU3bDOBpo9fax1eLCxfxuij0H+Cd+xs2aC/sa7LFVqUhyA22VwIkeF2nCL41+e4CbIfaJSDF1bqBDzy7PWtyNr4KHI1pMO/OALyTdkMGzi5jKBlrshemxjxbZb6LKqn3ixVUtbEfxW/NA5oqPZgBeviR0fzCfTqjmrci7B9PX38nXu4n81oGqr2g3VGQKur+26oCGf30YDKWhm8brL2CmKTrhMTiVyzDzdB8Zi9X68jkk1ICOa0D5rlGuYmIBW4dErGYZmtpQSBpaOpj0rXRf/ZBmLQg4/uKotBFN/kbsRvQwIcJSCBmhgJzvCnMulmhozgScsY9uM1ex7j3GnudHC1cMeJf01Exz7Zp0oTTUEsacjjpdYpcUfs2q/+1F2p5pIF9px7F17w5+NmAqq6XOEYWaffLmV+MaQUvhB9xJOfKoY5N82fgbQ1jT/cRkUQWjQt0P3bS3R/Dk8pF6VP/A3BDONxR9UM0JqnJKQ1umgKuZISHI26EYjEfFFqUMiYf9KvNa+rlSh1ZNPMsQ72C9fOQEAqNFfNzGqwrNvhLYMvbw17BRiqK9Ky+ItvaKbaunXreLcP3cyEpsAiaxJwePwrUaTtscR+1EdcBTlYwHb2XM6J89Fi34moAe/uGJMrXGMmUxQspPgNgVG2OGg+K+nWtEuCaQapoKa9coOBsC2Uu2t9AEtnF/8w0VnnZk9Vb3pmshJawAFkZYZRm6esPLHz3bHzulG5V+F9KLyodH8oZ9j3RHdeOgXCrHmCfjmRnEyeBIzRKNVcrOD+qI4kjhiF084vnbW7Bm95kUdhGQjiQE6CCZr2Bd8Gh4xDmelYogLNXE9OXQZQ1NQbOVPktgBloXFpt6bboqeaHy60FVYn8ZQS0wB+U/Enq2o+1yqtmOMoJrYLgiOnzNJjvyhgb2SjcRipgHYL1eh6WUqCVulr5tWVcZ57QMJP/Ulm7a5LiHbXb1wb7uwNVBoJgwSHYcBvd+trnfzkL9eqm0xq9dzK6GhjkmbmTaPb6xAc1TnSN49d9GqX5S6K2o+b22AOWy3sri+3Lhp6hFfaxGqAUan+XwW087gG0PRrfga18hFlqwQAZNBf4o5DYWbrth9qw+iYbPucBgSVoirikaP/WeGjQBjbYfdOZ3iaTsuJ9WieTNI9Hu+/XtUJXALTEBiRnGkswrAjs6yU/drR1mfZQSui8sgTsKS8C6bMBX2Ym1v83dhVCp9fxyY7KoEdgI0C/Mdk6II9wDNoER7WagVV/AKmSL6288sGbj+TV5OfoYwsMIRcVzA3LrpPvidX5doJ7j02ug815KQxMEqo76IjwORKMyX5d15hRMdYMtHGZWUMJ433oapjLYTAYES98klp2X6x9vegRr9XsVFm2Ff1XykLSv3DbWrGdVzsi+LconpX583JJv1eaxgek6Tvce+HgB6e2MCHpf7vfZjPnR2EDwo3QRaYQEX4CPtxwDNqo8xHWR3Kyc18paVtiGLFziQpRagFK44Mid18WwJGy39PYiWGMCYBMPAYZehOxYxvzPEz3J21Ahbb/NdtSEvJp8DyzSkL8QQlp0sHqrclDfizuF3vTY66HnGZD1ib8laybZ72X+qsSpXVH9t2WtMVLxGz/UXuzbE4fWa1GVX5JpWy3tcatx/0h4B82rV9xOXX2fYP4/rmYg/FOhkPDpRD8/mdTDEobqtQT1QEhD1p5qAqn34h0til8vL+LQdHl9JYIWwXioM21FOzUcyQK1EUY50V8t+DyiJMW3A2VH8UPKaBFreFYWosQmPblwTUGMt79rcvCuF1psvn1KXry70yrm0Sx1eTaET2gYG8FcdaHmxM4WW+SzJMmQwQ1Jzrqo/w8bGurRZU8RJvkUGQRSGY5cDISUqoAkpZa8x0oJWjtzjJV4UhE4r+n4gdoDdEEgii1Ut3Ha4sV+9V+RAxibEG+cTTCixM95BgYb+Aq9sK9G1jTDA2Nn8Xq0ofSDZHiWw6ZlC/pwS6T+o+ZoGxyAabOEJJC1JHVKscgV+fgGNrtXwVBQPjL2c9NSd9Zkqte39jurAkSmCo0OItTGRBzDc/rfB5QA67qVyDqStuVTkT6hp6jL8v3BjHSj9CEf16saJ4ZsgwyCnthYnSQ8QQZvbG6qtcM15mR2iVgJCU81nI3FaVuUePZtiPUJRTMr7ZitHE2dcSfksXkIXq1rk3WcKHm+0luKKMOqUblI1k8flw3rc5fBI6m3ekAnUNZQXb8DsLCzcd7t6cxE3yhU9KW9QvLuli6qQ8M04kwRrwaNvfR+83xkuoRGWOLBzBqQ250WSP+mWUYmqzWG/AyKh5Scygl79+Af8f2N7IVosadT6qXIXHCAJEVp0ancQUvCFNvqXyKvumORtTVxfZJnFW3JXTygZz6g/lqxkUOZ/bJhO6b/epAccRbQqwedIUfE9UerQksCfekDCM5byIjwmxpiLfE/31hiybYiSzudSvnfHPsr3T/XYx6TxccMAt+v1N3r6o83sYLFpYbVcfR86pgCIQbgYMK3mFPsY8W7v5vn9XJUhGaDNM+GulIQvOBUc1VN4jzAilueszgA6kZ8amNHr6sEpazFjPsKKmzPgy+4NpKlIVWpVaVjf4ubNxka/bSICS+mUG49ET9jS2yQwoznNXxXAGbCXy2cbnjmIZeHcaU4iMUsA0lK5Oy0rzGvVJOKl3RjEj6791Q8OFXkpkWoH/FCFkddl4h8W/+cOj/WolXMfoUgFmNNDR8eQaUt+6BP81ihg3VRIGqNSMvmwh7BOXvJJKqASLVzcfGXfBY7QtlKCr0hKMDC+2N5vcbGsF399ohoAeM+7MzloXScMmmepJXTNATl634gnEnkID0pqGYLPaxGjDdSio9tG0kzshSd4oxfGzgorZFPE9dx0xHMYOHbIj6HVrFTQQgAu40klrSZPZ2DgNakZTomwSCUwq6Nj9QkPVQsSiKIuA7S4K+8DCikRGExG6CXBq4vkjWGW8qRXPUfRKWaylpGoJ3F94WjVceBhsRvhmyt2lTuX3ctgO/vpWw/IYCIJTAISnNltG9pHtkxoxsl54uZnWcrqJ+n+VvIwKpIF/BKiSyocZU9tQbXnUJ4lpLPYYfO+5RKTO4vmAAfnss8BH7lP5/jv06qqZ0MF0xV0aJcWQqYi4nxNBsnI8oGtATF/tz/wt6SF/G8zDqCc0fzt0oonZeHmyYjqTT3ueIquFGkMaI1PzXAk/yP+H4JuBN4fyjq+g2LcdgcZ5e/ZSlcetyCUweeJSCGdGaQhuOEZ7cPrmLQkks4wGSVrij25W6y0zcoTWcgWS9AnOgGfRrBtBi86vrVdHeXxNs4o4+n9o8G2CuT07vqqrRF9zs3eTLmrShKRGIe1jm+3VTy+04ArWhDduznqEOVP2hzMf1HUx/yqQ1VlcV32hjvtrTTXRZLAKsgUK8oOtuGLEj6Xo69qumlqRZ3Y3GNT3ppKdq+WPnzx8tdiCIjp3dO7t2r0XJrcLxOpScZK7G2E1iGIwaNhtMaSGnC3lkPWcf/GdCv2UB+zCc6Eeuoo+nka2wu5hTVZZEGAmV364kMW8pkU0By5Wbzhnn7XGodCQ176fRXxXWuUG5rvzVoDG86H72iRfeJIsS/1oOF1dP+j27bp+ZdKTg5tFZnhYLVE4qFzfleCGZ+DPcX+v47LiQIymaW2kO8IQ5S1TijW8rV0XFvYlISHFyQfRghrEOMQPUOboZNUYtNrXmqznwNvbk4KDkfLigRpNGEXSe0oKx3naPPEyWacswOZERMk1OGy/En+OgSLPzvk8jKNmNEUzvNfo1Jrx4OAkgh6U2MFLo7KnCGTsStODIZkAXobJG/ToAZqWeEpTIjgO5a5J7pgfRR8PW7RiM0Ty95rThIpd+ph3Nmh0L6vBinmZnle1dxpAJ+FNdkxCvN8zRRkQTIW2syVo29AlXaRV6CI07t0Sz7dIFjhuRn6gVld6c184NlVVXROCx0xKwtcE+umK9l3zzC7/7Sc85D0A+/ALYEJEW++debD/A7Gkkj+JdqoUxRkVyQ2YIDiS5DA1CyaAO2uajIJcUcUd7djPnZCDeYnc1Z7DmdZPmgeQV+DGKkdOwHD6zHc4yKK9HBxXjv24VY/GTc0ZnZ+FU8MuchRSwBm/HBtzvrQCYJRVWkfiTxKyYuoDu1yqByEIs7jyh/LQyaxFpe/8nrlNqt04/CCUE3dFYhokULh+JqwR7I7C+uI603oqLBu3DueUJhl2ST2wprm46W1boEkXpNml2uFhBzD/CFme6p7jsUnfkG/ERifefsZQpM6bvRTVK8eEjeMKLbfjt9Dh7wUdDU7m2Pj8t9ZlsK+JV9sePEfJKm+ZaJfmh849mKcmQ3n0Jmd8/ZY02pdUWBJbL0qE29aNFTFpszPBNsaEzL8BqhwU4SxsN1t0BDDXjUb5naD0wmwfazM/wkQjXbeCT4IH4ecwRlxUIT1gBXJskwV1a5ibj/mpa27/Hwz2jVaQTkyqPQAHZ0WzySg1cnDQyfY0pKWf1Xw81cFwdMJ5NfFRbCjA1qRmdbyRcWS/+C5DF5t3rqB2Lx3P5qGWR59b+rW/ojTij+nYt4MORYBt38qP8/eORR8SqsRfR3w0QgYs7IR+96fWS8xL8kcMcHD6GV1WMr5snRwBUGZfhYlOL2tUYeYOg1XLr/6yxmy2Br+Z867J7xWIhqJ9aV5hqwl98+0PuX8eOsM429Cgp4zg1mIv0Ho5kxabDilFisjwt2PYB6XI4JY4Qo6WLj2ayBGYbmJ30xmoUXp/uH0kU4Ubd8KdN732X/DZR377F2Ufg+xUTlOU7ZSk7I8C0BOG95gMZ9EvF5Bv0II2JcRxKKd2Nf0RQSAqCMVheVuXviRodwfG532Z87YyxHZdxPy4cV1yMmTakvXtq4zYw7al7meD/l9PTOU7T7y6/hnX8NXaeTnGOpS2J+19A2n6bVKG9dSQfsJhifo9Uptt5L6zHDdRFKfserzNbY/9OVa+GL2wqU6kLKmJCSlB9+/udXNcbt3HT6vC3s2L9i/MWALifBhxeDwkWY4M1PW9KhvhGx1fV/BdbdrHkzhmgbAmVTq4a0PgS8tQJ6YSiG/N7fKk4nppHIbizJuOgL5HnnwomK4R9hVJ9JSAoVShXEWqSLu6/OQSTgPucV5TGZrWESbygt/VmcTQZeG/zuLU1K9g67gRL64wDqJ/SQvEONdypYX+arXwTAe1lOBg4b8mEU+eLvFkbuKVt/RHQsMHqY7+/MoaLyOeloSRf453MW5iiDXYeqUQKdb4gtz94mPhDV9vHAAU9rIDOPfEbeIfBQv/74p9J8t1zvGatxxGxFmWCqS/AOZ15G+vcexPiQbs+k7+tU3VEN424CiIhug1O5pqzIjnWqyTRkg3HcMCzxO+Yij3zUIloUZLGCLtbx/irtuwmhCsH7TXcfzk2+f8TjYM0+E0i6mGJXcMMLPKPsdewszbQM3zyIzXVMYTw8o2F/m5uL7APis/spoimUA4aYqD4g9y5d1a/N6geh5SdYiHw5r60H4meJpNudIXeKIizyKfIMcVl55VPp3qAsnuBfyvyxc9cc7yrZwIgjDNxaK3Tg00J0mMs9mI27oF0jkXc4UgXiFZ1lg0X1aJ+pCJvnTaACHJOpeWrnfmH3BFfQiKGUbMcVVOpdP0qxiPZsBHLBFilZ0NQ+4ThwFKnZLvnuqI++RDUDOx0xpnKW1+81E5cq8A7zznjTE2dQER3Z9qA15MbERYiu8qipwddDPPYFT6oBpQ9Y+W1xSm9nZ2WSiL5vi5SXe+ccAw3PxgzTS6OvI4qqOzCm22OCMBFmf/lWRGovXyhqpUXDUUMdPHk4dyeJ7TaRL5iNG0mjwfIE8fYfyQSqSRw6n4pLnulFOYqIg43hbe0P5yvsD1nFyq4a+LTeZ+o9hQx0aymsgWilxb2vsnwc+WOjvN6KG0Uxwz8KTO2aYQI1zO/9RpdjQySKcz4+6qElPPAveVTX8cv0+EzYCibVeKwZvMApDFWGdQDwd6qxvKlF5m2Pz2H8TGoosAlWGQfGj7vuHTojgcnuvXQt3we1j4ZQ4Vu99xACTk+8XAKJyVTbbBU6xaYqG/GyOWdYAx5zJGASzXFK+2sraeo892xhfjwL3AcR3bgKX+oEVJ9ypQPjhZE1AFkmv4Rvom69PS75ckpZbfuzo1dNuVrRdm+GRRUkDmhFFriB4Mo0RzHSftdggBta56Xufy106+uib7FxE7eo09CI9YxUV+T9cTAHXE3h4z1kle/K6CzB1Vl4Y1PV+YLEqGjVjA/ImQd3noRuyZ28V8XxlXoxpQtt0xPq5PUQ2aQBCiXf8uEK4ob5ANy2VFcsWmgQ+LmWIMFkpOu6flEAZg4Z/7+nEUXBCEk12CTZqM738kLJSK2Ah3bdzyhM4iDswdGTKfOzArNHv2T3BmSAIBeiraIXYntn21K2q+fLR8fJmkupwn6cUZ5Fu2FVBzk/kf64RNqMWMY2K0+ORTXVSIPZe8Ox8ZBkxv9hmCSACm2OplUZzHFAO9v2L0M4vp84NKWBvvq0vvf5wDYZt6+XwdF6nEJ4tOe1d3u5QR9pK/W46/MVWBxdPbsnSmOX79r0FN0F6vYCCMTsH+ROEG/UiihS9x7/3PwYBLh7it0i9h5vYwSDKNExfXO2nEw6JM+Fekf+xaQvWe98b4MdaQA3RFtsPbprt7zk1IcL7+WggiRm+yx2xCtdGEPuRoypUbLLLzRwIEG5XkoD4jmIWVt8lwcHiy1nRP4sSkE9Y9kv+I5V8At/aZdBI9secBx3DdJA32q3lYAHSOn3U7B0RPGbbWMAbtmHhC6z3Fak+x3bs+HsHPPmVNv0UiYeA5tGmVPem0AirmSD05svpk/TvpQ/RbgbgiO/Gee7ZX1mRZgIcAaMcUCCEXXASq6QFWEFeBmbqB19nUAKGltPNztLmcJlvcJKnLVDmKQicGjJyrj7rmlrhX1t/r7Ihbvs8laDzZC8GU4jSj3QKRQIdZfQMvyVOskapUcy9ffCInmwu8E9TVnqgnIdI68fvLGeSkEUaKpFRPrQv0eww6PfrvDL4om9eixaPyJqnYIhpiLhBbzeGrdy1RZLEmQ+Abaui7W3iq9+vK3/u8xjdYN8jJ+QB1dUgMOkmrjO95TaR4yr8UW73H3lxASYxoMWmZNHdNpeWK4BVrxrxLg2PYkIFwE8niREvD4a9NbB6YU/Yjn+WO7RuGcxQjpUlciOg3ZNbPawysk4guIcIzR+SqthbWHMwV2YdumITcpYUQpuKuKcx85pEqWQi+v2GdUslzXGjh+KgI9pJceB8bHni6Wi45MeIJGWx97SdZOwwFMNhcqJVnSLAtGYFbdNDqH9Nqq4LS/rNYYVOjxzzSQcZiyhxRMdyp8GCd6uhKoaY3T/WSQQDOtGxWnqkldvEcFtcFuy5aTlrnKD936yo4r3c0lvSTxB6bvJfd2oLn66vZA9k5HSrsQT7wno5iK7Z99XjHqGw9mRiLqML/FroZC9H0HsH7HxVk4MDKHnbpK4dS+sG3W6lmpI46tl1sCdsqJb1fBqwa87CC1UJiNmYDmKIZ/hGGqda+3wBsMR9bBEANKzMkIhoFjfYnj7eef9F/VPjAdA63rELW/UIbENVVHEsZv63TK2K+bwBh/PewJe4nth67EQFoxtu88xLek6fypVdvlA2XDTKoaifFcbthLkNcFUwRY5Os6r9A1x9PwpRfqsIB5tgbkmH3jm58PvjM77I5zO8MqNOFWqP/eK+gTJxWRBKJwiLUvFsYT233EGFoU0H3uIzo1fE2YHHryvv38QL/CA5AOIqtHGgQkaQLr1F97PRLGim5pxOUg9HM8KmWdASmLGl4wulVRcllgrvLf0ZcmOS1IsAN/0O5uZAHFwmdLGNeKC+DaweIyzj2zj0vyG06iO1Q6N8DEck2V5yZwm/PvI+8PaY9oDjT/ej6H3LRsDSqfxIksRCkJtZHtkvQbZm8vHA++e/eNONZDJlLFKW2/yt3dQ6FA+k98C8Ny4YPB8f+YoMDbgY8P3G72YlSEKInEzZOwhefcSw4c+TpDjTHdQjDkwQWj32L/+SRw+fI7BpYMigw3oIrjid6Kd9JbYMdDvtUYbWiL8Gn7j/TSDlKrlAWE+b2pCH1sAKaiNGRFTdJkuM1cqN7LHIzqTdPvh2WP8YOCfDReb+FtlNAW76clTzxW+g5ARx27JfZDigOmmNiK99MNMrd6xUNWOO6dPjy5kt2GbwRL1XFqbT1GZfhEhQ/13QkN+mLHntXrNY1VSyCSEejqzf+llcQXtevyFs3EynxgrnDWhnCvCR6CANVIFWewA5hRRXkhRWT7DxC+PsBIKKAXCKbua0/0RmvRSSDz+uFu+zGSbn4I64s3qtOJNucDp3WJIgY9wWNtvcTlf6SuHO3jWP0ICRb9nOCvS/t6WxYH1YWQoP55goCsDvREHRD5kX7p5lPspGhnKWhL8+8QxPQaQ833iEQyHk/p+CCi3Pt5v4IP1QjKAUxOq3HQiyGYz26kB0JhW6DShMSbFqqHl3VOswqJdieoci9EEJnYVxyhlSi64Po9cAydwZhcDGsoSwQ1IIPPKMYVDkNpF+05XjgNYB9+UvCJInzKrAcZDLBRSwQyK2VEVW2oJn/otu/J9p+vBGI2V15p/fYiSmTDUxQ+knE8aU6fzqHIkLETixpyoHikuqq0s2tuHJlSzpfCbPjsFC44QMk7B7phiLldilaW7Ktf8sztkwWyDClSKnPmL3fQAPnioqPh/FNwiaV8lQzd2WI4I7eYvWTWNgFV5eJMbuez4V941s2ee5WVUO/WZZT6f+owSYAImeD5gmD8GUWTRv/oAJhEQSGi5DEaB5Z6Stw8ozJGk6WydaKZ66uxS/L8WLb8Z1cmd8398uij+arAjwvtk3WierAf6RwEZTJTc5/kvTPFMoX8DsiToqdXtI8E/c+Lcg/wgEv7HXOLSgeIL4q35+M90PxGLMhVxkilWnDK/deEuxippj0iTXEsPaKRyvV0++HTg7dav7jIf0SCSlWhJK/mq1OiSg6v7b+0Pzog6vSAIq20G6akFJgoqBOzEyJ3xf+3oYjMmtc4Dvyxu/TqN2HqyiWJkBfuVeYvKMqJiLs/7Kl2E5xORNFcfVCKVgCIc/4VVRnvK2n0dHPiHqekzVKef5CDoCVRyBlyiuuNXlxSu6xwMTq7lj/wiBteP0beNXuB1hJnMeiigW9vqEeyf7kyEiHZBXl6YulXMqQFJXhVagbYsquwRTygmZydR6K0uv5HCoQ7L5+Aat7UNTXzHtOR7E2gShc20F9HhD3d/eihjYV3TSGqQarELL9voSdpAj2ljjSQOPS6xBbeQoCA+xSnQVh8O+02qEUyfvdzL8ufLhQOAmpvSZT7yqHt6fSKbhd+DwXtNc5OVx76oaX3+xFzC4cfThCyCE1AcQFjUu34YlaAnc8oG2buxGW/7uA/FDNpVZKVEW3aHpShjt4D6Fnh8WXWw/WmFiyu8Sgfl4CFpOmUuBgmGj/gwhFMDRvBPlWIr+lM+8/hc/oca5z7o7xs+EHQMHK/Vbb75E5wg393HRVRGq3EFxaQENZT3UQoZKmcEIYMl1YFhiaiVUJ3M9jjWOYqsqVwCjRymp1W/R9YNpLnTg7DAMjKBDVOfhOl9EPen6pVwztH/AuliXJcMriVNQ4xV0fM31XM9ykxsLEYaLBoXp8o9uvlZY71IxkwHaFdFqaQshX5wJSPRZlFRx8llJveNE8c17vrOFoMBC437cio57Y4wF0fVeMI14m0XibnoX8l1D5mT9UmJ36oWmY5OJX0EMi6RHjVVSsoR2cQuWydgnWrTUY0SOov8COK+tqczthHR0qwsMSWWbwNYQEpiw/bQ8RYB0+j5FYUmJbp2g0rGFnIYQGlZYlClFvjyY1YHgp14YE9BdijTRXEGm+cJUXJ5BGluOXASXPwX1CibVw1ngwWzDCzjZEew4NNb9mLpR0A5s2vlD9TCNx3AK/qUV6+I1xLSkEqIkU1ZngZhK484c0uhCbEsOikD9tU2SGPmDvAa0g0hv2ZmMgcaTKQsstCcms57N0p+ujF+PmEgeWOZkoW22tJt08qxAJPKrEXeU2drY7MMgaEXjpHSi/eL65n3XPEuJ+SU2PsQNnhAfy8pppW7g6tkhnmNhcZ8PWGSGGOWLLsmReT2TG9PjG06VBhAI8qs4yMztXM//Iv0YVyacW7TU/+Cn/KN9LGnWs3byxmmaTitys62kl43mZDSMM0bbOy2jL0kDv7ayE6EkQkCp8laM0MrSrhsRoiQYBrHz0MxOzocQ2jT7Ej9rQFQuxESa0NCoL0WxcwqztOaSQStbvU8lCySe8VhoGVBmoVEbDQ8qkIdO+E2nepp/cbTK6M3AM6q/G/GMXUn9m9DkwebGAC3HBJjd1PD/GswMtP/uh7ciXcgrHhEdcMeSHWq++VOo4PdoNA9QHCkavH1RNKmA3ipqJMH+1Y4dL7LYImbohX/F5s+icBMkPlXPT31lL8JVDpIGWwm3KW/kJCNeX2JHlI2VvbRozJCVNcjjQN6nJC77DgYedTqD+d/Bi/uLccjOox8wO1Nd1FqzaFx6lz+tddUzT95TThoC+x/Z2Slp0BZpkfTVcecl77Lb+HEeryEh0ckKKaYUH3dfe9y7q+w8fNHe6hhF5BDwVcf6DdNNcUHh1mTmSlN6lgXFD9sSn3D6tjdxsexIG9Vh2a1S3DjUGnOHguKkKY7tId7XORpflc3/m2YEKh7P/Mey7aMaSWUSJeVi4hr/msVCxsWGw8s0jWY6k4XcenJwvEJiAHgeqp3ldWCjuXIFwzZ7IDLxUFOtjVh6qMiyiU49Pi6aWyVIilQT1nO2B7gslScebzZkXVydkvG6kkLFd0qugFA5Xs7/4tRUJ1JwdkJ/Ojf7GZ5TDhkJ9I1Ed4qRVR+uBhJxiBTdToELuwWp2ubqhG86dN2FL4dAL3v2NOca6qFQpefyzkWzYrzP/CrEv/o14oAI309YUh3h8kXNCdTignoCo5duJAOPJkGwxpJrqjD+UJLR2FBnHF13Io9evicgS+fb4rRnbNdwGUhArHRXaFAhcZ1NfRaQ34M5haMrNoNM100bP1yDLuEIqdRC8KmdWVbk+0rAMzuJI1TyZUbpzVyR8RGKQQQc9Zk6q4gWtiW5AdwM6DAd0Lb5od11ewCGr/YJwtKIckO/DPnzhECKvkD6u8MuLCPQWYWccwYfnAFtiZdChJxHc0xYJ7/fH+5J/pKvvSp3aTtUw1coKsfWoFS8R4vxJhfYn5pG+KjTHzW/yuzYTB3IHJsol2ISrDK8mD0zgCZ5Af6b4a32k0Ze2lSbKqsvxnfzDrU0rzo4oKxNk0/f1y/VgrzFuqgdYUOuRyq5A3aY+5N3kq9yjcDAMtubQIh+wRx85J/uFRYCOQZcQ7rWMooDkibx2Jj3NPDTe8HD+a17kOP9OM7R6FFkXsQVPY9LLw437c46zAdOcS8j992z7PCbIbCUnudak0yXGFKxi9xImQLik5HHO4D/NEjTdPcTb6FfIX5hUPIOTJ0M1tNHoxMMCCd3j/jLjwjDzGNdNRxhaN7luR+UGvnK5u46ZqX/n0A6hIFTW95LbtL8sE40/r6Q164I+Mj1UitPQlvpJpIbxEGcWsD4mR4aYIV0aLoM5eXVr3cFhe+EiOXkyOjC25ZiSNEpVNNhgfwhb4g/CxbmS/aguDvHC5kVmTQzuVuH46nWV7Oqy5oSYYPM7CK+ZHMSDicgWnYVcGFLgF8fi7hTU+W7v/843gUs7q/bXf5JRqqLxM9LSLZq7+QqMmzNSOz9REqcELPJt27t1BvI8Um4AwMUbpWRDKdabHT5N2cOJoq2Uvf1Q+wXqghv4jgLBZa7qVKHYhoEjVxX1S6boQrHlq5hUBakfNYUi/GaEvK9GzcN4dKXtK+6oNfHZzaIWbNnslXykhWXm92ndGcM0ccR9cfDCsMk31wF4ms385++nQBxbPfRaX22cP2EkvUhMlQWcIKJjo0IIMRFFk+3rmj/EBCpVznHRv5+aphIlN9QTCjkHA2556BgvqVtZXPRoU3TYwvThmqR9yBexbdsUG/0a8bVCLoofwsOAJEB/bBkVPnebS+Ztf/rMmxpVwVpgyG2CQrOVnrS6D7ka2sfs8StYAhDLM/ikwT9oNOdTqOUuGDZF6me3gd2TOG6yQ1Gh/a03W1t/M92cfBxfdZRKKGCHbYsvFJUpwn1iYwfNelKQbZzbtSEbGksKeSHq7LBZQlmhBq+/wIbxOSVOWyQLbaZt1pTxUvchfIDRha1UiTkvKVBo0BTY7KF7s3944pFDgEu91XI5RydA302XnGGm+Ldrb0Syk4LeSPsvExEvrPvGWWiEd4pkFkGLQxnLT90okjMqVXUXXIOtn7SUXvPGUy8ICMFwSer3eUbCsmeUlg+TUxQZF4OhCI1e1jq64SgsbcIhbfoWFe+qGsqWzHH1zfjDF3BMdpzT7rbyA3Bn5ivK1RtMeu0g96QhA6awkscrTHlrUglsfrcxTPSDwCRfDxMt11aiZBDmv3tkgRVNEwD+1urajgi91COGG9jL6YYh+NcELqr3A9rRDPscldyLKpyUOufLYmKfw+o4t9KOh99jmfhVf2ZklSgFDaqbjGgW/EUbCqX5Bom5BnhsZ29eIXrA8NJ5iW9Dsd9PbW71QKuCD8BBGeVNjXgBnRr63Vk2f/Cp4p0+N5aZJ5bZfIGNyVkb5VJA3E8kQUQnaYk7HDGczLc+Tj5tzHLVLzKmnuGQA64KYPEioTtrC1MJDlFh21dJVek8X6VAHOCkEyNMMQ3DBJBHUq5ug+NmU2uaAUFwD4VfTMCTK224MUvuMsKlG0sUbHBhexMpvFKBhe+QW12aqT2AyWR1cI7KDg5M9kNzuX4EA8VAGcoxvYB9b0D61GmvhpGzzuWAWs9rRE2erDX/kq8luV18kRPVE5spQUwOzcPTeyRTUr22o2EFb9XoTDPZ57W+9aeAo/6CwRznLC+n+/l/+S0UNU/mf4diHtBtlXM1HZ4vLhG3C7UfJhuLbd9VzOz0yaDX1WkwKFA0+4zXcnDTIYRsy4MviMZ0A4RkuHaELkiXpQT1BMolIADBJGmBC+nQRTcS7yP3JA5JjaM9HWvxwFs+t9/VI8yjipLmUyuY/Z6egxdPSamCcgWsUgxOGgVUzP7gIAc3r4HA58DHniJrxTa6RnHYsgjBx8VGMdnjCgWEAAkn3fxgvDY5ogBVB1ZVy31qcnXuTEhN7u6CjuVDxNNYriKn9l+0Sl8Az2dxg1vbV/FRyE0vvv1LrXLBvv2Iuce6IVhvx3t8WMFfFzzAwi/AqjNxawfdRWw+s6E2bFO+sifT+XC8dn1XKqkqzwly8i3ZI8tgfeKDBV3RgpMy9ocE0MMwthYEfGQLiH8vOBjDQLeDWx/oj8ngaKYcAVAJGOhHoyi8h3rIRnpyu3abCvdrcI0as6Lln5jEdJ6dx72u5xkRIm99FgNTvEV+g52xZ8QhJMVnLXqiPUhE2VunTDcODob3kGGwxoz0RPaXBEhW2hEyYPaugNPwgP1rX4/kYiI+rBJCQbeZ7g6iSd/q+HzX4C8QZjGQMQaAe8e+2jtOj/50UmS/gzPstALI341V70yzrQPPf3KrSr0IZPK6Vd68qKsQGCdHlcYGs6lVaOgyp4C/IuwxPsku8mD/CZuBDfnARQtyRqwl/fWZFR+bZhnDYqKIHLCILwZ/BTgzey/I+pHOj5pGQuf/ONkDvTL5hDlXiW/donL9D4rm6SN06CJ9UhYprNuHZoASiehijqx073oaW5gQbumFQtJy9AGVRoIYlQhbJ21XXzxfr20oio55W4dohWGcnadwp68u3AitoKpfGA9uNnwb8hclm7T93Bx9WgFV8G5lYrRgVexDzaIRJE3855HhGKk8cqjGaVVmQKCq54T57A3QM019kP826qccI8rfzMSyKxaZcm6IgYo0xN7sti3GYx0SXueU3gpMiXkfw2VK3hJzJbob01C+zmpswvuhtGO6qgT2GgOQ0Ym8VyMyMmYe74Lk0TCe0vPjwHIkRxUzI40Oudsuj1WVa58tRg7G714BlbWWSoE0WpytraDKImPLkzWHXi3jE2G++WeNfZuacTxkk22ek52oA1Xiis5bFXYoTJwrIXGAccg8sAxrmCBcvHEhAgEqIXHBR+KPomoro/kLyG7L1yeD3+lEGYX1skwI73rS9x+5hsPE7ptXh1XKhmPS67+lGJChLItAYMCdS0s6fWzwUJXa3LlIPGPKnvsqCBWTEaOlrKpC5rA7Ni6aUVQk38xDAEvECu/UtteavDRykcFbcga58oDvIt6OhYy+cMaC0nC196GVfwIbKnfiGQcvB/vOdgtt1fUwZYhAix9lnZ7R0+XG2f8xZ8enolyn7nOOIBoxfGMLlOSQ3yRJ4gJi829reYFOkvC++7f8+dvBbqRJwyMYHx6OTvS8WcKXx8F1CJXRd/86A7i1b3tfGcvGemFA6CBzc+1ewabI35quCZhzXTDqNWoKLU4NKBsPI/Vvki7mlp7WRl6wInXAWTy0LtOc28HiGZ+KwIWL3xFs7IQoW0sJ/Je9u+XSmBSYSvOxWoxClfhZTKc38ObiwUfbhYRFvgzDTQ0xfO8WGzERdLHbzkY7clbBW+dYpRJcKO80oD/843cp91AR6DRyHeMaYcGkE57NsFGhpyUaY6C+ztTiR8uXCDR7v+G2TUTaSHwZzY7UBdfjO2MXVA38v0OcbLCAoJj6PW+iWEjGMVlwSp+bFpmow9Js24j+an7wLuIlbniXR1gTC736ZOJ+1p8fxk0ZKSXCNcQLNcm2hwHwmCy+NHPBAlUaVLMHu+1CdVxLOTztGfABwIuJNfWsvO96ObxnIbC1TaUQXGA/ndMUtxsy9YrEPqbp/GdfAvoI2R5Ovu4ZZLZu1Xe0pKQbQcL+ICqXQRqO7HhU9IeLAoAkhR3rR/76i9wobqp94b9ygO7z2jcJdDkXyrZKZrYNOL0cDbzocTf7csdX2MpmWK9kvQQoEWI6O0B1lMMnNcAxvIc6HrxC76uzVo1nXDkzCn/xOq3zJoAuY8rYczKyMBGjejr6Q/mgIR9cJ0h2M3BwkbbzYdOTq+k6Sgn73kWMWHKc0NcxOh8wc+YNbkPGEQkjwMZa+fIA0t7iYE21lmhn15b9IMBXKkySBNwBuHvR8vHsCSnDVbMAdV3INWvH6hThMbYhfzg/fayctaoTlpf56SJX5uG1ji5Ee2k/0SzU96UyFTtiN/hl/lEF412MdVeT+VQPqNEVcRVDW8BayEkGdXbrnecECoXqRbt1gje/Gd63NjmKkQGF/dinqwkOhoWth2GARmZTjuIThyMOqTiiq7TNHE0XrYaWgf0aUYZoyQtT1ZwjHH6Ao3S0I8jBsTHRGWq32Vy+DDx2FU0uP5A6uRG1GXlxY91oYlmxlsq2YpQNybzoVO0c6eguD7v4PwcbvY+dHwEKMenN3KNigG/piYGyOpHw1YRBCv50DBljB7MfQ56t9Xy73BEfglmeCGp9b2RV+OAMWe72Tn/mrFWqMItT3ycFbs8iEUXZRP/TYKcnyHWzmlF0oAUfqx0TsUAVroJ25ATgPA9B1AddhtepxEIAvunqTup9g2GwGkPJg36I4xNDknXtwb3jhAfM0W2WBsDyZ1cE47lbVjiNUg6X4vaEB6udXsJQNTv3abSQgkVXiKImt01RHCBgdX79vM8/S5ultv0i7aaEIhijLL9zMbbq4dp9OEgwIfYBNQivnt59WGXh2c0kYt8xzR3QVcoBIVe2T71nTOLjiJkM4jWto0fK+wjLa1zlhE5MyEPiewGQcl40VegZC498RChU4hNHqa22D+cp8o7mfz8BNazwNiK3nbES8zh+zqvd7E0Wf5UDfXalYYBgTZZr9tyeRv6LpeSufp3LCB4KRyqXfXpNv/GvJXNoLcmwEOLv9Tao6PBo0q84dZ4zkWWe6Dc3MXa97o5Q2KwYQf6+pq37MDFmGBFKk1ewrl6mH2dXrh5Kc+2AdW5X7/yyOsoiYXBwghxdvPx44SiZqdwEDyovi8kURQmktj/zcCIl9gzTx9zVLZn2se6rzyGUwUb/upKpwkIzSXzEhV64fixmsHiAwh5xknhCVGuxZVDgFp4u7uSbGlJx/xM7femqx4mooXO6Hkx3gklClO5TX8X6PzYPpJNLEYsqOd1Mo3AK2Xl4tzf+vwUFyG07r3NgVKrhbebl9jz+hazTLdAJN77iKNkCKCnjivSAkeKUqSQW04owKvTSIV7Q8mltJrmOHrKx+XZvKc9KMn6mC+jPOT4wwdKjHdFSRWpeRYMZeEKZxBi+tgiMgmAaRt9nWuU7tPlQs8Qj5+n9f/QRfiGuG6QIkBsQ2zlnU4hvm7nfvgw8V0GtTzOwxEseVBxvqBDCedEJrYMBVbVzSt/BAdG+XBx4iD5wf7z9CydSJHe8INroHVayT9PeSkSrXl18/smrrZvo2AfCLSHKtUn3pSQu5AVyVL0bPZTvEj/GcEr077ZjWK5WHmB+E1rq3uNuq7BLjQ98k/evmaUPvW0XrkBKldSSU4muICDt0+irZ/ENZhEOgQQaq6aWTWhbuLaBLRnCR+3HapodkcyW064xKjJvHnccGrM+8Sc3cjXYJ3CQ+9ic76yHOMDvke0/7sc4/mbOru0USrYMSov1iALtjlRd37/Dya0oXIvUvyqayjlGPoDQpBHA9qgXV9jg5Zbxe2ejEIooFaXrB0jVgSmbhl1ygSPQHEYnjWjDO1Tk768VDrxsqyGKzCzVcNyv2rOx2B45bXyswEhVQoeNr5WgBfBwW9BtaMCQwXEXBT78us7sRIePhvWUQlLVxpqvC22gd3MUZqPOV/2dr7rbcjSe4qBWCHgEXnYbOkOw628+46WrIkoo8E/hwWbmvrxsFip21mdmg7xhh+RHs44ZrYNxzaY1A97KBVTzpyOt9RiuLjg+AGTdRYNkHoaO08H/JvH0DWPz/NOOF2FefXIiPCd+qa15Z4rjoicoZh" data-ays-ignore="true"&gt;&lt;/span&gt;&lt;span style="display: none !important;"&gt;&lt;input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DE98733A" data-ays-ignore="true"&gt;&lt;/span&gt;<br/>
+   &lt;div data-act-control-type="modalPopupBackground" id="ctl00_ctl00_working_backgroundElement" class="working" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000; width: 1536px; height: 695px;"&gt;&lt;/div&gt;<br/>
+   &lt;input type="hidden" id="hdnFullSize" name="FullSize" value="false"&gt;<br/>
+  &lt;/form&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

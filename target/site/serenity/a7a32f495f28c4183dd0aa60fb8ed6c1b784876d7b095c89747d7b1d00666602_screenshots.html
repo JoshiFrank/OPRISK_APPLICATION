@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Oprisk_Serenity_framework</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="2449a4afa4f5ef35b303d4caa716b900123dc8091208b804744e1349c825f864.html">To Test Libraries Indicator Functioinality</a></span>
+                > <span class="truncate-60"><a
+                    href="a7a32f495f28c4183dd0aa60fb8ed6c1b784876d7b095c89747d7b1d00666602.html">To Test Libraries indicator functioinality </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-11-2023 18:25</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">To Test Libraries Indicator Functioinality</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="9aa82d331814d8b4f2f6d3e0f449486bc2f5d1dbace9c430f98e5548dc535eb3.html">Endto End
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">To Test Libraries indicator functioinality
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="d671c7213be71164c77a8494a968a4c24f01598f0ee077cdf844a3da6979fc49.png" title=" Given To open the OneSumX application" width="1920"/>
+                <img src="d671c7213be71164c77a8494a968a4c24f01598f0ee077cdf844a3da6979fc49.png" title=" Oktaverification" width="1920"/>
+                <img src="aa0cc5a6cd8920d24fba92a6d5286a74be0cfbfc694c68c4dd14b0e5470e428f.png" title=" Oktaverification (completed)" width="1920"/>
+                <img src="aa0cc5a6cd8920d24fba92a6d5286a74be0cfbfc694c68c4dd14b0e5470e428f.png" title=" Given To open the OneSumX application (completed)" width="1920"/>
+                <img src="0ae2472266d5496cd9f7739c4b7e16bef2690a3b1efc874f96f8c28b1f3dddad.png" title=" When To mouse hover to Libraries" width="1920"/>
+                <img src="0ae2472266d5496cd9f7739c4b7e16bef2690a3b1efc874f96f8c28b1f3dddad.png" title=" To mouse hover to libraries" width="1920"/>
+                <img src="0ae2472266d5496cd9f7739c4b7e16bef2690a3b1efc874f96f8c28b1f3dddad.png" title=" When To mouse hover to Libraries (completed)" width="1920"/>
+                <img src="08639b18228cc842cf0ef5639d173a63152d297e369c666d02110a8335d66af7.png" title=" When To Click the indicator option in Libraries" width="1920"/>
+                <img src="08639b18228cc842cf0ef5639d173a63152d297e369c666d02110a8335d66af7.png" title=" To click the indicator option in libraries" width="1920"/>
+                <img src="08639b18228cc842cf0ef5639d173a63152d297e369c666d02110a8335d66af7.png" title=" When To Click the indicator option in Libraries (completed)" width="1920"/>
+                <img src="08639b18228cc842cf0ef5639d173a63152d297e369c666d02110a8335d66af7.png" title=" Then To validate the Maintain indicator register page" width="1920"/>
+                <img src="08639b18228cc842cf0ef5639d173a63152d297e369c666d02110a8335d66af7.png" title=" To validate the maintain indicator register page" width="1920"/>
+                <img src="cab5a55d4bf32568d74e58ec7ad3e002581e1c9df5c787e9df5aba6cee5c76e0.png" title=" When To click  Down arrow button in Operational Risk Indicators related to Clients Products and Business Practices Failures" width="1920"/>
+                <img src="cab5a55d4bf32568d74e58ec7ad3e002581e1c9df5c787e9df5aba6cee5c76e0.png" title=" To click down arrow button in operational risk indicators related to clients products and business practices failures" width="1920"/>
+                <img src="cab5a55d4bf32568d74e58ec7ad3e002581e1c9df5c787e9df5aba6cee5c76e0.png" title=" When To click  Down arrow button in Operational Risk Indicators related to Clients Products and Business Practices Failures (completed)" width="1920"/>
+                <img src="05050522d1cf18a3192fffc4944f0ddcd4e9accf9b90bd19ebf649ab9737cfd4.png" title=" When To click the Add  headline indicator option" width="1920"/>
+                <img src="05050522d1cf18a3192fffc4944f0ddcd4e9accf9b90bd19ebf649ab9737cfd4.png" title=" To click the add headline indicator option" width="1920"/>
+                <img src="7e020c21756638185b08c514bac9bdcc1d403d928bec20586609a2aa30eee4a0.png" title=" To click the add headline indicator option (completed)" width="1920"/>
+                <img src="7e020c21756638185b08c514bac9bdcc1d403d928bec20586609a2aa30eee4a0.png" title=" When To click the Add  headline indicator option (completed)" width="1920"/>
+                <img src="8c16688203b70d9d4503d3f1523ab1d95329397c6a873a43b0754a4858c4ac28.png" title=" Then To Validate Create Headline Indicator  page" width="1920"/>
+                <img src="8c16688203b70d9d4503d3f1523ab1d95329397c6a873a43b0754a4858c4ac28.png" title=" To validate create headline indicator page" width="1920"/>
+                <img src="8c16688203b70d9d4503d3f1523ab1d95329397c6a873a43b0754a4858c4ac28.png" title=" Then To Validate Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="9f20138277a241c61c1180d2ad43c2d9b4d7f98d1488031a29a0afa0b632f8be.png" title=" When To Enter value in Headline Indicator Name box in Create Headline Indicator  page" width="1920"/>
+                <img src="9f20138277a241c61c1180d2ad43c2d9b4d7f98d1488031a29a0afa0b632f8be.png" title=" To enter value in headline indicator name box in create headline indicator page" width="1920"/>
+                <img src="9f20138277a241c61c1180d2ad43c2d9b4d7f98d1488031a29a0afa0b632f8be.png" title=" When To Enter value in Headline Indicator Name box in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="344a9c1664110b6978eb95cb82e638c9e280b2ec384c73b966f00b76af8453ad.png" title=" When To Enter value in Description box in Create Headline Indicator  page" width="1920"/>
+                <img src="344a9c1664110b6978eb95cb82e638c9e280b2ec384c73b966f00b76af8453ad.png" title=" To enter value in description box in create headline indicator page" width="1920"/>
+                <img src="344a9c1664110b6978eb95cb82e638c9e280b2ec384c73b966f00b76af8453ad.png" title=" When To Enter value in Description box in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="b2cf22928adf49885e34852540cf03a118ce5eeb2b9f043a720a7d24606657a1.png" title=" When To Enter value in Headline Indicator Reference box in Create Headline Indicator  page" width="1920"/>
+                <img src="b2cf22928adf49885e34852540cf03a118ce5eeb2b9f043a720a7d24606657a1.png" title=" To enter value in headline indicator reference box in create headline indicator page" width="1920"/>
+                <img src="4060e2e4bafe01fd88c09f3b13f4c335189c9cd2091aa8b27302540144bbeae9.png" title=" To enter value in headline indicator reference box in create headline indicator page (completed)" width="1920"/>
+                <img src="4060e2e4bafe01fd88c09f3b13f4c335189c9cd2091aa8b27302540144bbeae9.png" title=" When To Enter value in Headline Indicator Reference box in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="96fa4cd02271f51ed254669fb5922f6984992fdd7fbbcf4fb68b3c5b086f11da.png" title=" When To select the dropdown option in Periodicity in Create Headline Indicator  page" width="1920"/>
+                <img src="96fa4cd02271f51ed254669fb5922f6984992fdd7fbbcf4fb68b3c5b086f11da.png" title=" To select the dropdown option in periodicity in create headline indicator page" width="1920"/>
+                <img src="9fbf646639b6a275ff1d3841b1e60d891df201e41c1a734aec5ba5b527e46982.png" title=" To select the dropdown option in periodicity in create headline indicator page (completed)" width="1920"/>
+                <img src="9fbf646639b6a275ff1d3841b1e60d891df201e41c1a734aec5ba5b527e46982.png" title=" When To select the dropdown option in Periodicity in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="dab380cc65303bccf2b77acfc627b655e1d82ad50381f8c9d04def3a270dc031.png" title=" When To select the dropdown option in Provider in Create Headline Indicator  page" width="1920"/>
+                <img src="dab380cc65303bccf2b77acfc627b655e1d82ad50381f8c9d04def3a270dc031.png" title=" To select the dropdown option in provider in create headline indicator page" width="1920"/>
+                <img src="dab380cc65303bccf2b77acfc627b655e1d82ad50381f8c9d04def3a270dc031.png" title=" When To select the dropdown option in Provider in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="aaf24843ca3451d9b9a8d11e80e3d6abc04da6919dd4d84360a46e62c307edd8.png" title=" When To select the dropdown option in Approver in Create Headline Indicator  page" width="1920"/>
+                <img src="aaf24843ca3451d9b9a8d11e80e3d6abc04da6919dd4d84360a46e62c307edd8.png" title=" To select the dropdown option in approver in create headline indicator page" width="1920"/>
+                <img src="aaf24843ca3451d9b9a8d11e80e3d6abc04da6919dd4d84360a46e62c307edd8.png" title=" When To select the dropdown option in Approver in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="7d1c5d81936a7c7bce3b3a6188edc98c23ff1f7cabe6ca389ccce00b38f23788.png" title=" When To select the dropdown option in Overseer in Create Headline Indicator  page" width="1920"/>
+                <img src="7d1c5d81936a7c7bce3b3a6188edc98c23ff1f7cabe6ca389ccce00b38f23788.png" title=" To select the dropdown option in overseer in create headline indicator page" width="1920"/>
+                <img src="7d1c5d81936a7c7bce3b3a6188edc98c23ff1f7cabe6ca389ccce00b38f23788.png" title=" When To select the dropdown option in Overseer in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="790c580442657e4bc3631a28ee7a247ac41b36ec715d17b0bcd794a5af05ed70.png" title=" When To select the dropdown option in Overseer Alter Notification in Create Headline Indicator  page" width="1920"/>
+                <img src="790c580442657e4bc3631a28ee7a247ac41b36ec715d17b0bcd794a5af05ed70.png" title=" To select the dropdown option in overseer alter notification in create headline indicator page" width="1920"/>
+                <img src="790c580442657e4bc3631a28ee7a247ac41b36ec715d17b0bcd794a5af05ed70.png" title=" When To select the dropdown option in Overseer Alter Notification in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="d6c62febd70796dd9b669cc59de50fc815229947224715d80b9d10c20a2f5611.png" title=" When To Select the Completion Date in Create Headline Indicator  page" width="1920"/>
+                <img src="d6c62febd70796dd9b669cc59de50fc815229947224715d80b9d10c20a2f5611.png" title=" To select the completion date in create headline indicator page" width="1920"/>
+                <img src="d6c62febd70796dd9b669cc59de50fc815229947224715d80b9d10c20a2f5611.png" title=" When To Select the Completion Date in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="f552864d146b18eca7f84630d90acc3aff9b71d00e3f17087354b04deda1e1ae.png" title=" When To select the dropdown option in Collection Method in Create Headline Indicator  page" width="1920"/>
+                <img src="f552864d146b18eca7f84630d90acc3aff9b71d00e3f17087354b04deda1e1ae.png" title=" To select the dropdown option in collection method in create headline indicator page" width="1920"/>
+                <img src="f552864d146b18eca7f84630d90acc3aff9b71d00e3f17087354b04deda1e1ae.png" title=" When To select the dropdown option in Collection Method in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="e8b9d4873d53ce5c1e46288947295669a43780f1e197f9ea04c0579ea3489d05.png" title=" When To Enter value in Data Feed Mnemonic box in Create Headline Indicator  page" width="1920"/>
+                <img src="e8b9d4873d53ce5c1e46288947295669a43780f1e197f9ea04c0579ea3489d05.png" title=" To enter value in data feed mnemonic box in create headline indicator page" width="1920"/>
+                <img src="e8b9d4873d53ce5c1e46288947295669a43780f1e197f9ea04c0579ea3489d05.png" title=" When To Enter value in Data Feed Mnemonic box in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="5edd4528a7ed4275ea2b9678c1cb71815feeab5d3edf933a4c6e990100ca3125.png" title=" When To select the dropdown option in Aggregation Method in Create Headline Indicator  page" width="1920"/>
+                <img src="5edd4528a7ed4275ea2b9678c1cb71815feeab5d3edf933a4c6e990100ca3125.png" title=" To select the dropdown option in aggregation method in create headline indicator page" width="1920"/>
+                <img src="d03fd4d1df1511daa7961500c55824ac4792a2de0db92c18e063206dc2b1ea67.png" title=" To select the dropdown option in aggregation method in create headline indicator page (completed)" width="1920"/>
+                <img src="d03fd4d1df1511daa7961500c55824ac4792a2de0db92c18e063206dc2b1ea67.png" title=" When To select the dropdown option in Aggregation Method in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="72c0c2db85a9bdc2a00bd23c7874b88d21593e0ae91b9898ceaaabe8beb97c3d.png" title=" When To click the next button in Create Headline Indicator  page" width="1920"/>
+                <img src="72c0c2db85a9bdc2a00bd23c7874b88d21593e0ae91b9898ceaaabe8beb97c3d.png" title=" To click the next button in create headline indicator page" width="1920"/>
+                <img src="72c0c2db85a9bdc2a00bd23c7874b88d21593e0ae91b9898ceaaabe8beb97c3d.png" title=" When To click the next button in Create Headline Indicator  page (completed)" width="1920"/>
+                <img src="72c0c2db85a9bdc2a00bd23c7874b88d21593e0ae91b9898ceaaabe8beb97c3d.png" title=" Then To Validate the Select Scoring Method And Define Thresholds page" width="1920"/>
+                <img src="72c0c2db85a9bdc2a00bd23c7874b88d21593e0ae91b9898ceaaabe8beb97c3d.png" title=" To validate the select scoring method and define thresholds page" width="1920"/>
+                <img src="eb8d8956a8912c0ba5da5aca9de051ea3aca7f58a72b8049696689fda958acfe.png" title=" When To select dropdown option in Indicator Scoring Methodology in Select Scoring Method And Define Thresholds page" width="1920"/>
+                <img src="eb8d8956a8912c0ba5da5aca9de051ea3aca7f58a72b8049696689fda958acfe.png" title=" To select dropdown option in indicator scoring methodology in select scoring method and define thresholds page" width="1920"/>
+                <img src="eb8d8956a8912c0ba5da5aca9de051ea3aca7f58a72b8049696689fda958acfe.png" title=" When To select dropdown option in Indicator Scoring Methodology in Select Scoring Method And Define Thresholds page (completed)" width="1920"/>
+                <img src="b11b028add66721465042edbdc437bf4789a05dfc51bcd29a190c690751c13ca.png" title=" When To click check box in Inherit Headline Indicator Threshold in Select Scoring Method And Define Thresholds page" width="1920"/>
+                <img src="b11b028add66721465042edbdc437bf4789a05dfc51bcd29a190c690751c13ca.png" title=" To click check box in inherit headline indicator threshold in select scoring method and define thresholds page" width="1920"/>
+                <img src="b11b028add66721465042edbdc437bf4789a05dfc51bcd29a190c690751c13ca.png" title=" When To click check box in Inherit Headline Indicator Threshold in Select Scoring Method And Define Thresholds page (completed)" width="1920"/>
+                <img src="32c706d000f6c46725a32d0695fe68c36cfa7b51bb5d9b05c3f127c88abf0269.png" title=" When To click the next button in Select Scoring Method And Define Thresholds page" width="1920"/>
+                <img src="32c706d000f6c46725a32d0695fe68c36cfa7b51bb5d9b05c3f127c88abf0269.png" title=" To click the next button in select scoring method and define thresholds page" width="1920"/>
+                <img src="32c706d000f6c46725a32d0695fe68c36cfa7b51bb5d9b05c3f127c88abf0269.png" title=" When To click the next button in Select Scoring Method And Define Thresholds page (completed)" width="1920"/>
+                <img src="f952adbbd6b75d7c4ac3af4d77d51fb7a8362a9c6690486bb6fbb208ff78cb9d.png" title=" Then To Validate the Select Dimension Types page" width="1920"/>
+                <img src="f952adbbd6b75d7c4ac3af4d77d51fb7a8362a9c6690486bb6fbb208ff78cb9d.png" title=" To validate the select dimension types page" width="1920"/>
+                <img src="f952adbbd6b75d7c4ac3af4d77d51fb7a8362a9c6690486bb6fbb208ff78cb9d.png" title=" Then To Validate the Select Dimension Types page (completed)" width="1920"/>
+                <img src="24782353e6d01393f8957f48eee7157b79dea2d5f86c575286f0153b5909b3b5.png" title=" When To click the check box in Dimension Types in Select Dimension Types page" width="1920"/>
+                <img src="24782353e6d01393f8957f48eee7157b79dea2d5f86c575286f0153b5909b3b5.png" title=" To click the check box in dimension types in select dimension types page" width="1920"/>
+                <img src="24782353e6d01393f8957f48eee7157b79dea2d5f86c575286f0153b5909b3b5.png" title=" When To click the check box in Dimension Types in Select Dimension Types page (completed)" width="1920"/>
+                <img src="de6d80557199ffd2353c1a08d1181999f468d068591cafd6e7f00d53cd675550.png" title=" When To click the next button in Select Dimension Types page" width="1920"/>
+                <img src="de6d80557199ffd2353c1a08d1181999f468d068591cafd6e7f00d53cd675550.png" title=" To click the next button in select dimension types page" width="1920"/>
+                <img src="de6d80557199ffd2353c1a08d1181999f468d068591cafd6e7f00d53cd675550.png" title=" When To click the next button in Select Dimension Types page (completed)" width="1920"/>
+                <img src="75f2385f4d1dc8606e96765b9084defdb38e0db1f13f60fc6083eb93e9426e69.png" title=" Then To validate the Select Indicator Dimension Values page" width="1920"/>
+                <img src="75f2385f4d1dc8606e96765b9084defdb38e0db1f13f60fc6083eb93e9426e69.png" title=" To validate the select indicator dimension values page" width="1920"/>
+                <img src="aa423559228e1140f92961b3f66d38522cc58aedc0a7f50582b96839f4092b89.png" title=" To validate the select indicator dimension values page (completed)" width="1920"/>
+                <img src="aa423559228e1140f92961b3f66d38522cc58aedc0a7f50582b96839f4092b89.png" title=" Then To validate the Select Indicator Dimension Values page (completed)" width="1920"/>
+                <img src="874a1bb4d14c5a9a1e62ded49e7377f603b39318cfd1230587fc6d743b69ecd3.png" title=" When To click the Arrow button in office of the President in Select Indicator Dimension Values page" width="1920"/>
+                <img src="874a1bb4d14c5a9a1e62ded49e7377f603b39318cfd1230587fc6d743b69ecd3.png" title=" To click the arrow button in office of the president in select indicator dimension values page" width="1920"/>
+                <img src="874a1bb4d14c5a9a1e62ded49e7377f603b39318cfd1230587fc6d743b69ecd3.png" title=" When To click the Arrow button in office of the President in Select Indicator Dimension Values page (completed)" width="1920"/>
+                <img src="0407c5bb006c3514cdce05e6ad8d2ad93fa4370a40b13b1ce33026df62706337.png" title=" When To click the Arrow button the President in Select Indicator Dimension Values page" width="1920"/>
+                <img src="0407c5bb006c3514cdce05e6ad8d2ad93fa4370a40b13b1ce33026df62706337.png" title=" To click the arrow button the president in select indicator dimension values page" width="1920"/>
+                <img src="0407c5bb006c3514cdce05e6ad8d2ad93fa4370a40b13b1ce33026df62706337.png" title=" When To click the Arrow button the President in Select Indicator Dimension Values page (completed)" width="1920"/>
+                <img src="7f2fcb6f3fe1e189c966a2fc9c38bc652a0a125e21ad25707b0184382255e9f2.png" title=" When To click the check box in Risk management option in Select Indicator Dimension Values page" width="1920"/>
+                <img src="7f2fcb6f3fe1e189c966a2fc9c38bc652a0a125e21ad25707b0184382255e9f2.png" title=" To click the check box in risk management option in select indicator dimension values page" width="1920"/>
+                <img src="7f2fcb6f3fe1e189c966a2fc9c38bc652a0a125e21ad25707b0184382255e9f2.png" title=" When To click the check box in Risk management option in Select Indicator Dimension Values page (completed)" width="1920"/>
+                <img src="5c0c07368614db1dcad873c9c66edc4fa26cbeadfe8c358e1e697c02cf007db6.png" title=" When To click the next button in Select Indicator Dimension Values page" width="1920"/>
+                <img src="5c0c07368614db1dcad873c9c66edc4fa26cbeadfe8c358e1e697c02cf007db6.png" title=" To click the next button in select indicator dimension values page" width="1920"/>
+                <img src="5c0c07368614db1dcad873c9c66edc4fa26cbeadfe8c358e1e697c02cf007db6.png" title=" When To click the next button in Select Indicator Dimension Values page (completed)" width="1920"/>
+                <img src="10ad1a648ec98d7e3cb9b0c94b5dd15c62a951635ad8df59535108ec89f9de79.png" title=" Then To validate the Review Indicators page" width="1920"/>
+                <img src="10ad1a648ec98d7e3cb9b0c94b5dd15c62a951635ad8df59535108ec89f9de79.png" title=" To validate the review indicators page" width="1920"/>
+                <img src="8114362d322322828a93ff6eafdae958e1dff7565ed31157eed281368b0a50fd.png" title=" To validate the review indicators page (completed)" width="1920"/>
+                <img src="8114362d322322828a93ff6eafdae958e1dff7565ed31157eed281368b0a50fd.png" title=" Then To validate the Review Indicators page (completed)" width="1920"/>
+                <img src="c593f4301e885ac80cd81575ee44cf1b1ea8e11729ced7b47552d4cfc7b49571.png" title=" When To click the save button in Review Indicators page" width="1920"/>
+                <img src="c593f4301e885ac80cd81575ee44cf1b1ea8e11729ced7b47552d4cfc7b49571.png" title=" To click the save button in review indicators page" width="1920"/>
+                <img src="c593f4301e885ac80cd81575ee44cf1b1ea8e11729ced7b47552d4cfc7b49571.png" title=" When To click the save button in Review Indicators page (completed)" width="1920"/>
+                <img src="c593f4301e885ac80cd81575ee44cf1b1ea8e11729ced7b47552d4cfc7b49571.png" title=" Then To validate the Edit headline indicator page" width="1920"/>
+                <img src="c593f4301e885ac80cd81575ee44cf1b1ea8e11729ced7b47552d4cfc7b49571.png" title=" To validate the edit headline indicator page" width="1920"/>
+                <img src="4b42f3b3c8d45c72c93ce1244cf3f344ef8010471aa8212005cfa4961c1b6fb6.png" title=" When To click the check box in onesum Edit headline indicator page" width="1920"/>
+                <img src="4b42f3b3c8d45c72c93ce1244cf3f344ef8010471aa8212005cfa4961c1b6fb6.png" title=" To click the check box in onesum edit headline indicator page" width="1920"/>
+                <img src="4b42f3b3c8d45c72c93ce1244cf3f344ef8010471aa8212005cfa4961c1b6fb6.png" title=" When To click the check box in onesum Edit headline indicator page (completed)" width="1920"/>
+                <img src="619ff634a598b049746126cc9367d0dc86b764de46b0844bf5e36649f4b5e1f9.png" title=" When to click the save button in Edit headline indicator page" width="1920"/>
+                <img src="619ff634a598b049746126cc9367d0dc86b764de46b0844bf5e36649f4b5e1f9.png" title=" To click the save button in edit headline indicator page" width="1920"/>
+                <img src="619ff634a598b049746126cc9367d0dc86b764de46b0844bf5e36649f4b5e1f9.png" title=" When to click the save button in Edit headline indicator page (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.21</span>
+</div>
+</body>
+</html>

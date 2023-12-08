@@ -1,0 +1,1290 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html style="overflow: hidden;"&gt;<br/>
+ &lt;head id="ctl00_Head1"&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/knockout.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/knockout-bindings.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery-ui.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;link href="favicon.ico" rel="shortcut icon" type="image/x-icon"&gt; <br/>
+  &lt;script type="text/javascript" src="./js/lib/jquery.hiddenDimensions.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./js/lib/json-min.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./js/core/master.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./js/core/Popup.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/lib/tag-it.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./JS/Keywords/Keywords.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" type="text/css" href="css/jquery.tagit.css?v=200610"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" href="css/tagit.ui-zendesk.css?v=200610"&gt; <br/>
+  &lt;script type="text/javascript" src="./Content/js/lib/datatables.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" href="Content/js/lib/datatables.css?v=200610"&gt; <br/>
+  &lt;script type="text/javascript" src="js/Headlines/HeadlineIndicatorAdd.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="js/Headlines/HeadlineCollection.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="js/Headlines/HeadlineScoring.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;link href="https://oprisk-uat.afreximbank.net/AppA/UI/js/lib/jsTree/themes/default/style.css?v=200610" rel="stylesheet" type="text/css"&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/chosen.jquery.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/select2.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/Translations.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/Common.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink1" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/chosen.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink2" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/select2.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink3" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/onesumx.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink4" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/print.css?v=200610" rel="stylesheet" type="text/css" media="print"&gt;<br/>
+  &lt;meta name="format-detection" content="telephone=no"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink5" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/jquery.qtip.min.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link href="/AppA/UI/WebResource.axd?d=-H-7euyzCq22q5_s0z2InALb3_soWW_DsxqUKemcaHueG-IAyz6uG-68nGPwuTx8hzDBqh8975byWroTEJyVDb-Y4WFaQbhZsWnlHT0r_-ETKI15ybf1X1wC8se7JSiYBKAI5cCo0bSmCir-YB_bgQ2&amp;t=637308792196280579" type="text/css" rel="stylesheet"&gt;<br/>
+  &lt;link href="/AppA/UI/WebResource.axd?d=hcXDZhXiidgsQUtEo5iT31rdvP0rhBy9JJBD1qjEQ88YB-B_SGie-kjZiIIi7f_awGyx2Ypewi8Q8R-gdARIOiaycR9b-3zpb_jAJLdb9gzM7xEx88Hj6NDTCQG8H9g8K_RrxGALI12ESZmi_DSTjeajmMVN2VjRsKNbXE76Hqw1&amp;t=637308792196280579" type="text/css" rel="stylesheet"&gt;<br/>
+  &lt;title&gt;<br/>
+	OneSumX<br/>
+&lt;/title&gt;<br/>
+  &lt;link type="text/css" rel="stylesheet" href="/AppA/UI/WebResource.axd?d=-H-7euyzCq22q5_s0z2InALb3_soWW_DsxqUKemcaHueG-IAyz6uG-68nGPwuTx8hzDBqh8975byWroTEJyVDb-Y4WFaQbhZsWnlHT0r_-ETKI15ybf1X1wC8se7JSiYBKAI5cCo0bSmCir-YB_bgQ2&amp;t=637308792196280579"&gt;<br/>
+  &lt;link type="text/css" rel="stylesheet" href="/AppA/UI/WebResource.axd?d=hcXDZhXiidgsQUtEo5iT31rdvP0rhBy9JJBD1qjEQ88YB-B_SGie-kjZiIIi7f_awGyx2Ypewi8Q8R-gdARIOiaycR9b-3zpb_jAJLdb9gzM7xEx88Hj6NDTCQG8H9g8K_RrxGALI12ESZmi_DSTjeajmMVN2VjRsKNbXE76Hqw1&amp;t=637308792196280579"&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body onload="OnPageLoad(); " style="min-width: 960px;"&gt; <br/>
+  &lt;form name="aspnetForm" method="post" action="./HeadlineIndicatorAdd.aspx?Action=AddHeadline&amp;From=2&amp;RHId=12&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm" onactivate="SaveOnActivate();" ondeactivate="CompareOnDeActivate();" enctype="multipart/form-data" class="dirty"&gt; <br/>
+   &lt;div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var theForm = document.forms['aspnetForm'];<br/>
+if (!theForm) {<br/>
+    theForm = document.aspnetForm;<br/>
+}<br/>
+function __doPostBack(eventTarget, eventArgument) {<br/>
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {<br/>
+        theForm.__EVENTTARGET.value = eventTarget;<br/>
+        theForm.__EVENTARGUMENT.value = eventArgument;<br/>
+        theForm.submit();<br/>
+    }<br/>
+}<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZOpr66KL1iv7yPr3oSKKQvFySEH_QRSN8HTwbp02VivQv64_G4gQho6Gp97TSbDCcw2&amp;t=638092594030625477" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=-fCmiEcu3xUgmjOFHhP5L9LzK-ZA1KycWbe3oxCDfoLnL4-otx_fF3cFB8XpiPI_bqw9X3qvRAKHCqkn6dQitd_NHdlTfybUX3U-psQyAG1cbxSb2LVbUxavh2Y2-bf_hFMyv4t53-W6b20qNvTf-YLR3U3MvrIthF6HwsSRZEs1&amp;t=ffffffffda0d40b5" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var hdnDirty='ctl00_hdnDirty';<br/>
+var hdnAlwaysDirty='ctl00_hdnAlwaysDirty';<br/>
+var cDisableAreYouSure=false;<br/>
+var tsUnsavedChanges='There are unsaved changes that will be lost if you proceed.';<br/>
+var tsOKToContinue='Press OK to continue, or Cancel to stay on the current page.';<br/>
+var tsNothingToSave='Nothing to save.';<br/>
+var DisplayButtonsInScroll = false;<br/>
+var userName = "Joshi Franklin";<br/>
+var defaultDateFormat = 'dd MMM yyyy';<br/>
+var defaultTimeFormat = 'HH:mm:ss';<br/>
+var sessionID='hwcb4a1fqek1dm312tleyquu';<br/>
+var divPopupClientId1='ctl00_divExceptionWarning';<br/>
+var divPopupClientId2='ctl00_divException';<br/>
+var mpeMsgClientId='ctl00_popupMsg';<br/>
+var mpeClientId='ctl00_popup';<br/>
+var mpeWorkingId='ctl00_working';<br/>
+var gbFromLogin=false;<br/>
+var LoadDropdownURL = 'https://oprisk-uat.afreximbank.net/AppA/Services/GenericListSettings.svc/LoadSearchResults/';<br/>
+var WebApiRoot = 'https://oprisk-uat.afreximbank.net/AppA/api/';<br/>
+var gRowErrorId = 'ctl00_divError';<br/>
+var gLblErrorId = 'ctl00_lblError';<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.PrimaryReferencePopup = ARCLOGICS.PrimaryReferencePopup || {};<br/>
+ARCLOGICS.PrimaryReferencePopup.Options = {"ForegroundElement":"ctl00_ifpReferencePopup_pnlIFramePopup","ForegroundElementLeft":"ctl00_ifpReferencePopup_hdnLeft","ForegroundElementTop":"ctl00_ifpReferencePopup_hdnTop","BackgroundElement":"ctl00_ifpReferencePopup_backgroundElement","BackgroundWidth":"ctl00_ifpReferencePopup_hdnWidth","BackgroundHeight":"ctl00_ifpReferencePopup_hdnHeight","SaveButton":null,"CancelButton":"ctl00_ifpReferencePopup_btnCancel","ClearButton":null,"Apply":true,"PopupDimension":55,"CloseOnSave":true,"PopupTitle":null};<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/JS/TimeoutControl.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.are-you-sure.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/js/lib/jsTree/jstree.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.Constants = ARCLOGICS.Constants || {};<br/>
+ARCLOGICS.Constants.AM_SWORDAUTH=false;<br/>
+ARCLOGICS.Constants.UIDROPDOWN_SEARCHCOUNT = 10;<br/>
+ARCLOGICS.Constants.UIDROPDOWN_ENABLE = true;<br/>
+ARCLOGICS.Constants.RootPath='https://oprisk-uat.afreximbank.net/AppA/Pages/';<br/>
+ARCLOGICS.Constants.RootPathSur='https://oprisk-uat.afreximbank.net/AppA/Surveys/';<br/>
+ARCLOGICS.Constants.RootPathUI='https://oprisk-uat.afreximbank.net/AppA/UI/';<br/>
+ARCLOGICS.Constants.RootPathAPI='https://oprisk-uat.afreximbank.net/AppAPI/';<br/>
+ARCLOGICS.Constants.Lang = 'AFB';<br/>
+ARCLOGICS.Constants.TextDir= 'LTR';<br/>
+ARCLOGICS.Constants.BaseCcy= 'USD';<br/>
+ARCLOGICS.Constants.RootPath='https://oprisk-uat.afreximbank.net/AppA/Pages/';<br/>
+ARCLOGICS.Constants.BaseRoot='https://oprisk-uat.afreximbank.net/';<br/>
+ARCLOGICS.Constants.DefaultRTBFontFamily='verdana';<br/>
+ARCLOGICS.Constants.DefaultRTBFontSize='8';<br/>
+ARCLOGICS.Constants.RTBFonts='calibri';<br/>
+var imgMinus='../images//minus.gif';<br/>
+var imgPlus='../images//plus.gif';<br/>
+var gsNoneOption =" --None-- ";<br/>
+var gbIsPostBack=false;<br/>
+var sessionTimeoutWarning=30;<br/>
+var sessionTimeout=60;<br/>
+var sessionID='hwcb4a1fqek1dm312tleyquu';<br/>
+var sessionRAAutoSave=0;<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/js/Dates/date-en-IE.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/js/DateCombos.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/js/translations/langAFB.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.qtip.min.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+ValidatorOnChangeBuilder();function calendarExtenderPostback(e) { setTimeout('__doPostBack(\'ctl00$content$ctrlHeadline$ctrlCompletionDate$dtd\',\'\')', 0) }var gbIsAdding=true;<br/>
+var gMultEditDelay=100;<br/>
+var gScrollPosition='ctl00_hdScrollPosition';<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1GOl8UWQmSmJosSjxAONVqI48COuRc2DrF8d20mjmFdGzGMdSld6PL6y3wVfb26KMXsn9jysyC6jJIkoUSOSeW9tBWPNn79JnU6o9K5iG8FilHoJpCqMTodDgjsTQa17RA2&amp;t=33e90bc4" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var __cultureInfo = {"name":"en-IE","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":false,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"€","NaNSymbol":"NaN","CurrencyNegativePattern":1,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402293599999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":false},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":2,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":false,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"eras":[1,"AD",null,0]};//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvjgXrq4Zffc3rxmW1FpQeuyVZ5bXSAvQYwdfEoMfgt-Bh1vb53YzbB5XVmOGzh8iEMCeVxmu-dFHm-jtus7zA2eeYlV9zrg1j0QapgoBEZcztv_-JJwdHMGJAHGFylavbrDM8AdnXSwEu1CMiZDfq4w1&amp;t=10c151ff" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OMJWVkZaQZofQ3V-X4w5Qzk4NRFSWMPyKICcNx02mmsYtOc3giyPf8QDu6bcPhUoBcyljj3NrUqVeXQNw9yZraOtoBUNWsCUp0rAKuf2og6MRGUp6A9wO53llH_24iZlB6UGd-a31IeHiJg9aFBHNvc1&amp;t=10c151ff" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=eE6V8nDbUVn0gtG6hKNX_Iw-h66XQshgDa8XbU6kkgPmtXve-Dw4rQTAYzh--kLDo3lEIQW0dNZLQv1v8t9rOZv57PO19r0XMfeIW0fXTAdtJgqo-8lGSXKgWnHbeF0T0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=mcAASOSteirJeuV-3by3Uca1JwyJFCF-2HRdlcvPzsllfBLdBtDD3zfo7rO3uExFh5zNiy4TaETh3HaxkLpHVrE-1TO0Q1pXpDNegLmE0101&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=jwf4VSQi7LeShc44FJ-gATP8HdB7fZLmnawQnWV4hoBvD2S9smbR9HXAzS08hnzwxebFlttLQqkcIFuae1EiDc4YN6x6cbMv9Ue1BxC4oLCp_An28cB_3vHXI_JhQ3du0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=uiErWUqGhD5_ddnGX4Xq_tbJeZERZSn2REyMLJ2nSqJo3ROUHrgBdwBMY7q5zrIq0VdFHajlQsBf-uTU2__8VIc5RyHNoXW1HuZLSrpujvkbM-NcUoEujHyXjtOhsh6z0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=nai7mGcYyE2dix_TwveLDSyNMXf3TAwfZ6XJjTQ0y7pDBPYWQKzoAVIvB0a0GeGmRbkHXcfzf8cGTSYQ95VfbsW8jUI8AC68Mox36PXw8NwnltV5iJMSHQ-ofhwGD94T0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=LQ1q2RBSthBAZhliMjtG_8glOCAO8I5TOU16JZ05E8ekQziKgyO3N6_zgwR77VbN-C81TG1jAVmL1sV26-KLyQwO9T4HoaEaWDFG7MXUDii3dtOd2fxsxnCaPiC-uVaa0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=HEFpVKbnoeQjkjHkFKu3MLN6y9u1UoaZ1jLOqq8LK5y1P4jfzv75dXL2JbKvRzOUd8UL-fqvt9Se5Llk3Kv7shgeUOYzwOlgYIWcT3P33rVEI1i3iXMYggxsemk6zPUz0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=VOYD8Xe7kQA0lniBYXVpAouv61GNcDHRRAi7I7Pahhb6vNhhRIecACQ6hZLvNyRnB0WX6-Zxy_9EkZCfsEVxGnLY2sstmQhmoEXznYgbXdk9oSwNiLGzVsYn_zh9u81B0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=24039AtbfhsNBYQDFUMYHLlw1NZs4qB2noThFccGNUG-B1haPExoL65klgpBnDJN8GoRi4EMb--ptbJjnIduHCT3L5Xj1Ck-rBigHYGj5hc1&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=myBlz7mQmGQE80F8-WeLsX5ZHMcrXPD6W1KkTxlpYs6Ve30w4gJsbDa32qS1ALWk11Ts3p0pOn3i2Hv6JqZmGnnh7xEek0iDc86lZmRQMgWusOZVVqN__H1aUe9kw-660&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=NISXSzp87hD3qcCkP6NEPmFvUQY_tONByzlImUfFZxqV-HP4k6xrap8wGxup92yr5OKk80Z0HM53gt3uU0Fg4Xl4Ms75MeBocKlpIhTsETBVS59Csz_KI2cfMOd6DYgv0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=yDT7ulzE00Yqzs5zd38bJ2w9JGn1srU61yZa46m_pEdbZUydbTjizMTjhM-rZxPidrxkIIYgbuSsvkgKlI5aoNwY0mS4FDMKLx1hvNiwIpK9p2Q68RLuZj6TbKi3aTfC0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=5ib3lCcyinHeLQmkwMF7EmwV0qnW4jUyc_C55BcG7phMqdlPaZgQ6LnyW7Ax0rvmE5bCOJ0ZmCcUH-g9GZIvPbmo21yfjOGW6EPHhcYk5Dk0iLQeLRtr6fHECUMCk9yQ0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=iON9Jxe8QCRam1nkdNLgke98AoZd1jmB2R9fNWoubMvqkesgZu3rXd2i1_hUASV5kRgEUuUK86ysSYqzuErlzyU9VKE4bKJ0dfMLwpT-FNC26NFtoGPtHEzydBr-fUGP0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=xGmPTKfsNy0_1Sr5I58kO_OERHPNL28pbhKL9wgSIOk9-wPxolYq66BqVmUlhnFfzFzybJZK2Ab4X09axFxyyf-2HaEJhCA70O2omw6lu_vYNY9K-LFlhXjy9v7JcQcr0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=hOeJu0xhC-uW6Gf8ooKdXn3t0sDYjKCjw-_q6-LtuQ6LvkMOqwTgTlpxC1XeEjeXG0be-_VcLh6ZvhcIBO5yqA2v8V6f2ofA13qZ83GZm6c8PLI3Vta6gArsltsCo7nU0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=XlV9GqTk6b5uqDuL38kZ4NZns1KHLk2xw2g6boOGA1HKt_X6fsvmzsK2uU2eJto7WMgEdKqUdd4NpGd7mohSiF9y-F4I1MoVErz_RyuURrWNTZg9favHC5jm4ypX966n0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+function WebForm_OnSubmit() {<br/>
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;return OnSubmit();<br/>
+return true;<br/>
+}<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$up','','tctl00$content$ctrlHeadlineGeneral$ctrlPeriodicity$updPeriodicity','','tctl00$content$ctrlHeadlineScoring$pnlUpdThresholds',''], ['ctl00$content$ctrlHeadlineScoring$ddlScoringMethodology',''], ['ctl00$btnCancel',''], 300, 'ctl00');<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;input type="hidden" name="ctl00$hdScrollPosition" id="ctl00_hdScrollPosition" data-ays-ignore="true" tabindex="0" value="85.5999984741211"&gt; &lt;button onclick="if (typeof(Page_ClientValidate) == 'function') Page_ClientValidate(''); __doPostBack('ctl00$navBar$evtQuickAccess','')" id="ctl00_navBar_evtQuickAccess" style="display:none;" tabindex="0"&gt;&lt;/button&gt;<br/>
+   &lt;div id="wk_header"&gt;<br/>
+    &lt;div id="wk_page_header" class="clearfix"&gt;<br/>
+     &lt;div id="wk_logo"&gt;<br/>
+      &lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Home.aspx?nbc=Y&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" title="Go to home" tabindex="1"&gt;&lt;span class="wkicon_logo"&gt;&lt;/span&gt;&lt;span class="hidden_text"&gt;OneSumX&lt;/span&gt;&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_navigation"&gt;<br/>
+      &lt;ul id="wk_main_nav" class="wk_nav clearfix active"&gt;<br/>
+       &lt;li menu="2" tabindex="0"&gt;&lt;a tabindex="0"&gt;Home&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="3" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Home.aspx?NoRedirect=Y&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="4" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Dashboard.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="141" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Workspace.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Workspace&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="8" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Reporting/ReportListConsol.aspx?Type=1&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Reports&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="90" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ManageScheduledReports.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Scheduled Items&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="144" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ClarificationList.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Clarifications&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="146" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/KeywordList.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Tags&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="9" tabindex="0"&gt;&lt;a tabindex="0"&gt;Risks&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="10" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RM_Maintain.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Risk &amp; Control Maps&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="13" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/RMAPRFlatList.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="11" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/RA_RiskAssessmentList.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Risk &amp; Control Self-Assessment (RCSA)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="16" tabindex="0"&gt;&lt;a tabindex="0"&gt;Controls&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="17" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PA_ControlSignoffList.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Control Signoff&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="20" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/PA_Reassign.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Reassign PA Reports&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="84" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/PA_ApprovalOverride.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Override PA Reports&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="21" tabindex="0"&gt;&lt;a tabindex="0"&gt;Control Gap Management&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="22" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/IssueList.aspx?showList=Y&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Control Gap Management&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="25" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/CIL_QuickQuery.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="26" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/QueryIssue_List.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Saved Queries&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="24" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/CIL_ListWrapper24a.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Issue Wrappers&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="27" tabindex="0"&gt;&lt;a tabindex="0"&gt;Incidents/Losses&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="28" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/EO_ListEvents.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Incidents/Losses&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="30" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_SearchQuick.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="31" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_ManageQueries.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Saved Queries&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="32" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_ReassignApprover.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Reassign Incident/Loss Approval&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="33" tabindex="0"&gt;&lt;a tabindex="0"&gt;Key Risk Indicators (KRIs)&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="140" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ManagePeriodicIndicator.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Periodic Key Risk Indicators (KRIs)&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="73" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Cycle_List.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Indicator Statement Cycles&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="47" class="active" tabindex="0"&gt;&lt;a tabindex="0"&gt;Libraries&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="48" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWRTree.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Risk&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="49" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWCTree.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Control&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="107" tabindex="-1" class="active"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/IndicatorRegister_Maintain.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Indicator&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="53" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/LibraryList.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Question Set&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="54" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Web/AuthSource?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Authoritative Source&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="57" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/KeyAssetTreeExplorer.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Assets&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+      &lt;ul id="wk_admin_nav" class="wk_nav clearfix"&gt;<br/>
+       &lt;li menu="64"&gt;&lt;a tabindex="0"&gt;Organisation&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="65" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/OrganisationUnitTree.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Organisation Unit&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="66" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PersonList.aspx?CalledBy=0&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Person&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="67" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ORG_BusinessEntityMaintain.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Business Entities&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="125" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ProductLineTree.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Product Lines&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="68" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/SystemSetup/UserGroupList.aspx?CalledBy=0&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;User Groups&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="69" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_MaintainCCY.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Currencies&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="56"&gt;&lt;a tabindex="0"&gt;Risk Framework&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="59" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RM_Builder.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Risk Map Builder&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="60" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Statement_List.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Indicator Statements&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="58" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/SurveyList.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Questionnaires&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="78"&gt;&lt;a tabindex="0"&gt;Task Admin&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="76" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RA_OrgUnitSelect.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Generate Risk &amp; Control Self-Assessment (RCSA)&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="79" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RequirementList.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Requirements&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="80" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/OccurrenceMonitoring.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Monitoring&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="103" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/SurveyInstanceList.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Surveys&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="85"&gt;&lt;a tabindex="0"&gt;Tech Admin &lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="86" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Job_Maintain.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Scheduled Jobs&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="87" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EmailConfiguration.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Emails&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="88" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Job_Archive.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Archiving&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="89" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/AuditReport.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Auditing&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="92" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Reference_Register.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;References&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="94"&gt;&lt;a tabindex="0"&gt;Data Loading&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="95" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/DataLoaders.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Data Loaders&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="101" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/AssignLoaderIds.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Assign Loader Ids&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="96" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Import_List.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Manage Import Files&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="122" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Metric/MIVILoader.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Indicator Value Loader&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="129" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/DataFeedList.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Data Feeds&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="149" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ManageDocumentTransferConfig.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Document Transfer Configuration&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="121"&gt;&lt;a tabindex="0"&gt;System Settings&lt;/a&gt;<br/>
+        &lt;ul style="display: none;"&gt;<br/>
+         &lt;li submenu="118" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ConfigurationOptions.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Configuration Options&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="117" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/DataLookups.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="-1"&gt;Data Lookups&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+      &lt;div id="wk_admin_toggle" aria-label="Expand Admin Menu" role="button" tabindex="0"&gt;<br/>
+       &lt;a href="javascript: void[0]" title="View Admin Menu" tabindex="0"&gt;&lt;span class="wkicon_admin"&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_member"&gt;<br/>
+      &lt;ul id="wk_member_nav" class="wk_dropdown"&gt;<br/>
+       &lt;li&gt;&lt;span class="wk_member_link" aria-label="Expand Person Menu" tabindex="0" role="button" onclick="ARCLOGICS.navmenu.profileMenu(); return false;"&gt;&lt;span class="wkicon_profile"&gt;&lt;/span&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;ul id="wk_member_nav_ul"&gt;<br/>
+         &lt;li&gt;<br/>
+          &lt;div class="wk_member_panel"&gt;<br/>
+           &lt;div class="wk_member_title"&gt;<br/>
+            Username<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="wk_member_name"&gt;<br/>
+            Joshi Franklin<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainPerson.aspx?fromcontext=Y&amp;self=Y&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139&amp;nbc=Y" tabindex="0"&gt;Details&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ChangePassword.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139&amp;nbc=Y" tabindex="0"&gt;Product Ext. password&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MyS_Panels.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139&amp;nbc=Y" tabindex="0"&gt;Workspace Settings&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/About.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139&amp;nbc=Y" tabindex="0"&gt;About&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Logout.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139&amp;nbc=Y" tabindex="0"&gt;Logout&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div id="wk_page_subheader" class="clearfix"&gt;<br/>
+     &lt;div id="wk_page_subheader_left"&gt;<br/>
+      &lt;ul class="clearfix"&gt;<br/>
+       &lt;li id="wk_page_history"&gt;<br/>
+        &lt;div class="wk_dropdown_container position_left"&gt;<br/>
+         &lt;div class="wk_dropdown_btn"&gt;<br/>
+          &lt;button type="button" class="btn_normal btn_icon_only btn_no_border btn_dropdown" onclick="ARCLOGICS.navmenu.dropdownMenu(historyOptions); return false;" aria-label="Navigate Back List" role="buttton" tabindex="0"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_back"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_helper"&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="historyOptions" class="wk_dropdown_panel position_left"&gt;<br/>
+          &lt;ul class="menu_list"&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/UI/IndicatorRegister_Maintain.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139&amp;nbc=Y" tabindex="0"&gt;Maintain Indicator Register&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/UI/Workspace.aspx?r2055=b7b53743-0c10-40a3-82ba-de2a4530dec4&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139&amp;nbc=Y" tabindex="0"&gt;Workspace&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;/li&gt;<br/>
+       &lt;li id="wk_page_title"&gt;&lt;h1&gt;Create Headline Indicator - Headline Details - (Step 1)&lt;/h1&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_page_subheader_right"&gt;<br/>
+      &lt;ul class="clearfix"&gt;<br/>
+       &lt;li&gt;&lt;button type="button" class="btn_normal btn_icon_only btn_border" onclick="try{openNamedBox('https://oprisk-uat.afreximbank.net/AppA/Help/Online Help/Default.htm#AdminGuide/Creating Headline Indicators.htm', 1000, 500, 'ArcLogicsHelpWindow');}catch(e){}; return false;" title="View Help" tabindex="0"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_help"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;<br/>
+        &lt;div class="wk_dropdown_container"&gt;<br/>
+         &lt;div class="wk_dropdown_btn"&gt;<br/>
+          &lt;button type="button" class="btn_normal btn_group_left btn_border" onclick="return CancelChangesAndRedirectToPage('https://oprisk-uat.afreximbank.net/AppA/UI/HeadlineIndicatorAdd.aspx?fromcontext=Y&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139')" aria-label="Add Headline Indicator" tabindex="0"&gt;&lt;span class="btn_icon btn_icon_spacer"&gt;&lt;span class="wkicon_add"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_text"&gt;Headline Indicator&lt;/span&gt;&lt;/button&gt;&lt;button type="button" class="btn_normal btn_icon_only btn_group_right btn_border btn_dropdown" onclick="ARCLOGICS.navmenu.dropdownMenu(quickAddOptions); return false;" tabindex="0"&gt;&lt;span class="btn_helper"&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="quickAddOptions" class="wk_dropdown_panel position_right"&gt;<br/>
+          &lt;ul class="menu_list"&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl00_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/AuthoritativeSourceAddEdit.aspx?fromcontext=Y&amp;CalledBy=3&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="0"&gt;Authoritative Source&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl01_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWCAddEdit.aspx?fromcontext=Y&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="0"&gt;Groupwide Control&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl02_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWRAddEdit.aspx?fromcontext=Y&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="0"&gt;Groupwide Risk&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl03_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/HeadlineIndicatorAdd.aspx?fromcontext=Y&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="0"&gt;Headline Indicator&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl04_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RaiseIssue.aspx?r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="0"&gt;Issue&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl05_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainPerson.aspx?fromcontext=Y&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="0"&gt;Person&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl207_rptAddList_ctl06_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Reporting/UserReportDataSelect.aspx?fromcontext=Y&amp;r355851=83d0c262-f7b8-42b7-880c-e09629839139" tabindex="0"&gt;User Report&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="content-container"&gt; <br/>
+    &lt;div id="ctl00_divPageTitle" class="page-title-container" style="display:none; height:0px"&gt; <br/>
+     &lt;div class="page-title" tabindex="0"&gt; &lt;span id="ctl00_lblTitle" class="title"&gt;&lt;/span&gt; <br/>
+      &lt;div class="page-title-extras-right"&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;br class="clear"&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="page-title-extras-left"&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div id="ctl00_mainContainer" class="main-container"&gt; <br/>
+     &lt;div id="ctl00_up"&gt; <br/>
+      &lt;div id="boxOuter"&gt; <br/>
+       &lt;div id="boxInner"&gt; <br/>
+        &lt;div id="ctl00_rightPane"&gt; <br/>
+         &lt;div class="warning-container" aria-live="assertive"&gt; &lt;span id="ctl00_lblWarning" class="warning" style="display: none;"&gt;&lt;/span&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="ctl00_divError" class="error-container" aria-live="assertive" style="display: none;"&gt; &lt;span id="ctl00_lblError" class="error" style="display:none;"&gt;&lt;/span&gt; <br/>
+          &lt;div id="ctl00_vldError" class="error" style="color:Red;display:none;"&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="ctl00_contextcontainer" class="form-context-container"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="form-scrollable-container" onscroll="return RememberScrollPosition();"&gt; <br/>
+          &lt;div class="form-content-container scroll-button" onscroll="return RememberScrollPosition();" style="height: 534.2px;"&gt; <br/>
+           &lt;div id="ctl00_contextcontainerpath" class="form-context-container-path"&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="ui-helper-IE7-table-width"&gt; <br/>
+            &lt;div id="ctl00_content_pnlHeadlineGeneral" style="display:block;"&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_lblHeadlineName" class="subHeadingCOLON"&gt;Headline Indicator Name&lt;/span&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_headlineNameMandatory" title="Mandatory" class="mandatoryMark"&gt;&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineGeneral_pnlHeadlineIndicatorName"&gt; &lt;textarea name="ctl00$content$ctrlHeadlineGeneral$txtHeadlineIndicatorName$TextBox" rows="2" cols="20" id="ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_TextBox" class="bodyText" onkeypress="doKeypressForMaxLength(this);" onbeforepaste="doBeforePasteForMaxLength(this);" onpaste="doPasteForMaxLength(this);" maxlength="200" spellcheck="true" style="width:65%;"&gt;onesumx&lt;/textarea&gt;&lt;span id="ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator" title="Headline Indicator Name is required." class="bodyText" style="color:Red;display:none;"&gt;*&lt;/span&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_lblHeadlineDesc" class="subHeadingCOLON"&gt;Description&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineGeneral_pnlDescription"&gt; &lt;textarea name="ctl00$content$ctrlHeadlineGeneral$txtDescription" rows="3" cols="20" id="ctl00_content_ctrlHeadlineGeneral_txtDescription" class="bodyText" spellcheck="true" style="height:40px;width:65%;"&gt;test&lt;/textarea&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_lblRegisterHeading" class="subHeadingCOLON"&gt;Library Heading&lt;/span&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_spanRegHeadingMandatory" title="Mandatory" class="mandatoryMark" style="display:block;"&gt;&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineGeneral_pnlRegisterHeading"&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_lblRegisterHeadingName" class="bodyText"&gt;Operational Risk Indicators related to Clients, Products and Business Practices Failures.&lt;/span&gt; &lt;a id="ctl00_content_ctrlHeadlineGeneral_lnkRegHeadingSelect" class="bodyText" href="javascript:ShowHideJSTreePopup({&quot;TreeContainerElement&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_pnlGenericTreePopup&quot;,&quot;ValueFieldID&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_hRegHeadID&quot;,&quot;LabelFieldID&quot;:null,&quot;SaveCallbackButtonID&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_btnRegHeadingPopupCallback&quot;,&quot;PicklistID&quot;:1000042,&quot;SingleSelect&quot;:true,&quot;SelectAtLevel&quot;:1,&quot;PopupCheckboxOneID&quot;:null,&quot;PopupCheckboxOneValueCode&quot;:null,&quot;PopupCheckboxTwoID&quot;:null,&quot;PopupCheckboxTwoValueCode&quot;:null,&quot;PopupSearchBoxID&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_txtGenericPopupSearch&quot;,&quot;PopupSearchButtonID&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_btnGenericPopupSearch&quot;,&quot;PopupSearchClearButtonID&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_btnGenericPopupClearSearch&quot;,&quot;ApplySelectionIDOffset&quot;:false,&quot;IsNestedPopup&quot;:false,&quot;TreeType&quot;:null,&quot;FilterSelectID&quot;:0,&quot;WarningMessage&quot;:null,&quot;SaveButtonText&quot;:null,&quot;DisableSelectOptionIds&quot;:null,&quot;ForegroundElement&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_pnlGenericTree&quot;,&quot;ForegroundElementLeft&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_hdnLeft&quot;,&quot;ForegroundElementTop&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_hdnTop&quot;,&quot;BackgroundElement&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_backgroundElementOP&quot;,&quot;BackgroundWidth&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_hdnHeight&quot;,&quot;BackgroundHeight&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_ctl18&quot;,&quot;SaveButton&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_btnProceed&quot;,&quot;CancelButton&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_btnCancel&quot;,&quot;ClearButton&quot;:&quot;ctl00_content_ctrlHeadlineGeneral_divPopupOP_btnClear&quot;,&quot;Apply&quot;:true,&quot;PopupDimension&quot;:50,&quot;CloseOnSave&quot;:true,&quot;PopupTitle&quot;:&quot;Library Heading&quot;})"&gt;Change&lt;/a&gt; <br/>
+                &lt;input type="submit" name="ctl00$content$ctrlHeadlineGeneral$btnRegHeadingPopupCallback" value="" id="ctl00_content_ctrlHeadlineGeneral_btnRegHeadingPopupCallback" style="display:none"&gt; <br/>
+                &lt;input name="ctl00$content$ctrlHeadlineGeneral$hRegHeadID" type="hidden" id="ctl00_content_ctrlHeadlineGeneral_hRegHeadID" value="12" data-ays-ignore="true"&gt; <br/>
+                &lt;input name="ctl00$content$ctrlHeadlineGeneral$hRegHeadNewName" type="hidden" id="ctl00_content_ctrlHeadlineGeneral_hRegHeadNewName" value="Operational Risk Indicators related to Clients, Products and Business Practices Failures." data-ays-ignore="true"&gt; <br/>
+                &lt;table id="ctl00_content_ctrlHeadlineGeneral_divPopupOP" cellpadding="1"&gt; <br/>
+                 &lt;tbody&gt;<br/>
+                  &lt;tr&gt; <br/>
+                   &lt;td&gt;<br/>
+                    &lt;div id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_pnlGenericTree" class="popUpBox ra-onscreenscoring-div ra-showComment-div generic-list-popup-div GL-FE" style="display:none;"&gt; <br/>
+                     &lt;div class="wrapper"&gt;<br/>
+                      &lt;div id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_divTitle" class="popup-title popUpHeader"&gt;<br/>
+                       &lt;span id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_lblTitle"&gt;&lt;/span&gt;<br/>
+                       &lt;div id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_popupCloseBtn" title="Close pop up" class="closePopup"&gt;&lt;/div&gt;<br/>
+                       &lt;div id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_popupMaximizeBtn" title="Maximize" class="maximizePopup maximizePopupBG"&gt;&lt;/div&gt;<br/>
+                      &lt;/div&gt;<br/>
+                      &lt;div id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_divWarningMessage" class="popup-title"&gt;&lt;/div&gt;<br/>
+                      &lt;div id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_divPopupExtraControls" class="popup-outside-scroll"&gt;<br/>
+                       &lt;div class="wk_search_bar clearfix" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_content_ctrlHeadlineGeneral_divPopupOP_btnGenericPopupSearch')"&gt; <br/>
+                        &lt;div class="wk_search_inputs clearfix"&gt;<br/>
+                         &lt;div class="wk_search_input"&gt;<br/>
+                          &lt;input name="ctl00$content$ctrlHeadlineGeneral$divPopupOP$txtGenericPopupSearch" id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_txtGenericPopupSearch" class="inputbox no_border" data-ays-ignore="true" type="text" placeholder="Enter Search..." spellcheck="true"&gt;&lt;a id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_btnGenericPopupSearch" title="Search" class="btn_normal btn_inline btn_no_border btn_icon_only" href="javascript:__doPostBack('ctl00$content$ctrlHeadlineGeneral$divPopupOP$btnGenericPopupSearch','')"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_search"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+                         &lt;/div&gt;<br/>
+                        &lt;/div&gt;<br/>
+                        &lt;div class="wk_clear_search_btn"&gt;<br/>
+                         &lt;a id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_btnGenericPopupClearSearch" title="Clear Search" class="btn_normal btn_inline btn_no_border btn_icon_only" href="javascript:__doPostBack('ctl00$content$ctrlHeadlineGeneral$divPopupOP$btnGenericPopupClearSearch','')"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_clear_search"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+                        &lt;/div&gt;<br/>
+                        &lt;div id="divSearchResults" class="popup-search-results"&gt;&lt;/div&gt; <br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/div&gt;<br/>
+                      &lt;div id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_popup-content" class="popupcontainer popup-content"&gt;<br/>
+                       &lt;div id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_pnlGenericTreePopup" class="generic-list-popup"&gt; <br/>
+                       &lt;/div&gt;<br/>
+                      &lt;/div&gt;<br/>
+                     &lt;/div&gt;<br/>
+                     &lt;div class="popUpFooter"&gt;<br/>
+                      &lt;input type="submit" name="ctl00$content$ctrlHeadlineGeneral$divPopupOP$btnProceed" value="Proceed" id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_btnProceed" class="buttonText"&gt;<br/>
+                      &lt;input type="submit" name="ctl00$content$ctrlHeadlineGeneral$divPopupOP$btnClear" value="Clear" id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_btnClear" class="buttonText"&gt;<br/>
+                      &lt;input type="submit" name="ctl00$content$ctrlHeadlineGeneral$divPopupOP$btnCancel" value="Cancel" id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_btnCancel" class="buttonText"&gt;<br/>
+                      &lt;input type="hidden" name="ctl00$content$ctrlHeadlineGeneral$divPopupOP$hdnHeight" id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_hdnHeight" data-ays-ignore="true"&gt;<br/>
+                      &lt;input type="hidden" name="ctl00$content$ctrlHeadlineGeneral$divPopupOP$ctl18" id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_ctl18" data-ays-ignore="true"&gt;<br/>
+                      &lt;input type="hidden" name="ctl00$content$ctrlHeadlineGeneral$divPopupOP$hdnTop" id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_hdnTop" data-ays-ignore="true"&gt;<br/>
+                      &lt;input type="hidden" name="ctl00$content$ctrlHeadlineGeneral$divPopupOP$hdnLeft" id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_hdnLeft" data-ays-ignore="true"&gt;<br/>
+                      &lt;input type="hidden" name="ctl00$content$ctrlHeadlineGeneral$divPopupOP$hdnScrollPosition" id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_hdnScrollPosition" data-ays-ignore="true"&gt;<br/>
+                      &lt;input type="hidden" name="ctl00$content$ctrlHeadlineGeneral$divPopupOP$hdnPopupChanges" id="ctl00_content_ctrlHeadlineGeneral_divPopupOP_hdnPopupChanges" data-ays-ignore="true"&gt;<br/>
+                     &lt;/div&gt; <br/>
+                    &lt;/div&gt;&lt;/td&gt; <br/>
+                  &lt;/tr&gt; <br/>
+                 &lt;/tbody&gt;<br/>
+                &lt;/table&gt;<br/>
+                &lt;div id="ctl00_content_ctrlHeadlineGeneral_backgroundElementOP" class="modal-dialog-bg background GL-BE" style="display:none;"&gt;&lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_lblHeadlineRef" class="subHeadingCOLON"&gt;Headline Indicator Reference&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineGeneral_pnlHeadlineRef"&gt; <br/>
+                &lt;input name="ctl00$content$ctrlHeadlineGeneral$txtReference" type="text" value="test" maxlength="50" id="ctl00_content_ctrlHeadlineGeneral_txtReference" class="bodyText" spellcheck="true" style="width:45%;"&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div id="ctl00_content_ctrlHeadlineGeneral_divDataTypeRow" class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_lblDataType" class="subHeadingCOLON"&gt;Data Type&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineGeneral_pnlDataType"&gt; <br/>
+                &lt;table id="ctl00_content_ctrlHeadlineGeneral_radioDataType" class="bodyText" border="0"&gt; <br/>
+                 &lt;tbody&gt;<br/>
+                  &lt;tr&gt; <br/>
+                   &lt;td&gt;&lt;input id="ctl00_content_ctrlHeadlineGeneral_radioDataType_0" type="radio" name="ctl00$content$ctrlHeadlineGeneral$radioDataType" value="CCY" onclick="javascript:setTimeout('__doPostBack(\'ctl00$content$ctrlHeadlineGeneral$radioDataType$0\',\'\')', 0)"&gt;&lt;label for="ctl00_content_ctrlHeadlineGeneral_radioDataType_0"&gt;Currency&lt;/label&gt;&lt;/td&gt;<br/>
+                   &lt;td&gt;&lt;input id="ctl00_content_ctrlHeadlineGeneral_radioDataType_1" type="radio" name="ctl00$content$ctrlHeadlineGeneral$radioDataType" value="NUM" checked&gt;&lt;label for="ctl00_content_ctrlHeadlineGeneral_radioDataType_1"&gt;Numeric&lt;/label&gt;&lt;/td&gt;<br/>
+                   &lt;td&gt;&lt;input id="ctl00_content_ctrlHeadlineGeneral_radioDataType_2" type="radio" name="ctl00$content$ctrlHeadlineGeneral$radioDataType" value="PCT" onclick="javascript:setTimeout('__doPostBack(\'ctl00$content$ctrlHeadlineGeneral$radioDataType$2\',\'\')', 0)"&gt;&lt;label for="ctl00_content_ctrlHeadlineGeneral_radioDataType_2"&gt;Percentage&lt;/label&gt;&lt;/td&gt;<br/>
+                   &lt;td&gt;&lt;input id="ctl00_content_ctrlHeadlineGeneral_radioDataType_3" type="radio" name="ctl00$content$ctrlHeadlineGeneral$radioDataType" value="SBO" onclick="javascript:setTimeout('__doPostBack(\'ctl00$content$ctrlHeadlineGeneral$radioDataType$3\',\'\')', 0)"&gt;&lt;label for="ctl00_content_ctrlHeadlineGeneral_radioDataType_3"&gt;Score Only&lt;/label&gt;&lt;/td&gt; <br/>
+                  &lt;/tr&gt; <br/>
+                 &lt;/tbody&gt;<br/>
+                &lt;/table&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div id="ctl00_content_ctrlHeadlineGeneral_divPeriodicityRow" class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_lblPeriodicity" class="subHeadingCOLON"&gt;Periodicity&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineGeneral_pnlPeriodicity"&gt; <br/>
+                &lt;div id="ctl00_content_ctrlHeadlineGeneral_ctrlPeriodicity_updPeriodicity"&gt; <br/>
+                 &lt;div style="white-space: nowrap; vertical-align: middle" class="FloatLeft"&gt; &lt;select name="ctl00$content$ctrlHeadlineGeneral$ctrlPeriodicity$ddlPeriodicity" onchange="javascript:setTimeout('__doPostBack(\'ctl00$content$ctrlHeadlineGeneral$ctrlPeriodicity$ddlPeriodicity\',\'\')', 0)" id="ctl00_content_ctrlHeadlineGeneral_ctrlPeriodicity_ddlPeriodicity" class="bodyText" data-ays-ignore="true"&gt; &lt;option selected value="DAY"&gt;Daily&lt;/option&gt; &lt;option value="WEEK"&gt;Weekly&lt;/option&gt; &lt;option value="MONTH"&gt;Monthly&lt;/option&gt; &lt;option value="QUARTER"&gt;Quarterly&lt;/option&gt; &lt;option value="HALFYEAR"&gt;Half-Yearly&lt;/option&gt; &lt;option value="YEAR"&gt;Yearly&lt;/option&gt; &lt;/select&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_ctrlPeriodicity_lblPre" class="bodyText"&gt;&lt;/span&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_ctrlPeriodicity_lblMid" class="bodyText"&gt;&lt;/span&gt; &lt;span id="ctl00_content_ctrlHeadlineGeneral_ctrlPeriodicity_lblPost" class="bodyText"&gt;&lt;/span&gt; <br/>
+                  &lt;input type="hidden" name="ctl00$content$ctrlHeadlineGeneral$ctrlPeriodicity$hdDay" id="ctl00_content_ctrlHeadlineGeneral_ctrlPeriodicity_hdDay" value="1" data-ays-ignore="true"&gt; <br/>
+                  &lt;input type="hidden" name="ctl00$content$ctrlHeadlineGeneral$ctrlPeriodicity$hdMonth" id="ctl00_content_ctrlHeadlineGeneral_ctrlPeriodicity_hdMonth" value="1" data-ays-ignore="true"&gt; <br/>
+                  &lt;input type="hidden" name="ctl00$content$ctrlHeadlineGeneral$ctrlPeriodicity$hdWeekDay" id="ctl00_content_ctrlHeadlineGeneral_ctrlPeriodicity_hdWeekDay" data-ays-ignore="true"&gt; <br/>
+                 &lt;/div&gt; <br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadline_lblProvider" class="subHeadingCOLON"&gt;Provider&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadline_pnlProvider"&gt; &lt;select name="ctl00$content$ctrlHeadline$ddlProvider" id="ctl00_content_ctrlHeadline_ddlProvider" class="bodyText" transform="chosen" data-placeholder="Select An Option" style="display: none;"&gt; &lt;option selected value="8E97E628"&gt;Abah Ofon&lt;/option&gt; &lt;option value="B2D2A516"&gt;Ahmed El Amir&lt;/option&gt; &lt;option value="F91B68D0"&gt;Ahmed hamdi&lt;/option&gt; &lt;option value="07ED2E9E"&gt;Ahmed Magdi&lt;/option&gt; &lt;option value="BCAD3E80"&gt;Aleya Sultan&lt;/option&gt; &lt;option value="13E360D2"&gt;Amgad El Morsy&lt;/option&gt; &lt;option value="95414A48"&gt;Amira Hanna &lt;/option&gt; &lt;option value="F217D964"&gt;amr roshdy&lt;/option&gt; &lt;option value="A035CE26"&gt;Anne Ezeh&lt;/option&gt; &lt;option value="83744D53"&gt;Anthony Coleman&lt;/option&gt; &lt;option value="6DBCC1F5"&gt;Augustine Chukwuemeka Uzoh&lt;/option&gt; &lt;option value="A71860D0"&gt;Ayo Mubarak&lt;/option&gt; &lt;option value="14657E87"&gt;Babajide Sodipo&lt;/option&gt; &lt;option value="F5B5E77A"&gt;Basma Magdy&lt;/option&gt; &lt;option value="0D44E416"&gt;Benoit Messi&lt;/option&gt; &lt;option value="3D5BC702"&gt;Busisani Ndlovu&lt;/option&gt; &lt;option value="9446A173"&gt;Celine Stino&lt;/option&gt; &lt;option value="C50EDD11"&gt;Chidozie Ezeani&lt;/option&gt; &lt;option value="C577ED74"&gt;Christine Elia&lt;/option&gt; &lt;option value="73E70142"&gt;Cyril Bitanda&lt;/option&gt; &lt;option value="432BE333"&gt;Daniel Kimani Ndiba&lt;/option&gt; &lt;option value="3B7156C5"&gt;David Chatsama&lt;/option&gt; &lt;option value="B99F23A9"&gt;Edmond Bala-Gbogbo&lt;/option&gt; &lt;option value="F0A1EA2D"&gt;Elias Kagumya&lt;/option&gt; &lt;option value="48E5C190"&gt;Ernest Yao Ahiagbe&lt;/option&gt; &lt;option value="C29916BC"&gt;Esraa Abdel Gelil&lt;/option&gt; &lt;option value="4CAE64EC"&gt;fadi assad&lt;/option&gt; &lt;option value="0B670D23"&gt;Fady Serry&lt;/option&gt; &lt;option value="12508D46"&gt;Fungai Nyamahowa&lt;/option&gt; &lt;option value="A3F81882"&gt;Gehane Adel&lt;/option&gt; &lt;option value="541E4DDF"&gt;Gerald Nsomba&lt;/option&gt; &lt;option value="F8590F65"&gt;Hillary Kumwenda&lt;/option&gt; &lt;option value="0526059E"&gt;Hugues Roland&lt;/option&gt; &lt;option value="B5573B70"&gt;Jacqueline Clarisse Motsebo&lt;/option&gt; &lt;option value="11CBB661"&gt;Jerry Osagie&lt;/option&gt; &lt;option value="C0A02190"&gt;Joshi Franklin&lt;/option&gt; &lt;option value="716C2BBC"&gt;Joumana Magdi&lt;/option&gt; &lt;option value="CCC6DA37"&gt;Joy Albright&lt;/option&gt; &lt;option value="284C476B"&gt;Kelechi Enwerem&lt;/option&gt; &lt;option value="46DA9405"&gt;Kevin Kazibwe&lt;/option&gt; &lt;option value="D992596A"&gt;Lamiaa Abdel Hameed&lt;/option&gt; &lt;option value="4B68899F"&gt;Lamya ElBishbishy&lt;/option&gt; &lt;option value="352465D3"&gt;Lina Iyok&lt;/option&gt; &lt;option value="76A6A2EE"&gt;Lloyd Musha&lt;/option&gt; &lt;option value="BAC1A806"&gt;Lovemore Tsumba&lt;/option&gt; &lt;option value="070339E8"&gt;Mahmoud Abdel Salam&lt;/option&gt; &lt;option value="C1ECB71E"&gt;Manal Mounir&lt;/option&gt; &lt;option value="50A6FC6C"&gt;Mark wasfy&lt;/option&gt; &lt;option value="32EE3CF8"&gt;Maryam Riad&lt;/option&gt; &lt;option value="E114E804"&gt;Mohamad Thabet&lt;/option&gt; &lt;option value="C3AFEE32"&gt;Mona Taha&lt;/option&gt; &lt;option value="F43DD2CF"&gt;Monica Fahmy&lt;/option&gt; &lt;option value="E7F1AF8E"&gt;Mostafa Kamel&lt;/option&gt; &lt;option value="CE7A97FC"&gt;Nafal Hassani Mohamed&lt;/option&gt; &lt;option value="1C9641F8"&gt;Nancy Victor&lt;/option&gt; &lt;option value="1269D6BA"&gt;Nevine Khattab&lt;/option&gt; &lt;option value="C3967B3B"&gt;Olawale Kolawole&lt;/option&gt; &lt;option value="606C97F0"&gt;Olleny Muringani&lt;/option&gt; &lt;option value="708EF597"&gt;Reem Khairy&lt;/option&gt; &lt;option value="191FC0CF"&gt;Rita Ghattas&lt;/option&gt; &lt;option value="00AB2B9D"&gt;Saheed Animashaun&lt;/option&gt; &lt;option value="C59C2C95"&gt;Sangwani Mabhena&lt;/option&gt; &lt;option value="E7CAD10B"&gt;Sara Seif El Nasr&lt;/option&gt; &lt;option value="CD3A0343"&gt;Sarah Attawia&lt;/option&gt; &lt;option value="C6B80DB1"&gt;Seenee Permal&lt;/option&gt; &lt;option value="C30325F3"&gt;Sewunet Deressa&lt;/option&gt; &lt;option value="6B13B6D8"&gt;Shahd Ali&lt;/option&gt; &lt;option value="B324B0EC"&gt;simba simba&lt;/option&gt; &lt;option value="svc_credit_prod"&gt;svc_credit_prod&lt;/option&gt; &lt;option value="02609FB8"&gt;Winnie Mutesi&lt;/option&gt; &lt;/select&gt;<br/>
+                &lt;div class="chosen-container chosen-container-single" title="" id="ctl00_content_ctrlHeadline_ddlProvider_chosen" style="width: 223px;"&gt;<br/>
+                 &lt;a class="chosen-single"&gt; &lt;span&gt;Joshi Franklin&lt;/span&gt; <br/>
+                  &lt;div&gt;<br/>
+                   &lt;b&gt;&lt;/b&gt;<br/>
+                  &lt;/div&gt; &lt;/a&gt; <br/>
+                 &lt;div class="chosen-drop"&gt; <br/>
+                  &lt;div class="chosen-search"&gt; <br/>
+                   &lt;input class="chosen-search-input" type="text" autocomplete="off"&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;ul class="chosen-results"&gt;<br/>
+                   &lt;li class="active-result result-selected" data-option-array-index="0" style=""&gt;Abah Ofon&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="1" style=""&gt;Ahmed El Amir&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="2" style=""&gt;Ahmed hamdi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="3" style=""&gt;Ahmed Magdi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="4" style=""&gt;Aleya Sultan&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="5" style=""&gt;Amgad El Morsy&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="6" style=""&gt;Amira Hanna &lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="7" style=""&gt;amr roshdy&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="8" style=""&gt;Anne Ezeh&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="9" style=""&gt;Anthony Coleman&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="10" style=""&gt;Augustine Chukwuemeka Uzoh&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="11" style=""&gt;Ayo Mubarak&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="12" style=""&gt;Babajide Sodipo&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="13" style=""&gt;Basma Magdy&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="14" style=""&gt;Benoit Messi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="15" style=""&gt;Busisani Ndlovu&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="16" style=""&gt;Celine Stino&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="17" style=""&gt;Chidozie Ezeani&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="18" style=""&gt;Christine Elia&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="19" style=""&gt;Cyril Bitanda&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="20" style=""&gt;Daniel Kimani Ndiba&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="21" style=""&gt;David Chatsama&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="22" style=""&gt;Edmond Bala-Gbogbo&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="23" style=""&gt;Elias Kagumya&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="24" style=""&gt;Ernest Yao Ahiagbe&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="25" style=""&gt;Esraa Abdel Gelil&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="26" style=""&gt;fadi assad&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="27" style=""&gt;Fady Serry&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="28" style=""&gt;Fungai Nyamahowa&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="29" style=""&gt;Gehane Adel&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="30" style=""&gt;Gerald Nsomba&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="31" style=""&gt;Hillary Kumwenda&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="32" style=""&gt;Hugues Roland&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="33" style=""&gt;Jacqueline Clarisse Motsebo&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="34" style=""&gt;Jerry Osagie&lt;/li&gt;<br/>
+                   &lt;li class="active-result result-selected" data-option-array-index="35" style=""&gt;Joshi Franklin&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="36" style=""&gt;Joumana Magdi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="37" style=""&gt;Joy Albright&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="38" style=""&gt;Kelechi Enwerem&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="39" style=""&gt;Kevin Kazibwe&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="40" style=""&gt;Lamiaa Abdel Hameed&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="41" style=""&gt;Lamya ElBishbishy&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="42" style=""&gt;Lina Iyok&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="43" style=""&gt;Lloyd Musha&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="44" style=""&gt;Lovemore Tsumba&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="45" style=""&gt;Mahmoud Abdel Salam&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="46" style=""&gt;Manal Mounir&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="47" style=""&gt;Mark wasfy&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="48" style=""&gt;Maryam Riad&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="49" style=""&gt;Mohamad Thabet&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="50" style=""&gt;Mona Taha&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="51" style=""&gt;Monica Fahmy&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="52" style=""&gt;Mostafa Kamel&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="53" style=""&gt;Nafal Hassani Mohamed&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="54" style=""&gt;Nancy Victor&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="55" style=""&gt;Nevine Khattab&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="56" style=""&gt;Olawale Kolawole&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="57" style=""&gt;Olleny Muringani&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="58" style=""&gt;Reem Khairy&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="59" style=""&gt;Rita Ghattas&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="60" style=""&gt;Saheed Animashaun&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="61" style=""&gt;Sangwani Mabhena&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="62" style=""&gt;Sara Seif El Nasr&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="63" style=""&gt;Sarah Attawia&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="64" style=""&gt;Seenee Permal&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="65" style=""&gt;Sewunet Deressa&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="66" style=""&gt;Shahd Ali&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="67" style=""&gt;simba simba&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="68" style=""&gt;svc_credit_prod&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="69" style=""&gt;Winnie Mutesi&lt;/li&gt;<br/>
+                  &lt;/ul&gt; <br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadline_lblApprover" class="subHeadingCOLON"&gt;Approver&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadline_pnlApprover"&gt; &lt;select name="ctl00$content$ctrlHeadline$ddlApprover" id="ctl00_content_ctrlHeadline_ddlApprover" class="bodyText" transform="chosen" data-placeholder="Select An Option" style="display: none;"&gt; &lt;option selected value="-1"&gt;None&lt;/option&gt; &lt;option value="419C21B1"&gt;AbdulKareem Salami&lt;/option&gt; &lt;option value="FEE712B8"&gt;Abel Osuji&lt;/option&gt; &lt;option value="F91B68D0"&gt;Ahmed hamdi&lt;/option&gt; &lt;option value="07ED2E9E"&gt;Ahmed Magdi&lt;/option&gt; &lt;option value="C5F9741B"&gt;Ayman El-Zoghby&lt;/option&gt; &lt;option value="A7F76BDE"&gt;Chandi Mwenebungu&lt;/option&gt; &lt;option value="14A0957F"&gt;Constantin Von Moltke&lt;/option&gt; &lt;option value="7C7F165B"&gt;Debra Chambara&lt;/option&gt; &lt;option value="3D9EEB6F"&gt;Dennis Muthuita&lt;/option&gt; &lt;option value="A0A8530E"&gt;Denys Denya&lt;/option&gt; &lt;option value="2335FF2F"&gt;Desmond Chipunza&lt;/option&gt; &lt;option value="95062643"&gt;Douglas Tsetsetse&lt;/option&gt; &lt;option value="B99F23A9"&gt;Edmond Bala-Gbogbo&lt;/option&gt; &lt;option value="8D0809EC"&gt;eei&lt;/option&gt; &lt;option value="F0A1EA2D"&gt;Elias Kagumya&lt;/option&gt; &lt;option value="754866C4"&gt;Emeka Uzoigwe&lt;/option&gt; &lt;option value="4CAE64EC"&gt;fadi assad&lt;/option&gt; &lt;option value="0B670D23"&gt;Fady Serry&lt;/option&gt; &lt;option value="EF1A8EAE"&gt;Francis Esoh&lt;/option&gt; &lt;option value="133E297E"&gt;Gainmore Zanamwe&lt;/option&gt; &lt;option value="6B9595C8"&gt;George Elombi&lt;/option&gt; &lt;option value="0D63F8E3"&gt;Gerald Chihota&lt;/option&gt; &lt;option value="43804645"&gt;Gwen Mwaba&lt;/option&gt; &lt;option value="9E0F9982"&gt;Hannah Chombah&lt;/option&gt; &lt;option value="7CEAD3B0"&gt;Hayam Abu Arab&lt;/option&gt; &lt;option value="66087DE0"&gt;Helen Brume&lt;/option&gt; &lt;option value="F8590F65"&gt;Hillary Kumwenda&lt;/option&gt; &lt;option value="ED884E54"&gt;Hippolyte Fofack&lt;/option&gt; &lt;option value="901965C3"&gt;Ibrahim Sagna&lt;/option&gt; &lt;option value="741B7606"&gt;Idrissa Diop&lt;/option&gt; &lt;option value="C2307FB2"&gt;Ishmael Malebe&lt;/option&gt; &lt;option value="D5882AFF"&gt;Jonathan Nangor&lt;/option&gt; &lt;option value="C0A02190"&gt;Joshi Franklin&lt;/option&gt; &lt;option value="9D7E0F5C"&gt;Kanayo Awani&lt;/option&gt; &lt;option value="385B4768"&gt;Kofi Asumadu Addo&lt;/option&gt; &lt;option value="E6384644"&gt;Kwabena Ayirebi&lt;/option&gt; &lt;option value="D992596A"&gt;Lamiaa Abdel Hameed&lt;/option&gt; &lt;option value="81B3DAE7"&gt;Lizanne Case&lt;/option&gt; &lt;option value="76A6A2EE"&gt;Lloyd Musha&lt;/option&gt; &lt;option value="070339E8"&gt;Mahmoud Abdel Salam&lt;/option&gt; &lt;option value="18ADDBAA"&gt;Mamdouh Salem&lt;/option&gt; &lt;option value="50A6FC6C"&gt;Mark wasfy&lt;/option&gt; &lt;option value="FC637093"&gt;Mhamed Laraqui&lt;/option&gt; &lt;option value="E7F1AF8E"&gt;Mostafa Kamel&lt;/option&gt; &lt;option value="6546B03C"&gt;Nyevero Hlupo&lt;/option&gt; &lt;option value="D7CE73CB"&gt;Ody Akhanoba&lt;/option&gt; &lt;option value="FAD8CFF7"&gt;Okechukwu Ihejirika&lt;/option&gt; &lt;option value="5D12D0CC"&gt;Ola Mansour&lt;/option&gt; &lt;option value="B295D04B"&gt;Olaleye Babatunde&lt;/option&gt; &lt;option value="606C97F0"&gt;Olleny Muringani&lt;/option&gt; &lt;option value="EBA6A48C"&gt;Oluranti Doherty&lt;/option&gt; &lt;option value="43E08C14"&gt;Oluwatoyosi Adelakin&lt;/option&gt; &lt;option value="4DA37757"&gt;Peter Zulu&lt;/option&gt; &lt;option value="8FBD3551"&gt;Rene Awambeng&lt;/option&gt; &lt;option value="5AB0606B"&gt;Robert Tomusange&lt;/option&gt; &lt;option value="9D075A1E"&gt;Samallie Kiyingi&lt;/option&gt; &lt;option value="497D400F"&gt;Serge Belinga&lt;/option&gt; &lt;option value="9DEB98AE"&gt;Stephen Kauma&lt;/option&gt; &lt;option value="svc_credit_prod"&gt;svc_credit_prod&lt;/option&gt; &lt;option value="9C71D2D1"&gt;Thulani Chambwe&lt;/option&gt; &lt;option value="D31CA752"&gt;Tito Alai&lt;/option&gt; &lt;option value="388DB13C"&gt;Yusuf Daya&lt;/option&gt; &lt;option value="CF036E03"&gt;Zitto Alfayo&lt;/option&gt; &lt;/select&gt;<br/>
+                &lt;div class="chosen-container chosen-container-single" title="" id="ctl00_content_ctrlHeadline_ddlApprover_chosen" style="width: 178px;"&gt;<br/>
+                 &lt;a class="chosen-single"&gt; &lt;span&gt;Joshi Franklin&lt;/span&gt; <br/>
+                  &lt;div&gt;<br/>
+                   &lt;b&gt;&lt;/b&gt;<br/>
+                  &lt;/div&gt; &lt;/a&gt; <br/>
+                 &lt;div class="chosen-drop"&gt; <br/>
+                  &lt;div class="chosen-search"&gt; <br/>
+                   &lt;input class="chosen-search-input" type="text" autocomplete="off"&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;ul class="chosen-results"&gt;<br/>
+                   &lt;li class="active-result result-selected" data-option-array-index="0" style=""&gt;None&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="1" style=""&gt;AbdulKareem Salami&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="2" style=""&gt;Abel Osuji&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="3" style=""&gt;Ahmed hamdi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="4" style=""&gt;Ahmed Magdi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="5" style=""&gt;Ayman El-Zoghby&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="6" style=""&gt;Chandi Mwenebungu&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="7" style=""&gt;Constantin Von Moltke&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="8" style=""&gt;Debra Chambara&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="9" style=""&gt;Dennis Muthuita&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="10" style=""&gt;Denys Denya&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="11" style=""&gt;Desmond Chipunza&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="12" style=""&gt;Douglas Tsetsetse&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="13" style=""&gt;Edmond Bala-Gbogbo&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="14" style=""&gt;eei&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="15" style=""&gt;Elias Kagumya&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="16" style=""&gt;Emeka Uzoigwe&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="17" style=""&gt;fadi assad&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="18" style=""&gt;Fady Serry&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="19" style=""&gt;Francis Esoh&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="20" style=""&gt;Gainmore Zanamwe&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="21" style=""&gt;George Elombi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="22" style=""&gt;Gerald Chihota&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="23" style=""&gt;Gwen Mwaba&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="24" style=""&gt;Hannah Chombah&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="25" style=""&gt;Hayam Abu Arab&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="26" style=""&gt;Helen Brume&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="27" style=""&gt;Hillary Kumwenda&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="28" style=""&gt;Hippolyte Fofack&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="29" style=""&gt;Ibrahim Sagna&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="30" style=""&gt;Idrissa Diop&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="31" style=""&gt;Ishmael Malebe&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="32" style=""&gt;Jonathan Nangor&lt;/li&gt;<br/>
+                   &lt;li class="active-result result-selected" data-option-array-index="33" style=""&gt;Joshi Franklin&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="34" style=""&gt;Kanayo Awani&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="35" style=""&gt;Kofi Asumadu Addo&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="36" style=""&gt;Kwabena Ayirebi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="37" style=""&gt;Lamiaa Abdel Hameed&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="38" style=""&gt;Lizanne Case&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="39" style=""&gt;Lloyd Musha&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="40" style=""&gt;Mahmoud Abdel Salam&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="41" style=""&gt;Mamdouh Salem&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="42" style=""&gt;Mark wasfy&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="43" style=""&gt;Mhamed Laraqui&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="44" style=""&gt;Mostafa Kamel&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="45" style=""&gt;Nyevero Hlupo&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="46" style=""&gt;Ody Akhanoba&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="47" style=""&gt;Okechukwu Ihejirika&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="48" style=""&gt;Ola Mansour&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="49" style=""&gt;Olaleye Babatunde&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="50" style=""&gt;Olleny Muringani&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="51" style=""&gt;Oluranti Doherty&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="52" style=""&gt;Oluwatoyosi Adelakin&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="53" style=""&gt;Peter Zulu&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="54" style=""&gt;Rene Awambeng&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="55" style=""&gt;Robert Tomusange&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="56" style=""&gt;Samallie Kiyingi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="57" style=""&gt;Serge Belinga&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="58" style=""&gt;Stephen Kauma&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="59" style=""&gt;svc_credit_prod&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="60" style=""&gt;Thulani Chambwe&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="61" style=""&gt;Tito Alai&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="62" style=""&gt;Yusuf Daya&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="63" style=""&gt;Zitto Alfayo&lt;/li&gt;<br/>
+                  &lt;/ul&gt; <br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadline_lblOverseer" class="subHeadingCOLON"&gt;Overseer&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadline_pnlOverseer"&gt; &lt;select name="ctl00$content$ctrlHeadline$ddlOverseer" id="ctl00_content_ctrlHeadline_ddlOverseer" class="bodyText" transform="chosen" onchange="SetOverseerControlVisibility()" data-placeholder="Select An Option" style="display: none;"&gt; &lt;option selected value="-1"&gt;None&lt;/option&gt; &lt;option value="419C21B1"&gt;AbdulKareem Salami&lt;/option&gt; &lt;option value="FEE712B8"&gt;Abel Osuji&lt;/option&gt; &lt;option value="F91B68D0"&gt;Ahmed hamdi&lt;/option&gt; &lt;option value="07ED2E9E"&gt;Ahmed Magdi&lt;/option&gt; &lt;option value="C5F9741B"&gt;Ayman El-Zoghby&lt;/option&gt; &lt;option value="A7F76BDE"&gt;Chandi Mwenebungu&lt;/option&gt; &lt;option value="14A0957F"&gt;Constantin Von Moltke&lt;/option&gt; &lt;option value="7C7F165B"&gt;Debra Chambara&lt;/option&gt; &lt;option value="3D9EEB6F"&gt;Dennis Muthuita&lt;/option&gt; &lt;option value="A0A8530E"&gt;Denys Denya&lt;/option&gt; &lt;option value="2335FF2F"&gt;Desmond Chipunza&lt;/option&gt; &lt;option value="95062643"&gt;Douglas Tsetsetse&lt;/option&gt; &lt;option value="B99F23A9"&gt;Edmond Bala-Gbogbo&lt;/option&gt; &lt;option value="8D0809EC"&gt;eei&lt;/option&gt; &lt;option value="F0A1EA2D"&gt;Elias Kagumya&lt;/option&gt; &lt;option value="754866C4"&gt;Emeka Uzoigwe&lt;/option&gt; &lt;option value="4CAE64EC"&gt;fadi assad&lt;/option&gt; &lt;option value="0B670D23"&gt;Fady Serry&lt;/option&gt; &lt;option value="EF1A8EAE"&gt;Francis Esoh&lt;/option&gt; &lt;option value="133E297E"&gt;Gainmore Zanamwe&lt;/option&gt; &lt;option value="6B9595C8"&gt;George Elombi&lt;/option&gt; &lt;option value="0D63F8E3"&gt;Gerald Chihota&lt;/option&gt; &lt;option value="43804645"&gt;Gwen Mwaba&lt;/option&gt; &lt;option value="9E0F9982"&gt;Hannah Chombah&lt;/option&gt; &lt;option value="7CEAD3B0"&gt;Hayam Abu Arab&lt;/option&gt; &lt;option value="66087DE0"&gt;Helen Brume&lt;/option&gt; &lt;option value="F8590F65"&gt;Hillary Kumwenda&lt;/option&gt; &lt;option value="ED884E54"&gt;Hippolyte Fofack&lt;/option&gt; &lt;option value="901965C3"&gt;Ibrahim Sagna&lt;/option&gt; &lt;option value="741B7606"&gt;Idrissa Diop&lt;/option&gt; &lt;option value="C2307FB2"&gt;Ishmael Malebe&lt;/option&gt; &lt;option value="D5882AFF"&gt;Jonathan Nangor&lt;/option&gt; &lt;option value="C0A02190"&gt;Joshi Franklin&lt;/option&gt; &lt;option value="9D7E0F5C"&gt;Kanayo Awani&lt;/option&gt; &lt;option value="385B4768"&gt;Kofi Asumadu Addo&lt;/option&gt; &lt;option value="E6384644"&gt;Kwabena Ayirebi&lt;/option&gt; &lt;option value="D992596A"&gt;Lamiaa Abdel Hameed&lt;/option&gt; &lt;option value="81B3DAE7"&gt;Lizanne Case&lt;/option&gt; &lt;option value="76A6A2EE"&gt;Lloyd Musha&lt;/option&gt; &lt;option value="070339E8"&gt;Mahmoud Abdel Salam&lt;/option&gt; &lt;option value="18ADDBAA"&gt;Mamdouh Salem&lt;/option&gt; &lt;option value="50A6FC6C"&gt;Mark wasfy&lt;/option&gt; &lt;option value="FC637093"&gt;Mhamed Laraqui&lt;/option&gt; &lt;option value="E7F1AF8E"&gt;Mostafa Kamel&lt;/option&gt; &lt;option value="6546B03C"&gt;Nyevero Hlupo&lt;/option&gt; &lt;option value="D7CE73CB"&gt;Ody Akhanoba&lt;/option&gt; &lt;option value="FAD8CFF7"&gt;Okechukwu Ihejirika&lt;/option&gt; &lt;option value="5D12D0CC"&gt;Ola Mansour&lt;/option&gt; &lt;option value="B295D04B"&gt;Olaleye Babatunde&lt;/option&gt; &lt;option value="606C97F0"&gt;Olleny Muringani&lt;/option&gt; &lt;option value="EBA6A48C"&gt;Oluranti Doherty&lt;/option&gt; &lt;option value="43E08C14"&gt;Oluwatoyosi Adelakin&lt;/option&gt; &lt;option value="4DA37757"&gt;Peter Zulu&lt;/option&gt; &lt;option value="8FBD3551"&gt;Rene Awambeng&lt;/option&gt; &lt;option value="5AB0606B"&gt;Robert Tomusange&lt;/option&gt; &lt;option value="9D075A1E"&gt;Samallie Kiyingi&lt;/option&gt; &lt;option value="497D400F"&gt;Serge Belinga&lt;/option&gt; &lt;option value="9DEB98AE"&gt;Stephen Kauma&lt;/option&gt; &lt;option value="svc_credit_prod"&gt;svc_credit_prod&lt;/option&gt; &lt;option value="9C71D2D1"&gt;Thulani Chambwe&lt;/option&gt; &lt;option value="D31CA752"&gt;Tito Alai&lt;/option&gt; &lt;option value="388DB13C"&gt;Yusuf Daya&lt;/option&gt; &lt;option value="CF036E03"&gt;Zitto Alfayo&lt;/option&gt; &lt;/select&gt;<br/>
+                &lt;div class="chosen-container chosen-container-single chosen-container-active" title="" id="ctl00_content_ctrlHeadline_ddlOverseer_chosen" style="width: 178px;"&gt;<br/>
+                 &lt;a class="chosen-single"&gt; &lt;span&gt;Joshi Franklin&lt;/span&gt; <br/>
+                  &lt;div&gt;<br/>
+                   &lt;b&gt;&lt;/b&gt;<br/>
+                  &lt;/div&gt; &lt;/a&gt; <br/>
+                 &lt;div class="chosen-drop"&gt; <br/>
+                  &lt;div class="chosen-search"&gt; <br/>
+                   &lt;input class="chosen-search-input" type="text" autocomplete="off"&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;ul class="chosen-results"&gt;<br/>
+                   &lt;li class="active-result result-selected" data-option-array-index="0" style=""&gt;None&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="1" style=""&gt;AbdulKareem Salami&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="2" style=""&gt;Abel Osuji&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="3" style=""&gt;Ahmed hamdi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="4" style=""&gt;Ahmed Magdi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="5" style=""&gt;Ayman El-Zoghby&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="6" style=""&gt;Chandi Mwenebungu&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="7" style=""&gt;Constantin Von Moltke&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="8" style=""&gt;Debra Chambara&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="9" style=""&gt;Dennis Muthuita&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="10" style=""&gt;Denys Denya&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="11" style=""&gt;Desmond Chipunza&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="12" style=""&gt;Douglas Tsetsetse&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="13" style=""&gt;Edmond Bala-Gbogbo&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="14" style=""&gt;eei&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="15" style=""&gt;Elias Kagumya&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="16" style=""&gt;Emeka Uzoigwe&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="17" style=""&gt;fadi assad&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="18" style=""&gt;Fady Serry&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="19" style=""&gt;Francis Esoh&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="20" style=""&gt;Gainmore Zanamwe&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="21" style=""&gt;George Elombi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="22" style=""&gt;Gerald Chihota&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="23" style=""&gt;Gwen Mwaba&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="24" style=""&gt;Hannah Chombah&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="25" style=""&gt;Hayam Abu Arab&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="26" style=""&gt;Helen Brume&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="27" style=""&gt;Hillary Kumwenda&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="28" style=""&gt;Hippolyte Fofack&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="29" style=""&gt;Ibrahim Sagna&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="30" style=""&gt;Idrissa Diop&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="31" style=""&gt;Ishmael Malebe&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="32" style=""&gt;Jonathan Nangor&lt;/li&gt;<br/>
+                   &lt;li class="active-result result-selected" data-option-array-index="33" style=""&gt;Joshi Franklin&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="34" style=""&gt;Kanayo Awani&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="35" style=""&gt;Kofi Asumadu Addo&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="36" style=""&gt;Kwabena Ayirebi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="37" style=""&gt;Lamiaa Abdel Hameed&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="38" style=""&gt;Lizanne Case&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="39" style=""&gt;Lloyd Musha&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="40" style=""&gt;Mahmoud Abdel Salam&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="41" style=""&gt;Mamdouh Salem&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="42" style=""&gt;Mark wasfy&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="43" style=""&gt;Mhamed Laraqui&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="44" style=""&gt;Mostafa Kamel&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="45" style=""&gt;Nyevero Hlupo&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="46" style=""&gt;Ody Akhanoba&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="47" style=""&gt;Okechukwu Ihejirika&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="48" style=""&gt;Ola Mansour&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="49" style=""&gt;Olaleye Babatunde&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="50" style=""&gt;Olleny Muringani&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="51" style=""&gt;Oluranti Doherty&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="52" style=""&gt;Oluwatoyosi Adelakin&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="53" style=""&gt;Peter Zulu&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="54" style=""&gt;Rene Awambeng&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="55" style=""&gt;Robert Tomusange&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="56" style=""&gt;Samallie Kiyingi&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="57" style=""&gt;Serge Belinga&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="58" style=""&gt;Stephen Kauma&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="59" style=""&gt;svc_credit_prod&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="60" style=""&gt;Thulani Chambwe&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="61" style=""&gt;Tito Alai&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="62" style=""&gt;Yusuf Daya&lt;/li&gt;<br/>
+                   &lt;li class="active-result" data-option-array-index="63" style=""&gt;Zitto Alfayo&lt;/li&gt;<br/>
+                  &lt;/ul&gt; <br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt; <br/>
+                &lt;input type="hidden" name="ctl00$content$ctrlHeadline$hdnOverseerID" id="ctl00_content_ctrlHeadline_hdnOverseerID" value="-1" data-ays-ignore="true"&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="form-row-container" id="divOverseerControl" style="display: block;"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadline_lblOverseerAlert" class="subHeadingCOLON"&gt;Overseer Alert Notification&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadline_pnlOverseerCtrl"&gt; &lt;select name="ctl00$content$ctrlHeadline$ctrlOverseerAlert$ddlOverseerAlertType" id="ctl00_content_ctrlHeadline_ctrlOverseerAlert_ddlOverseerAlertType" class="bodyText"&gt; &lt;option selected value="0"&gt;None&lt;/option&gt; &lt;option value="GT"&gt;Greater Than&lt;/option&gt; &lt;option value="GE"&gt;Greater Than or Equal To&lt;/option&gt; &lt;/select&gt; &nbsp; &lt;select name="ctl00$content$ctrlHeadline$ctrlOverseerAlert$ddlOverseerTheshold" id="ctl00_content_ctrlHeadline_ctrlOverseerAlert_ddlOverseerTheshold" class="bodyText"&gt; &lt;option selected value="0"&gt;None&lt;/option&gt; &lt;option value="1"&gt;Red&lt;/option&gt; &lt;option value="2"&gt;Amber&lt;/option&gt; &lt;option value="3"&gt;Green&lt;/option&gt; &lt;option value="4"&gt;Yellow&lt;/option&gt; &lt;/select&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadline_lblCompletionDate" class="subHeadingCOLON"&gt;Completion Date&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadline_pnlCompletionDate"&gt; &lt;span&gt; &lt;span id="ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd__phCalendarExtender" style="z-index:10000;white-space:nowrap;width:135px;" enabled="true"&gt;&lt;input name="ctl00$content$ctrlHeadline$ctrlCompletionDate$dtd$txtDate" type="text" id="ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_txtDate" class="bodyText" spellcheck="true" style="width:150px;"&gt;&lt;input type="hidden" name="ctl00$content$ctrlHeadline$ctrlCompletionDate$dtd$hdnDateV" id="ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_hdnDateV" data-ays-ignore="true"&gt;&lt;input type="image" name="ctl00$content$ctrlHeadline$ctrlCompletionDate$dtd$imgCalendarButton" id="ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_imgCalendarButton" tabindex="-1" class="calendar-icon" title="" alt="" src="../images/Calendar.gif" align="absbottom" style="border-width:0px;"&gt;&lt;/span&gt;&lt;span id="ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate" title="Invalid Date" class="error" enabled="true" style="color:Red;display:none;"&gt;*&lt;/span&gt;&lt;iframe id="ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd__if" style="display:none;left:0px;position:absolute;top:0px;z-index:-1;" src="javascript:'';" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt; &lt;/span&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadline_lblCollectionMethod" class="subHeadingCOLON"&gt;Collection Method&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadline_pnlCollectionMethod"&gt; &lt;select name="ctl00$content$ctrlHeadline$ddlCollectionMethod" onchange="SetManualCollectionVisibility();setTimeout('__doPostBack(\'ctl00$content$ctrlHeadline$ddlCollectionMethod\',\'\')', 0)" id="ctl00_content_ctrlHeadline_ddlCollectionMethod" class="bodyText" transform="chosen" data-placeholder="Select An Option" style="display: none;"&gt; &lt;option selected value="MANUAL"&gt;Manual&lt;/option&gt; &lt;option value="DATAFEED"&gt;Datafeed&lt;/option&gt; &lt;/select&gt;<br/>
+                &lt;div class="chosen-container chosen-container-single chosen-container-single-nosearch" title="" id="ctl00_content_ctrlHeadline_ddlCollectionMethod_chosen" style="width: 95px;"&gt;<br/>
+                 &lt;a class="chosen-single"&gt; &lt;span&gt;Manual&lt;/span&gt; <br/>
+                  &lt;div&gt;<br/>
+                   &lt;b&gt;&lt;/b&gt;<br/>
+                  &lt;/div&gt; &lt;/a&gt; <br/>
+                 &lt;div class="chosen-drop"&gt; <br/>
+                  &lt;div class="chosen-search"&gt; <br/>
+                   &lt;input class="chosen-search-input" type="text" autocomplete="off" readonly&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;ul class="chosen-results"&gt;&lt;/ul&gt; <br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt; <br/>
+                &lt;input type="hidden" name="ctl00$content$ctrlHeadline$hdnCollectionMethodID" id="ctl00_content_ctrlHeadline_hdnCollectionMethodID" data-ays-ignore="true"&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div id="divNonManualCollection" style="display: none;"&gt; <br/>
+              &lt;div class="form-row-container"&gt; <br/>
+               &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadline_lblMnemonic" class="subHeadingCOLON"&gt;Data Feed Mnemonic&lt;/span&gt; &lt;span id="ctl00_content_ctrlHeadline_mneomicMandatory" title="Mandatory" class="mandatoryMark"&gt;&lt;/span&gt; <br/>
+               &lt;/div&gt; <br/>
+               &lt;div class="bodyText"&gt; <br/>
+                &lt;div id="ctl00_content_ctrlHeadline_pnlMnemonic"&gt; <br/>
+                 &lt;input name="ctl00$content$ctrlHeadline$txtMnemonic" type="text" id="ctl00_content_ctrlHeadline_txtMnemonic" class="bodyText" spellcheck="true" style="width:45%;"&gt; <br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+               &lt;br class="clearLine"&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="form-row-container"&gt; <br/>
+               &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadline_lblAggregation" class="subHeadingCOLON"&gt;Aggregation Method&lt;/span&gt; <br/>
+               &lt;/div&gt; <br/>
+               &lt;div class="bodyText"&gt; <br/>
+                &lt;div id="ctl00_content_ctrlHeadline_pnlAggregationMethod"&gt; &lt;select name="ctl00$content$ctrlHeadline$ddlAggregationMethod" id="ctl00_content_ctrlHeadline_ddlAggregationMethod" class="bodyText" transform="chosen" data-placeholder="Select An Option" style="display: none;"&gt; &lt;option selected value="AVG"&gt;Average&lt;/option&gt; &lt;option value="CNT"&gt;Count&lt;/option&gt; &lt;option value="LST"&gt;Last&lt;/option&gt; &lt;option value="MAX"&gt;Max&lt;/option&gt; &lt;option value="MIN"&gt;Min&lt;/option&gt; &lt;option value="SUM"&gt;Sum&lt;/option&gt; &lt;/select&gt;<br/>
+                 &lt;div class="chosen-container chosen-container-single chosen-container-single-nosearch" title="" id="ctl00_content_ctrlHeadline_ddlAggregationMethod_chosen" style="width: 0px;"&gt;<br/>
+                  &lt;a class="chosen-single"&gt; &lt;span&gt;Average&lt;/span&gt; <br/>
+                   &lt;div&gt;<br/>
+                    &lt;b&gt;&lt;/b&gt;<br/>
+                   &lt;/div&gt; &lt;/a&gt; <br/>
+                  &lt;div class="chosen-drop"&gt; <br/>
+                   &lt;div class="chosen-search"&gt; <br/>
+                    &lt;input class="chosen-search-input" type="text" autocomplete="off" readonly&gt; <br/>
+                   &lt;/div&gt; <br/>
+                   &lt;ul class="chosen-results"&gt;&lt;/ul&gt; <br/>
+                  &lt;/div&gt;<br/>
+                 &lt;/div&gt; <br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+               &lt;br class="clearLine"&gt; <br/>
+              &lt;/div&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="custom-field-control-div" style="width:100%;"&gt; <br/>
+              &lt;table id="ctl00_content_ctrlHeadlineCustom_ctrlHeadlineCustomFields" class="custom-field-container reset_table" cellspacing="8" cellpadding="0" border="0" style="width:100%;"&gt; <br/>
+              &lt;/table&gt; <br/>
+             &lt;/div&gt;<br/>
+             &lt;table id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22" cellpadding="1"&gt; <br/>
+              &lt;tbody&gt;<br/>
+               &lt;tr&gt; <br/>
+                &lt;td&gt;<br/>
+                 &lt;div id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_pnlGenericTree" class="popUpBox ra-onscreenscoring-div ra-showComment-div generic-list-popup-div GL-FE" style="display:none;"&gt; <br/>
+                  &lt;div class="wrapper"&gt;<br/>
+                   &lt;div id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_divTitle" class="popup-title popUpHeader"&gt;<br/>
+                    &lt;span id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_lblTitle"&gt;&lt;/span&gt;<br/>
+                    &lt;div id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_popupCloseBtn" title="Close pop up" class="closePopup"&gt;&lt;/div&gt;<br/>
+                    &lt;div id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_popupMaximizeBtn" title="Maximize" class="maximizePopup maximizePopupBG"&gt;&lt;/div&gt;<br/>
+                   &lt;/div&gt;<br/>
+                   &lt;div id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_divWarningMessage" class="popup-title"&gt;&lt;/div&gt;<br/>
+                   &lt;div id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_divPopupExtraControls" class="popup-outside-scroll"&gt;<br/>
+                    &lt;div class="wk_search_bar clearfix" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_btnGenericPopupSearch')"&gt; <br/>
+                     &lt;div class="wk_search_inputs clearfix"&gt;<br/>
+                      &lt;div class="wk_search_input"&gt;<br/>
+                       &lt;input name="ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$txtGenericPopupSearch" id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_txtGenericPopupSearch" class="inputbox no_border" data-ays-ignore="true" type="text" placeholder="Enter Search..." spellcheck="true"&gt;&lt;a id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_btnGenericPopupSearch" title="Search" class="btn_normal btn_inline btn_no_border btn_icon_only" href="javascript:__doPostBack('ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$btnGenericPopupSearch','')"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_search"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+                      &lt;/div&gt;<br/>
+                     &lt;/div&gt;<br/>
+                     &lt;div class="wk_clear_search_btn"&gt;<br/>
+                      &lt;a id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_btnGenericPopupClearSearch" title="Clear Search" class="btn_normal btn_inline btn_no_border btn_icon_only" href="javascript:__doPostBack('ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$btnGenericPopupClearSearch','')"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_clear_search"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+                     &lt;/div&gt;<br/>
+                     &lt;div id="divSearchResults" class="popup-search-results"&gt;&lt;/div&gt; <br/>
+                    &lt;/div&gt;<br/>
+                   &lt;/div&gt;<br/>
+                   &lt;div id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_popup-content" class="popupcontainer popup-content"&gt;<br/>
+                    &lt;div id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_pnlGenericTreePopup" class="generic-list-popup"&gt; <br/>
+                    &lt;/div&gt;<br/>
+                   &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="popUpFooter"&gt;<br/>
+                   &lt;input type="submit" name="ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$btnProceed" value="Proceed" id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_btnProceed" class="buttonText"&gt;<br/>
+                   &lt;input type="submit" name="ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$btnClear" value="Clear" id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_btnClear" class="buttonText"&gt;<br/>
+                   &lt;input type="submit" name="ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$btnCancel" value="Cancel" id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_btnCancel" class="buttonText"&gt;<br/>
+                   &lt;input type="hidden" name="ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$hdnHeight" id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_hdnHeight" data-ays-ignore="true"&gt;<br/>
+                   &lt;input type="hidden" name="ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$ctl18" data-ays-ignore="true"&gt;<br/>
+                   &lt;input type="hidden" name="ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$hdnTop" id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_hdnTop" data-ays-ignore="true"&gt;<br/>
+                   &lt;input type="hidden" name="ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$hdnLeft" id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_hdnLeft" data-ays-ignore="true"&gt;<br/>
+                   &lt;input type="hidden" name="ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$hdnScrollPosition" id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_hdnScrollPosition" data-ays-ignore="true"&gt;<br/>
+                   &lt;input type="hidden" name="ctl00$content$ctrlHeadlineCustom$ctlGenericTreePoup22$hdnPopupChanges" id="ctl00_content_ctrlHeadlineCustom_ctlGenericTreePoup22_hdnPopupChanges" data-ays-ignore="true"&gt;<br/>
+                  &lt;/div&gt; <br/>
+                 &lt;/div&gt;&lt;/td&gt; <br/>
+               &lt;/tr&gt; <br/>
+              &lt;/tbody&gt;<br/>
+             &lt;/table&gt;<br/>
+             &lt;div id="ctl00_content_ctrlHeadlineCustom_backgroundElementCFC" class="modal-dialog-bg background GL-BE" style="display:none;"&gt;&lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div id="ctl00_content_pnlScoringConfig" style="display:none;"&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_lblScoringMethodology" class="subHeadingCOLON"&gt;Indicator Scoring Methodology&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineScoring_pnlScoringMethodology"&gt; &lt;select name="ctl00$content$ctrlHeadlineScoring$ddlScoringMethodology" onchange="javascript:setTimeout('__doPostBack(\'ctl00$content$ctrlHeadlineScoring$ddlScoringMethodology\',\'\')', 0)" id="ctl00_content_ctrlHeadlineScoring_ddlScoringMethodology" class="bodyText" data-ays-ignore="true"&gt; &lt;option selected value="1"&gt;Red\Amber\Green&lt;/option&gt; &lt;option value="2"&gt;Green\Amber\Red&lt;/option&gt; &lt;option value="3"&gt;Red\Amber\Green\Amber\Red&lt;/option&gt; &lt;option value="4"&gt;Green\Amber\Red\Amber\Green&lt;/option&gt; &lt;option value="6"&gt;Green&gt;Red&lt;/option&gt; &lt;/select&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div id="ctl00_content_ctrlHeadlineScoring_divInheritWrapper"&gt; <br/>
+              &lt;div class="form-row-container"&gt; <br/>
+               &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_lblInheritThresholds" class="subHeadingCOLON"&gt;Inherit Headline Indicator Threshold&lt;/span&gt; <br/>
+               &lt;/div&gt; <br/>
+               &lt;div class="bodyText"&gt; <br/>
+                &lt;div id="ctl00_content_ctrlHeadlineScoring_pnlChkInheritThresholds"&gt; &lt;span class="bodyText" onchange="SetThresholdControlVisibility()"&gt;&lt;input id="ctl00_content_ctrlHeadlineScoring_chkInheritThresholds" type="checkbox" name="ctl00$content$ctrlHeadlineScoring$chkInheritThresholds"&gt;&lt;/span&gt; <br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+               &lt;br class="clearLine"&gt; <br/>
+              &lt;/div&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div id="ctl00_content_ctrlHeadlineScoring_divThresholdWrapper"&gt; <br/>
+              &lt;div class="form-row-container" id="divThresholdControl" style="display: none;"&gt; <br/>
+               &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_lblScoringThresholds" class="subHeadingCOLON"&gt;Threshold(s)&lt;/span&gt; <br/>
+               &lt;/div&gt; <br/>
+               &lt;div class="bodyText"&gt; <br/>
+                &lt;div id="ctl00_content_ctrlHeadlineScoring_pnlUpdThresholds"&gt; <br/>
+                 &lt;div style="width: 60%"&gt; <br/>
+                  &lt;div&gt; <br/>
+                   &lt;table cellspacing="0" cellpadding="0" border="0" id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores" style="border-style:None;border-collapse:collapse;width:80%"&gt; <br/>
+                    &lt;tbody&gt;<br/>
+                     &lt;tr class="tableHeader"&gt; <br/>
+                      &lt;th scope="col"&gt;Score is...&lt;/th&gt;<br/>
+                      &lt;th scope="col"&gt;When value is...&lt;/th&gt;<br/>
+                      &lt;th scope="col"&gt;&nbsp;&lt;/th&gt; <br/>
+                     &lt;/tr&gt;<br/>
+                     &lt;tr class="bodytextRow"&gt; <br/>
+                      &lt;td align="center" style="background-color:Red;width:25%;"&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_lblColour" class="bodyText" style="font-weight:bold;"&gt;Red&lt;/span&gt; &lt;/td&gt;<br/>
+                      &lt;td align="center" style="width:25%;"&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_lblOperator" title="Less than" class="bodyText" value="xx" style="font-weight:bold;"&gt;&lt;&lt;/span&gt; &lt;/td&gt;<br/>
+                      &lt;td align="center" style="width:20%;"&gt; &lt;input name="ctl00$content$ctrlHeadlineScoring$ctrlThresholdScores$gvThresholdScores$ctl02$txtThresholdValue$TextBox" type="text" value="0" id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_TextBox" class="bodyText" spellcheck="true" autocomplete="off" style="width:85%;"&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator" title="This field must contain a numeric value,  to a maximum of 2 decimal places." class="bodyText" style="color:Red;display:none;"&gt;*&lt;/span&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator" style="color:Red;visibility:hidden;"&gt;*&lt;/span&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator" title="This field is required." style="color:Red;display:none;"&gt;*&lt;/span&gt; &lt;/td&gt; <br/>
+                     &lt;/tr&gt;<br/>
+                     &lt;tr class="bodytextRowAlternate"&gt; <br/>
+                      &lt;td align="center" style="background-color:Orange;width:25%;"&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_lblColour" class="bodyText" style="font-weight:bold;"&gt;Amber&lt;/span&gt; &lt;/td&gt;<br/>
+                      &lt;td align="center" style="width:25%;"&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_lblOperator" title="Less than" class="bodyText" value="xx" style="font-weight:bold;"&gt;&lt;&lt;/span&gt; &lt;/td&gt;<br/>
+                      &lt;td align="center" style="width:20%;"&gt; &lt;input name="ctl00$content$ctrlHeadlineScoring$ctrlThresholdScores$gvThresholdScores$ctl03$txtThresholdValue$TextBox" type="text" value="0" id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_TextBox" class="bodyText" spellcheck="true" autocomplete="off" style="width:85%;"&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator" title="This field must contain a numeric value,  to a maximum of 2 decimal places." class="bodyText" style="color:Red;display:none;"&gt;*&lt;/span&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator" style="color:Red;visibility:hidden;"&gt;*&lt;/span&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator" title="This field is required." style="color:Red;display:none;"&gt;*&lt;/span&gt; &lt;/td&gt; <br/>
+                     &lt;/tr&gt;<br/>
+                     &lt;tr class="bodytextRow"&gt; <br/>
+                      &lt;td align="center" style="background-color:Green;width:25%;"&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl04_lblColour" class="bodyText" style="font-weight:bold;"&gt;Green&lt;/span&gt; &lt;/td&gt;<br/>
+                      &lt;td align="center" style="width:25%;"&gt; &lt;span id="ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl04_lblOperator" class="bodyText" value="xx" style="font-weight:bold;"&gt;Values that did not fall in any of other specified criterias&lt;/span&gt; &lt;/td&gt;<br/>
+                      &lt;td align="center" style="width:20%;"&gt; &lt;/td&gt; <br/>
+                     &lt;/tr&gt; <br/>
+                    &lt;/tbody&gt;<br/>
+                   &lt;/table&gt; <br/>
+                  &lt;/div&gt; <br/>
+                 &lt;/div&gt; <br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+               &lt;br class="clearLine"&gt; <br/>
+              &lt;/div&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div id="ctl00_content_pnlAutoCollectionConfig" style="display:none;"&gt; <br/>
+             &lt;style&gt;<br/>
+    .qtip {<br/>
+        max-width: 1000px !important;<br/>
+    }<br/>
+<br/>
+    .arclogics-tooltip-content {<br/>
+        max-height: none !important;<br/>
+    }<br/>
+&lt;/style&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineAuto_lblAutoCollectType" class="subHeadingCOLON"&gt;Automatic Collection Type&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineAuto_pnlSwordCollectionType"&gt; &lt;select name="ctl00$content$ctrlHeadlineAuto$ddlSwordCollectionType" onchange="javascript:setTimeout('__doPostBack(\'ctl00$content$ctrlHeadlineAuto$ddlSwordCollectionType\',\'\')', 0)" id="ctl00_content_ctrlHeadlineAuto_ddlSwordCollectionType" class="bodyText" transform="chosen" data-placeholder="Select An Option" style="display: none;"&gt; &lt;option selected value="AC"&gt;Actions&lt;/option&gt; &lt;option value="IS"&gt;Issues&lt;/option&gt; &lt;/select&gt;<br/>
+                &lt;div class="chosen-container chosen-container-single chosen-container-single-nosearch" title="" id="ctl00_content_ctrlHeadlineAuto_ddlSwordCollectionType_chosen" style="width: 0px;"&gt;<br/>
+                 &lt;a class="chosen-single"&gt; &lt;span&gt;Actions&lt;/span&gt; <br/>
+                  &lt;div&gt;<br/>
+                   &lt;b&gt;&lt;/b&gt;<br/>
+                  &lt;/div&gt; &lt;/a&gt; <br/>
+                 &lt;div class="chosen-drop"&gt; <br/>
+                  &lt;div class="chosen-search"&gt; <br/>
+                   &lt;input class="chosen-search-input" type="text" autocomplete="off" readonly&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;ul class="chosen-results"&gt;&lt;/ul&gt; <br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineAuto_lblAutoDateColumn" class="subHeadingCOLON"&gt;Automatic Collection Date Range Field&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineAuto_pnlAutoDateColumn"&gt; &lt;select name="ctl00$content$ctrlHeadlineAuto$ddlAutoDateColumn" id="ctl00_content_ctrlHeadlineAuto_ddlAutoDateColumn" class="bodyText" transform="chosen" data-placeholder="Select An Option" style="display: none;"&gt; &lt;option selected value="-1"&gt;None&lt;/option&gt; &lt;option value="3191"&gt;Completion Date&lt;/option&gt; &lt;option value="3192"&gt;Created Date&lt;/option&gt; &lt;option value="3190"&gt;Current Target Date&lt;/option&gt; &lt;option value="3189"&gt;Initial Target Date&lt;/option&gt; &lt;option value="3195"&gt;Last Changed Date&lt;/option&gt; &lt;/select&gt;<br/>
+                &lt;div class="chosen-container chosen-container-single chosen-container-single-nosearch" title="" id="ctl00_content_ctrlHeadlineAuto_ddlAutoDateColumn_chosen" style="width: 0px;"&gt;<br/>
+                 &lt;a class="chosen-single"&gt; &lt;span&gt;None&lt;/span&gt; <br/>
+                  &lt;div&gt;<br/>
+                   &lt;b&gt;&lt;/b&gt;<br/>
+                  &lt;/div&gt; &lt;/a&gt; <br/>
+                 &lt;div class="chosen-drop"&gt; <br/>
+                  &lt;div class="chosen-search"&gt; <br/>
+                   &lt;input class="chosen-search-input" type="text" autocomplete="off" readonly&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;ul class="chosen-results"&gt;&lt;/ul&gt; <br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineAuto_lblAutoValueColumn" class="subHeadingCOLON"&gt;Automatic Collection Value Field&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineAuto_pnlAutoValueColumn"&gt; &lt;select name="ctl00$content$ctrlHeadlineAuto$ddlAutoValueColumn" id="ctl00_content_ctrlHeadlineAuto_ddlAutoValueColumn" class="bodyText" transform="chosen" data-placeholder="Select An Option" style="display: none;"&gt; &lt;option selected value="3197"&gt;Action Benefit&lt;/option&gt; &lt;option value="3176"&gt;Action ID&lt;/option&gt; &lt;option value="3196"&gt;Cost&lt;/option&gt; &lt;/select&gt;<br/>
+                &lt;div class="chosen-container chosen-container-single chosen-container-single-nosearch" title="" id="ctl00_content_ctrlHeadlineAuto_ddlAutoValueColumn_chosen" style="width: 0px;"&gt;<br/>
+                 &lt;a class="chosen-single"&gt; &lt;span&gt;Action Benefit&lt;/span&gt; <br/>
+                  &lt;div&gt;<br/>
+                   &lt;b&gt;&lt;/b&gt;<br/>
+                  &lt;/div&gt; &lt;/a&gt; <br/>
+                 &lt;div class="chosen-drop"&gt; <br/>
+                  &lt;div class="chosen-search"&gt; <br/>
+                   &lt;input class="chosen-search-input" type="text" autocomplete="off" readonly&gt; <br/>
+                  &lt;/div&gt; <br/>
+                  &lt;ul class="chosen-results"&gt;&lt;/ul&gt; <br/>
+                 &lt;/div&gt;<br/>
+                &lt;/div&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div id="ctl00_content_pnlDimensionTypes" style="display:none;"&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineDimensionConfig_lblComplexity" class="subHeadingCOLON"&gt;Complexity&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineDimensionConfig_pnlComplexity"&gt; <br/>
+                &lt;table id="ctl00_content_ctrlHeadlineDimensionConfig_radioComplexity" class="bodyText" border="0"&gt; <br/>
+                 &lt;tbody&gt;<br/>
+                  &lt;tr&gt; <br/>
+                   &lt;td&gt;&lt;input id="ctl00_content_ctrlHeadlineDimensionConfig_radioComplexity_0" type="radio" name="ctl00$content$ctrlHeadlineDimensionConfig$radioComplexity" value="Single" onclick="javascript:setTimeout('__doPostBack(\'ctl00$content$ctrlHeadlineDimensionConfig$radioComplexity$0\',\'\')', 0)"&gt;&lt;label for="ctl00_content_ctrlHeadlineDimensionConfig_radioComplexity_0"&gt;Single Instance&lt;/label&gt;&lt;/td&gt;<br/>
+                   &lt;td&gt;&lt;input id="ctl00_content_ctrlHeadlineDimensionConfig_radioComplexity_1" type="radio" name="ctl00$content$ctrlHeadlineDimensionConfig$radioComplexity" value="Multi" checked&gt;&lt;label for="ctl00_content_ctrlHeadlineDimensionConfig_radioComplexity_1"&gt;Multiple Instances&lt;/label&gt;&lt;/td&gt; <br/>
+                  &lt;/tr&gt; <br/>
+                 &lt;/tbody&gt;<br/>
+                &lt;/table&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div id="ctl00_content_ctrlHeadlineDimensionConfig_divDimensionsControl" class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineDimensionConfig_lblDimensionTypes" class="subHeadingCOLON"&gt;Dimension Types&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;div id="ctl00_content_ctrlHeadlineDimensionConfig_pnlDimensionTypes"&gt; <br/>
+                &lt;table id="ctl00_content_ctrlHeadlineDimensionConfig_chkListDimensionTypes" cellpadding="2" border="0"&gt; <br/>
+                 &lt;tbody&gt;<br/>
+                  &lt;tr&gt; <br/>
+                   &lt;td&gt;&lt;input id="ctl00_content_ctrlHeadlineDimensionConfig_chkListDimensionTypes_0" type="checkbox" name="ctl00$content$ctrlHeadlineDimensionConfig$chkListDimensionTypes$0"&gt;&lt;label for="ctl00_content_ctrlHeadlineDimensionConfig_chkListDimensionTypes_0"&gt;Organisation Unit&lt;/label&gt;&lt;/td&gt; <br/>
+                  &lt;/tr&gt; <br/>
+                 &lt;/tbody&gt;<br/>
+                &lt;/table&gt; <br/>
+               &lt;/div&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div id="ctl00_content_pnlIndicatorCreationDimPicker" style="display:none;"&gt; <br/>
+             &lt;div class="form-row-container"&gt; <br/>
+              &lt;div class="labelTD"&gt; &lt;span id="ctl00_content_ctrlHeadlineAddIndicDim_lblDimensionBehaviour" class="subHeadingCOLON"&gt;Each set of Dimension Values selected defines&lt;/span&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;div class="bodyText"&gt; <br/>
+               &lt;table id="ctl00_content_ctrlHeadlineAddIndicDim_radioDimensionBehaviour" class="bodyText" border="0"&gt; <br/>
+                &lt;tbody&gt;<br/>
+                 &lt;tr&gt; <br/>
+                  &lt;td&gt;&lt;input id="ctl00_content_ctrlHeadlineAddIndicDim_radioDimensionBehaviour_0" type="radio" name="ctl00$content$ctrlHeadlineAddIndicDim$radioDimensionBehaviour" value="0"&gt;&lt;label for="ctl00_content_ctrlHeadlineAddIndicDim_radioDimensionBehaviour_0"&gt;One Indicator&lt;/label&gt;&lt;/td&gt;<br/>
+                  &lt;td&gt;&lt;input id="ctl00_content_ctrlHeadlineAddIndicDim_radioDimensionBehaviour_1" type="radio" name="ctl00$content$ctrlHeadlineAddIndicDim$radioDimensionBehaviour" value="1" checked&gt;&lt;label for="ctl00_content_ctrlHeadlineAddIndicDim_radioDimensionBehaviour_1"&gt;Multiple Indicators&lt;/label&gt;&lt;/td&gt; <br/>
+                 &lt;/tr&gt; <br/>
+                &lt;/tbody&gt;<br/>
+               &lt;/table&gt; <br/>
+              &lt;/div&gt; <br/>
+              &lt;br class="clearLine"&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;hr&gt; <br/>
+             &lt;div id="divDimValSelects" style="padding: 8px; margin-left: auto; margin-right: auto; width: 95%; text-align: center;"&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div id="ctl00_content_pnlIndicatorCreationReviewList" style="display:none;"&gt; <br/>
+             &lt;div id="divIndicators" style="width: 100%;"&gt; &lt;span id="ctl00_content_ctrlHeadlineAddIndicReview_lblIndicsCount" class="sectionHeading"&gt;X &lt;/span&gt; &lt;span id="ctl00_content_ctrlHeadlineAddIndicReview_lblIndicsCreated" class="sectionHeading"&gt;Indicators Generated&lt;/span&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div id="ctl00_divButtons" class="action-container"&gt; <br/>
+           &lt;input type="submit" name="ctl00$buttons$btnPageNext" value="Next &gt;" onclick="if (!IsPageValid()) { return false; };WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$buttons$btnPageNext&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_buttons_btnPageNext" class="buttonText"&gt; <br/>
+           &lt;input type="submit" name="ctl00$btnCancel" value="Cancel" onclick="Page_ValidationActive=false; return CancelChanges(this);" id="ctl00_btnCancel" class="buttontext"&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;br class="clear"&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;br class="clear"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="footer-container"&gt; <br/>
+    &lt;img id="ctl00_KeepAliveMVC" src="https://oprisk-uat.afreximbank.net/AppA/Web/SessionSync?" style="height:0px;width:0px;border-width:0px;"&gt;<br/>
+    &lt;img id="ctl00_KeepAliveSurveys" src="https://oprisk-uat.afreximbank.net/AppA/Surveys/SessionSync.aspx?" style="height:0px;width:0px;border-width:0px;"&gt;<br/>
+    &lt;img id="ctl00_KeepAliveSwordDotNet" src="https://oprisk-uat.afreximbank.net/AppA/Pages/SessionSync.aspx?" style="height:0px;width:0px;border-width:0px;"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnRandomParameter" id="ctl00_hdnRandomParameter" value="r355851" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnRandomIdentifier" id="ctl00_hdnRandomIdentifier" value="83d0c262-f7b8-42b7-880c-e09629839139" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnDocumentmode" id="ctl00_hdnDocumentmode" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnDirty" id="ctl00_hdnDirty" data-ays-ignore="true" value="Y" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnAlwaysDirty" id="ctl00_hdnAlwaysDirty" data-ays-ignore="true" tabindex="0"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="divWorking" style="position: fixed; z-index: 1000001; left: 720px; top: 299.5px; display: none;"&gt;<br/>
+    &lt;img src="../images/wk_loading.gif" alt="Loading..." id="loadImg" style="display: block;"&gt;<br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="ctl00_ifpReferencePopup_backgroundElement" class="modal-dialog-bg background GL-BE" style="display:none;"&gt;&lt;/div&gt; <br/>
+   &lt;div id="ctl00_ifpReferencePopup_pnlIFramePopup" class="popUpBox ra-onscreenscoring-div ra-showComment-div generic-list-popup-div GL-FE" style="display:none;"&gt; <br/>
+    &lt;div class="wrapper"&gt; <br/>
+     &lt;div class="popup-title popUpHeader"&gt; &lt;span id="ctl00_ifpReferencePopup_lblTitle"&gt;&lt;/span&gt; <br/>
+      &lt;div title="Close pop up" class="closePopup" id="popupCloseTreeBtn"&gt;&lt;/div&gt; <br/>
+      &lt;div title="Maximize" class="maximizePopup maximizePopupBG" id="popupMaximizeTreeBtn"&gt;&lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div id="popup-content" class="popupcontainer"&gt; &lt;iframe id="iframe-content" frameborder="0" tabindex="0"&gt;&lt;/iframe&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div class="popUpFooter"&gt; <br/>
+     &lt;input type="submit" name="ctl00$ifpReferencePopup$btnCancel" value="Close" id="ctl00_ifpReferencePopup_btnCancel" class="buttonText" tabindex="0"&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnWidth" id="ctl00_ifpReferencePopup_hdnWidth" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnHeight" id="ctl00_ifpReferencePopup_hdnHeight" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnTop" id="ctl00_ifpReferencePopup_hdnTop" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnLeft" id="ctl00_ifpReferencePopup_hdnLeft" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnScrollPosition" id="ctl00_ifpReferencePopup_hdnScrollPosition" data-ays-ignore="true" tabindex="0"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnPopupChanges" id="ctl00_ifpReferencePopup_hdnPopupChanges" data-ays-ignore="true" tabindex="0"&gt; <br/>
+   &lt;/div&gt; &lt;button id="ctl00_btnPopupTarget" style="display: none;" type="button" tabindex="0"&gt;&lt;/button&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var Page_ValidationSummaries =  new Array(document.getElementById("ctl00_vldError"));<br/>
+var Page_Validators =  new Array(document.getElementById("ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator"), document.getElementById("ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate"), document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator"), document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator"), document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator"), document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator"), document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator"), document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator"));<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator = document.all ? document.all["ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator"] : document.getElementById("ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator");<br/>
+ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator.controltovalidate = "ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_TextBox";<br/>
+ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator.errormessage = "Headline Indicator Name is required.";<br/>
+ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator.display = "Dynamic";<br/>
+ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";<br/>
+ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator.initialvalue = "";<br/>
+var ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate = document.all ? document.all["ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate"] : document.getElementById("ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate");<br/>
+ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate.controltovalidate = "ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_txtDate";<br/>
+ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate.errormessage = "Invalid Date";<br/>
+ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate.display = "Dynamic";<br/>
+ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate.evaluationfunction = "CustomValidatorEvaluateIsValid";<br/>
+ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate.clientvalidationfunction = "CheckDate";<br/>
+var ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator = document.all ? document.all["ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator"] : document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator");<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator.controltovalidate = "ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_TextBox";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator.errormessage = "This field must contain a numeric value,  to a maximum of 2 decimal places.";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator.display = "Dynamic";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator.validationexpression = "^[-+]?\\d{0,16}(([.]\\d{1,2})|([,]\\d{0,2}))?$";<br/>
+var ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator = document.all ? document.all["ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator"] : document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator");<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator.controltovalidate = "ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_TextBox";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator.errormessage = "Values Between -999999999999.99 And 999999999999.99.";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator.type = "Double";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator.decimalchar = ".";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator.evaluationfunction = "RangeValidatorEvaluateIsValid";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator.maximumvalue = "999999999999.99";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator.minimumvalue = "-999999999999.99";<br/>
+var ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator = document.all ? document.all["ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator"] : document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator");<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator.controltovalidate = "ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_TextBox";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator.errormessage = "This field is required.";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator.display = "Dynamic";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator.initialvalue = "";<br/>
+var ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator = document.all ? document.all["ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator"] : document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator");<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator.controltovalidate = "ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_TextBox";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator.errormessage = "This field must contain a numeric value,  to a maximum of 2 decimal places.";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator.display = "Dynamic";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator.validationexpression = "^[-+]?\\d{0,16}(([.]\\d{1,2})|([,]\\d{0,2}))?$";<br/>
+var ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator = document.all ? document.all["ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator"] : document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator");<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator.controltovalidate = "ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_TextBox";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator.errormessage = "Values Between -999999999999.99 And 999999999999.99.";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator.type = "Double";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator.decimalchar = ".";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator.evaluationfunction = "RangeValidatorEvaluateIsValid";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator.maximumvalue = "999999999999.99";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator.minimumvalue = "-999999999999.99";<br/>
+var ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator = document.all ? document.all["ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator"] : document.getElementById("ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator");<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator.controltovalidate = "ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_TextBox";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator.errormessage = "This field is required.";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator.display = "Dynamic";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";<br/>
+ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator.initialvalue = "";<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+document.addEventListener('DOMContentLoaded', function(){ $('body').css('min-width', ( ( (typeof IsPopupWindow !== 'undefined') && (IsPopupWindow) ) ? 'none' : '960px' )); });Sys.Application.add_load( function(){ prepSetting(); } );$("tr[class^=bodytextRow]").on('mouseover', function() { hover_OnMouseOver(this); }).on('mouseout', function() { hover_OnMouseOut(this); });qTipConfigJSON = '{"content":{},"position":{"my":"top left","at":"bottom center","adjust":{"x":5},"viewport":true},"hide":{"delay":200,"fixed":true,"leave":false },"style":{"tip":{"width":6,"height":12}}}';var ARCLOGICS = ARCLOGICS || {};$(document).ready(function () {try{ ARCLOGICS.navmenu = $('#navbar').navigationBar({selectedMenuId: 107}); }catch(e){console.log(e)} });var overseerPersonControlClientID = 'ctl00_content_ctrlHeadline_ddlOverseer';<br/>
+var collectionMethodControlClientID = 'ctl00_content_ctrlHeadline_ddlCollectionMethod';<br/>
+SetOverseerControlVisibility();<br/>
+SetManualCollectionVisibility();SetupDateControl('ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_txtDate', 'ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd__if', '');var chkInheritThresholdsClientID = 'ctl00_content_ctrlHeadlineScoring_chkInheritThresholds';<br/>
+SetThresholdControlVisibility();ChangePageTitle('Create Headline Indicator - Headline Details - (Step 1)');<br/>
+(function(id) {<br/>
+    var e = document.getElementById(id);<br/>
+    if (e) {<br/>
+        e.dispose = function() {<br/>
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));<br/>
+        }<br/>
+        e = null;<br/>
+    }<br/>
+})('ctl00_vldError');<br/>
+<br/>
+var Page_ValidationActive = false;<br/>
+if (typeof(ValidatorOnLoad) == "function") {<br/>
+    ValidatorOnLoad();<br/>
+}<br/>
+<br/>
+function ValidatorOnSubmit() {<br/>
+    if (Page_ValidationActive) {<br/>
+        return ValidatorCommonOnSubmit();<br/>
+    }<br/>
+    else {<br/>
+        return true;<br/>
+    }<br/>
+}<br/>
+        <br/>
+document.getElementById('ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_content_ctrlHeadlineGeneral_txtHeadlineIndicatorName_RequiredFieldValidator'));<br/>
+}<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.CalendarBehavior, {"button":$get("ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_imgCalendarButton"),"format":"dd MMM yyyy","id":"ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_calendarButtonExtender"}, {"dateSelectionChanged":DateChanged,"hidden":HideCalendarControl,"shown":ShowCalendarControl}, null, $get("ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_txtDate"));<br/>
+});<br/>
+<br/>
+document.getElementById('ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_content_ctrlHeadline_ctrlCompletionDate_dtd_VDate'));<br/>
+}<br/>
+<br/>
+document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RegularExpressionValidator'));<br/>
+}<br/>
+<br/>
+document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RangeValidator'));<br/>
+}<br/>
+<br/>
+document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl02_txtThresholdValue_RequiredFieldValidator'));<br/>
+}<br/>
+<br/>
+document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RegularExpressionValidator'));<br/>
+}<br/>
+<br/>
+document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RangeValidator'));<br/>
+}<br/>
+<br/>
+document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator').dispose = function() {<br/>
+    Array.remove(Page_Validators, document.getElementById('ctl00_content_ctrlHeadlineScoring_ctrlThresholdScores_gvThresholdScores_ctl03_txtThresholdValue_RequiredFieldValidator'));<br/>
+}<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"modal-timeout","dropShadow":true,"dynamicServicePath":"/AppA/UI/HeadlineIndicatorAdd.aspx","id":"ctl00_popup","okControlID":"btnTimeoutOK","onOkScript":"GotoHomePage();","popupControlID":"ctl00_divException","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"modal-timeout","cancelControlID":"btnNoMsg","dropShadow":true,"dynamicServicePath":"/AppA/UI/HeadlineIndicatorAdd.aspx","id":"ctl00_popupMsg","okControlID":"btnOKMsg","onCancelScript":"NotKeepAlive();","onOkScript":"KeepAlive();","popupControlID":"ctl00_divExceptionWarning","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"working","dynamicServicePath":"/AppA/UI/HeadlineIndicatorAdd.aspx","id":"ctl00_working","popupControlID":"divWorking","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;div id="ctl00_popup_foregroundElement" style="display: none; position: fixed; z-index: 1000001; left: 768px; top: 347.5px;"&gt;<br/>
+    &lt;div id="ctl00_divException" style="display:none;" class="tmeout-div"&gt;<br/>
+     &lt;br&gt;Your session has timed out.<br/>
+     &lt;br&gt;Click OK to continue using OneSumX.<br/>
+     &lt;br&gt;<br/>
+     &lt;br&gt;<br/>
+     &lt;input type="button" id="btnTimeoutOK" tabindex="0" value="Ok"&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div data-act-control-type="modalPopupBackground" id="ctl00_popup_backgroundElement" class="modal-timeout" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000; width: 1536px; height: 695px;"&gt;&lt;/div&gt;<br/>
+   &lt;div id="ctl00_popupMsg_foregroundElement" style="display: none; position: fixed; z-index: 1000001; left: 768px; top: 347.5px;"&gt;<br/>
+    &lt;div id="ctl00_divExceptionWarning" style="display:none;" class="tmeout-div"&gt;<br/>
+     &lt;br&gt;Your session is about to timeout.<br/>
+     &lt;br&gt;Do you wish to refresh your session?<br/>
+     &lt;br&gt;<br/>
+     &lt;br&gt;<br/>
+     &lt;input type="button" id="btnOKMsg" value="Yes" tabindex="0"&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+     &lt;input type="button" id="btnNoMsg" value="No" tabindex="0"&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div data-act-control-type="modalPopupBackground" id="ctl00_popupMsg_backgroundElement" class="modal-timeout" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000; width: 1536px; height: 695px;"&gt;&lt;/div&gt;<br/>
+   &lt;div data-act-control-type="modalPopupBackground" id="ctl00_working_backgroundElement" class="working" style="position: fixed; left: 0px; top: 0px; z-index: 10001; width: 1536px; height: 695px; display: none;"&gt;&lt;/div&gt;&lt;span style="display: none !important;"&gt;&lt;input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" data-ays-ignore="true"&gt;&lt;/span&gt;&lt;span style="display: none !important;"&gt;&lt;input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" data-ays-ignore="true"&gt;&lt;/span&gt;&lt;span style="display: none !important;"&gt;&lt;input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" data-ays-ignore="true"&gt;&lt;/span&gt;&lt;span style="display: none !important;"&gt;&lt;input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" data-ays-ignore="true"&gt;&lt;/span&gt;&lt;span style="display: none !important;"&gt;&lt;input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0EA4BAF6" data-ays-ignore="true"&gt;&lt;/span&gt;&lt;span style="display: none !important;"&gt;&lt;input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="S1qNXidJRjRu5W37N/yBmY32zeHETRJJyjnyXvvCcynToMVUWoJfx8fOdwgxfuhU7ZXQidgXIOSK6wd6c6og8qmOOTjUijy4/z1Cm0owxGopC2J66VCXC5lNwW3vdH+NEeXKuxb88iMWA3/VnWj2U/XcvxjaFYCzNZsqK0OHBxocaf343hh5QSgGNlS46kNNJWiL0/xV4M/WmyS522sfE3bHujWDz25zQ+gl6XYZRjRO2vTER9+o1yttrA3YGF8HppEZMvIzBy+Xs/+9n754VyqZacRIMeUzbB7LbDbwjI9avUFKAJaglnEdOP4LA9PY0fzNxiXP2bBV6GIuWLFKgOdgyoJhlWHnJ//dyTBcG1dIEBsgct1Ara+vYwiEGJG+L0/pWQiVCE/LYODTujsriO/iwn6PxnZZ7xSk9PLdtHITYhwwVVygZkHxwJrvPoHRC6r6OxjIWdX9LDoaQzVJ2sZzDdMDKdF6m66cD397cGEEmTpJoQhkzxen96stUWnWTQbY7OgM14Btu7xGgAPXCyIyWvcyylZibA4+98JpL1VmSKo+FkucvaizefK3Rzu2U+fmpalfA88bXA1At/7MbK8TSOsB26ef9rwLGX7xP6fu9r59C6K45YjsgFEGiQB0m080C/1FqSg7/GZqTQaa2Y1X+Y/vaurPMjoPyosuHGA85VLvxuWcChJ33uo3T/hRWb5hiqer7K1S8n8mB9fToBkmtyLHxDNJ8AmnutFEpxEngpkPfAhSPExMeh0AHVcTZqeXFcjDHCHmBG6CQwAWRK3T3R42Vxrq51AwVvzuTPYO9DShlZ/lHNS9NUUbOat5zgaO9qzDTCOxfy62LIhMfnHwTTwbSCPgauqQTSRKrOln2D4hUwNWB1kMFjb7qC13uMKGmA/XjVsvzsqp0/APj+l1+PuSt194LxPUN89TKKeuRA6mhV9oK9PNgVptO0cWS7uPV34tXQyRtPu3eAhl2dNyT3dDJG8d2DUNjtrTsZipE/fKBMQRTRA/qGZFMijiyp9v/1d5aogLcqKP1HfVCzPhKxWNO4QFhT954jrrMW7hgIxxMjYE1SgxbzffLMMeVmKQHa+8AE5oHeYmi+BPueDi2CLmhLxmto+lse/Wn+rqlRuZ2DW7kSI5GjPGrhGMrs3EUH9QyIS3oRpP1TCUxz0q6XqR33p4mNB9w87zy7nV232r6Q2xDHLRpPdCCU4vYvIjFQr/dwAzeg3o+83krrSrQLrvhQyJfDKrC0a9lYJGq7aknPOGk2y7e/lhM5A4nTAa2hy5oVLkuUkko/6b+0a7mHWR5LL1286+b5kgEzGq9jmX/KoqmlT7V/8324QJsfrtLtgzjH5+TU80xsjQcLrodex0EO8I9gdKhHd+miestItZHc5LpBfxJdW+EVlRCuJNDv2TYbmsfOOqJ4+BBZnLpDrUHMTDEhmntZRKdNVyD8BEeKWuLFBsK4rF/fJFNVh71ARrHBz4mEEQgbyv+i8JATB2v+BpzZvEdKnO+JiDFg8oX/sM1fziVh5mq64n5RFx2JMKVAnNVYNbN2sYBWiFco4XNEVFEifL9NQn0OSHdNAykofoIUsz27LdMdBNeiUPdnKfCUkXTp6vQ0c0GUaTGHF75H0TN5E6Ccp12RbTyJCFIPNc90QiMphXwOYs1YOZ1yliOSgzgSUYbTYstTnYF4rEVxI4WtxV+4gmAyIIakXlzUh6zP5aeb+y7LB8Qequu8kk6SMrVzShh25fZ9jrGd1WMF8IVIIwYDLxtmr98cdjQc+e74Nf55ByQ9+R/QObOiRQ/nwbcxfcJBvFyPQEnxTpen5NeVoPjNBfXtrXgu61NVR6IvGxe7FrzbGPCSR4raYT2txaaCZsZBHqpMdpEEKwRaFCTOxrVIY4M6DNo3IVPLc3CeRDMPpLQSVYwva91zdmwLT7I06ONfA+q1n+OynnezHeO9hZjuK9thiyx3Mygf/LELSinzMtIe5v1yU3Lyy5fxn5o5YsKHsXB97HYVNtemWs1ev9Yhul8420Y2kr13Qp/NbiPubPVRnA+nNf5KMAxwcxOabG2lisE+ppFUX8A1HSMJaATkbYZO73YOb0ESU+1e0OaC3uJfS1xdRVASe1ZvuXHCxYwgjPu5YeHL+Og33kznxs8MtP80fAybOwz7ejXSnoUk4eGLMZga7jiOKqr9HjcKh4rs7rNztg/dbkUy9U12NsTDBjeAsjTDgbsHW6jW4ZZJd3BTKSahbIU6y3Oh1vuUkjKwElIgYYXXWAwtL8zGGgoU+Fy8XupK8dTg3wQOtMMKUO1w/pRcMfxsFTXG/wzWa3FkS91OtHUM9HxOOXojyzPgqsjVNhi+hZEFk4LudXduHK8SdraWkKE958I1ext6mIn6ovGRb5fSBhZoc1GsesueIgg/fhO3soFlU3kSIaLu6FTv7dCCXDFKOK1jrzOyicaOt3FizRB1XM91wF7nJaacvnz5xyYXF9nUw4ZfrGec2RDXI4EixEREfMBx+V1xhVFGbbYXmfIaALU8cDXciGo+wyKh+NFK2uWmtSWkW/g9IVOpmLmEcd+f3NSV0c2esEOLhLBukSovX3y0iAaOQrejX6kxtvufjqFvnFcGkDHpPDf4q7g7J3SmGxMoCRdu1Nhq7StUgtX6wZhuppKZbaqoYDXgNdsvPkJ4iBO0dlsYdCUx6khWb/dbsKfNE+kjMrdZOBGvuX4O8OYT50qC40Q3XWwP8aZkEThgQsQ5Njq/oj4f2twCCHEBvpitvGC/AyfLAkyA013ONlyRT6Wf09p6cYUa4oa5yA4hhc4gOWBohqkETQ60xtVRksaAY8PE70nbKE0HFU6BLdr3Mwb1XZLynmW0EvuBL1bTHovWy6kaTdcwb+imuCXOUPKO1Rgs2MlrJdeEbr3VPh1cPX1swYCJVnTApyr/Hu9Y/CQAprfo/lG7+x87XIuLPWT9pWU3UMst7kkkizKYFyZ8x13vXISHyOQNjM62ESVaNtqjHen2sl+h/zSQFnTXlnrl00WAmRRu4c6h/DGJOhjYSHfKdHoNb1fnZHtwBJaB9g/a4dfQALB+5rqqDEFmjGP2Z+GpZSj8YIi/dYkPxQBH3OPRArfTqHur4vdXVSrrwfp2FbWg6b2EVcqF2bKXmLGZQz6PnKQrfHDp64LDS8/7Ydkzi45an2/8SCzdsZ0Kzq1HkDaGISCW1GMSvq75HAToi6j0DkH/2tzeKttcOlUUFtkbiGifdYSKrDCBtO7I6r4sfANNo4TBoyUtC18O6hcSSm7zNfB29yU9lyelmJO3R4DXBTFjGRUqDaaOwGrgGBu8tFPXY6PO68l0eGYYlwbHJ+5SUe3ZRr3ZVjf/+6HUzM9eDzQxlL6XdYHEqZ5KgY5gWaUrEAlSjSYs47oLaiMXxeVbLO1MHC3csCmKMT5mApc49pp0qGCqbQfLufZL3sLOPCS+Ert3oy89VYkdXNdUKgAGFk465DGUU8yIMVRZpWp2vfHO5mP9+P8fVgqDiQvSBpRbfc+bGsCDempNTn+HKb8dGuxahzxSNqxy3mgVv2TmmrW0BK5ptBnMS7O8LFBBk9aQ49yljlDVGr5ZJ7ndL2anIu9qsQ7NTwfzvx5kcnyki8xsQBXOHQgyDhx49+q9Zb4+S+Y/gWseBtTqT8yiGsteYJ2bRQ9T/h2jlVNW8avre6ktM5cURJllL1UEoy8w4TNYTvNeZzbdXcH/RKclsvW/5/we3c3+GVZP+CXNgAxcjEzuhpj7kw8JhGimaQLSuZKg9A48TdiVxOcUwB9QGyV1RLIscBX4fV7N9A+aDQycH1fsBfKw2jjhEQke8bS3vHzfwTatcCz0R280DL1+p3HejgA7o9GCu0Z1SYGOpPLa5u1Gt3BEIvvEt7PNEPM5KfiZScQwrrv2f63WBZ9fBh5/6oCKqmQnMYvs/R4zyblgxIRXjjcYd6bt608n/qT451OpdxSBWIVKi8GbrS7q9ly2xIRy4CkMoOzwbJpIc0etjIG0F8EFb+1ZNCjj88ezwAmfWlp0VE8QTDgsdRRCrUU4Bvk8E4fCNF6qGOIiX573bN9czfnBwUUJbCEQSLWzXPiyn/JQJos7cMCFkGsMpF5YGH1duvszXbOlJtyCgr5Q6D6A0PUoyjCkpRjxT1kQ2oEqnKJl1u9rUiv/NwLFovRT6MQxbHnL54bilToLgc/nRAsqrHcshCEcQAfIcCfEVTBuWZ6z16YRoomdoXESS8N69klrkjI6KXbNZewuBrMq0FeQKUY7eGhCAA0D775sEw9VOs0Ql141XLLlvw4Og1ieNJcFf1mZqOT1VidfnGFrwSXatwp3wwPuh73cPG9L6Ft8aGp0191EQ1T2t+Dk5sjOSXli2mfYhb9PHAazchJnzNgmX5lOe3jSU8ScJKSAFGeZBaa8G8EBy2+Hf4hM+XYEDJfFDYkTJyGc2Dk+pGAkyIBXp3w48ukc08+SU5r0vGV5GRD2MGJ9RO8AAvMgyZrjt7nGmKrprelm0CeTIWlIH4lJSHeD1T4rFZZnmtMZfqlupTcXTWqQiC2wXCwTEDufLkEKDS8OchiZWguspGGh1xWVikT0mxSN5iUZs8y08wHC6QT116i1IifvstapoUv9EDb1wfRs37uqmCEUUcJfMCLFM4LpoxNq22sT/Aix0fTYcEkqHCraGfBLwLjJzBEiF2IISXZK8XDlihp3c1h33EBSdYMfzjNScua6gl0BOAmAa/pCorrZ6x9tE1bjozZ1b8RHYmqn5xKeXobU5OJ36DrIMwon9VY7rCFYZr7oY00GLCTz/F3om4h2+rH+7hyQjXW5yffAFzYw6SORZiY0Hr/D0GEl2NhMTDBz5/EZ6zO3HrYyXm9R6WCqyFqOyzTNO9K/j1+PnXBlcUCES/pPiwnA4Z1NBWlcYluAkkhKkNcYD9ybVu8ybrGAaXnOE48YM/3EmzjNhzcYhs3TKMf0zfMD/2zNLU2Mkk6UeNb/bf6Wtnsgp/oSogZI7OiV/55yT6hD/acOHqSHVzoCCFdsVWnSW3Ie39E9W+8WNhsALa9ors+C9TLPKGa9v/WYjCxIN69+hSElWtZNrB9kjD1F4hx8iwQv0kbJj3OOn8WChMlBFs9nXKaz84IPL07SBdPKzzWQTfNoFx4qqT2rx+r4cXVjs5ib+UXH3LBx/MaaPKav1rS22eezasnCE1Bp+fWqOdCFafKjaX0zWe5PIm8rHhtfjUsytGrHV6a/OF/3oGDlySvPMsIr4KkJLb+fMCm5pjJl0PmzWhAVbpGXFuZrTvThVqIODYm9OARXrq1F4RQ3NuDntcBYemwLH+EYGjkak1enU1mEz6gJHEYtHJXHgPegGjqWRHRWWTbAs3HjSYZY//bL/socoRq8lsX5x50qgcnQCAsAITIFNZhuW+iVtk6fqI82HF0SaRpT/7eXBXMkoXjDjIPjQe1NVLJT6RFsh479TX5L0W+4hdfe0tjAzQ0E05OsnLXKlyqQDI3x7RGaAbZSyh0RQS9YwiT6iLqrUVOHcoqH01+NZiWFwtOb9zMfW50CN1+W1NiawvYjEydBBfV0/ANgC+BE8DZf7gBN8DZXuwYIuadnzPOlVsiUlCDdr+rVzKZ4sNqfVDd/kbJnO+mOwQA8iTBdOLgin8r8vgbgkHcLcHDipUFKfNjoYVTxAGWUvBqiZNd4l8+kedQhhctX3oyk5R0e++lFfR+5bUpRKS/uiAawFk3E5OIaDssqtS83cawlSacSekFESNo5qeGQsIJKWkaWDyCEtfnpZPR2KdWWH9CL0SLde3osOIzD/3PmZTLVd0IMp6jv8P8bL0bQAQyFO0xq6BHVPj/N8G/gAplFTeqTotMAC3WJwNhuPwhYQHAGQUahzezUg34sbFYJ0LZtJPThFTmiYuXbIu9Sr836YjsV8YtZeppwJZpAeMmH15Wza6l15eescdRajacc0iHBKfwzuEpfLsnM31iKcYRpPxyPsrLs1G7lP/XvMA+9yCIWc3IPyTc8VCXizionmmvDNjfunE9Avqho7E9kpSdWNJ5s+WsgxA3Zb/kp9qj6W0IAoT4ura9TTVssgr7hrDjmH60S2xiFkj6fuLCD6Ich0FlARjopRvGZ+HzC/l55QkMOhOX1S6LLzoGDboOFRvpAM27PXDUsV5TGLS6hF8ILwLPNOuV2U7OpNWWYVGJ+ENL5NV93YPvve8hTmH6AUqt6/xmaI71Ks70E+K9u7k7jrb3do8e7pGCi/tLjn257zIxQ0KdiwTkUllHIwTET8rk40oTC7i5KfbSFPDgHGvBdDGrP2CF3DObNXq4AMPb77qilnJ3As7g2Z3sumtWSYQeRBRCGjMX66ViP/272AAV9/VvOhonYUqhv6dDKizBzEQNYzFoyAGHSOCqm+0YlfSa+qBZV3eAv3knnZ4kBtaYukn6mV+0ajHVLxZbl0xb0yZ+p6CKdxbQmkTog1n9lRrLyoZyghy10thfW6gZol6s8QlJ+dJrm119oP+SEtdG22AUyEjKxcsJNB5Eyk+abaf0baTMLcNjOwj7X+/HCGan52sxOdgSvV4IOoi2gaw5ONmT82cgurn1WBQ5etchAu75tE5j8mO4pQ8KWDsdadnvBBaJ3rL95458D9jkWdmN3aL7smlvGEzzErgsHAxTaeQJOup4tJW6arGHUS6+J0p5eWeQvXtnxnmF4GHH230i6RydsrZVUxadhSutGSxeEDR" data-ays-ignore="true"&gt;&lt;/span&gt;<br/>
+  &lt;/form&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

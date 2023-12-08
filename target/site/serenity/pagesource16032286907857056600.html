@@ -1,0 +1,688 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html style="overflow: hidden;"&gt;<br/>
+ &lt;head id="ctl00_Head1"&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/knockout.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/knockout-bindings.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery-ui.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;link href="favicon.ico" rel="shortcut icon" type="image/x-icon"&gt; <br/>
+  &lt;script type="text/javascript" src="./js/lib/jquery.hiddenDimensions.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./js/lib/json-min.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./js/core/master.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./js/core/Popup.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="../JS/lib/tag-it.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;script type="text/javascript" src="./JS/Keywords/Keywords.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" type="text/css" href="css/jquery.tagit.css?v=200610"&gt;<br/>
+  &lt;link rel="stylesheet" type="text/css" href="css/tagit.ui-zendesk.css?v=200610"&gt; <br/>
+  &lt;script type="text/javascript" src="./Content/js/lib/datatables.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;link rel="stylesheet" href="Content/js/lib/datatables.css?v=200610"&gt; <br/>
+  &lt;script type="text/javascript" src="js/SystemSetup/QuickQuerySettings.js?v=200610"&gt;&lt;/script&gt; <br/>
+  &lt;link href="https://oprisk-uat.afreximbank.net/AppA/UI/js/lib/jsTree/themes/default/style.css?v=200610" rel="stylesheet" type="text/css"&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/chosen.jquery.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/select2.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/Translations.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;script type="text/javascript" src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/Common.js?v=200610"&gt;&lt;/script&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink1" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/chosen.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink2" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/select2.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink3" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/onesumx.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink4" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/print.css?v=200610" rel="stylesheet" type="text/css" media="print"&gt;<br/>
+  &lt;meta name="format-detection" content="telephone=no"&gt;<br/>
+  &lt;link id="ctl00_StyleSheetLink5" href="https://oprisk-uat.afreximbank.net/AppA/UI/Content/css/jquery.qtip.min.css?v=200610" rel="stylesheet" type="text/css" media="all"&gt;<br/>
+  &lt;title&gt;<br/>
+	OneSumX<br/>
+&lt;/title&gt;<br/>
+ &lt;/head&gt; <br/>
+ &lt;body onload="OnPageLoad(); " style="min-width: 960px;"&gt; <br/>
+  &lt;form name="aspnetForm" method="post" action="./QuickQuerySettings.aspx?CalledBy=1&amp;dmId=217&amp;PageType=1&amp;Type=C&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" id="aspnetForm" onsubmit="return OnSubmit();" onactivate="SaveOnActivate();" ondeactivate="CompareOnDeActivate();" enctype="multipart/form-data"&gt; <br/>
+   &lt;div&gt; <br/>
+    &lt;input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var theForm = document.forms['aspnetForm'];<br/>
+if (!theForm) {<br/>
+    theForm = document.aspnetForm;<br/>
+}<br/>
+function __doPostBack(eventTarget, eventArgument) {<br/>
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {<br/>
+        theForm.__EVENTTARGET.value = eventTarget;<br/>
+        theForm.__EVENTARGUMENT.value = eventArgument;<br/>
+        theForm.submit();<br/>
+    }<br/>
+}<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZOpr66KL1iv7yPr3oSKKQvFySEH_QRSN8HTwbp02VivQv64_G4gQho6Gp97TSbDCcw2&amp;t=638092594030625477" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=-fCmiEcu3xUgmjOFHhP5L9LzK-ZA1KycWbe3oxCDfoLnL4-otx_fF3cFB8XpiPI_bqw9X3qvRAKHCqkn6dQitd_NHdlTfybUX3U-psQyAG1cbxSb2LVbUxavh2Y2-bf_hFMyv4t53-W6b20qNvTf-YLR3U3MvrIthF6HwsSRZEs1&amp;t=ffffffffda0d40b5" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var hdnDirty='ctl00_hdnDirty';<br/>
+var hdnAlwaysDirty='ctl00_hdnAlwaysDirty';<br/>
+var cDisableAreYouSure=false;<br/>
+var tsUnsavedChanges='There are unsaved changes that will be lost if you proceed.';<br/>
+var tsOKToContinue='Press OK to continue, or Cancel to stay on the current page.';<br/>
+var tsNothingToSave='Nothing to save.';<br/>
+var DisplayButtonsInScroll = false;<br/>
+var userName = "Joshi Franklin";<br/>
+var defaultDateFormat = 'dd MMM yyyy';<br/>
+var defaultTimeFormat = 'HH:mm:ss';<br/>
+var sessionID='qgmp43hfbshk0qvskdpnbacw';<br/>
+var divPopupClientId1='ctl00_divExceptionWarning';<br/>
+var divPopupClientId2='ctl00_divException';<br/>
+var mpeMsgClientId='ctl00_popupMsg';<br/>
+var mpeClientId='ctl00_popup';<br/>
+var mpeWorkingId='ctl00_working';<br/>
+var gbFromLogin=false;<br/>
+var LoadDropdownURL = 'https://oprisk-uat.afreximbank.net/AppA/Services/GenericListSettings.svc/LoadSearchResults/';<br/>
+var WebApiRoot = 'https://oprisk-uat.afreximbank.net/AppA/api/';<br/>
+var gRowErrorId = 'ctl00_divError';<br/>
+var gLblErrorId = 'ctl00_lblError';<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.PrimaryReferencePopup = ARCLOGICS.PrimaryReferencePopup || {};<br/>
+ARCLOGICS.PrimaryReferencePopup.Options = {"ForegroundElement":"ctl00_ifpReferencePopup_pnlIFramePopup","ForegroundElementLeft":"ctl00_ifpReferencePopup_hdnLeft","ForegroundElementTop":"ctl00_ifpReferencePopup_hdnTop","BackgroundElement":"ctl00_ifpReferencePopup_backgroundElement","BackgroundWidth":"ctl00_ifpReferencePopup_hdnWidth","BackgroundHeight":"ctl00_ifpReferencePopup_hdnHeight","SaveButton":null,"CancelButton":"ctl00_ifpReferencePopup_btnCancel","ClearButton":null,"Apply":true,"PopupDimension":55,"CloseOnSave":true,"PopupTitle":null};<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/JS/TimeoutControl.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.are-you-sure.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/js/lib/jsTree/jstree.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var ARCLOGICS = ARCLOGICS || {};<br/>
+ARCLOGICS.Constants = ARCLOGICS.Constants || {};<br/>
+ARCLOGICS.Constants.AM_SWORDAUTH=false;<br/>
+ARCLOGICS.Constants.UIDROPDOWN_SEARCHCOUNT = 10;<br/>
+ARCLOGICS.Constants.UIDROPDOWN_ENABLE = true;<br/>
+ARCLOGICS.Constants.RootPath='https://oprisk-uat.afreximbank.net/AppA/Pages/';<br/>
+ARCLOGICS.Constants.RootPathSur='https://oprisk-uat.afreximbank.net/AppA/Surveys/';<br/>
+ARCLOGICS.Constants.RootPathUI='https://oprisk-uat.afreximbank.net/AppA/UI/';<br/>
+ARCLOGICS.Constants.RootPathAPI='https://oprisk-uat.afreximbank.net/AppAPI/';<br/>
+ARCLOGICS.Constants.Lang = 'AFB';<br/>
+ARCLOGICS.Constants.TextDir= 'LTR';<br/>
+ARCLOGICS.Constants.BaseCcy= 'USD';<br/>
+ARCLOGICS.Constants.RootPath='https://oprisk-uat.afreximbank.net/AppA/Pages/';<br/>
+ARCLOGICS.Constants.BaseRoot='https://oprisk-uat.afreximbank.net/';<br/>
+ARCLOGICS.Constants.DefaultRTBFontFamily='verdana';<br/>
+ARCLOGICS.Constants.DefaultRTBFontSize='8';<br/>
+ARCLOGICS.Constants.RTBFonts='calibri';<br/>
+var imgMinus='../images//minus.gif';<br/>
+var imgPlus='../images//plus.gif';<br/>
+var gsNoneOption =" --None-- ";<br/>
+var gbIsPostBack=false;<br/>
+var sessionTimeoutWarning=30;<br/>
+var sessionTimeout=60;<br/>
+var sessionID='qgmp43hfbshk0qvskdpnbacw';<br/>
+var sessionRAAutoSave=0;<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/js/Dates/date-en-IE.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/js/DateCombos.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/js/translations/langAFB.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="https://oprisk-uat.afreximbank.net/AppA/UI/Content/js/lib/jquery.qtip.min.js?v=200610" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+ValidatorOnChangeBuilder();var gbIsAdding=true;<br/>
+var gMultEditDelay=100;<br/>
+var gScrollPosition='ctl00_hdScrollPosition';<br/>
+var __cultureInfo = {"name":"en-IE","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":".","IsReadOnly":false,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":",","CurrencySymbol":"€","NaNSymbol":"NaN","CurrencyNegativePattern":1,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":".","NumberGroupSeparator":",","CurrencyPositivePattern":0,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":".","PercentGroupSeparator":",","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"AM","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402293599999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":false},"DateSeparator":"/","FirstDayOfWeek":0,"CalendarWeekRule":2,"FullDateTimePattern":"dddd d MMMM yyyy HH:mm:ss","LongDatePattern":"dddd d MMMM yyyy","LongTimePattern":"HH:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"PM","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd/MM/yyyy","ShortTimePattern":"HH:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"ShortestDayNames":["Su","Mo","Tu","We","Th","Fr","Sa"],"DayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"AbbreviatedMonthNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthNames":["January","February","March","April","May","June","July","August","September","October","November","December",""],"IsReadOnly":false,"NativeCalendarName":"Gregorian Calendar","AbbreviatedMonthGenitiveNames":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],"MonthGenitiveNames":["January","February","March","April","May","June","July","August","September","October","November","December",""]},"eras":[1,"AD",null,0]};//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvjgXrq4Zffc3rxmW1FpQeuyVZ5bXSAvQYwdfEoMfgt-Bh1vb53YzbB5XVmOGzh8iEMCeVxmu-dFHm-jtus7zA2eeYlV9zrg1j0QapgoBEZcztv_-JJwdHMGJAHGFylavbrDM8AdnXSwEu1CMiZDfq4w1&amp;t=10c151ff" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OMJWVkZaQZofQ3V-X4w5Qzk4NRFSWMPyKICcNx02mmsYtOc3giyPf8QDu6bcPhUoBcyljj3NrUqVeXQNw9yZraOtoBUNWsCUp0rAKuf2og6MRGUp6A9wO53llH_24iZlB6UGd-a31IeHiJg9aFBHNvc1&amp;t=10c151ff" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=eE6V8nDbUVn0gtG6hKNX_Iw-h66XQshgDa8XbU6kkgPmtXve-Dw4rQTAYzh--kLDo3lEIQW0dNZLQv1v8t9rOZv57PO19r0XMfeIW0fXTAdtJgqo-8lGSXKgWnHbeF0T0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=mcAASOSteirJeuV-3by3Uca1JwyJFCF-2HRdlcvPzsllfBLdBtDD3zfo7rO3uExFh5zNiy4TaETh3HaxkLpHVrE-1TO0Q1pXpDNegLmE0101&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=jwf4VSQi7LeShc44FJ-gATP8HdB7fZLmnawQnWV4hoBvD2S9smbR9HXAzS08hnzwxebFlttLQqkcIFuae1EiDc4YN6x6cbMv9Ue1BxC4oLCp_An28cB_3vHXI_JhQ3du0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=nai7mGcYyE2dix_TwveLDSyNMXf3TAwfZ6XJjTQ0y7pDBPYWQKzoAVIvB0a0GeGmRbkHXcfzf8cGTSYQ95VfbsW8jUI8AC68Mox36PXw8NwnltV5iJMSHQ-ofhwGD94T0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=yDT7ulzE00Yqzs5zd38bJ2w9JGn1srU61yZa46m_pEdbZUydbTjizMTjhM-rZxPidrxkIIYgbuSsvkgKlI5aoNwY0mS4FDMKLx1hvNiwIpK9p2Q68RLuZj6TbKi3aTfC0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=HEFpVKbnoeQjkjHkFKu3MLN6y9u1UoaZ1jLOqq8LK5y1P4jfzv75dXL2JbKvRzOUd8UL-fqvt9Se5Llk3Kv7shgeUOYzwOlgYIWcT3P33rVEI1i3iXMYggxsemk6zPUz0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=5ib3lCcyinHeLQmkwMF7EmwV0qnW4jUyc_C55BcG7phMqdlPaZgQ6LnyW7Ax0rvmE5bCOJ0ZmCcUH-g9GZIvPbmo21yfjOGW6EPHhcYk5Dk0iLQeLRtr6fHECUMCk9yQ0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=iON9Jxe8QCRam1nkdNLgke98AoZd1jmB2R9fNWoubMvqkesgZu3rXd2i1_hUASV5kRgEUuUK86ysSYqzuErlzyU9VKE4bKJ0dfMLwpT-FNC26NFtoGPtHEzydBr-fUGP0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=xGmPTKfsNy0_1Sr5I58kO_OERHPNL28pbhKL9wgSIOk9-wPxolYq66BqVmUlhnFfzFzybJZK2Ab4X09axFxyyf-2HaEJhCA70O2omw6lu_vYNY9K-LFlhXjy9v7JcQcr0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=LQ1q2RBSthBAZhliMjtG_8glOCAO8I5TOU16JZ05E8ekQziKgyO3N6_zgwR77VbN-C81TG1jAVmL1sV26-KLyQwO9T4HoaEaWDFG7MXUDii3dtOd2fxsxnCaPiC-uVaa0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=VOYD8Xe7kQA0lniBYXVpAouv61GNcDHRRAi7I7Pahhb6vNhhRIecACQ6hZLvNyRnB0WX6-Zxy_9EkZCfsEVxGnLY2sstmQhmoEXznYgbXdk9oSwNiLGzVsYn_zh9u81B0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=hOeJu0xhC-uW6Gf8ooKdXn3t0sDYjKCjw-_q6-LtuQ6LvkMOqwTgTlpxC1XeEjeXG0be-_VcLh6ZvhcIBO5yqA2v8V6f2ofA13qZ83GZm6c8PLI3Vta6gArsltsCo7nU0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script src="/AppA/UI/ScriptResource.axd?d=XlV9GqTk6b5uqDuL38kZ4NZns1KHLk2xw2g6boOGA1HKt_X6fsvmzsK2uU2eJto7WMgEdKqUdd4NpGd7mohSiF9y-F4I1MoVErz_RyuURrWNTZg9favHC5jm4ypX966n0&amp;t=ffffffffb56adc1f" type="text/javascript"&gt;&lt;/script&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', ['tctl00$up',''], [], ['ctl00$btnSave','','ctl00$btnCancel',''], 300, 'ctl00');<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;input type="hidden" name="ctl00$hdScrollPosition" id="ctl00_hdScrollPosition" data-ays-ignore="true"&gt; &lt;button onclick="__doPostBack('ctl00$navBar$evtQuickAccess','')" id="ctl00_navBar_evtQuickAccess" style="display:none;"&gt;&lt;/button&gt;<br/>
+   &lt;div id="wk_header"&gt;<br/>
+    &lt;div id="wk_page_header" class="clearfix admin_active"&gt;<br/>
+     &lt;div id="wk_logo"&gt;<br/>
+      &lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Home.aspx?nbc=Y&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" title="Go to home" tabindex="1"&gt;&lt;span class="wkicon_logo"&gt;&lt;/span&gt;&lt;span class="hidden_text"&gt;OneSumX&lt;/span&gt;&lt;/a&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_navigation"&gt;<br/>
+      &lt;ul id="wk_main_nav" class="wk_nav clearfix"&gt;<br/>
+       &lt;li menu="2"&gt;&lt;a&gt;Home&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="3" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Home.aspx?NoRedirect=Y&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Home&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="4" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Dashboard.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="141" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Workspace.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Workspace&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="8" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Reporting/ReportListConsol.aspx?Type=1&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Reports&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="90" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ManageScheduledReports.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Scheduled Items&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="144" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ClarificationList.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Clarifications&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="146" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/KeywordList.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Tags&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="9"&gt;&lt;a&gt;Risks&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="10" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RM_Maintain.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Risk &amp; Control Maps&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="13" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/RMAPRFlatList.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="11" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/RA_RiskAssessmentList.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Risk &amp; Control Self-Assessment (RCSA)&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="16"&gt;&lt;a&gt;Controls&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="17" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PA_ControlSignoffList.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Control Signoff&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="20" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/PA_Reassign.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Reassign PA Reports&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="84" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/PA_ApprovalOverride.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Override PA Reports&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="21"&gt;&lt;a&gt;Control Gap Management&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="22" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/IssueList.aspx?showList=Y&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Control Gap Management&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="25" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/CIL_QuickQuery.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="26" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/QueryIssue_List.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Saved Queries&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="24" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/CIL_ListWrapper24a.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Issue Wrappers&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="27"&gt;&lt;a&gt;Incidents/Losses&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="28" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/EO_ListEvents.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Incidents/Losses&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="30" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_SearchQuick.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Quick Query&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="31" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_ManageQueries.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Saved Queries&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="32" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_ReassignApprover.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Reassign Incident/Loss Approval&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="33"&gt;&lt;a&gt;Key Risk Indicators (KRIs)&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="140" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ManagePeriodicIndicator.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Periodic Key Risk Indicators (KRIs)&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="73" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Cycle_List.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Indicator Statement Cycles&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="47"&gt;&lt;a&gt;Libraries&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="48" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWRTree.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Risk&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="49" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWCTree.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Control&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="107" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/IndicatorRegister_Maintain.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Indicator&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="53" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/LibraryList.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Question Set&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="54" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Web/AuthSource?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Authoritative Source&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="57" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/KeyAssetTreeExplorer.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Assets&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+      &lt;ul id="wk_admin_nav" class="wk_nav clearfix active"&gt;<br/>
+       &lt;li menu="64" tabindex="0"&gt;&lt;a&gt;Organisation&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="65" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/OrganisationUnitTree.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Organisation Unit&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="66" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/PersonList.aspx?CalledBy=0&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Person&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="67" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ORG_BusinessEntityMaintain.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Business Entities&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="125" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/ProductLineTree.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Product Lines&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="68" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/SystemSetup/UserGroupList.aspx?CalledBy=0&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;User Groups&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="69" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EO_MaintainCCY.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Currencies&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="56" tabindex="0"&gt;&lt;a&gt;Risk Framework&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="59" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RM_Builder.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Risk Map Builder&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="60" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Statement_List.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Indicator Statements&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="58" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/SurveyList.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Questionnaires&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="78" tabindex="0"&gt;&lt;a&gt;Task Admin&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="76" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RA_OrgUnitSelect.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Generate Risk &amp; Control Self-Assessment (RCSA)&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="79" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RequirementList.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Requirements&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="80" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/OccurrenceMonitoring.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Monitoring&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="103" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Surveys/SurveyInstanceList.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Surveys&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="85" tabindex="0"&gt;&lt;a&gt;Tech Admin &lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="86" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Job_Maintain.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Scheduled Jobs&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="87" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/EmailConfiguration.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Emails&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="88" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Job_Archive.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Archiving&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="89" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/AuditReport.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Auditing&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="92" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Reference_Register.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;References&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="94" tabindex="0"&gt;&lt;a&gt;Data Loading&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="95" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/DataLoaders.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Data Loaders&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="101" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/AssignLoaderIds.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Assign Loader Ids&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="96" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/Import_List.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Manage Import Files&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="122" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Metric/MIVILoader.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Indicator Value Loader&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="129" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/DataFeedList.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Data Feeds&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="149" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ManageDocumentTransferConfig.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Document Transfer Configuration&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+       &lt;li menu="121" class="active" tabindex="0"&gt;&lt;a&gt;System Settings&lt;/a&gt;<br/>
+        &lt;ul&gt;<br/>
+         &lt;li submenu="118" tabindex="-1" class="active"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ConfigurationOptions.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Configuration Options&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li submenu="117" tabindex="-1"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/DataLookups.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35" tabindex="-1"&gt;Data Lookups&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+      &lt;div id="wk_admin_toggle" aria-label="Expand Admin Menu" role="button" tabindex="0"&gt;<br/>
+       &lt;a href="javascript: void[0]" title="View Business Menu" class="active"&gt;&lt;span class="wkicon_admin"&gt;&lt;/span&gt;&lt;/a&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_member"&gt;<br/>
+      &lt;ul id="wk_member_nav" class="wk_dropdown"&gt;<br/>
+       &lt;li&gt;&lt;span class="wk_member_link" aria-label="Expand Person Menu" tabindex="0" role="button" onclick="ARCLOGICS.navmenu.profileMenu(); return false;"&gt;&lt;span class="wkicon_profile"&gt;&lt;/span&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;<br/>
+        &lt;ul id="wk_member_nav_ul"&gt;<br/>
+         &lt;li&gt;<br/>
+          &lt;div class="wk_member_panel"&gt;<br/>
+           &lt;div class="wk_member_title"&gt;<br/>
+            Username<br/>
+           &lt;/div&gt;<br/>
+           &lt;div class="wk_member_name"&gt;<br/>
+            Joshi Franklin<br/>
+           &lt;/div&gt;<br/>
+          &lt;/div&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainPerson.aspx?fromcontext=Y&amp;self=Y&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35&amp;nbc=Y"&gt;Details&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/ChangePassword.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35&amp;nbc=Y"&gt;Product Ext. password&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MyS_Panels.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35&amp;nbc=Y"&gt;Workspace Settings&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/About.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35&amp;nbc=Y"&gt;About&lt;/a&gt;&lt;/li&gt;<br/>
+         &lt;li&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/Logout.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35&amp;nbc=Y"&gt;Logout&lt;/a&gt;&lt;/li&gt;<br/>
+        &lt;/ul&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div id="wk_page_subheader" class="clearfix"&gt;<br/>
+     &lt;div id="wk_page_subheader_left"&gt;<br/>
+      &lt;ul class="clearfix"&gt;<br/>
+       &lt;li id="wk_page_history"&gt;<br/>
+        &lt;div class="wk_dropdown_container position_left"&gt;<br/>
+         &lt;div class="wk_dropdown_btn"&gt;<br/>
+          &lt;button type="button" class="btn_normal btn_icon_only btn_no_border btn_dropdown" onclick="ARCLOGICS.navmenu.dropdownMenu(historyOptions); return false;" aria-label="Navigate Back List" role="buttton" tabindex="0"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_back"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_helper"&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="historyOptions" class="wk_dropdown_panel position_left"&gt;<br/>
+          &lt;ul class="menu_list"&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/UI/QuickQuerySettings.aspx?CalledBy=1&amp;dmId=217&amp;PageType=1&amp;Type=C&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35&amp;nbc=Y"&gt;Incident/Loss Quick Query Settings&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/Pages/ConfigurationOptions.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35&amp;nbc=Y"&gt;Settings&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li&gt;&lt;a href="/AppA/UI/Workspace.aspx?r2055=b7b53743-0c10-40a3-82ba-de2a4530dec4&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35&amp;nbc=Y"&gt;Workspace&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;/li&gt;<br/>
+       &lt;li id="wk_page_title"&gt;&lt;h1&gt;Incident/Loss Quick Query Settings&lt;/h1&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div id="wk_page_subheader_right"&gt;<br/>
+      &lt;ul class="clearfix"&gt;<br/>
+       &lt;li&gt;&lt;button type="button" class="btn_normal btn_icon_only btn_border" onclick="try{openNamedBox('https://oprisk-uat.afreximbank.net/AppA/Help/Online Help/Default.htm#AdminGuide/Defining Incident Quick Query Pages.htm', 1000, 500, 'ArcLogicsHelpWindow');}catch(e){}; return false;" title="View Help"&gt;&lt;span class="btn_icon"&gt;&lt;span class="wkicon_help"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;<br/>
+       &lt;li&gt;<br/>
+        &lt;div class="wk_dropdown_container"&gt;<br/>
+         &lt;div class="wk_dropdown_btn"&gt;<br/>
+          &lt;button type="button" class="btn_normal btn_group_left btn_border" onclick="return CancelChangesAndRedirectToPage('https://oprisk-uat.afreximbank.net/AppA/UI/AuthoritativeSourceAddEdit.aspx?fromcontext=Y&amp;CalledBy=3&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35')" aria-label="Add Authoritative Source"&gt;&lt;span class="btn_icon btn_icon_spacer"&gt;&lt;span class="wkicon_add"&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="btn_text"&gt;Authoritative Source&lt;/span&gt;&lt;/button&gt;&lt;button type="button" class="btn_normal btn_icon_only btn_group_right btn_border btn_dropdown" onclick="ARCLOGICS.navmenu.dropdownMenu(quickAddOptions); return false;"&gt;&lt;span class="btn_helper"&gt;&lt;span class="wkicon_carrot_down"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div id="quickAddOptions" class="wk_dropdown_panel position_right"&gt;<br/>
+          &lt;ul class="menu_list"&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl00_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/AuthoritativeSourceAddEdit.aspx?fromcontext=Y&amp;CalledBy=3&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35"&gt;Authoritative Source&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl01_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWCAddEdit.aspx?fromcontext=Y&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35"&gt;Groupwide Control&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl02_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/GWRAddEdit.aspx?fromcontext=Y&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35"&gt;Groupwide Risk&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl03_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/UI/HeadlineIndicatorAdd.aspx?fromcontext=Y&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35"&gt;Headline Indicator&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl04_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/RaiseIssue.aspx?r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35"&gt;Issue&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl05_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Pages/MaintainPerson.aspx?fromcontext=Y&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35"&gt;Person&lt;/a&gt;&lt;/li&gt;<br/>
+           &lt;li id="ctl00_navBar_ctl209_rptAddList_ctl06_li"&gt;&lt;a href="https://oprisk-uat.afreximbank.net/AppA/Reporting/UserReportDataSelect.aspx?fromcontext=Y&amp;r860049=8103e5e2-179d-4c6d-ad46-d3528bf72c35"&gt;User Report&lt;/a&gt;&lt;/li&gt;<br/>
+          &lt;/ul&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;&lt;/li&gt;<br/>
+      &lt;/ul&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="content-container"&gt; <br/>
+    &lt;div id="ctl00_divPageTitle" class="page-title-container" style="display:none; height:0px"&gt; <br/>
+     &lt;div class="page-title" tabindex="0"&gt; &lt;span id="ctl00_lblTitle" class="title"&gt;&lt;/span&gt; <br/>
+      &lt;div class="page-title-extras-right"&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;br class="clear"&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="page-title-extras-left"&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div id="ctl00_mainContainer" class="main-container"&gt; <br/>
+     &lt;div id="ctl00_up"&gt; <br/>
+      &lt;div id="boxOuter"&gt; <br/>
+       &lt;div id="boxInner"&gt; <br/>
+        &lt;div id="ctl00_rightPane"&gt; <br/>
+         &lt;div class="warning-container" aria-live="assertive"&gt; &lt;span id="ctl00_lblWarning" class="warning" style="display: none;"&gt;&lt;/span&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="ctl00_divError" class="error-container" aria-live="assertive" style="display: none;"&gt; &lt;span id="ctl00_lblError" class="error" style="display:none;"&gt;&lt;/span&gt; <br/>
+          &lt;div id="ctl00_vldError" class="error" style="color:Red;display:none;"&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div id="ctl00_contextcontainer" class="form-context-container"&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="form-scrollable-container" onscroll="return RememberScrollPosition();"&gt; <br/>
+          &lt;div class="form-content-container scroll-button" onscroll="return RememberScrollPosition();" style="height: 534.2px;"&gt; <br/>
+           &lt;div id="ctl00_contextcontainerpath" class="form-context-container-path"&gt; <br/>
+           &lt;/div&gt; <br/>
+           &lt;div class="ui-helper-IE7-table-width"&gt; <br/>
+            &lt;ul id="ctl00_content_ulSearchRows" class="template-items-sortable ui-sortable"&gt; <br/>
+             &lt;div id="ctl00_content_divRows"&gt; <br/>
+              &lt;table cellspacing="0" width="100%" border="0" cellpadding="2" class="connectedSortable"&gt; <br/>
+               &lt;tbody class="ui-sortable"&gt;<br/>
+                &lt;tr class="tableHeader"&gt; <br/>
+                 &lt;th style="width:.5%;"&gt; &lt;/th&gt; <br/>
+                 &lt;th&gt; &lt;span id="ctl00_content_rptRows_ctl00_lblHeaderDataItem"&gt;Data Item&lt;/span&gt; &lt;/th&gt; <br/>
+                 &lt;th&gt; &lt;span id="ctl00_content_rptRows_ctl00_lblHeaderVisible"&gt;Visible&lt;/span&gt; &lt;/th&gt; <br/>
+                 &lt;th&gt; &lt;span id="ctl00_content_rptRows_ctl00_lblHeaderDescription"&gt;Description&lt;/span&gt; &lt;/th&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl01$hdnDataItemId" id="ctl00_content_rptRows_ctl01_hdnDataItemId" value="296" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl01$hdnScreenOrder" id="ctl00_content_rptRows_ctl01_hdnScreenOrder" value="1" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl01_lblDataItem" class="bodyText"&gt;ID&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl01_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl01$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl01_lblDescription" class="bodyText"&gt;This allows you you to search by Incident/Loss Id using a range.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl02$hdnDataItemId" id="ctl00_content_rptRows_ctl02_hdnDataItemId" value="546" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl02$hdnScreenOrder" id="ctl00_content_rptRows_ctl02_hdnScreenOrder" value="1" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl02_lblDataItem" class="bodyText"&gt;Clarifications&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl02_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl02$chkVisible"&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl02_lblDescription" class="bodyText"&gt;This is a Yes/No checkbox which allows the user to search on whether a loss has clarifications. &lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl03$hdnDataItemId" id="ctl00_content_rptRows_ctl03_hdnDataItemId" value="547" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl03$hdnScreenOrder" id="ctl00_content_rptRows_ctl03_hdnScreenOrder" value="2" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl03_lblDataItem" class="bodyText"&gt;Unread Clarification Responses&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl03_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl03$chkVisible"&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl03_lblDescription" class="bodyText"&gt;This is a Yes/No checkbox which allows the user to search on whether a loss has unread clarification responses. &lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl04$hdnDataItemId" id="ctl00_content_rptRows_ctl04_hdnDataItemId" value="297" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl04$hdnScreenOrder" id="ctl00_content_rptRows_ctl04_hdnScreenOrder" value="2" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl04_lblDataItem" class="bodyText"&gt;Organisation Unit(s)&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl04_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl04$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl04_lblDescription" class="bodyText"&gt;This is a multiselect field which allows you to search by Organisation unit.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl05$hdnDataItemId" id="ctl00_content_rptRows_ctl05_hdnDataItemId" value="516" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl05$hdnScreenOrder" id="ctl00_content_rptRows_ctl05_hdnScreenOrder" value="3" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl05_lblDataItem" class="bodyText"&gt;Current Responsible Originator&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl05_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl05$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl05_lblDescription" class="bodyText"&gt;This is a dropdown field which allows the user to search on the Current Responsible Originator.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable hoverBar"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl06$hdnDataItemId" id="ctl00_content_rptRows_ctl06_hdnDataItemId" value="517" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl06$hdnScreenOrder" id="ctl00_content_rptRows_ctl06_hdnScreenOrder" value="4" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl06_lblDataItem" class="bodyText"&gt;Current Approver&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl06_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl06$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl06_lblDescription" class="bodyText"&gt;This is a dropdown field which allows the user to search on the Current Approver.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl07$hdnDataItemId" id="ctl00_content_rptRows_ctl07_hdnDataItemId" value="520" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl07$hdnScreenOrder" id="ctl00_content_rptRows_ctl07_hdnScreenOrder" value="4" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl07_lblDataItem" class="bodyText"&gt;Current Approver Group&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl07_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl07$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl07_lblDescription" class="bodyText"&gt;This is a dropdown field which allows the user to search on the Current Approver Group.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl08$hdnDataItemId" id="ctl00_content_rptRows_ctl08_hdnDataItemId" value="298" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl08$hdnScreenOrder" id="ctl00_content_rptRows_ctl08_hdnScreenOrder" value="5" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl08_lblDataItem" class="bodyText"&gt;Primary Target OU Local Currency&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl08_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl08$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl08_lblDescription" class="bodyText"&gt;This is a dropdown which allows you to search on the Primary Target OU Local Currency.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl09$hdnDataItemId" id="ctl00_content_rptRows_ctl09_hdnDataItemId" value="299" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl09$hdnScreenOrder" id="ctl00_content_rptRows_ctl09_hdnScreenOrder" value="6" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl09_lblDataItem" class="bodyText"&gt;Local Reference&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl09_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl09$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl09_lblDescription" class="bodyText"&gt;Textbox field which allows you to search by an internal reference.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl10$hdnDataItemId" id="ctl00_content_rptRows_ctl10_hdnDataItemId" value="458" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl10$hdnScreenOrder" id="ctl00_content_rptRows_ctl10_hdnScreenOrder" value="7" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl10_lblDataItem" class="bodyText"&gt;Target OU Code&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl10_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl10$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl10_lblDescription" class="bodyText"&gt;This is a textbox which allows you to search on Target OU Code.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl11$hdnDataItemId" id="ctl00_content_rptRows_ctl11_hdnDataItemId" value="300" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl11$hdnScreenOrder" id="ctl00_content_rptRows_ctl11_hdnScreenOrder" value="8" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl11_lblDataItem" class="bodyText"&gt;Split&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl11_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl11$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl11_lblDescription" class="bodyText"&gt;Yes/No Checkbox which allows you to search for Split incidents/losses.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl12$hdnDataItemId" id="ctl00_content_rptRows_ctl12_hdnDataItemId" value="301" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl12$hdnScreenOrder" id="ctl00_content_rptRows_ctl12_hdnScreenOrder" value="9" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl12_lblDataItem" class="bodyText"&gt;Status&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl12_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl12$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl12_lblDescription" class="bodyText"&gt;Checkbox fields which allow you to search by Statuses.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl13$hdnDataItemId" id="ctl00_content_rptRows_ctl13_hdnDataItemId" value="302" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl13$hdnScreenOrder" id="ctl00_content_rptRows_ctl13_hdnScreenOrder" value="10" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl13_lblDataItem" class="bodyText"&gt;Date Discovered&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl13_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl13$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl13_lblDescription" class="bodyText"&gt;This is a Date field which allows you to search by the Date Discovered.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl14$hdnDataItemId" id="ctl00_content_rptRows_ctl14_hdnDataItemId" value="303" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl14$hdnScreenOrder" id="ctl00_content_rptRows_ctl14_hdnScreenOrder" value="11" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl14_lblDataItem" class="bodyText"&gt;Date Resolved&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl14_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl14$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl14_lblDescription" class="bodyText"&gt;This is a Date field which allows you to search by the Date Resolved.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl15$hdnDataItemId" id="ctl00_content_rptRows_ctl15_hdnDataItemId" value="304" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl15$hdnScreenOrder" id="ctl00_content_rptRows_ctl15_hdnScreenOrder" value="12" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl15_lblDataItem" class="bodyText"&gt;Value&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl15_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl15$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl15_lblDescription" class="bodyText"&gt;This is a from and to textbox which allows the user to search on a value range for the Total Estimated Amount in the base currency and for the Total Actual Amount in the base currency.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl16$hdnDataItemId" id="ctl00_content_rptRows_ctl16_hdnDataItemId" value="534" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl16$hdnScreenOrder" id="ctl00_content_rptRows_ctl16_hdnScreenOrder" value="12" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl16_lblDataItem" class="bodyText"&gt;Estimated Value Total&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl16_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl16$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl16_lblDescription" class="bodyText"&gt;This is a from and to textbox which allows the user to search on a value range for the Total Estimated Amount in the base currency.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl17$hdnDataItemId" id="ctl00_content_rptRows_ctl17_hdnDataItemId" value="535" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl17$hdnScreenOrder" id="ctl00_content_rptRows_ctl17_hdnScreenOrder" value="12" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl17_lblDataItem" class="bodyText"&gt;Actual Value Total&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl17_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl17$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl17_lblDescription" class="bodyText"&gt;This is a from and to textbox which allows the user to search on a value range for the Total Actual Amount in the base currency.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl18$hdnDataItemId" id="ctl00_content_rptRows_ctl18_hdnDataItemId" value="536" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl18$hdnScreenOrder" id="ctl00_content_rptRows_ctl18_hdnScreenOrder" value="12" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl18_lblDataItem" class="bodyText"&gt;Notional Value Total&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl18_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl18$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl18_lblDescription" class="bodyText"&gt;This is a from and to textbox which allows the user to search on a value range for the Total Notional Amount in the base currency.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl19$hdnDataItemId" id="ctl00_content_rptRows_ctl19_hdnDataItemId" value="305" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl19$hdnScreenOrder" id="ctl00_content_rptRows_ctl19_hdnScreenOrder" value="13" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl19_lblDataItem" class="bodyText"&gt;Cause Level 1&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl19_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl19$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl19_lblDescription" class="bodyText"&gt;This is a dropdown field which allows you to search on the Incident/Loss Cause.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl20$hdnDataItemId" id="ctl00_content_rptRows_ctl20_hdnDataItemId" value="306" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl20$hdnScreenOrder" id="ctl00_content_rptRows_ctl20_hdnScreenOrder" value="14" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl20_lblDataItem" class="bodyText"&gt;Cause Level 2&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl20_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl20$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl20_lblDescription" class="bodyText"&gt;This is a dropdown field which allows you to search on the Incident/Loss Cause. Dependent on Cause Level 1.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl21$hdnDataItemId" id="ctl00_content_rptRows_ctl21_hdnDataItemId" value="307" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl21$hdnScreenOrder" id="ctl00_content_rptRows_ctl21_hdnScreenOrder" value="15" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl21_lblDataItem" class="bodyText"&gt;Cause Level 3&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl21_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl21$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl21_lblDescription" class="bodyText"&gt;This is a dropdown field which allows you to search on the Incident/Loss Cause. Dependent on Cause Level 2.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl22$hdnDataItemId" id="ctl00_content_rptRows_ctl22_hdnDataItemId" value="308" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl22$hdnScreenOrder" id="ctl00_content_rptRows_ctl22_hdnScreenOrder" value="17" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl22_lblDataItem" class="bodyText"&gt;Incident/Loss Type Level 1&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl22_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl22$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl22_lblDescription" class="bodyText"&gt;This is a dropdown field which allows you to search on the Incident/Loss Type.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl23$hdnDataItemId" id="ctl00_content_rptRows_ctl23_hdnDataItemId" value="309" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl23$hdnScreenOrder" id="ctl00_content_rptRows_ctl23_hdnScreenOrder" value="18" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl23_lblDataItem" class="bodyText"&gt;Incident/Loss Type Level 2&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl23_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl23$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl23_lblDescription" class="bodyText"&gt;This is a dropdown field which allows you to search on the Incident/Loss Type. Dependent on Incident/Loss Type 1.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl24$hdnDataItemId" id="ctl00_content_rptRows_ctl24_hdnDataItemId" value="310" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl24$hdnScreenOrder" id="ctl00_content_rptRows_ctl24_hdnScreenOrder" value="19" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl24_lblDataItem" class="bodyText"&gt;Incident/Loss Type Level 3&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl24_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl24$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl24_lblDescription" class="bodyText"&gt;This is a dropdown field which allows you to search on the Incident/Loss Type. Dependent on Incident/Loss Type 2.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl25$hdnDataItemId" id="ctl00_content_rptRows_ctl25_hdnDataItemId" value="311" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl25$hdnScreenOrder" id="ctl00_content_rptRows_ctl25_hdnScreenOrder" value="20" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl25_lblDataItem" class="bodyText"&gt;Incident/Loss Potential&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl25_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl25$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl25_lblDescription" class="bodyText"&gt;This is a dropdown field which allows you to search on the incident/loss potential for a loss.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl26$hdnDataItemId" id="ctl00_content_rptRows_ctl26_hdnDataItemId" value="312" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl26$hdnScreenOrder" id="ctl00_content_rptRows_ctl26_hdnScreenOrder" value="21" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl26_lblDataItem" class="bodyText"&gt;Root Cause&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl26_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl26$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl26_lblDescription" class="bodyText"&gt;This is a dropdown field which allows you to search on the root cause for a incident/loss.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl27$hdnDataItemId" id="ctl00_content_rptRows_ctl27_hdnDataItemId" value="313" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl27$hdnScreenOrder" id="ctl00_content_rptRows_ctl27_hdnScreenOrder" value="22" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl27_lblDataItem" class="bodyText"&gt;Regulatory Breach&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl27_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl27$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl27_lblDescription" class="bodyText"&gt;This is a Yes/No checkbox which allows the user to search on whether the incident/loss was a Regulatory Breach.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl28$hdnDataItemId" id="ctl00_content_rptRows_ctl28_hdnDataItemId" value="314" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl28$hdnScreenOrder" id="ctl00_content_rptRows_ctl28_hdnScreenOrder" value="23" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl28_lblDataItem" class="bodyText"&gt;Mandate Breach&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl28_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl28$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl28_lblDescription" class="bodyText"&gt;This is a Yes/No checkbox which allows the user to search on whether the incident/loss was a Mandate Breach.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl29$hdnDataItemId" id="ctl00_content_rptRows_ctl29_hdnDataItemId" value="315" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl29$hdnScreenOrder" id="ctl00_content_rptRows_ctl29_hdnScreenOrder" value="24" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl29_lblDataItem" class="bodyText"&gt;Complaint&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl29_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl29$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl29_lblDescription" class="bodyText"&gt;This is a Yes/No checkbox which allows the user to search on whether the incident/loss was a Complaint.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl30$hdnDataItemId" id="ctl00_content_rptRows_ctl30_hdnDataItemId" value="316" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl30$hdnScreenOrder" id="ctl00_content_rptRows_ctl30_hdnScreenOrder" value="25" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl30_lblDataItem" class="bodyText"&gt;Pricing Error Flag&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl30_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl30$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl30_lblDescription" class="bodyText"&gt;This is a Yes/No checkbox which allows the user to search on whether the incident/loss was a Pricing Error.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl31$hdnDataItemId" id="ctl00_content_rptRows_ctl31_hdnDataItemId" value="317" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl31$hdnScreenOrder" id="ctl00_content_rptRows_ctl31_hdnScreenOrder" value="26" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl31_lblDataItem" class="bodyText"&gt;Operational Error&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl31_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl31$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl31_lblDescription" class="bodyText"&gt;This is a Yes/No checkbox which allows the user to search on whether the incident/loss was an Operational error.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl32$hdnDataItemId" id="ctl00_content_rptRows_ctl32_hdnDataItemId" value="318" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl32$hdnScreenOrder" id="ctl00_content_rptRows_ctl32_hdnScreenOrder" value="27" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl32_lblDataItem" class="bodyText"&gt;Commercial Gesture&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl32_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl32$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl32_lblDescription" class="bodyText"&gt;This is a Yes/No checkbox which allows the user to search on whether the incident/loss was a Commerical Gesture.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl33$hdnDataItemId" id="ctl00_content_rptRows_ctl33_hdnDataItemId" value="522" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl33$hdnScreenOrder" id="ctl00_content_rptRows_ctl33_hdnScreenOrder" value="29" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl33_lblDataItem" class="bodyText"&gt;Incident/Loss Id&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl33_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl33$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl33_lblDescription" class="bodyText"&gt;This allows users to search on a specific incident/loss id.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl34$hdnDataItemId" id="ctl00_content_rptRows_ctl34_hdnDataItemId" value="523" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl34$hdnScreenOrder" id="ctl00_content_rptRows_ctl34_hdnScreenOrder" value="30" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl34_lblDataItem" class="bodyText"&gt;Title&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl34_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl34$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl34_lblDescription" class="bodyText"&gt;This allows users search on an incident/loss title.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl35$hdnDataItemId" id="ctl00_content_rptRows_ctl35_hdnDataItemId" value="524" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl35$hdnScreenOrder" id="ctl00_content_rptRows_ctl35_hdnScreenOrder" value="31" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl35_lblDataItem" class="bodyText"&gt;Template Names&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl35_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl35$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl35_lblDescription" class="bodyText"&gt;This is a multiselect fields in which the user can search on a template name.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+                &lt;tr class="bodytextRow row-sortable"&gt; <br/>
+                 &lt;td class="row-order" style="width:.5%;"&gt;&lt;/td&gt; <br/>
+                 &lt;td style="width:15%;"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl36$hdnDataItemId" id="ctl00_content_rptRows_ctl36_hdnDataItemId" value="525" data-ays-ignore="true"&gt; &lt;input type="hidden" name="ctl00$content$rptRows$ctl36$hdnScreenOrder" id="ctl00_content_rptRows_ctl36_hdnScreenOrder" value="32" data-ays-ignore="true"&gt; &lt;span id="ctl00_content_rptRows_ctl36_lblDataItem" class="bodyText"&gt;Created Date&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:8%; text-align:center;"&gt; &lt;span class="bodyText"&gt;&lt;input id="ctl00_content_rptRows_ctl36_chkVisible" type="checkbox" name="ctl00$content$rptRows$ctl36$chkVisible" checked&gt;&lt;/span&gt; &lt;/td&gt; <br/>
+                 &lt;td style="width:35%;"&gt; &lt;span id="ctl00_content_rptRows_ctl36_lblDescription" class="bodyText"&gt;This is a Date field which allows you to search by the Created Date.&lt;/span&gt; &lt;/td&gt; <br/>
+                &lt;/tr&gt; <br/>
+               &lt;/tbody&gt;<br/>
+              &lt;/table&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/ul&gt; <br/>
+           &lt;/div&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div id="ctl00_divButtons" class="action-container"&gt; <br/>
+           &lt;input type="submit" name="ctl00$btnSave" value="Save" onclick="return SaveChanges();" id="ctl00_btnSave" class="buttonText"&gt; <br/>
+           &lt;input type="submit" name="ctl00$btnCancel" value="Cancel" onclick="Page_ValidationActive=false; return CancelChanges(this);" id="ctl00_btnCancel" class="buttontext"&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;br class="clear"&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;br class="clear"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="footer-container"&gt; <br/>
+    &lt;img id="ctl00_KeepAliveMVC" src="https://oprisk-uat.afreximbank.net/AppA/Web/SessionSync?" style="height:0px;width:0px;border-width:0px;"&gt;<br/>
+    &lt;img id="ctl00_KeepAliveSurveys" src="https://oprisk-uat.afreximbank.net/AppA/Surveys/SessionSync.aspx?" style="height:0px;width:0px;border-width:0px;"&gt;<br/>
+    &lt;img id="ctl00_KeepAliveSwordDotNet" src="https://oprisk-uat.afreximbank.net/AppA/Pages/SessionSync.aspx?" style="height:0px;width:0px;border-width:0px;"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnRandomParameter" id="ctl00_hdnRandomParameter" value="r860049" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnRandomIdentifier" id="ctl00_hdnRandomIdentifier" value="8103e5e2-179d-4c6d-ad46-d3528bf72c35" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnDocumentmode" id="ctl00_hdnDocumentmode" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnDirty" id="ctl00_hdnDirty" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$hdnAlwaysDirty" id="ctl00_hdnAlwaysDirty" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="divWorking" style="display: none; position: fixed; z-index: 1000001;"&gt; <br/>
+    &lt;img src="../images/wk_loading.gif" alt="Loading..." id="loadImg"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div id="ctl00_ifpReferencePopup_backgroundElement" class="modal-dialog-bg background GL-BE" style="display:none;"&gt;&lt;/div&gt; <br/>
+   &lt;div id="ctl00_ifpReferencePopup_pnlIFramePopup" class="popUpBox ra-onscreenscoring-div ra-showComment-div generic-list-popup-div GL-FE" style="display:none;"&gt; <br/>
+    &lt;div class="wrapper"&gt; <br/>
+     &lt;div class="popup-title popUpHeader"&gt; &lt;span id="ctl00_ifpReferencePopup_lblTitle"&gt;&lt;/span&gt; <br/>
+      &lt;div title="Close pop up" class="closePopup" id="popupCloseTreeBtn"&gt;&lt;/div&gt; <br/>
+      &lt;div title="Maximize" class="maximizePopup maximizePopupBG" id="popupMaximizeTreeBtn"&gt;&lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div id="popup-content" class="popupcontainer"&gt; &lt;iframe id="iframe-content" frameborder="0"&gt;&lt;/iframe&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div class="popUpFooter"&gt; <br/>
+     &lt;input type="submit" name="ctl00$ifpReferencePopup$btnCancel" value="Close" id="ctl00_ifpReferencePopup_btnCancel" class="buttonText"&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnWidth" id="ctl00_ifpReferencePopup_hdnWidth" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnHeight" id="ctl00_ifpReferencePopup_hdnHeight" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnTop" id="ctl00_ifpReferencePopup_hdnTop" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnLeft" id="ctl00_ifpReferencePopup_hdnLeft" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnScrollPosition" id="ctl00_ifpReferencePopup_hdnScrollPosition" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="ctl00$ifpReferencePopup$hdnPopupChanges" id="ctl00_ifpReferencePopup_hdnPopupChanges" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; &lt;button id="ctl00_btnPopupTarget" style="display: none;" type="button"&gt;&lt;/button&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+var Page_ValidationSummaries =  new Array(document.getElementById("ctl00_vldError"));<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;div&gt; <br/>
+    &lt;input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0E073DD5" data-ays-ignore="true"&gt; <br/>
+    &lt;input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" data-ays-ignore="true"&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;script type="text/javascript"&gt;<br/>
+//&lt;![CDATA[<br/>
+document.addEventListener('DOMContentLoaded', function(){ $('body').css('min-width', ( ( (typeof IsPopupWindow !== 'undefined') && (IsPopupWindow) ) ? 'none' : '960px' )); });Sys.Application.add_load( function(){ prepSetting(); } );$("tr[class^=bodytextRow]").on('mouseover', function() { hover_OnMouseOver(this); }).on('mouseout', function() { hover_OnMouseOut(this); });qTipConfigJSON = '{"content":{},"position":{"my":"top left","at":"bottom center","adjust":{"x":5},"viewport":true},"hide":{"delay":200,"fixed":true,"leave":false },"style":{"tip":{"width":6,"height":12}}}';var ARCLOGICS = ARCLOGICS || {};$(document).ready(function () {try{ ARCLOGICS.navmenu = $('#navbar').navigationBar({selectedMenuId: 118}); }catch(e){console.log(e)} });<br/>
+(function(id) {<br/>
+    var e = document.getElementById(id);<br/>
+    if (e) {<br/>
+        e.dispose = function() {<br/>
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));<br/>
+        }<br/>
+        e = null;<br/>
+    }<br/>
+})('ctl00_vldError');<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"modal-timeout","dropShadow":true,"dynamicServicePath":"/AppA/UI/QuickQuerySettings.aspx","id":"ctl00_popup","okControlID":"btnTimeoutOK","onOkScript":"GotoHomePage();","popupControlID":"ctl00_divException","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"modal-timeout","cancelControlID":"btnNoMsg","dropShadow":true,"dynamicServicePath":"/AppA/UI/QuickQuerySettings.aspx","id":"ctl00_popupMsg","okControlID":"btnOKMsg","onCancelScript":"NotKeepAlive();","onOkScript":"KeepAlive();","popupControlID":"ctl00_divExceptionWarning","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+Sys.Application.add_init(function() {<br/>
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"backgroundCssClass":"working","dynamicServicePath":"/AppA/UI/QuickQuerySettings.aspx","id":"ctl00_working","popupControlID":"divWorking","repositionMode":1}, null, null, $get("ctl00_btnPopupTarget"));<br/>
+});<br/>
+//]]&gt;<br/>
+&lt;/script&gt; <br/>
+   &lt;div id="ctl00_popup_foregroundElement" style="display: none; position: fixed; z-index: 1000001;"&gt;<br/>
+    &lt;div id="ctl00_divException" style="display:none;" class="tmeout-div"&gt;<br/>
+     &lt;br&gt;Your session has timed out.<br/>
+     &lt;br&gt;Click OK to continue using OneSumX.<br/>
+     &lt;br&gt;<br/>
+     &lt;br&gt;<br/>
+     &lt;input type="button" id="btnTimeoutOK" tabindex="0" value="Ok"&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div data-act-control-type="modalPopupBackground" id="ctl00_popup_backgroundElement" class="modal-timeout" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"&gt;&lt;/div&gt;<br/>
+   &lt;div id="ctl00_popupMsg_foregroundElement" style="display: none; position: fixed; z-index: 1000001;"&gt;<br/>
+    &lt;div id="ctl00_divExceptionWarning" style="display:none;" class="tmeout-div"&gt;<br/>
+     &lt;br&gt;Your session is about to timeout.<br/>
+     &lt;br&gt;Do you wish to refresh your session?<br/>
+     &lt;br&gt;<br/>
+     &lt;br&gt;<br/>
+     &lt;input type="button" id="btnOKMsg" value="Yes"&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+     &lt;input type="button" id="btnNoMsg" value="No"&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+   &lt;div data-act-control-type="modalPopupBackground" id="ctl00_popupMsg_backgroundElement" class="modal-timeout" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"&gt;&lt;/div&gt;<br/>
+   &lt;div data-act-control-type="modalPopupBackground" id="ctl00_working_backgroundElement" class="working" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"&gt;&lt;/div&gt;<br/>
+  &lt;/form&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>

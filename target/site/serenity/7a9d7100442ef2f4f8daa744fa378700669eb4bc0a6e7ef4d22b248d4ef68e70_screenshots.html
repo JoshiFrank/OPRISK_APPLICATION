@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Oprisk_Serenity_framework</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="d31321dc38489c81761372c30e13c2a5890e8af36afe942ebe8577e7f85da2c5.html">To Test Admin Menu Organisation Unit In Organisation Option</a></span>
+                > <span class="truncate-60"><a
+                    href="7a9d7100442ef2f4f8daa744fa378700669eb4bc0a6e7ef4d22b248d4ef68e70.html">To Test Admin menu Organisation unit in Organisation Option </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 20-11-2023 17:55</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">To Test Admin Menu Organisation Unit In Organisation Option</span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="6fe0671aeea9e76b6998ee682216d11c7748a4152740df0586f3c256ecb3f5da.html">Chrome
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="9aa82d331814d8b4f2f6d3e0f449486bc2f5d1dbace9c430f98e5548dc535eb3.html">Endto End
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="59736924e81ea98f655ac8eba7cd96079d8d80131e0c4360daf32a724d0b38a0.html">Chrome, Windows
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">To Test Admin menu Organisation unit in Organisation Option
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="ea929a1c8389484f1c13e6c19d54815a930ecb75c0de186028a4af0f9392fa74.png" title=" Given To open the OneSumX application" width="1920"/>
+                <img src="ea929a1c8389484f1c13e6c19d54815a930ecb75c0de186028a4af0f9392fa74.png" title=" Oktaverification" width="1920"/>
+                <img src="aa0cc5a6cd8920d24fba92a6d5286a74be0cfbfc694c68c4dd14b0e5470e428f.png" title=" Oktaverification (completed)" width="1920"/>
+                <img src="aa0cc5a6cd8920d24fba92a6d5286a74be0cfbfc694c68c4dd14b0e5470e428f.png" title=" Given To open the OneSumX application (completed)" width="1920"/>
+                <img src="29bc31e8715a46181011b57633899fd23797736e95b467b3503f2590d9a24daf.png" title=" When To click the Admin menu option in home page" width="1920"/>
+                <img src="29bc31e8715a46181011b57633899fd23797736e95b467b3503f2590d9a24daf.png" title=" To click the admin menu option in home page" width="1920"/>
+                <img src="29bc31e8715a46181011b57633899fd23797736e95b467b3503f2590d9a24daf.png" title=" When To click the Admin menu option in home page (completed)" width="1920"/>
+                <img src="c165df84631b98155bf6fa876907b7453cf0ca1e4836772f94af3247626e688b.png" title=" When To mouse hover to organisation option" width="1920"/>
+                <img src="c165df84631b98155bf6fa876907b7453cf0ca1e4836772f94af3247626e688b.png" title=" To mouse hover to organisation option" width="1920"/>
+                <img src="01eeed57f66beac1c161a5a263f6fa6a2a2618b9462690935cb4cc7d2c00c8c5.png" title=" To mouse hover to organisation option (completed)" width="1920"/>
+                <img src="01eeed57f66beac1c161a5a263f6fa6a2a2618b9462690935cb4cc7d2c00c8c5.png" title=" When To mouse hover to organisation option (completed)" width="1920"/>
+                <img src="c228f92c4767b822d661534ff2859483fd4856c802f431b2ea303c3360f57ee3.png" title=" When To click the organisation unit in organisation option" width="1920"/>
+                <img src="c228f92c4767b822d661534ff2859483fd4856c802f431b2ea303c3360f57ee3.png" title=" To click the organisation unit in organisation option" width="1920"/>
+                <img src="c228f92c4767b822d661534ff2859483fd4856c802f431b2ea303c3360f57ee3.png" title=" When To click the organisation unit in organisation option (completed)" width="1920"/>
+                <img src="c228f92c4767b822d661534ff2859483fd4856c802f431b2ea303c3360f57ee3.png" title=" Then To validate the Maintain Organisation Unit page" width="1920"/>
+                <img src="c228f92c4767b822d661534ff2859483fd4856c802f431b2ea303c3360f57ee3.png" title=" To validate the maintain organisation unit page" width="1920"/>
+                <img src="f03902dc418afcccac90878814256113f1bc4db5027a69aad66f431b9e219699.png" title=" When To click the arrow button in office of the president in Maintain Organisation Unit page" width="1920"/>
+                <img src="f03902dc418afcccac90878814256113f1bc4db5027a69aad66f431b9e219699.png" title=" To click the arrow button in office of the president in maintain organisation unit page" width="1920"/>
+                <img src="f03902dc418afcccac90878814256113f1bc4db5027a69aad66f431b9e219699.png" title=" When To click the arrow button in office of the president in Maintain Organisation Unit page (completed)" width="1920"/>
+                <img src="b5e46a20af036c36407a0715890b032ca24b6115ba55dd92f5d8bb5a143dcbc0.png" title=" When To click the arrow button in the president in Maintain Organisation Unit page" width="1920"/>
+                <img src="b5e46a20af036c36407a0715890b032ca24b6115ba55dd92f5d8bb5a143dcbc0.png" title=" To click the arrow button in the president in maintain organisation unit page" width="1920"/>
+                <img src="b5e46a20af036c36407a0715890b032ca24b6115ba55dd92f5d8bb5a143dcbc0.png" title=" When To click the arrow button in the president in Maintain Organisation Unit page (completed)" width="1920"/>
+                <img src="6519d76a6693ac36670a53b08846a7ff292d9b0f300f2fbdfb49add9cab4696c.png" title=" When To click the down arrow button in Risk management in Maintain Organisation Unit page" width="1920"/>
+                <img src="6519d76a6693ac36670a53b08846a7ff292d9b0f300f2fbdfb49add9cab4696c.png" title=" To click the down arrow button in risk management in maintain organisation unit page" width="1920"/>
+                <img src="6519d76a6693ac36670a53b08846a7ff292d9b0f300f2fbdfb49add9cab4696c.png" title=" When To click the down arrow button in Risk management in Maintain Organisation Unit page (completed)" width="1920"/>
+                <img src="acb5ae988cc10420a94afb24327ff7b7ed0e966dc7a80a57b2e83e5c1727431e.png" title=" When To click the Add organisation unit in Maintain Organisation Unit page" width="1920"/>
+                <img src="acb5ae988cc10420a94afb24327ff7b7ed0e966dc7a80a57b2e83e5c1727431e.png" title=" To click the add organisation unit in maintain organisation unit page" width="1920"/>
+                <img src="acb5ae988cc10420a94afb24327ff7b7ed0e966dc7a80a57b2e83e5c1727431e.png" title=" When To click the Add organisation unit in Maintain Organisation Unit page (completed)" width="1920"/>
+                <img src="156456bdfa6847c78f29c218b13c07ec25edb9f64c00a3db66cfdfd0249cbd93.png" title=" Then To validate the Add Organisation Unit page" width="1920"/>
+                <img src="156456bdfa6847c78f29c218b13c07ec25edb9f64c00a3db66cfdfd0249cbd93.png" title=" To validate the add organisation unit page" width="1920"/>
+                <img src="156456bdfa6847c78f29c218b13c07ec25edb9f64c00a3db66cfdfd0249cbd93.png" title=" Then To validate the Add Organisation Unit page (completed)" width="1920"/>
+                <img src="ef2efb499d1e9b1a8ba54b3944dde4daafbd6e78f36b542a02575e87d9c68bf4.png" title=" When To Enter value in Organisation Unit Code in Add Organisation Unit page" width="1920"/>
+                <img src="ef2efb499d1e9b1a8ba54b3944dde4daafbd6e78f36b542a02575e87d9c68bf4.png" title=" To enter value in organisation unit code in add organisation unit page" width="1920"/>
+                <img src="ef2efb499d1e9b1a8ba54b3944dde4daafbd6e78f36b542a02575e87d9c68bf4.png" title=" When To Enter value in Organisation Unit Code in Add Organisation Unit page (completed)" width="1920"/>
+                <img src="30908186cfe2682681ff805d843f8e1701dfca21a3003b2c31d76657f02fa701.png" title=" When To Enter value in Organisation Unit Name in Add Organisation Unit page" width="1920"/>
+                <img src="30908186cfe2682681ff805d843f8e1701dfca21a3003b2c31d76657f02fa701.png" title=" To enter value in organisation unit name in add organisation unit page" width="1920"/>
+                <img src="70e40fc63b960eec6e28df1be354113edf6d61b712624459aaeb4017aa765583.png" title=" To enter value in organisation unit name in add organisation unit page (completed)" width="1920"/>
+                <img src="70e40fc63b960eec6e28df1be354113edf6d61b712624459aaeb4017aa765583.png" title=" When To Enter value in Organisation Unit Name in Add Organisation Unit page (completed)" width="1920"/>
+                <img src="d91d6833250af4fc11207581f60a91bb0eac22f67f64a176ab8c9cc43dc5fe73.png" title=" When To Enter value in Organisation Unit Description in Add Organisation Unit page" width="1920"/>
+                <img src="d91d6833250af4fc11207581f60a91bb0eac22f67f64a176ab8c9cc43dc5fe73.png" title=" To enter value in organisation unit description in add organisation unit page" width="1920"/>
+                <img src="d91d6833250af4fc11207581f60a91bb0eac22f67f64a176ab8c9cc43dc5fe73.png" title=" When To Enter value in Organisation Unit Description in Add Organisation Unit page (completed)" width="1920"/>
+                <img src="9ab7f0bb081ce68708e78928ad74e082e6db7cb68f6342a4aef15d582425665a.png" title=" When To select dropdown option in owner in Add Organisation Unit page" width="1920"/>
+                <img src="9ab7f0bb081ce68708e78928ad74e082e6db7cb68f6342a4aef15d582425665a.png" title=" To select dropdown option in owner in add organisation unit page" width="1920"/>
+                <img src="9ab7f0bb081ce68708e78928ad74e082e6db7cb68f6342a4aef15d582425665a.png" title=" When To select dropdown option in owner in Add Organisation Unit page (completed)" width="1920"/>
+                <img src="93d083ba0cc48eda635e4a6486330f6adcb5232d16f6c2058c3b84662bff7d9b.png" title=" When To select dropdown option in Risk manager in Add Organisation Unit page" width="1920"/>
+                <img src="93d083ba0cc48eda635e4a6486330f6adcb5232d16f6c2058c3b84662bff7d9b.png" title=" To select dropdown option in risk manager in add organisation unit page" width="1920"/>
+                <img src="93d083ba0cc48eda635e4a6486330f6adcb5232d16f6c2058c3b84662bff7d9b.png" title=" When To select dropdown option in Risk manager in Add Organisation Unit page (completed)" width="1920"/>
+                <img src="cb75c8420e8b72ec7bc9bfe1a11a71a40b8ee8cb1bd71927488ba2d858fcefc7.png" title=" When To Enter value in External Link in Add Organisation Unit page" width="1920"/>
+                <img src="cb75c8420e8b72ec7bc9bfe1a11a71a40b8ee8cb1bd71927488ba2d858fcefc7.png" title=" To enter value in external link in add organisation unit page" width="1920"/>
+                <img src="cb75c8420e8b72ec7bc9bfe1a11a71a40b8ee8cb1bd71927488ba2d858fcefc7.png" title=" When To Enter value in External Link in Add Organisation Unit page (completed)" width="1920"/>
+                <img src="168355992fe65b7e3500c84586c257597a926fa4e3bc4faa21cd8f3094dc5049.png" title=" When To Enter value in Objectives in Add Organisation Unit page" width="1920"/>
+                <img src="168355992fe65b7e3500c84586c257597a926fa4e3bc4faa21cd8f3094dc5049.png" title=" To enter value in objectives in add organisation unit page" width="1920"/>
+                <img src="cc3671653b521e2c28a6059594625bfb4ae25a5b55d4c31e7f45d095d6b42884.png" title=" To enter value in objectives in add organisation unit page (completed)" width="1920"/>
+                <img src="cc3671653b521e2c28a6059594625bfb4ae25a5b55d4c31e7f45d095d6b42884.png" title=" When To Enter value in Objectives in Add Organisation Unit page (completed)" width="1920"/>
+                <img src="cd8918375b2ee53384c7d39371e2d7ceb85725d78ed1a6f98bb608705cff577f.png" title=" When To Enter value in Background in Add Organisation Unit page" width="1920"/>
+                <img src="cd8918375b2ee53384c7d39371e2d7ceb85725d78ed1a6f98bb608705cff577f.png" title=" To enter value in background in add organisation unit page" width="1920"/>
+                <img src="40f55eaf20766d2450205178583bf7830ad9489df872a80a136f43e1efc06165.png" title=" To enter value in background in add organisation unit page (completed)" width="1920"/>
+                <img src="40f55eaf20766d2450205178583bf7830ad9489df872a80a136f43e1efc06165.png" title=" When To Enter value in Background in Add Organisation Unit page (completed)" width="1920"/>
+                <img src="74336331081ad85fd71aee6c739fd93cfe3a8dd7aef821615b46209081fe276f.png" title=" When To Enter value in Planning in Add Organisation Unit page" width="1920"/>
+                <img src="74336331081ad85fd71aee6c739fd93cfe3a8dd7aef821615b46209081fe276f.png" title=" To enter value in planning in add organisation unit page" width="1920"/>
+                <img src="9bf061190fc6cb61d8ec8b950462e1f29df2938ba70e4b4c5a5c89952d4529d3.png" title=" To enter value in planning in add organisation unit page (completed)" width="1920"/>
+                <img src="9bf061190fc6cb61d8ec8b950462e1f29df2938ba70e4b4c5a5c89952d4529d3.png" title=" When To Enter value in Planning in Add Organisation Unit page (completed)" width="1920"/>
+                <img src="9cab05b7595c5ff21aabca3b06261a99cc60572ef217f9f1712a67aee3ce99d1.png" title=" When To click the Save button in Add Organisation Unit page" width="1920"/>
+                <img src="9cab05b7595c5ff21aabca3b06261a99cc60572ef217f9f1712a67aee3ce99d1.png" title=" To click the save button in add organisation unit page" width="1920"/>
+                <img src="9cab05b7595c5ff21aabca3b06261a99cc60572ef217f9f1712a67aee3ce99d1.png" title=" When To click the Save button in Add Organisation Unit page (completed)" width="1920"/>
+                <img src="9cab05b7595c5ff21aabca3b06261a99cc60572ef217f9f1712a67aee3ce99d1.png" title=" Then To validate the Manage Organisation Unit page" width="1920"/>
+                <img src="9cab05b7595c5ff21aabca3b06261a99cc60572ef217f9f1712a67aee3ce99d1.png" title=" To validate the manage organisation unit page" width="1920"/>
+                <img src="3a48042378842a0a8f629b3cf768b39109622e219797ea74e43cf2afe5512b1d.png" title=" When To Enter the value in Loader id in Manage Organisation Unit page" width="1920"/>
+                <img src="3a48042378842a0a8f629b3cf768b39109622e219797ea74e43cf2afe5512b1d.png" title=" To enter the value in loader id in manage organisation unit page" width="1920"/>
+                <img src="3a48042378842a0a8f629b3cf768b39109622e219797ea74e43cf2afe5512b1d.png" title=" When To Enter the value in Loader id in Manage Organisation Unit page (completed)" width="1920"/>
+                <img src="e3e6226460781ea2ae781c5edd3a5221fb37676066a7078d07bdbc93d8d32b18.png" title=" When To Select dropdown in source system in Manage Organisation Unit page" width="1920"/>
+                <img src="e3e6226460781ea2ae781c5edd3a5221fb37676066a7078d07bdbc93d8d32b18.png" title=" To select dropdown in source system in manage organisation unit page" width="1920"/>
+                <img src="cb1aa54c41abe53f0f09d61da42ab3db09ff72e32c1202ca72e887a7d876edd8.png" title=" To select dropdown in source system in manage organisation unit page (completed)" width="1920"/>
+                <img src="cb1aa54c41abe53f0f09d61da42ab3db09ff72e32c1202ca72e887a7d876edd8.png" title=" When To Select dropdown in source system in Manage Organisation Unit page (completed)" width="1920"/>
+                <img src="655a72e59f4730a8c3c695e006df9801bfa731fa672d7acb9f4d586d1f43cb73.png" title=" When To click the Save button in Manage Organisation Unit page" width="1920"/>
+                <img src="655a72e59f4730a8c3c695e006df9801bfa731fa672d7acb9f4d586d1f43cb73.png" title=" To click the save button in manage organisation unit page" width="1920"/>
+                <img src="655a72e59f4730a8c3c695e006df9801bfa731fa672d7acb9f4d586d1f43cb73.png" title=" When To click the Save button in Manage Organisation Unit page (completed)" width="1920"/>
+                <img src="5e5a4c1242d5978db880c1346820f46256250fc6885dae9540f5bdf4b306230c.png" title=" When To click the Admin menu option in home page" width="1920"/>
+                <img src="5e5a4c1242d5978db880c1346820f46256250fc6885dae9540f5bdf4b306230c.png" title=" To click the admin menu option in home page" width="1920"/>
+                <img src="5e5a4c1242d5978db880c1346820f46256250fc6885dae9540f5bdf4b306230c.png" title=" When To click the Admin menu option in home page (completed)" width="1920"/>
+                <img src="0d04e4ce82d82ed0521ac4fb25ee7d7835a620dc1995558905a9d42643fb3a33.png" title=" When To MouseOver on the Risks option in home page" width="1920"/>
+                <img src="35d420f531715b01bd61e40f06b16a00a82038bac7263da89211ba20f33c3bd2.png" title=" When To click the Risk and control map option in Risks" width="1920"/>
+                <img src="35d420f531715b01bd61e40f06b16a00a82038bac7263da89211ba20f33c3bd2.png" title=" To click the risk and control map option in risks" width="1920"/>
+                <img src="35d420f531715b01bd61e40f06b16a00a82038bac7263da89211ba20f33c3bd2.png" title=" When To click the Risk and control map option in Risks (completed)" width="1920"/>
+                <img src="35d420f531715b01bd61e40f06b16a00a82038bac7263da89211ba20f33c3bd2.png" title=" Then To validate the Maintain Risk Map page" width="1920"/>
+                <img src="35d420f531715b01bd61e40f06b16a00a82038bac7263da89211ba20f33c3bd2.png" title=" To validate the maintain risk map page" width="1920"/>
+                <img src="6e396f609fa252a70a900c98b046f6e2d74a281e5470f1739a72a306f07a85cc.png" title=" When To click the arrow button in office of the president in Maintain Risk Map page" width="1920"/>
+                <img src="6e396f609fa252a70a900c98b046f6e2d74a281e5470f1739a72a306f07a85cc.png" title=" To click the arrow button in office of the president in maintain risk map page" width="1920"/>
+                <img src="6e396f609fa252a70a900c98b046f6e2d74a281e5470f1739a72a306f07a85cc.png" title=" When To click the arrow button in office of the president in Maintain Risk Map page (completed)" width="1920"/>
+                <img src="1c6d510151775d33ccfaa1d3ac6481668c356e2efc433db8f4474d4b63bdaa69.png" title=" When To click the arrow button in the president in Maintain Risk Map page" width="1920"/>
+                <img src="1c6d510151775d33ccfaa1d3ac6481668c356e2efc433db8f4474d4b63bdaa69.png" title=" To click the arrow button in the president in maintain risk map page" width="1920"/>
+                <img src="1c6d510151775d33ccfaa1d3ac6481668c356e2efc433db8f4474d4b63bdaa69.png" title=" When To click the arrow button in the president in Maintain Risk Map page (completed)" width="1920"/>
+                <img src="b291cc4994fff18c17c63b6a8e9c61aedf296e161a60a256837175cc44b295d0.png" title=" When To click the arrow button in Risk Management in Maintain Risk Map page" width="1920"/>
+                <img src="b291cc4994fff18c17c63b6a8e9c61aedf296e161a60a256837175cc44b295d0.png" title=" To click the arrow button in risk management in maintain risk map page" width="1920"/>
+                <img src="b291cc4994fff18c17c63b6a8e9c61aedf296e161a60a256837175cc44b295d0.png" title=" When To click the arrow button in Risk Management in Maintain Risk Map page (completed)" width="1920"/>
+                <img src="a23e1b304826ed9051d988a3357d4bf4b73b8dc21b8ce48100f6de2ce7cd216f.png" title=" Then To validate the result Risk Management in Maintain Risk Map page" width="1920"/>
+                <img src="a23e1b304826ed9051d988a3357d4bf4b73b8dc21b8ce48100f6de2ce7cd216f.png" title=" To validate the result risk management in maintain risk map page" width="1920"/>
+                <img src="a23e1b304826ed9051d988a3357d4bf4b73b8dc21b8ce48100f6de2ce7cd216f.png" title=" Then To validate the result Risk Management in Maintain Risk Map page (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.21</span>
+</div>
+</body>
+</html>
