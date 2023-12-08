@@ -1,4 +1,4 @@
-@rocky
+@run
 Feature: To Test Admin menu in Data looks ups in System settings
 Scenario: To Test Admin menu in source system under Administration option in Data looks ups in System settings
 Given To open the OneSumX application
