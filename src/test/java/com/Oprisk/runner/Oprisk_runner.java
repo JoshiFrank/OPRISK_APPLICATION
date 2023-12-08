@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberSerenityRunner;
 
 	@RunWith(CucumberSerenityRunner.class)
-	@CucumberOptions( features="src/test/resources/Oprisk.feature" ,glue= {"com/Oprisk/Steps"},tags="@rocky")
+	@CucumberOptions( features="src/test/resources/Oprisk.feature" ,glue= {"com/Oprisk/Steps"},tags="@run")
 
 
 	
